@@ -1,0 +1,221 @@
+.create-account-page {
+    // max-width: 624px;
+    .text-highlight {
+        font-weight: 800;
+        font-style: italic;
+        color: $uhc-black;
+    }
+
+    &.epic-hearing {
+        .text-content {
+            img {
+                width: 50%;
+                @include media-breakpoint-down(sm) {
+                    display: flex;
+                    margin: auto;
+                }
+            }
+        }
+    }
+
+    .custom-form-control-label {
+        font-size: 14px;
+        color: $tints-col-3;
+
+        &::after {
+            content: '*';
+            color: $tints-col-3;
+        }
+    }
+
+    .custom-form-label {
+        font-size: 14px;
+        color: $tints-col-3;
+        position: relative;
+    }
+
+    .custom-select.custom-form-control-label {
+        font-size: 16px;
+    }
+
+    .member-id-info-card {
+        float: right;
+        position: relative;
+    }
+
+    .member-id-info-card-icon {
+        margin-top: 2px;
+        width: 18px;
+        height: 18px;
+        margin-left: 5px;
+        cursor: pointer;
+        background-image: $info-icon;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        &:hover + .member-id-info-card-img {
+            display: block;
+        }
+    }
+
+    .member-id-info-card-img {
+        display: none;
+        position: absolute;
+        bottom: 19px;
+        left: 23px;
+        transform: translateX(-42%);
+    }
+
+    .healthplan-memberid-card {
+        position: absolute;
+        top: -102px;
+        transform: translate(-50%, -50%);
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 108px;
+            top: 169px;
+            border-top: 12px solid $uhc-white;
+            border-right: 7px solid transparent;
+            border-left: 7px solid transparent;
+        }
+    }
+
+    .border-radius-10 {
+        border-radius: 10px;
+    }
+
+    .card-container-box-shadow {
+        filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.2));
+    }
+
+    .form-control-label {
+        font-size: 14px;
+    }
+
+    .healthplan-memberid-info-container {
+        position: absolute;
+        top: -100px;
+        width: 307px;
+        height: 169px;
+        transform: translate(-50%, -50%);
+        padding: 15px;
+        background-color: $uhc-white;
+        line-height: 20px;
+        color: $secondary-col-3;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 160px;
+            top: 168px;
+            border-top: 12px solid $uhc-white;
+            border-right: 7px solid transparent;
+            border-left: 7px solid transparent;
+        }
+
+        .healthplan-memberid-info {
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .form-control.is-invalid {
+        padding-right: 15px;
+    }
+
+    input[type='date'] {
+        -webkit-appearance: none;
+
+        &::-webkit-date-and-time-value {
+            text-align: left;
+        }
+    }
+
+    .form-control.is-input {
+        border-color: $uhc-error;
+    }
+
+    .invalid-input {
+        color: $uhc-error;
+        display: none;
+        font-size: 80%;
+
+        &::before {
+            content: '';
+            width: 9px;
+            height: 9px;
+            display: inline-block;
+            margin-right: 4px;
+            background-image: $icon-input-error;
+        }
+    }
+
+    .btn-create-account:disabled {
+        border: 2px solid $tints-col-5;
+    }
+
+    .btn-create-account:not(:disabled) {
+        border: 2px solid transparent;
+    }
+}
+
+// 7/20/2023 - Style Updates - RE:Figma v6, UHC Hearing Desktop vFC
+
+// .background-image {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 100%;
+//     background-image: url('../../../../static/default/images/uhc_hearing-signup.png');
+//     background-size: cover;
+//     background-position: center;
+//     opacity: 0.8; /* You can adjust the opacity if needed */
+//     z-index: -1;
+// }
+
+.card {
+    padding: 18px 20px;
+}
+
+.image-container {
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+
+    h1.hero-title {
+        color: #002677;
+    }
+}
+
+.text-content {
+    // consider :  @media (min-width: 1024px){} for tablets and small screens
+    @include media-breakpoint-up(lg) {
+        position: absolute;
+        top: 35px;
+        left: 5%;
+        max-width: 530px;
+    }
+
+    padding: 20px 20px 16px;
+    background-color: #fff;
+}
+
+.sign-up-form {
+    padding: 0;
+    // consider :  @media (min-width: 1024px){} for tablets and small screens
+    @include media-breakpoint-up(lg) {
+        position: absolute;
+        top: 35px;
+        right: 10%;
+        max-width: 530px;
+    }
+}
