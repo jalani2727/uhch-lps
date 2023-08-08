@@ -37,8 +37,8 @@
     }
 
     .btn-primary {
-        background-color: $secondary-col-3;
-        border-color: $secondary-col-3;
+        background-color: $primary-col-3;
+        border-color: $primary-col-3;
         color: #fff;
     }
 
@@ -63,7 +63,7 @@
             img {
                 width: 100%;
                 clip-path: polygon(14% 0, 100% 0, 100% 100%, 0% 100%);
-                
+
                 @include media-breakpoint-down(md) {
                     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
                 }
@@ -79,7 +79,6 @@
 
     .hero-text {
         margin-left: auto;
-        padding: 0 40px;
 
         @include media-breakpoint-up(md) {
             max-width: 75%;
