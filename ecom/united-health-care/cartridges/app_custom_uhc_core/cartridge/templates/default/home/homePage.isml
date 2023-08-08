@@ -14,11 +14,11 @@
                 <div class="col-12 col-md-7">
                     <div class="hero-text">
                         <h1>Your hearing matters</h1>
-                        <p>Discover where you are in your hearing journey with a brief questionnaire.</p>
-                        <a href="javascript:void(0)" class="next btn-next btn btn-primary mb-5">Take questionnaire </a>
+                        <p>Could you benefit from hearing care? Take our 5-minute questionnaire to learn how well you’re hearing.</p>
+                        <a href="javascript:void(0)" class="next btn-next btn btn-primary mb-md-5">Take questionnaire </a>
                     </div>
                 </div>
-                <div class="hidden-md-down col-5">
+                <div class="col-12 col-md-5">
                     <div class="image-content">
                         <picture>
                             <img alt="sign in image" src="${URLUtils.staticURL('/images/red_shawl_2.png')}" />
@@ -27,13 +27,10 @@
                 </div>
             </div>
         </div>
-
-    </div>
-
     <!--TODO: Move this to another template and create controller to render the Questionnaire on a separate page -->
-        <div class="hearing-screener">
+        <iscomment> <div class="hearing-screener">
             <isinclude url="${URLUtils.url('Screener-IncludeHearingScreener')}" />
-        </div>
+        </div> </iscomment>
     
     <iscomment> Perks </iscomment>
     <isinclude template="home/banner-1" />
@@ -41,6 +38,9 @@
     <isinclude template="home/banner-2" />
     <iscomment> Asian Dude CTA </iscomment>
     <isinclude template="home/banner-3" />
+
+    </div>
+
 
 
     <isinclude template="home/registrationSuccessModal" />

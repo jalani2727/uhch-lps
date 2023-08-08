@@ -97,7 +97,10 @@ $hero-description-font-color: $body-text-color;
                 margin: 0 auto;
                 padding: 0 20px;
                 color: $uhc-white;
-                max-width: 75%;
+                
+                @include media-breakpoint-up(md) {
+                    max-width: 75%;
+                }
 
                 h1 {
                     font-size: 56px;
@@ -105,14 +108,27 @@ $hero-description-font-color: $body-text-color;
                     font-weight: 600;
                     line-height: 64px;
                     margin-bottom: 35px;
+
+                    @include media-breakpoint-down(md){
+                        font-size: 28px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 36px;
+                        margin-top: 35px;
+                    }
                 }
 
                 p {
                     font-size: 30px;
                     font-style: normal;
-
                     line-height: 35px;
                     margin-bottom: 35px;
+
+                    @include media-breakpoint-down(md){
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 20px;
+                    }
                 }
 
                 .btn-primary {
@@ -126,8 +142,17 @@ $hero-description-font-color: $body-text-color;
                 clip-path: ellipse(67% 84% at 56% 79%);
                 transform: rotate(-37.445deg);
 
+                @include media-breakpoint-down(md){
+                    clip-path: ellipse(68% 91% at 68% 86%);
+                    transform: rotate(18.555deg);
+                }
+
                 img {
                     transform: rotate(37.445deg);
+
+                    @include media-breakpoint-down(md){
+                        transform: rotate(-18.555deg);
+                    }
                 }
 
             }

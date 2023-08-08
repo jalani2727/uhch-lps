@@ -52,19 +52,38 @@
 
     &.banner-3 {
 
+        .hero-text-wrapper {
+            display: flex;
+            align-items: center;
+        }
+
         .image-content {
+            height: 100%;
 
             img {
                 width: 100%;
                 clip-path: polygon(14% 0, 100% 0, 100% 100%, 0% 100%);
+                
+                @include media-breakpoint-down(md) {
+                    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
+                }
             }
+        }
+    }
+
+    .hero-text-wrapper {
+        @include media-breakpoint-down(md) {
+            order: 2;
         }
     }
 
     .hero-text {
         margin-left: auto;
         padding: 0 40px;
-        max-width: 75%;
+
+        @include media-breakpoint-up(md) {
+            max-width: 75%;
+        }
     }
 
     .aarp-perk-desc {
