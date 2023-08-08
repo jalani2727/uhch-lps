@@ -11,6 +11,13 @@ var server = require('server');
 
 
 server.get(
+    'Show',
+    function (req, res, next) {
+        res.render('hearingScreener/questionnaire');
+        next();
+    }
+);
+server.get(
     'IncludeHearingScreener',
     function (req, res, next) {
         res.render('hearingScreener/questionnaire');

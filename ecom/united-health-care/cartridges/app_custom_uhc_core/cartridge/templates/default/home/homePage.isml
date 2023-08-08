@@ -15,7 +15,7 @@
                     <div class="hero-text">
                         <h1>Your hearing matters</h1>
                         <p>Could you benefit from hearing care? Take our 5-minute questionnaire to learn how well you’re hearing.</p>
-                        <a href="javascript:void(0)" class="next btn-next btn btn-primary mb-md-5">Take questionnaire </a>
+                        <a href="${URLUtils.url('Screener-Show')}" class="next btn-next btn btn-primary mb-md-5">Take questionnaire </a>
                     </div>
                 </div>
                 <div class="col-12 col-md-5">
