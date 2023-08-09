@@ -94,6 +94,10 @@ nav > .header {
             position: relative;
             margin: 0 auto;
         }
+        
+        .hearing-solutions & {
+            position: relative;
+        }
     }
 
     .user,
@@ -142,6 +146,49 @@ nav > .header {
             text-indent: -9999px;
             display: block;
         }
+    }
+}
+
+.hearing-solutions-header {
+
+    nav > .header {
+        @include media-breakpoint-down(sm) {
+            height: auto;
+        }
+    }
+
+    .navigation-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px;
+
+        @include media-breakpoint-down(md) {
+            flex-direction: column;
+            
+        }
+    }
+
+    .navbar-header {
+        &.logo-wrapper {
+            height: auto;
+            width: 100%;
+            margin-bottom: 25px;
+            
+            @include media-breakpoint-up(md) {
+                width: 400px;
+                margin: 0;
+            }
+        }
+    }
+
+    P {
+        color: $primary-col-1;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+        margin: 0;
     }
 }
 
