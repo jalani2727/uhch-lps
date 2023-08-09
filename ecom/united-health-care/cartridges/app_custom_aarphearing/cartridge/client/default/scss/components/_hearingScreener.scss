@@ -133,7 +133,7 @@ $hs: hearing-screener;
         }
 
         h3 {
-            @include hearing-screener-title-font-2();
+            @include hearing-screener-title-font-2;
         }
 
         .#{$hs}-header {

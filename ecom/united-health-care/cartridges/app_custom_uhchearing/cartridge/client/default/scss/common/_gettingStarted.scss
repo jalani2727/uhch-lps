@@ -3,14 +3,10 @@ $hero-description-font-color: $body-text-color;
 
 @mixin getting-started-title-font {
     font-family: $uhc-heading-font-1;
-    font-size: 26px;
+    font-size: 36px;
     line-height: 34px;
     color: $hero-title-font-color;
 
-    @include media-breakpoint-up(lg) {
-        font-size: 28px;
-        line-height: 36px;
-    }
 }
 
 @mixin getting-started-description-font {
@@ -33,6 +29,10 @@ $hero-description-font-color: $body-text-color;
 
     .image-content {
         margin-bottom: 20px;
+
+        @include media-breakpoint-down(md) {
+            align-self: center;
+        }
     }
 
     .text-content {
@@ -60,7 +60,6 @@ $hero-description-font-color: $body-text-color;
     }
 
     @include media-breakpoint-up(lg) {
-        margin-top: 60px;
         padding-bottom: 64px;
         border-bottom: none;
         flex-direction: row;
@@ -68,7 +67,7 @@ $hero-description-font-color: $body-text-color;
 
         .image-content {
             margin-left: 120px;
-            margin-bottom: 0;
+            margin-bottom: 100px;
         }
 
         .text-content {
@@ -79,10 +78,12 @@ $hero-description-font-color: $body-text-color;
             }
 
             .getting-started-description {
-                max-width: 675px;
 
                 p {
                     margin-bottom: 16px;
+                    &:first-of-type {
+                        color: $primary-col-1;
+                    }
                 }
             }
         }

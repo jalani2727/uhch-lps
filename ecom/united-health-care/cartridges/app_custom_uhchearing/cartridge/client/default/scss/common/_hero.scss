@@ -8,7 +8,7 @@ $hero-description-font-color: $body-text-color;
     color: $hero-title-font-color;
 
     @include media-breakpoint-up(lg) {
-        font-size: 36px;
+        font-size: 32px;
         line-height: 44px;
     }
 }
@@ -23,6 +23,40 @@ $hero-description-font-color: $body-text-color;
         font-size: 16px;
         line-height: 23px;
     }
+}
+
+@mixin bold-element-font {
+    font-family: $uhc-font-sans-bold;
+    font-size: 16px;
+    font-style: normal;
+    list-style: none;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+h1 {
+    @include hero-title-font;
+}
+
+p {
+    @include bold-element-font;
+}
+
+.sub-text {
+    text-align: center;
+    margin: 15px 0;
+
+    @include media-breakpoint-down(md) {
+        text-align: start;
+    }
+}
+
+.video-label {
+    @include bold-element-font;
+
+    font-size: 26px;
+    color: $primary-col-1;
+    margin-top: 25px;
 }
 
 .hero-container {
@@ -44,7 +78,6 @@ $hero-description-font-color: $body-text-color;
         .hero-title {
             @include hero-title-font;
 
-            max-width: 208px;
             margin-bottom: 8px;
         }
 
@@ -56,7 +89,6 @@ $hero-description-font-color: $body-text-color;
     }
 
     @include media-breakpoint-up(lg) {
-        max-height: 30vw;
         overflow: hidden;
 
         .text-content {
@@ -68,7 +100,6 @@ $hero-description-font-color: $body-text-color;
             border-bottom: none;
 
             .hero-title {
-                max-width: 268px;
                 margin-bottom: 10px;
             }
 
@@ -77,11 +108,6 @@ $hero-description-font-color: $body-text-color;
                 margin-bottom: 24px;
             }
         }
-    }
-
-    @include media-breakpoint-down(sm) {
-        padding-left: 0;
-        padding-right: 0;
     }
 
     // 7/31/2023 - FIGMA - https://www.figma.com/file/zqqzzwcIxC3ZD34c9rDACh/UHCH-Questionnaire-Landing-Page-%2B-Simulator-CLIENT?node-id=69%3A4122&mode=dev
@@ -108,6 +134,7 @@ $hero-description-font-color: $body-text-color;
                     font-weight: 600;
                     line-height: 64px;
                     margin-bottom: 35px;
+                    color: $white;
 
                     @include media-breakpoint-down(md){
                         font-size: 28px;
@@ -156,6 +183,41 @@ $hero-description-font-color: $body-text-color;
                 }
 
             }
+        }
+    }
+
+    &.try-simulator {
+
+        .video-section-wrapper {
+            justify-content: space-around;
+        }
+
+        @include media-breakpoint-down(md) {
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
+    &.hero-container-blue {
+        color: $white;
+        background-color: $primary-col-1;
+
+        h1 {
+            color: $white;
+            @include media-breakpoint-down(md) {
+                font-size: 28px;
+            }
+        }
+        
+        .container {
+            text-align: start;
+            
+            @include media-breakpoint-up(md) {
+                text-align: center;
+                max-width: 50%;
+            }
+            
         }
     }
 }
