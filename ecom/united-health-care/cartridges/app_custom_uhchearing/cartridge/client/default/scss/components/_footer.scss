@@ -204,3 +204,20 @@ footer {
         font-size: 18px;
     }
 }
+
+.footnote-section {
+    background-color: $uhc-grey-footnote; 
+    p {
+        font-family: $uhc-font-sans-medium;
+        font-weight: 500;
+        color: $white;
+    }
+}
+
+.hearing-solutions-footer-content {
+    background-color: $uhc-grey-background;
+
+    p {
+        color: $white;
+    }
+}

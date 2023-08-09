@@ -29,7 +29,7 @@
         <div role="main" id="maincontent">
             <isreplace/>
         </div>
-        <isinclude template="/components/footer/pageFooter" />
+        <isinclude template="/components/footer/hearingSolutionsFooter" />
     </div>
     <div class="error-messaging"></div>
     <div class="modal-background"></div>

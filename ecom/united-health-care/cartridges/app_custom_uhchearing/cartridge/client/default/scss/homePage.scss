@@ -46,6 +46,10 @@
     .banner-2-content {
         text-align: center;
 
+        @include media-breakpoint-between(md, lg){
+
+        }
+
         @include media-breakpoint-down(md) {
             text-align: left;
         }
@@ -65,7 +69,11 @@
                 width: 100%;
                 clip-path: polygon(14% 0, 100% 0, 100% 100%, 0% 100%);
 
-                @include media-breakpoint-down(md) {
+                @include media-breakpoint-between(md, lg){
+
+                }
+
+                @include media-breakpoint-down(sm) {
                     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
                 }
             }
@@ -73,7 +81,11 @@
     }
 
     .hero-text-wrapper {
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-between(md, lg){
+
+        }
+
+        @include media-breakpoint-down(sm) {
             order: 2;
         }
     }
