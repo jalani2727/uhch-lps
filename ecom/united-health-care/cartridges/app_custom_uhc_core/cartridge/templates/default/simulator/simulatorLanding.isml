@@ -1,4 +1,4 @@
-<isdecorate template="common/layout/page">
+<isdecorate template="common/layout/simulatorLandingLayout">
     <isscript>
         var assets = require('*/cartridge/scripts/assets.js');
         assets.addJs('/js/homePage.js');
@@ -67,12 +67,8 @@
         <div class="container p-3 p-md-5">
 
             <h1 class="pb-3">Think you might have hearing loss?</h1>
-            <p>Treating hearing loss with hearing aids does more than just make it easier to hear, it also helps
-                preserve important connections in your brain to help keep you sharp, active and part of the
-                conversation.</p>
-            <p>Today’s hearing aids are cutting edge, discreet and use advanced technology to mimic natural hearing. And
-                there's more good news for AARP members: Save up to 20% on hearing aids through AARP® Hearing
-                SolutionsTM provided by UnitedHealthcare Hearing.</p>
+            <p>Treating hearing loss with hearing aids does more than just make it easier to hear, it also helps preserve important connections in your brain to help keep you sharp, active and part of the conversation.</p>
+            <p>Today’s hearing aids are cutting edge, discreet and use advanced technology to mimic natural hearing. And there's more good news for AARP members: Save up to 20% on hearing aids through AARP® Hearing SolutionsTM provided by UnitedHealthcare Hearing.</p>
         </div>
     </div>
 

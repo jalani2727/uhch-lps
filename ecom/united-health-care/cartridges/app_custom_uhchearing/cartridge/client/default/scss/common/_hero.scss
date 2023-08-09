@@ -48,7 +48,7 @@ p {
     text-align: center;
     margin: 15px 0;
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(sm) {
         text-align: start;
     }
 }
@@ -82,7 +82,15 @@ p {
     }
 
     .text-content {
-        padding: 16px 16px 42px;
+        display: flex;
+
+        @include media-breakpoint-down(sm) {
+            display: block;
+        }
+
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px;
         margin: 0 auto;
         background-color: $primary-col-2;
         position: relative;
@@ -105,8 +113,9 @@ p {
         overflow: hidden;
 
         .text-content {
-            padding: 36px 36px 42px;
+            padding: 55px 30px;
             position: absolute;
+            width: 420px;
             top: 50%;
             left: calc((100% - 1242px) / 2);
             transform: translateY(-50%);
@@ -117,7 +126,6 @@ p {
             }
 
             .hero-description {
-                max-width: 318px;
                 margin-bottom: 24px;
             }
         }
@@ -128,18 +136,17 @@ p {
         max-height: none;
 
         .new-landing {
-            // height: 30vw;
             background-color: $primary-col-1;
             align-items: center;
-
+            
             .hero-text {
-                margin: 0 auto;
+
+                @include media-breakpoint-between(lg, xl) {
+                    margin: 0 168px;
+                }
+                
                 padding: 0 20px;
                 color: $uhc-white;
-                
-                @include media-breakpoint-up(md) {
-                    max-width: 75%;
-                }
 
                 h1 {
                     font-size: 56px;
@@ -149,7 +156,12 @@ p {
                     margin-bottom: 35px;
                     color: $white;
 
-                    @include media-breakpoint-down(md){
+                    @include media-breakpoint-between(md, lg) {
+                        font-size: 26px;
+                        margin: 0;
+                    }
+
+                    @include media-breakpoint-down(sm){
                         font-size: 28px;
                         font-style: normal;
                         font-weight: 600;
@@ -164,7 +176,12 @@ p {
                     line-height: 35px;
                     margin-bottom: 35px;
 
-                    @include media-breakpoint-down(md){
+                    @include media-breakpoint-between(md, lg) {
+                        line-height: 24px;
+                        font-size: 18px;
+                    }
+
+                    @include media-breakpoint-down(sm){
                         font-size: 16px;
                         font-weight: 700;
                         line-height: 20px;
@@ -182,7 +199,10 @@ p {
                 clip-path: ellipse(67% 84% at 56% 79%);
                 transform: rotate(-37.445deg);
 
-                @include media-breakpoint-down(md){
+                @include media-breakpoint-between(md, lg) {
+
+                }
+                @include media-breakpoint-down(sm){
                     clip-path: ellipse(68% 91% at 68% 86%);
                     transform: rotate(18.555deg);
                 }
@@ -190,7 +210,10 @@ p {
                 img {
                     transform: rotate(37.445deg);
 
-                    @include media-breakpoint-down(md){
+                    @include media-breakpoint-between(md, lg) {
+
+                    }
+                    @include media-breakpoint-down(sm){
                         transform: rotate(-18.555deg);
                     }
                 }
@@ -206,7 +229,7 @@ p {
         justify-content: space-around;
     }
 
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(sm) {
         img {
             max-width: 100%;
         }
@@ -219,7 +242,7 @@ p {
 
     h1 {
         color: $white;
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(sm) {
             font-size: 28px;
         }
     }
@@ -240,12 +263,12 @@ p {
 
     .text-content {
         margin: 25% 0;
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(sm) {
             margin: 35px 0;
         }
     }
     .container, .image-content {
-        @include media-breakpoint-down(md) {
+        @include media-breakpoint-down(sm) {
             padding: 0;
         }
     }

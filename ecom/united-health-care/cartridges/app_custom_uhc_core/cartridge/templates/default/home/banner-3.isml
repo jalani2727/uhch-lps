@@ -7,7 +7,7 @@
         <p class="mt-md-4">
           If you or someone you love might be experiencing hearing loss, answer these 4 questions to learn more and take that first step in professional hearing care.
         </p>
-        <a href="${URLUtils.url('Screener-Show')}" class="next btn-next btn btn-primary mt-md-2 mb-5">Take questionnaire </a>
+        <a href="${URLUtils.url('Screener-Show')}" class="next btn-next btn btn-primary mt-md-2 mb-5">Take the Questionnaire </a>
       </div>
     </div>
     <div class="col-12 col-md-7">
