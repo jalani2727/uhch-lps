@@ -5,10 +5,12 @@
         assets.addCss('/css/homePage.css');
     </isscript>
 
-    <div class="hero-container">
+    <div class="hero-container top-content">
         <div class="image-content">
             <picture>
-                <img src="${URLUtils.staticURL('/images/simulator-hero.png')}" alt="hero banner image">
+                <img class="hidden-md-down" src="${URLUtils.staticURL('/images/simulator-hero.png')}"
+                    alt="hero banner image">
+                <img class="d-lg-none" src="${URLUtils.staticURL('/images/hero-mobile.png')}" alt="hero banner image">
             </picture>
         </div>
         <div class="text-content">
@@ -21,8 +23,7 @@
             </p>
             <a class="btn btn-primary hero-button custom-datalayer" data-name="" data-location=""
                 href="javascript:void(0)" data-datalayer-config="">
-                <!-- dwMarker="link" dwPipelineTitle="HearingTest-Landing (int_adobe_datalayer)" dwIsController="true" dwPipelineURL="http://localhost:60606/target=/int_adobe_datalayer/cartridge/controllers/HearingTest.js&amp;start=Landing" -->Take
-                the test</a>
+                Schedule an appointment</a>
         </div>
     </div>
 
@@ -76,7 +77,10 @@
     </div>
 
     <div class="container getting-started-container p-3 p-md-4">
-        <img alt="getting started image" src="${URLUtils.staticURL('/images/questionnaire-ear.svg')}">
+        <div class="image-content">
+
+            <img alt="getting started image" src="${URLUtils.staticURL('/images/questionnaire-ear.svg')}">
+        </div>
 
         <div class="text-content">
             <h2 class="getting-started-title">Find out if you could benefit from hearing aids</h2>
@@ -96,5 +100,29 @@
         </div>
     </div>
 
+    <div class="container-fluid explore-products-container">
+        <div class="container">
+            <div class="row ">
+                <div class="col-12 col-md-6">
+                    <div class="text-content">
+                        <h1 class="getting-started-title">Interested in exploring hearing aid options?</h1>
 
+                        <div class="getting-started-description">
+                            <p>Hearing aids are more discreet, more comfortable and more advanced than ever. With a wide
+                                variety of styles that feature the latest technology such as recharging capabilities,
+                                connection to Bluetooth® devices, tap control, remote adjustments and more, AARP Hearing
+                                Solutions can help you hear more for less.</p>
+                        </div>
+                        <a class="btn btn-primary hero-button custom-datalayer" href="">Explore Products</a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 image-content">
+                    <img class="hidden-md-down" alt="explore products image"
+                        src="${URLUtils.staticURL('/images/explore-products.png')}" />
+                    <img class="d-lg-none" alt="explore products image"
+                        src="${URLUtils.staticURL('/images/explore-products-mobile.png')}" />
+                </div>
+            </div>
+        </div>
+    </div>
 </isdecorate>

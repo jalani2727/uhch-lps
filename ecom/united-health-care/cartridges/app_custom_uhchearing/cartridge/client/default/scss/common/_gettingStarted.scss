@@ -23,12 +23,14 @@ $hero-description-font-color: $body-text-color;
 .getting-started-container {
     margin-top: 16px;
     padding-bottom: 45px;
-    border-bottom: 1px solid $uhc-section-border-color;
     display: flex;
     flex-direction: column;
 
     .image-content {
-        margin-bottom: 20px;
+        margin-bottom: 50px;
+        img {
+            max-width: none;
+        }
 
         @include media-breakpoint-down(md) {
             align-self: center;
@@ -65,13 +67,7 @@ $hero-description-font-color: $body-text-color;
         flex-direction: row;
         align-items: center;
 
-        .image-content {
-            margin-left: 120px;
-            margin-bottom: 100px;
-        }
-
         .text-content {
-            margin-left: 60px;
 
             .getting-started-title {
                 margin-bottom: 16px;
