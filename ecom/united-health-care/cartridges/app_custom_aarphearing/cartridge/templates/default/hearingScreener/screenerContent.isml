@@ -196,7 +196,7 @@
             <p>
                 ${Resource.msg('label.hearing-screener.complete.subheading1', 'hearingscreener', null)}
             </p>
-            <h3 class="pt-3 pb-3">
+            <iscomment> <h3 class="pt-3 pb-3">
                 ${Resource.msg('label.hearing-screener.complete.subheading2', 'hearingscreener', null)}
             </h3>
 
@@ -221,7 +221,7 @@
                         ${Resource.msg('label.input.screener-skip', 'hearingscreener', null)}
                     </a>
                 </div>
-            </div>
+            </div> </iscomment>
         </div>
     </div>
 
