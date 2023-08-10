@@ -228,7 +228,10 @@ p {
 .try-simulator {
 
     .video-section-wrapper {
-        justify-content: space-around;
+
+        @include media-breakpoint-up(sm){
+            justify-content: space-around;
+        }
     }
 
     @include media-breakpoint-down(sm) {
