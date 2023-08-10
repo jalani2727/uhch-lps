@@ -3,7 +3,7 @@
         var assets = require('*/cartridge/scripts/assets.js');
         assets.addJs('/js/homePage.js');
         assets.addJs('/js/hearingScreener.js');
-        assets.addCss('/css/homePage.css');
+
     </isscript>
     <div class="home-main homepage" data-is-pricebook-updated="${true}">
         <iscomment>
@@ -32,11 +32,11 @@
             </div>
         </div>
 
-        <isinclude template="home/banner-1" />
+        <isinclude template="hearingScreener/banner-1" />
 
-        <isinclude template="home/banner-2" />
+        <isinclude template="hearingScreener/banner-2" />
 
-        <isinclude template="home/banner-3" />
+        <isinclude template="hearingScreener/banner-3" />
 
         <div class="footnote-section">
             <div class="container py-5">

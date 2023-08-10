@@ -20,7 +20,7 @@ server.get(
 server.get(
     'ShowLanding',
     function (req, res, next) {
-        res.render('questionnaire/questionnaireLanding');
+        res.render('hearingScreener/questionnaireLanding');
         next();
     }
 );
