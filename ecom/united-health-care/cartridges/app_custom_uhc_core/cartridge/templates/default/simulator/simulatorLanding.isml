@@ -23,12 +23,12 @@
 
             <h1 class="hero-title">Hear the difference</h1>
             <p class="hero-description">Been missing parts of your conversations? Experience what hearing aids could do
-                for you with this simulator below, or schedule a no-cost hearing test with a hearing provider near you.
+                for you with this simulator below, or schedule a no-cost hearing test with hearing care professionals near you.
             </p>
             <a class="custom-datalayer btn btn-primary hero-button custom-datalayer" href="javascript:void(0)"
                 data-name="${Resource.msg('label.adobe.simulator-landing-name-request', 'adobetracking', null)}"
                 data-location="${Resource.msg('label.adobe.simulator-landing-location', 'adobetracking', null)}">
-                Schedule an appointment</a>
+                Request an appointment</a>
         </div>
     </div>
 
@@ -98,7 +98,7 @@
                     about your lifestyle and hearing goals and provide you with a personalized recommendation and next
                     steps.</p>
 
-                <p>Not an AARP Member? <span><a href="javascript:void(0)">Join</a></span> or <span><a href="javascript:void(0)">Renew</a></span> your membership today!</p>
+                <p>Not an AARP member? <span><a href="javascript:void(0)">Join</a></span> or <span><a href="javascript:void(0)">Renew</a></span> your membership today!</p>
             </div>
             <a class="custom-datalayer btn btn-primary hero-button custom-datalayer" href=""
                 data-name="${Resource.msg('label.adobe.simulator-landing-name-request', 'adobetracking', null)}"

@@ -14,8 +14,7 @@
                 <div class="col-12 col-md-7">
                     <div class="hero-text">
                         <h1>Your hearing matters</h1>
-                        <p>Could you benefit from hearing care? Take our 5-minute questionnaire to learn how well you’re
-                            hearing.</p>
+                        <p>Could you benefit from hearing care? Take our 5-minute questionnaire to find out.</p>
                         <a href="${URLUtils.url('Screener-Show')}"
                             class="custom-datalayer next btn-next btn btn-primary mb-md-5"
                             data-name="${Resource.msg('label.adobe.questionnaire-landing-name', 'adobetracking', null)}"
