@@ -1,51 +1,23 @@
-<isdecorate template="common/layout/questionnaireLandingLayout">
+<isdecorate template="common/layout/page">
     <isscript>
         var assets = require('*/cartridge/scripts/assets.js');
         assets.addJs('/js/homePage.js');
-        assets.addJs('/js/hearingScreener.js');
         assets.addCss('/css/homePage.css');
     </isscript>
     <div class="home-main homepage" data-is-pricebook-updated="${true}">
-        <iscomment>
-            <isslot id="home-main-m" description="Main home page slot." context="global" />
-        </iscomment>
-        <div class="hero-container new-landing-hero-container">
-            <div class="row new-landing">
-                <div class="col-12 col-md-7">
-                    <div class="hero-text">
-                        <h1>Your hearing matters</h1>
-                        <p>Could you benefit from hearing care? Take our 5-minute questionnaire to find out.</p>
-                        <a href="${URLUtils.url('Screener-Show')}"
-                            class="custom-datalayer next btn-next btn btn-primary mb-md-5"
-                            data-name="${Resource.msg('label.adobe.questionnaire-landing-name', 'adobetracking', null)}"
-                            data-location="${Resource.msg('label.adobe.questionnaire-landing-location', 'adobetracking', null)}">Take
-                            the Questionnaire</a>
-                    </div>
-                </div>
-                <div class="col-12 col-md-5">
-                    <div class="image-content">
-                        <picture>
-                            <img alt="sign in image" src="${URLUtils.staticURL('/images/red_shawl_2.png')}" />
-                        </picture>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <isinclude template="home/banner-1" />
-
-        <isinclude template="home/banner-2" />
-
-        <isinclude template="home/banner-3" />
-
-        <div class="footnote-section">
-            <div class="container py-5">
-                <p><sup>1</sup>4 - year warranty applies to hearing aids in the Classic & Premier technology levels.</p>
-            </div>
-        </div>
+        <isslot id="home-main-m" description="Main home page slot." context="global" />
     </div>
-
-
-
-    <isinclude template="home/registrationSuccessModal" />
+    <div class="get-started-slot">
+        <isslot id="get-started-slot" description="Get Started Slot" context="global" />
+    </div>
+    <div class="path-selection-slot">
+        <isslot id="path-selection-slot" description="Path Selection Slot" context="global" />
+    </div>
+    <div class="direction-slot">
+        <isslot id="direction-slot" description="Direction Slot" context="global" />
+    </div> 
+    <div class="take-test-slot">
+        <isslot id="take-test-slot" description="Take the test slot" context="global" />
+    </div>
+    <isinclude template="home/registrationSuccessModal"/>
 </isdecorate>

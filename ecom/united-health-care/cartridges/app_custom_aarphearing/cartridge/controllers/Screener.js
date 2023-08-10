@@ -18,9 +18,9 @@ server.get(
     }
 );
 server.get(
-    'IncludeHearingScreener',
+    'ShowLanding',
     function (req, res, next) {
-        res.render('hearingScreener/questionnaire');
+        res.render('questionnaire/questionnaireLanding');
         next();
     }
 );
