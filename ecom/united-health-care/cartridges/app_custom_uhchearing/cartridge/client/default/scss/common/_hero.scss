@@ -1,6 +1,8 @@
 $hero-title-font-color: $primary-col-1;
 $hero-description-font-color: $body-text-color;
 
+$content-background-color-light-blue: #e7f7fa;
+
 @mixin hero-title-font {
     font-family: $uhc-heading-font-1;
     font-size: 26px;
@@ -8,7 +10,7 @@ $hero-description-font-color: $body-text-color;
     color: $hero-title-font-color;
 
     @include media-breakpoint-up(lg) {
-        font-size: 36px;
+        font-size: 32px;
         line-height: 44px;
     }
 }
@@ -25,26 +27,78 @@ $hero-description-font-color: $body-text-color;
     }
 }
 
+@mixin bold-element-font {
+    font-family: $uhc-font-sans-bold;
+    font-size: 16px;
+    font-style: normal;
+    list-style: none;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+h1 {
+    @include hero-title-font;
+}
+
+p {
+    @include bold-element-font;
+}
+
+.sub-text {
+    text-align: center;
+    margin: 15px 0;
+
+    @include media-breakpoint-down(sm) {
+        text-align: start;
+    }
+}
+
+.video-label {
+    @include bold-element-font;
+
+    font-size: 26px;
+    color: $primary-col-1;
+    margin-top: 25px;
+}
+
 .hero-container {
     position: relative;
+
+    &.top-content {
+        flex-direction: column;
+        display: flex;
+    
+        .image-content {
+            order: 2;
+        }
+    
+        .text-content {
+            order: 1;
+        }
+    }
 
     .image-content img {
         width: 100%;
     }
 
     .text-content {
-        padding: 16px 16px 42px;
-        max-width: 90%;
+        display: flex;
+
+        @include media-breakpoint-down(sm) {
+            display: block;
+        }
+
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px;
         margin: 0 auto;
         background-color: $primary-col-2;
         position: relative;
-        top: -32px;
         border-bottom: 1px solid $uhc-section-border-color;
 
         .hero-title {
             @include hero-title-font;
 
-            max-width: 208px;
             margin-bottom: 8px;
         }
 
@@ -56,31 +110,166 @@ $hero-description-font-color: $body-text-color;
     }
 
     @include media-breakpoint-up(lg) {
-        max-height: 30vw;
         overflow: hidden;
 
         .text-content {
-            padding: 36px 36px 42px;
+            padding: 55px 30px;
             position: absolute;
+            width: 420px;
             top: 50%;
             left: calc((100% - 1242px) / 2);
             transform: translateY(-50%);
             border-bottom: none;
 
             .hero-title {
-                max-width: 268px;
                 margin-bottom: 10px;
             }
 
             .hero-description {
-                max-width: 318px;
                 margin-bottom: 24px;
             }
         }
     }
 
+    // 7/31/2023 - FIGMA - https://www.figma.com/file/zqqzzwcIxC3ZD34c9rDACh/UHCH-Questionnaire-Landing-Page-%2B-Simulator-CLIENT?node-id=69%3A4122&mode=dev
+    &.new-landing-hero-container {
+        max-height: none;
+
+        .new-landing {
+            background-color: $primary-col-1;
+            align-items: center;
+            
+            .hero-text {
+
+                @include media-breakpoint-between(lg, xl) {
+                    margin: 0 168px;
+                }
+                
+                padding: 0 20px;
+                color: $uhc-white;
+
+                h1 {
+                    font-size: 56px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 64px;
+                    margin-bottom: 35px;
+                    color: $white;
+
+                    @include media-breakpoint-between(md, lg) {
+                        font-size: 26px;
+                        margin: 0;
+                    }
+
+                    @include media-breakpoint-down(sm){
+                        font-size: 28px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 36px;
+                        margin-top: 35px;
+                    }
+                }
+
+                p {
+                    font-size: 30px;
+                    font-style: normal;
+                    line-height: 35px;
+                    margin-bottom: 35px;
+
+                    @include media-breakpoint-between(md, lg) {
+                        line-height: 24px;
+                        font-size: 18px;
+                    }
+
+                    @include media-breakpoint-down(sm){
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 20px;
+                    }
+                }
+
+                .btn-primary {
+                    background-color: $primary-col-3;
+                    border-color: $primary-col-3;
+                    color: #fff;
+                }
+            }
+
+            .image-content {
+                clip-path: ellipse(67% 84% at 56% 79%);
+                transform: rotate(-37.445deg);
+
+                @include media-breakpoint-between(md, lg) {
+
+                }
+                @include media-breakpoint-down(sm){
+                    clip-path: ellipse(68% 91% at 68% 86%);
+                    transform: rotate(18.555deg);
+                }
+
+                img {
+                    transform: rotate(37.445deg);
+
+                    @include media-breakpoint-between(md, lg) {
+
+                    }
+                    @include media-breakpoint-down(sm){
+                        transform: rotate(-18.555deg);
+                    }
+                }
+
+            }
+        }
+    }
+
+}
+.try-simulator {
+
+    .video-section-wrapper {
+        justify-content: space-around;
+    }
+
     @include media-breakpoint-down(sm) {
-        padding-left: 0;
-        padding-right: 0;
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+.hero-container-blue {
+    color: $white;
+    background-color: $primary-col-1;
+
+    h1 {
+        color: $white;
+        @include media-breakpoint-down(sm) {
+            font-size: 28px;
+        }
+    }
+    
+    .container {
+        text-align: start;
+        
+        @include media-breakpoint-up(md) {
+            text-align: center;
+            max-width: 50%;
+        }
+        
+    }
+}
+
+.explore-products-container {
+    background-color: $content-background-color-light-blue;
+
+    .text-content {
+        margin: 25% 0;
+        @include media-breakpoint-down(sm) {
+            margin: 35px 0;
+        }
+    }
+    .container, .image-content {
+        @include media-breakpoint-down(sm) {
+            padding: 0;
+        }
     }
 }

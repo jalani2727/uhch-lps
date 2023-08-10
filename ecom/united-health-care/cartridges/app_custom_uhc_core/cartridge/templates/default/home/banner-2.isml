@@ -1,0 +1,25 @@
+<div class="content-banner banner-3 mt-5">
+
+  <div class="row">
+    <div class="col-12 col-md-5 hero-text-wrapper">
+      <div class="container hero-text">
+        <h1>Do you or a loved one need hearing aids?</h1>
+        <p class="mt-md-4">
+          If you or someone you love might be experiencing hearing loss, answer these 4 questions to learn more and take
+          that first step in professional hearing care.
+        </p>
+      </div>
+    </div>
+    <div class="col-12 col-md-7">
+      <div class="image-content">
+        <picture>
+          <img class="hidden-md-down" alt="sign in image"
+            src="${URLUtils.staticURL('/images/Situational_Older_Gentleman.png')}" />
+          <img class="d-lg-none" alt="sign in image"
+            src="${URLUtils.staticURL('/images/Situational_Older_Gentleman-Mobile.png')}" />
+        </picture>
+      </div>
+    </div>
+  </div>
+
+</div>
