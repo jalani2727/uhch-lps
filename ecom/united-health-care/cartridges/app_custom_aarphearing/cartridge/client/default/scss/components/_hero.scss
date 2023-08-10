@@ -270,6 +270,9 @@ p {
         }
     }
     .container, .image-content {
+        img {
+            width: 100%;
+        }
         @include media-breakpoint-down(sm) {
             padding: 0;
         }
