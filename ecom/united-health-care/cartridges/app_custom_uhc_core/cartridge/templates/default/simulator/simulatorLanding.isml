@@ -26,7 +26,7 @@
                 for you with this simulator below, or schedule a no-cost hearing test with hearing care professionals
                 near you.
             </p>
-            <a class="custom-datalayer btn btn-primary hero-button custom-datalayer" href="javascript:void(0)"
+            <a class="custom-datalayer btn btn-primary hero-button custom-datalayer" href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest&cid=AARP:LandingPage:other:Aug:2023:AARP-Sim-LP-Request-Appointment-1:Request-Appointment"
                 data-name="${Resource.msg('label.adobe.simulator-landing-name-request', 'adobetracking', null)}"
                 data-location="${Resource.msg('label.adobe.simulator-landing-location', 'adobetracking', null)}">
                 Request an appointment</a>
@@ -102,7 +102,7 @@
                 <p>Not an AARP member? <span><a href="javascript:void(0)">Join</a></span> or <span><a
                             href="javascript:void(0)">Renew</a></span> your membership today!</p>
             </div>
-            <a class="custom-datalayer btn btn-primary hero-button custom-datalayer" href=""
+            <a class="custom-datalayer btn btn-primary hero-button custom-datalayer" href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest&cid=AARP:LandingPage:other:Aug:2023:AARP-Sim-LP-Request-Appointment-1:Request-Appointment"
                 data-name="${Resource.msg('label.adobe.simulator-landing-name-request', 'adobetracking', null)}"
                 data-location="${Resource.msg('label.adobe.simulator-landing-location', 'adobetracking', null)}">Request
                 an appointment</a>
@@ -123,7 +123,7 @@
                                 Solutions can help you hear more for less.</p>
                         </div>
                         <a class="custom-datalayer btn btn-primary hero-button custom-datalayer"
-                            href="javascript:void(0)"
+                            href="https://www.aarphearingsolutions.com/shop-products?cid=AARP:LandingPage:other:Aug:2023:AARP-Sim-LP-Shop-Products:Shop-Products"
                             data-name="${Resource.msg('label.adobe.simulator-landing-name-explore', 'adobetracking', null)}"
                             data-location="${Resource.msg('label.adobe.simulator-landing-location', 'adobetracking', null)}">Explore
                             Products</a>
