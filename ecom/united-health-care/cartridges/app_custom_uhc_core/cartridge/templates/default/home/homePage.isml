@@ -16,8 +16,11 @@
                         <h1>Your hearing matters</h1>
                         <p>Could you benefit from hearing care? Take our 5-minute questionnaire to learn how well you’re
                             hearing.</p>
-                        <a href="${URLUtils.url('Screener-Show')}" class="next btn-next btn btn-primary mb-md-5">Take
-                            the Questionnaire </a>
+                        <a href="${URLUtils.url('Screener-Show')}"
+                            class="custom-datalayer next btn-next btn btn-primary mb-md-5"
+                            data-name="${Resource.msg('label.adobe.questionnaire-landing-name', 'adobetracking', null)}"
+                            data-location="${Resource.msg('label.adobe.questionnaire-landing-location', 'adobetracking', null)}">Take
+                            the Questionnaire</a>
                     </div>
                 </div>
                 <div class="col-12 col-md-5">
@@ -38,7 +41,7 @@
 
         <div class="footnote-section">
             <div class="container py-5">
-                <p><sup>1</sup>4 - years warranty applies to hearing aids in the Classic & Premier technology levels.</p>
+                <p><sup>1</sup>4 - year warranty applies to hearing aids in the Classic & Premier technology levels.</p>
             </div>
         </div>
     </div>
