@@ -179,7 +179,10 @@
 
     </ul>
 
-    <a href="javascript:void(0)" id="results-btn" class="next btn-next btn btn-primary mb-5">
+    <a href="javascript:void(0)" id="results-btn" class="custom-datalyer next btn-next btn btn-primary mb-5"
+        data-name="${Resource.msg('label.adobe.questionnaire-widget-name', 'adobetracking', null)}"
+        data-location="${Resource.msg('label.adobe.questionnaire-widget-location', 'adobetracking', null)}"
+    >
         ${Resource.msg('label.input.screener-submit', 'hearingscreener', null)}
     </a>
 </fieldset>

@@ -21,8 +21,9 @@
             <p class="hero-description">Been missing parts of your conversations? Experience what hearing aids could do
                 for you with this simulator below, or schedule a no-cost hearing test with a hearing provider near you.
             </p>
-            <a class="btn btn-primary hero-button custom-datalayer" data-name="" data-location=""
-                href="javascript:void(0)" data-datalayer-config="">
+            <a class="custom-datalayer btn btn-primary hero-button custom-datalayer" href="javascript:void(0)"
+                data-name="${Resource.msg('label.adobe.simulator-landing-name-request', 'adobetracking', null)}"
+                data-location="${Resource.msg('label.adobe.simulator-landing-location', 'adobetracking', null)}">
                 Schedule an appointment</a>
         </div>
     </div>
@@ -67,8 +68,12 @@
         <div class="container p-3 p-md-5">
 
             <h1 class="pb-3">Think you might have hearing loss?</h1>
-            <p>Treating hearing loss with hearing aids does more than just make it easier to hear, it also helps preserve important connections in your brain to help keep you sharp, active and part of the conversation.</p>
-            <p>Today’s hearing aids are cutting edge, discreet and use advanced technology to mimic natural hearing. And there's more good news for AARP members: Save up to 20% on hearing aids through AARP® Hearing SolutionsTM provided by UnitedHealthcare Hearing.</p>
+            <p>Treating hearing loss with hearing aids does more than just make it easier to hear, it also helps
+                preserve important connections in your brain to help keep you sharp, active and part of the
+                conversation.</p>
+            <p>Today’s hearing aids are cutting edge, discreet and use advanced technology to mimic natural hearing. And
+                there's more good news for AARP members: Save up to 20% on hearing aids through AARP® Hearing
+                SolutionsTM provided by UnitedHealthcare Hearing.</p>
         </div>
     </div>
 
@@ -89,10 +94,12 @@
                     about your lifestyle and hearing goals and provide you with a personalized recommendation and next
                     steps.</p>
 
-                <p>Not an AARP Member? <span><a href="javascript:void(0)">Join</a></span> or <span><a
-                            href="javascript:void(0)">Renew</a></span> your membership today!</p>
+                <p>Not an AARP Member? <span><a href="javascript:void(0)">Join</a></span> or <span><a href="javascript:void(0)">Renew</a></span> your membership today!</p>
             </div>
-            <a class="btn btn-primary hero-button custom-datalayer" href="">Request an appointment</a>
+            <a class="custom-datalayer btn btn-primary hero-button custom-datalayer" href=""
+                data-name="${Resource.msg('label.adobe.simulator-landing-name-request', 'adobetracking', null)}"
+                data-location="${Resource.msg('label.adobe.simulator-landing-location', 'adobetracking', null)}">Request
+                an appointment</a>
         </div>
     </div>
 
@@ -109,7 +116,11 @@
                                 connection to Bluetooth® devices, tap control, remote adjustments and more, AARP Hearing
                                 Solutions can help you hear more for less.</p>
                         </div>
-                        <a class="btn btn-primary hero-button custom-datalayer" href="">Explore Products</a>
+                        <a class="custom-datalayer btn btn-primary hero-button custom-datalayer" href="javascript:void(0)"
+                        data-name="${Resource.msg('label.adobe.simulator-landing-name-explore', 'adobetracking', null)}"
+                        data-location="${Resource.msg('label.adobe.simulator-landing-location', 'adobetracking', null)}"
+                        >Explore
+                            Products</a>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 image-content">
