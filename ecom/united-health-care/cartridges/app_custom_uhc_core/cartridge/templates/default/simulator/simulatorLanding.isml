@@ -8,9 +8,9 @@
     <div class="hero-container top-content">
         <div class="image-content">
             <picture>
-                    <img class="hidden-md-down" src="${URLUtils.staticURL('/images/simulator-hero.png')}"
-                        alt="hero banner image">
-                    <img class="d-lg-none" src="${URLUtils.staticURL('/images/hero-mobile.png')}" alt="hero banner image">
+                <img class="hidden-md-down" src="${URLUtils.staticURL('/images/simulator-hero.png')}"
+                    alt="hero banner image">
+                <img class="d-lg-none" src="${URLUtils.staticURL('/images/hero-mobile.png')}" alt="hero banner image">
             </picture>
         </div>
         <div class="text-content">
@@ -18,12 +18,13 @@
                 data-name="${Resource.msg('label.adobe.simulator-landing-name-logo', 'adobetracking', null)}"
                 data-location="${Resource.msg('label.adobe.simulator-landing-location', 'adobetracking', null)}">
                 <img class="mb-4 p-3" src="${URLUtils.staticURL('/images/logo-small.svg')}"
-                alt="${Resource.msg('global.storename', 'common', null)}" />
+                    alt="${Resource.msg('global.storename', 'common', null)}" />
             </a>
 
             <h1 class="hero-title">Hear the difference</h1>
             <p class="hero-description">Been missing parts of your conversations? Experience what hearing aids could do
-                for you with this simulator below, or schedule a no-cost hearing test with hearing care professionals near you.
+                for you with this simulator below, or schedule a no-cost hearing test with hearing care professionals
+                near you.
             </p>
             <a class="custom-datalayer btn btn-primary hero-button custom-datalayer" href="javascript:void(0)"
                 data-name="${Resource.msg('label.adobe.simulator-landing-name-request', 'adobetracking', null)}"
@@ -42,21 +43,21 @@
 
         <div class="row video-section-wrapper container">
             <div class="video-wrapper">
-                <iscomment> <video controls width="250">
-                        <source src="#" type="video/mp4" />
-                    </video> </iscomment>
-
-                <!--Placeholder Image -->
-                <img src="${URLUtils.staticURL('/images/thumbnail-1.png')}" alt="">
+                <iframe id="kaltura_player"
+                    src=https://cdnapisec.kaltura.com/p/2297431/sp/229743100/embedIframeJs/uiconf_id/40040682/partner_id/2297431?iframeembed=true&playerId=kaltura_player&entry_id=1_71im3mi3&flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[hotspots.plugin]=1&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_zu47qiv9
+                    width="400" height="285" allowfullscreen webkitallowfullscreen mozAllowFullScreen
+                    allow="autoplay *; fullscreen *; encrypted-media *"
+                    sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation"
+                    frameborder="0" title="With Hearing Aids"></iframe>
                 <p class="video-label">Without hearing aids</p>
             </div>
             <div class="video-wrapper">
-                <iscomment> <video controls width="250">
-                        <source src="#" type="video/mp4" />
-                    </video> </iscomment>
-
-                <!--Placeholder Image -->
-                <img src="${URLUtils.staticURL('/images/thumbnail-2.png')}" alt="">
+                <iframe id="kaltura_player"
+                    src=https://cdnapisec.kaltura.com/p/2297431/sp/229743100/embedIframeJs/uiconf_id/40040682/partner_id/2297431?iframeembed=true&playerId=kaltura_player&entry_id=1_035darub&flashvars[streamerType]=auto&amp;flashvars[localizationCode]=en&amp;flashvars[sideBarContainer.plugin]=true&amp;flashvars[sideBarContainer.position]=left&amp;flashvars[sideBarContainer.clickToClose]=true&amp;flashvars[chapters.plugin]=true&amp;flashvars[chapters.layout]=vertical&amp;flashvars[chapters.thumbnailRotator]=false&amp;flashvars[streamSelector.plugin]=true&amp;flashvars[EmbedPlayer.SpinnerTarget]=videoHolder&amp;flashvars[dualScreen.plugin]=true&amp;flashvars[hotspots.plugin]=1&amp;flashvars[Kaltura.addCrossoriginToIframe]=true&amp;&wid=1_7tqtrjuh
+                    width="400" height="285" allowfullscreen webkitallowfullscreen mozAllowFullScreen
+                    allow="autoplay *; fullscreen *; encrypted-media *"
+                    sandbox="allow-downloads allow-forms allow-same-origin allow-scripts allow-top-navigation allow-pointer-lock allow-popups allow-modals allow-orientation-lock allow-popups-to-escape-sandbox allow-presentation allow-top-navigation-by-user-activation"
+                    frameborder="0" title="Without Hearing Aids"></iframe>
                 <p class="video-label">With hearing aids</p>
             </div>
 
@@ -98,7 +99,8 @@
                     about your lifestyle and hearing goals and provide you with a personalized recommendation and next
                     steps.</p>
 
-                <p>Not an AARP member? <span><a href="javascript:void(0)">Join</a></span> or <span><a href="javascript:void(0)">Renew</a></span> your membership today!</p>
+                <p>Not an AARP member? <span><a href="javascript:void(0)">Join</a></span> or <span><a
+                            href="javascript:void(0)">Renew</a></span> your membership today!</p>
             </div>
             <a class="custom-datalayer btn btn-primary hero-button custom-datalayer" href=""
                 data-name="${Resource.msg('label.adobe.simulator-landing-name-request', 'adobetracking', null)}"
@@ -120,10 +122,10 @@
                                 connection to Bluetooth® devices, tap control, remote adjustments and more, AARP Hearing
                                 Solutions can help you hear more for less.</p>
                         </div>
-                        <a class="custom-datalayer btn btn-primary hero-button custom-datalayer" href="javascript:void(0)"
-                        data-name="${Resource.msg('label.adobe.simulator-landing-name-explore', 'adobetracking', null)}"
-                        data-location="${Resource.msg('label.adobe.simulator-landing-location', 'adobetracking', null)}"
-                        >Explore
+                        <a class="custom-datalayer btn btn-primary hero-button custom-datalayer"
+                            href="javascript:void(0)"
+                            data-name="${Resource.msg('label.adobe.simulator-landing-name-explore', 'adobetracking', null)}"
+                            data-location="${Resource.msg('label.adobe.simulator-landing-location', 'adobetracking', null)}">Explore
                             Products</a>
                     </div>
                 </div>
