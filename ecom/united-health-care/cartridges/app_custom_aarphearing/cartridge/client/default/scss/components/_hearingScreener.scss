@@ -362,6 +362,11 @@ $hs: hearing-screener;
             .btn-next {
                 margin-top: 20px;
                 width: fit-content;
+
+                &.disabled {
+                    pointer-events: none;
+                    opacity: 0.5
+                }
             }
 
             .btn-back {
