@@ -8,14 +8,18 @@
     <div class="hero-container top-content">
         <div class="image-content">
             <picture>
-                <img class="hidden-md-down" src="${URLUtils.staticURL('/images/simulator-hero.png')}"
-                    alt="hero banner image">
-                <img class="d-lg-none" src="${URLUtils.staticURL('/images/hero-mobile.png')}" alt="hero banner image">
+                    <img class="hidden-md-down" src="${URLUtils.staticURL('/images/simulator-hero.png')}"
+                        alt="hero banner image">
+                    <img class="d-lg-none" src="${URLUtils.staticURL('/images/hero-mobile.png')}" alt="hero banner image">
             </picture>
         </div>
         <div class="text-content">
-            <img class="mb-4 p-3" src="${URLUtils.staticURL('/images/logo-small.svg')}"
+            <a class="logo-home custom-datalayer" href="${URLUtils.url('Home-Show')}"
+                data-name="${Resource.msg('label.adobe.simulator-landing-name-logo', 'adobetracking', null)}"
+                data-location="${Resource.msg('label.adobe.simulator-landing-location', 'adobetracking', null)}">
+                <img class="mb-4 p-3" src="${URLUtils.staticURL('/images/logo-small.svg')}"
                 alt="${Resource.msg('global.storename', 'common', null)}" />
+            </a>
 
             <h1 class="hero-title">Hear the difference</h1>
             <p class="hero-description">Been missing parts of your conversations? Experience what hearing aids could do
