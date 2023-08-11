@@ -1,7 +1,16 @@
-<div class="hearing-screener-container container">
-    <div class="container">
-        <h2>${Resource.msg('label.hearing-screener.header','hearingscreener',null)}</h2>
-    </div>
+<isdecorate template="common/layout/page">
+      <isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addJs('/js/hearingScreener.js');
+        assets.addCss('/css/hearingScreener.css');
+    </isscript>
+
+
+    <div class="hearing-screener">
+        <div class="hearing-screener-container container">
+            <div class="container">
+                <h2>${Resource.msg('label.hearing-screener.header', 'hearingscreener', null)}</h2>
+            </div>
 
 <!-- Begin: Screener Progress Bar-->
     <div class="hearing-screener-header">
