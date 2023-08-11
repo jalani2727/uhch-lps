@@ -207,6 +207,7 @@ function isBenefitApplicable() {
             var customerOrder = customerOrders.next();
             if ('isBenefitApplicable' in customerOrder.custom && customerOrder.custom.isBenefitApplicable) {
                 isBenefitApplicable = false;
+                session.privacy.otcBenefitUsed = true;
                 return isBenefitApplicable;
             }
         }
@@ -214,10 +215,6 @@ function isBenefitApplicable() {
     return isBenefitApplicable;
 }
 
-function checkOTCBenefit(){
-    if (session.privacy.OTCBenefitRemaining > 0){
-    }
-}
 /**
  * @function calculateGiftCertificates
  *

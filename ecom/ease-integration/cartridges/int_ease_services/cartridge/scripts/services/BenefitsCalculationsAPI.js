@@ -6,14 +6,14 @@ var LocalServiceRegistry = require('dw/svc/LocalServiceRegistry');
 var Logger = require('dw/system/Logger');
 var AuthToken = require('*/cartridge/scripts/services/EaseAuthService');
 /**
- * Create Request for Lead Creation for SF Ease
+ * Create Request benefit calculations in SF Ease
  * @returns {dw.svc.HTTPService} HTTP service object
  */
-function getEligibilityMemberDetails() {
-    return LocalServiceRegistry.createService('ease.http.eligibilityCheck.post', {
+function benefitsCalculationsAPI() {
+    return LocalServiceRegistry.createService('ease.http.benefitsCalculationsAPI', {
         /**
          * @param {dw.svc.HTTPService} svc
-         * @param {object} request object from contactus form
+         * @param {object} request object for  benefit calculation
          * @param {boolean} requestType - requestType
          * @returns {string} request body
          */
@@ -46,43 +46,54 @@ function getEligibilityMemberDetails() {
                 }
             } catch (e) {
                 response = client.text;
-                Logger.error('Error while fetching the SF Ease Lead Service ' + e);
+                Logger.error('Error while fetching the SF Ease benefit calculation Service ' + e);
             }
             return response;
         },
         /**
          *
          * @param {dw.svc.HTTPService} svc
-         * @param {object} contactInfo
-         * @returns {{text: string, statusMessage: string, statusCode: number}}
+         * @param {object} request
+         * @returns {{text: object, statusMessage: string, statusCode: number}}
          */
         // eslint-disable-next-line no-unused-vars
-        mockCall: function (svc, contactInfo) {
+        mockCall: function (svc, request) {
             var response;
             if ('mockResponse' in svc.configuration.custom && !empty(svc.configuration.custom.mockResponse)) {
                 response = JSON.parse(svc.configuration.custom.mockResponse);
             } else {
                 response = {
-                    "subscriberId": "9160891010",
-                    "lastName": "Doe58012",
-                    "firstName": "Jane58012",
-                    "dob": "1953-07-15",
-                    "zipCode": "91768",
-                    "email": "ramesh_potlapuvvu@optum.com",
-                    "hsIdUUID": "123Doe58012",
-                    "siteId":"UHC_Hearing",
-                    "requestSource":"Registration"
+                    statusCode: 0,
+                    finalOOP: 849.00,
+                    deductibleMet: 'Yes',
+                    calculationDetails: [
+                        {
+                            productOOPAmount: 749.00,
+                            productName: 'Jabra Enhance Plus',
+                            productId: '01t4y00000F6OBHAA3',
+                            productCost: 749.00,
+                            insurancePlanName: 'ASRS',
+                            insurancePlanID: 'a02DC00000GpBmmYAF'
+                        },
+                        {
+                            productOOPAmount: 100.00,
+                            productName: 'Serenity Choice Music',
+                            productId: '01t4y00000F6O99AAF',
+                            productCost: 100.00,
+                            insurancePlanName: 'ASRS',
+                            insurancePlanID: 'a02DC00000GpBmmYAF'
+                        }
+                    ]
                 };
-                response = JSON.stringify(response);
             }
             return {
                 statusCode: 200,
-                statusMessage: 'Success',
+                statusMessage: 'OK',
                 text: response
             };
         }
     });
 }
 
-// execute and return the created instance
-module.exports = getEligibilityMemberDetails();
+// execute and return the benefit calculation
+module.exports = benefitsCalculationsAPI();
