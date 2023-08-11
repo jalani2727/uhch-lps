@@ -16,6 +16,14 @@
     font-weight: 700;
     line-height: 24px;
 }
+@mixin normal-element-font {
+    font-family: $uhc-font-sans-medium;
+    font-size: 16px;
+    font-style: normal;
+    list-style: none;
+    font-weight: 500;
+    line-height: 24px;
+}
 
 .image-content img {
     max-width: 100%;
@@ -29,7 +37,7 @@
     }
 
     p {
-        @include bold-element-font;
+        @include normal-element-font;
 
     }
 

@@ -10,7 +10,7 @@
         </p>
          <a href="${URLUtils.url('Screener-Show')}" class="custom-datalayer next btn-next btn btn-primary mt-md-2 mb-5"
           data-name="${Resource.msg('label.adobe.homepage-landing-name', 'adobetracking', null)}"
-          data-location="${Resource.msg('label.adobe.homepage-landing-location', 'adobetracking', null)}">Take the Questionnaire </a>
+          data-location="${Resource.msg('label.adobe.homepage-landing-location', 'adobetracking', null)}">Take the questionnaire </a>
 
       </div>
     </div>
