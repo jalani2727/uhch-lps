@@ -60,7 +60,7 @@ p {
 
     font-size: 26px;
     color: $color-blue-dark;
-    margin-top: 25px;
+    margin-top: 5px;
 }
 
 .hero-container {
@@ -232,11 +232,34 @@ p {
         @include media-breakpoint-up(sm){
             justify-content: space-around;
         }
+
+        .video-wrapper iframe {
+            border: 3px solid $color-blue-dark;
+
+            @include media-breakpoint-down(sm) {
+                width: 425px;
+
+            }
+            @include media-breakpoint-down(xs) {
+                width: 345px;
+
+            }
+        }
     }
 
     @include media-breakpoint-down(sm) {
         img {
             max-width: 100%;
+        }
+    }
+}
+
+.getting-started-description {
+
+    p {
+        margin-bottom: 16px;
+        &:first-of-type {
+            color: $color-blue-dark;
         }
     }
 }
