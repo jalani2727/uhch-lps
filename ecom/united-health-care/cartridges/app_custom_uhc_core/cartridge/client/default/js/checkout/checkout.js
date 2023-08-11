@@ -708,9 +708,14 @@ var exports = {
         $('body').on('checkout:enableButton', function (e, button) {
             $(button).prop('disabled', false);
         });
+    },
+
+    submitPage: function () {
+        $('body').on('click', '.button-refresh', function () {
+            var url = $(this).data('zaction');
+            window.location.href = url;
+        });
     }
-
-
 };
 
 [customerHelpers, billingHelpers, shippingHelpers, addressHelpers].forEach(function (library) {

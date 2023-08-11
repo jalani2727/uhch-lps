@@ -279,7 +279,6 @@ base.addLineItem = function addLineItem(
     if (productLineItem.product.custom.isOTCProduct) {
         base.applyPriceAdjustment(productLineItem);
     }
-
     productLineItem.setQuantityValue(quantity);
 
     return productLineItem;
@@ -459,69 +458,20 @@ base.checkPrescriptionId = function checkPrescriptionId(prescriptionProducts, pr
  * @param {dw.util.Collection<dw.order.ProductLineItem>} productLineItem - productLineItem
  */
 base.applyPriceAdjustment = function applyPriceAdjustment(productLineItem) {
-    var isOTCBenefitApplicable = base.checkOTCBenefit();
-    var isBenefitApplicable = base.isBenefitApplicable();
-    if (isOTCBenefitApplicable && isBenefitApplicable) {
-        var OTCBenefitRemaining = session.privacy.OTCBenefitRemaining;
-        if (OTCBenefitRemaining > 0) {
-            var maxAmountDiscount = getDiscountAmount(productLineItem);
-            if (maxAmountDiscount > 0) {
-                Transaction.wrap(function () {
-                    productLineItem.createPriceAdjustment(productLineItem.UUID + OTC_BENEFIT_ID, new dw.campaign.AmountDiscount(maxAmountDiscount));
-                });
-                session.privacy.OTCBenefitInCart = maxAmountDiscount;
-                session.privacy.OTCStatus = 'benefitApplied';
-            } else {
-                session.privacy.OTCStatus = 'benefitNotApplied';
-            }
+    // check if benefits api needs to be called, we are going to check ease API attributes and customer order history to call benefits api or not
+    if (session.privacy.OTCBenefitApplicable) {
+        base.isBenefitApplicable()
+        if (!session.privacy.benefitAlreadyUsedInPast) {
+            base.benefitsCalculationsAPI();
         }
-    } else {
-        session.privacy.OTCStatus = 'benefitNotApplied';
     }
 };
-
-/**
- * checks if OTCBenefit is applicable based on session values for OTCBenefitRemaining and OTCDevicesCoverage
- * @return {boolean} - returns true if isOTCBenefitApplicable
- */
-base.checkOTCBenefit = function checkOTCBenefit() {
-    var customerDetails = JSON.parse(session.privacy.customerDetails);
-    if (customerDetails && customerDetails.OTCBenefitRemaining && customerDetails.OTCBenefitRemaining > 0) {
-        var OTCBenefitTotal = Number(customerDetails.OTCBenefitRemaining);
-        session.privacy.OTCBenefitTotal = OTCBenefitTotal;
-        var OTCBenefitRemaining = 0;
-        var OTCBenefitInCart = session.privacy.OTCBenefitInCart;
-        if (OTCBenefitInCart > 0 && OTCBenefitTotal >= OTCBenefitInCart) {
-            OTCBenefitRemaining = OTCBenefitTotal - OTCBenefitInCart;
-        } else {
-            OTCBenefitRemaining = Number(customerDetails.OTCBenefitRemaining);
-        }
-        var OTCDevicesCoverage = customerDetails.OTCDevicesCoverage ? customerDetails.OTCDevicesCoverage : '';
-        var isOTCBenefitApplicable = false;
-        if (OTCBenefitTotal && OTCBenefitTotal > 0 && OTCDevicesCoverage === 'Yes') {
-            session.privacy.OTCBenefitRemaining = OTCBenefitRemaining;
-            session.privacy.OTCStatus = 'benefitApplied';
-            isOTCBenefitApplicable = true;
-        } else if (OTCBenefitTotal && OTCBenefitTotal === 0) {
-            session.privacy.OTCBenefitRemaining = 0;
-            session.privacy.OTCStatus = 'benefitVerifiedOnly';
-            isOTCBenefitApplicable = false;
-        } else if (OTCDevicesCoverage !== 'Yes') {
-            session.privacy.OTCBenefitRemaining = 0;
-            session.privacy.OTCStatus = 'eligibilityNotAvailable';
-            isOTCBenefitApplicable = false;
-        }
-        return isOTCBenefitApplicable;
-    }
-    return false;
-};
-
 
 base.isBenefitApplicable = function isBenefitApplicable() {
-    var Calendar = require('dw/util/Calendar');
-    var today = new Calendar();
-    today.add(Calendar.DATE, -2);
-    var ordertime = today.time;
+    // check the past orders of customer based on the site pref value
+    var numberOfPastHoursForOrderLookup = preferences.numberOfPastHoursForOrderLookup || 2;
+    var ordertime = new Date();
+    ordertime.setHours(ordertime.getHours() - numberOfPastHoursForOrderLookup); 
     var benefitApplicable = true;
     var orderHistory = customer.getOrderHistory();
     var customerOrders = orderHistory.getOrders(
@@ -529,23 +479,47 @@ base.isBenefitApplicable = function isBenefitApplicable() {
         'creationDate desc',
         ordertime
     );
-
     if (customerOrders.count > 0) {
         while (customerOrders.hasNext()) {
             var customerOrder = customerOrders.next();
             if ('isBenefitApplied' in customerOrder.custom && customerOrder.custom.isBenefitApplied) {
                 benefitApplicable = false;
+                session.privacy.benefitAlreadyUsedInPast = true;
                 return benefitApplicable;
             }
         }
     }
+    session.privacy.benefitAlreadyUsedInPast = false;
     return benefitApplicable;
 };
 
 base.recalculatePriceAdjustments = function recalculatePriceAdjustments(currentBasket) {
     base.removeLinePriceAdjustments(currentBasket);
-    base.addLinePriceAdjustments(currentBasket);
-    base.checkBenefitApplied(currentBasket);
+    session.privacy.OTCStatus = null;
+    if (session.customer.authenticated) {
+        if (empty(session.privacy.subscriberId)) {
+            session.privacy.OTCStatus = 'eligibilityNotAvailable';
+        } else  if (!empty(session.privacy.subscriberId) && empty(session.privacy.pricebook)) {
+            session.privacy.OTCStatus = 'eligibilityInProgress';
+        } else if (session.privacy.OTCDevicesCoverage && session.privacy.NewPurchasePossible) {
+            // if benefits are not used in recent past then call the benefits api
+            if (!session.privacy.benefitAlreadyUsedInPast) {
+                session.privacy.benefitAppliedToCart  = true;
+                var benefitsCalculationsAPIResp = base.benefitsCalculationsAPI();
+                if (benefitsCalculationsAPIResp && ( benefitsCalculationsAPIResp.ok || 'deductibleMet' in benefitsCalculationsAPIResp) &&  !empty(benefitsCalculationsAPIResp.deductibleMet)) {
+                    if (benefitsCalculationsAPIResp.deductibleMet.equalsIgnoreCase('yes')) {
+                        session.privacy.OTCStatus = 'benefitApplied_DM';
+                    } else {
+                        session.privacy.OTCStatus = 'benefitApplied_DNM';
+                    }
+                }
+            } else {
+                session.privacy.OTCStatus = 'benefitNotAvailable';
+            }
+        } else if (session.privacy.hasReturns && session.privacy.benefit_max == 0 && session.privacy.OTCDevicesCoverage && !session.privacy.NewPurchasePossible) {
+            session.privacy.OTCStatus = 'benefitNotAvailable';
+        }
+    }
 };
 
 base.removeLinePriceAdjustments = function removeLinePriceAdjustments(currentBasket) {
@@ -563,30 +537,57 @@ base.removeLinePriceAdjustments = function removeLinePriceAdjustments(currentBas
     session.privacy.OTCBenefitInCart = 0;
 };
 
-base.addLinePriceAdjustments = function addLinePriceAdjustments(currentBasket) {
-    var basket = currentBasket;
-    collections.forEach(basket.productLineItems, function (productLineItem) {
-        if (productLineItem.product.custom.isOTCProduct) {
-            base.applyPriceAdjustment(productLineItem);
-            var priceAdjustment = productLineItem.getPriceAdjustmentByPromotionID(productLineItem.UUID + OTC_BENEFIT_ID);
-            if (priceAdjustment) {
-                Transaction.wrap(function () {
-                    basket.custom.isBenefitApplied = true;
-                });
+base.benefitsCalculationsAPI = function benefitsCalculationsAPI() {
+    var BasketMgr = require('dw/order/BasketMgr');
+    var currentBasket = BasketMgr.getCurrentBasket();
+    base.removeLinePriceAdjustments(currentBasket);
+    var benefitsCalculationsService = require('*/cartridge/scripts/services/BenefitsCalculationsAPI');
+    var Logger = require('dw/system/Logger');
+    var benefitCalculationAPPID = session.privacy.opportunityId;
+    var products = [];
+    var benefitsCalculationsAPIRequestObj = {};
+    for (var i = 0 ; i < currentBasket.productLineItems.length; i ++) {
+        products.push({
+            productId: currentBasket.productLineItems[i].productID,
+            quantity: currentBasket.productLineItems[i].quantity.value
+        });
+    }
+    benefitsCalculationsAPIRequestObj.oppId = benefitCalculationAPPID;
+    benefitsCalculationsAPIRequestObj.products = products;
+    var benefitsCalculationsAPIRespObj = benefitsCalculationsService.call(benefitsCalculationsAPIRequestObj, false);
+    if (benefitsCalculationsAPIRespObj.error === 401) {
+        benefitsCalculationsAPIRespObj = benefitsCalculationsService.call(benefitsCalculationsAPIRequestObj, true);
+    }
+    if (benefitsCalculationsAPIRespObj.status === 'OK') {
+        session.privacy.isBenefitsApiCallSuccessful = true;
+        benefitsCalculationsAPIRespObj = benefitsCalculationsAPIRespObj.object ? benefitsCalculationsAPIRespObj.object : benefitsCalculationsAPIRespObj.object;
+    } else {
+        session.privacy.isBenefitsApiCallSuccessful = false;
+    }
+    Logger.debug('benefits Calculations API API {0}', JSON.stringify(benefitsCalculationsAPIRespObj));
+
+    session.privacy.benefitAPICalled = true;
+    if (benefitsCalculationsAPIRespObj && 'calculationDetails' in benefitsCalculationsAPIRespObj && benefitsCalculationsAPIRespObj.calculationDetails && benefitsCalculationsAPIRespObj.calculationDetails.length > 0) {
+        if (benefitsCalculationsAPIRespObj && 'planBenefit' in benefitsCalculationsAPIRespObj) {
+            session.privacy.benefitAPICalled = true;
+        }    
+        var pli , benefitProd, benefitAmt;
+        var BENEFIT_ID = 'BENEFITAPI';
+        for (var z = 0 ; z< benefitsCalculationsAPIRespObj.calculationDetails.length; z++) {
+            benefitProd = benefitsCalculationsAPIRespObj.calculationDetails[z];
+            pli = currentBasket.getProductLineItems(benefitProd.productId);
+            if (pli.length > 0 ) {
+                if (benefitProd.productOOPAmount != benefitProd.productCost) {
+                    benefitAmt = Math.abs(benefitProd.productCost - benefitProd.productOOPAmount);
+                    Transaction.wrap(function () {
+                        currentBasket.custom.isBenefitApplied = true;
+                        pli[0].createPriceAdjustment(pli[0].UUID + BENEFIT_ID, new dw.campaign.AmountDiscount(benefitAmt));
+                    });
+                }
             }
         }
-    });
-};
-
-base.checkBenefitApplied = function checkBenefitApplied(currentBasket) {
-    collections.forEach(currentBasket.productLineItems, function (productLineItem) {
-        var adjustments = productLineItem.priceAdjustments;
-        if (!adjustments.isEmpty()) {
-            session.privacy.OTCStatus = 'benefitApplied';
-        } else {
-            session.privacy.OTCStatus = 'benefitNotApplied';
-        }
-    });
+    }
+    return benefitsCalculationsAPIRespObj;
 };
 
 module.exports = base;

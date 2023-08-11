@@ -61,16 +61,10 @@ $(".next").click(function () {
             });
             //show the next fieldset
             next_fs.show();
-            // disable button next button on next_fs
-            next_fs.find('.next').addClass("disabled");
         },
         duration: 600,
         complete: function () {
             animating = false;
-            // enable button next button on next_fs
-            setTimeout(()=> {
-                next_fs.find('.next').removeClass("disabled");
-            },100)
         },
     });
 });
@@ -112,14 +106,10 @@ $(".previous").click(function () {
                 'opacity': opacity
             });
             current_fs.hide();
-            previous_fs.find('.next').addClass("disabled");
         },
         duration: 800,
         complete: function () {
             animating = false;
-            setTimeout(()=> {
-                previous_fs.find('.next').removeClass("disabled");
-            }, 100)
         },
     });
 });
