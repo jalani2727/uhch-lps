@@ -179,10 +179,7 @@
 
     </ul>
 
-    <a href="javascript:void(0)" id="results-btn" class="custom-datalyer next btn-next btn btn-primary mb-5"
-        data-name="${Resource.msg('label.adobe.questionnaire-widget-name', 'adobetracking', null)}"
-        data-location="${Resource.msg('label.adobe.questionnaire-widget-location', 'adobetracking', null)}"
-    >
+    <a href="javascript:void(0)" id="results-btn" class="next btn-next btn btn-primary mb-5">
         ${Resource.msg('label.input.screener-submit', 'hearingscreener', null)}
     </a>
 </fieldset>
@@ -199,7 +196,7 @@
             <p>
                 ${Resource.msg('label.hearing-screener.complete.subheading1', 'hearingscreener', null)}
             </p>
-            <iscomment> <h3 class="pt-3 pb-3">
+            <h3 class="pt-3 pb-3">
                 ${Resource.msg('label.hearing-screener.complete.subheading2', 'hearingscreener', null)}
             </h3>
 
@@ -224,7 +221,7 @@
                         ${Resource.msg('label.input.screener-skip', 'hearingscreener', null)}
                     </a>
                 </div>
-            </div> </iscomment>
+            </div>
         </div>
     </div>
 

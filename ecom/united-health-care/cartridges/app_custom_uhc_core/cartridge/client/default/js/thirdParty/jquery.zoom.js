@@ -25,7 +25,7 @@ module.exports = (function ($) {
             xRatio,
             yRatio,
             offset,
-            $target = $(target),
+            $target = $('body').find(target),
             position = $target.css('position'),
             $source = $(source);
 
@@ -47,7 +47,7 @@ module.exports = (function ($) {
                 maxWidth: 'none',
                 maxHeight: 'none'
             })
-            .appendTo(target);
+            .find(target).text(target);
 
         return {
             init: function () {
@@ -85,7 +85,7 @@ module.exports = (function ($) {
             var
                 settings = $.extend({}, defaults, options || {}),
                 // target will display the zoomed image
-                target = settings.target && $(settings.target)[0] || this,
+                target = settings.target && $('body').find(settings.target)[0] || this,
                 // source will provide zoom location info (thumbnail)
                 source = this,
                 $source = $(source),
@@ -227,7 +227,7 @@ module.exports = (function ($) {
 
             img.setAttribute('role', 'presentation');
             img.alt = '';
-            img.src = settings.url;
+            img.src = $.find(settings.url);
         });
     };
 
