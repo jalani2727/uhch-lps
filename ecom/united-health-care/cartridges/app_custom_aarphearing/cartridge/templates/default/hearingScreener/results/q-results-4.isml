@@ -1,0 +1,54 @@
+<isdecorate template="common/layout/questionnaireResultsLayout">
+    <isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addJs('/js/homePage.js');
+        assets.addJs('/js/hearingScreener.js');
+
+    </isscript>
+    <div class="home-main homepage" data-is-pricebook-updated="${true}">
+        Results Page 4
+
+        <div class="hero-container top-content">
+            <div class="image-content">
+                <picture>
+                    <img class="hidden-md-down" src="${URLUtils.staticURL('/images/simulator-hero.png')}"
+                        alt="hero banner image">
+                    <img class="d-lg-none" src="${URLUtils.staticURL('/images/hero-mobile.png')}"
+                        alt="hero banner image">
+                </picture>
+            </div>
+            <div class="text-content">
+                <a class="logo-home custom-datalayer" href="${URLUtils.url('Home-Show')}"
+                    data-name="${Resource.msg('label.adobe.simulator-landing-name-logo', 'adobetracking', null)}"
+                    data-location="${Resource.msg('label.adobe.simulator-landing-location', 'adobetracking', null)}">
+                    <img class="mb-4 p-3" src="${URLUtils.staticURL('/images/logo-small.svg')}"
+                        alt="${Resource.msg('global.storename', 'common', null)}" />
+                </a>
+
+                <h1 class="hero-title">Hear the difference</h1>
+                <p class="hero-description">Been missing parts of your conversations? Experience what hearing aids could
+                    do
+                    for you with this simulator below, or schedule a no-cost hearing test with hearing care
+                    professionals
+                    near you.
+                </p>
+                <a class="custom-datalayer btn btn-primary hero-button custom-datalayer"
+                    href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest&amp;cid=AARP:LandingPage:other:Aug:2023:AARP-Sim-LP-Request-Appointment-1:Request-Appointment"
+                    data-name="${Resource.msg('label.adobe.simulator-landing-name-request', 'adobetracking', null)}"
+                    data-location="${Resource.msg('label.adobe.simulator-landing-location', 'adobetracking', null)}">
+                    Request an appointment</a>
+            </div>
+        </div>
+
+        <isinclude template="hearingScreener/banner-1" />
+
+        <isinclude template="hearingScreener/banner-2" />
+
+        <isinclude template="hearingScreener/banner-3" />
+
+    </div>
+
+
+
+    <isinclude template="home/registrationSuccessModal" />
+</isdecorate>
