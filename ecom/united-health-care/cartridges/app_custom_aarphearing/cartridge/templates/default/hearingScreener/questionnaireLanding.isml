@@ -19,13 +19,13 @@
                             class="custom-datalayer next btn-next btn btn-primary mb-md-5"
                             data-name="${Resource.msg('label.adobe.questionnaire-landing-name', 'adobetracking', null)}"
                             data-location="${Resource.msg('label.adobe.questionnaire-landing-location', 'adobetracking', null)}">Take
-                            the Questionnaire</a>
+                            the questionnaire</a>
                     </div>
                 </div>
                 <div class="col-12 col-md-5">
                     <div class="image-content">
                         <picture>
-                            <img alt="sign in image" src="${URLUtils.staticURL('/images/red_shawl_2.png')}" />
+                            <img alt="sign in image" src="${URLUtils.staticURL('/images/red_shawl_3.png')}" />
                         </picture>
                     </div>
                 </div>

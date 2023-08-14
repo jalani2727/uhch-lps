@@ -60,7 +60,7 @@ p {
 
     font-size: 26px;
     color: $color-blue-dark;
-    margin-top: 25px;
+    margin-top: 5px;
 }
 
 .hero-container {
@@ -198,19 +198,19 @@ p {
             }
 
             .image-content {
-                clip-path: ellipse(67% 84% at 56% 79%);
-                transform: rotate(-37.445deg);
+                clip-path: ellipse(88% 87% at 43% 94%);
+                transform: rotate(-75.445deg);
 
                 @include media-breakpoint-between(md, lg) {
 
                 }
                 @include media-breakpoint-down(sm){
-                    clip-path: ellipse(68% 91% at 68% 86%);
+                    clip-path: ellipse(75% 89% at 66% 85%);
                     transform: rotate(18.555deg);
                 }
 
                 img {
-                    transform: rotate(37.445deg);
+                    transform: rotate(75.445deg);
 
                     @include media-breakpoint-between(md, lg) {
 
@@ -232,11 +232,34 @@ p {
         @include media-breakpoint-up(sm){
             justify-content: space-around;
         }
+
+        .video-wrapper iframe {
+            border: 1px solid $color-blue-dark;
+
+            @include media-breakpoint-down(sm) {
+                width: 425px;
+
+            }
+            @include media-breakpoint-down(xs) {
+                width: 345px;
+
+            }
+        }
     }
 
     @include media-breakpoint-down(sm) {
         img {
             max-width: 100%;
+        }
+    }
+}
+
+.getting-started-description {
+
+    p {
+        margin-bottom: 16px;
+        &:first-of-type {
+            color: $color-blue-dark;
         }
     }
 }

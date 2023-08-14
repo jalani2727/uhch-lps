@@ -112,19 +112,19 @@
             <div class="row ">
                 <div class="col-12 col-md-6">
                     <div class="text-content">
-                        <h1 class="getting-started-title">Interested in exploring hearing aid options?</h1>
+                        <h1>Interested in exploring hearing aid options?</h1>
 
-                        <div class="getting-started-description">
-                            <p>Hearing aids are more discreet, more comfortable and more advanced than ever. With a wide
-                                variety of styles that feature the latest technology such as recharging capabilities,
-                                connection to Bluetooth® devices, tap control, remote adjustments and more, AARP Hearing
-                                Solutions can help you hear more for less.</p>
-                        </div>
+                      
+                        <p>Hearing aids are more discreet, more comfortable and more advanced than ever. With a wide
+                            variety of styles that feature the latest technology such as recharging capabilities,
+                            connection to Bluetooth® devices, tap control, remote adjustments and more, AARP Hearing
+                            Solutions can help you hear more for less.</p>
+                    
                         <a class="custom-datalayer btn btn-primary hero-button custom-datalayer"
                             href="https://www.aarphearingsolutions.com/shop-products?cid=AARP:LandingPage:other:Aug:2023:AARP-Sim-LP-Shop-Products:Shop-Products"
                             data-name="${Resource.msg('label.adobe.simulator-landing-name-explore', 'adobetracking', null)}"
                             data-location="${Resource.msg('label.adobe.simulator-landing-location', 'adobetracking', null)}">Explore
-                            Products</a>
+                            products</a>
                     </div>
                 </div>
                 <div class="col-12 col-md-6 image-content">

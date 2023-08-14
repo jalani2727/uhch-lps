@@ -72,16 +72,6 @@ $hero-description-font-color: $body-text-color;
             .getting-started-title {
                 margin-bottom: 16px;
             }
-
-            .getting-started-description {
-
-                p {
-                    margin-bottom: 16px;
-                    &:first-of-type {
-                        color: $primary-col-1;
-                    }
-                }
-            }
         }
 
         .custom-logo-container {
