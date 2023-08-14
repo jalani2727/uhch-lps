@@ -6,8 +6,7 @@
 
     </isscript>
     <div class="home-main homepage" data-is-pricebook-updated="${true}">
-        Results Page 1
-
+       <iscomment> this is a placeholder for the hero</iscomment>
         <div class="hero-container top-content">
             <div class="image-content">
                 <picture>
@@ -30,7 +29,7 @@
                     do
                     for you with this simulator below, or schedule a no-cost hearing test with hearing care
                     professionals
-                    near you.
+                    near you. hello
                 </p>
                 <a class="custom-datalayer btn btn-primary hero-button custom-datalayer"
                     href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest&amp;cid=AARP:LandingPage:other:Aug:2023:AARP-Sim-LP-Request-Appointment-1:Request-Appointment"
@@ -40,11 +39,91 @@
             </div>
         </div>
 
+<iscomment> banner-1 is a placeholder for for first section that is shared across pages </iscomment>
         <isinclude template="hearingScreener/banner-1" />
 
-        <isinclude template="hearingScreener/banner-2" />
+        <div class="container content-banner">
+            <h1>Early signs of hearing loss</h1>
+            <p>Get the support you need sooner. If you're experiencing any of these early symptoms, you may want to schedule an appointment with a hearing professional:</p>
+            <ul>
+                <li class="aarp-perk-desc">High-pitched sounds are hard to hear (For example: Doorbells or birds)</li>
+                <li class="aarp-perk-desc">You often turn up the volume of the TV or radio</li>
+                <li class="aarp-perk-desc">It's difficult to understand conversations, especially in crowded places</li>
+                <li class="aarp-perk-desc">You frequently ask people to speak louder, slow down or repeat themselves</li>
+            </ul>
+            <div>
+                <a href="#" class="custom-datalayer next btn-next btn btn-primary mb-md-5">Schedule Appointment</a>
+            </div>
+        </div>
 
-        <isinclude template="hearingScreener/banner-3" />
+        <div class="container content-banner">
+            <img src="${URLUtils.staticURL('/images/logo-small.svg')}" alt="Woman with doctor" />
+            <h1>Risks of untreated hearing loss</h1>
+            <p>Living with untreated hearing loss impacts more than just your hearing. That's why it's important to get help early, so it doesn't lead to negative effects such as:</p>
+            <ul>
+                <li class="aarp-perk-desc">Depression or chronic fatigue</li>
+                <li class="aarp-perk-desc">Feelings of loneliness in social settings</li>
+                <li class="aarp-perk-desc">Problems with memory and focus</li>
+                <li class="aarp-perk-desc">Risks to your safety such as falling or tripping</li>
+                <li class="aarp-perk-desc">More severe health problems (For example: Alzheimer's or dementia)</li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <h1>Why it's important to treat hearing loss early</h1>
+            <p>Treating hearing loss early can make all the difference in the world, allowing you to rediscover parts of your life that may have felt missing.</p>
+            <ul>
+                <li>
+                    <img src="${URLUtils.staticURL('/images/1-color-shoe.png')}" alt="Exercise shoe" />
+                    <h2>Enjoy your daily activities again</h2>
+                    <p>Whether it's gardening or going to the gym, better hearing can help you be more involved in your everyday activities.</p>
+                </li>
+                <li>
+                    <img src="${URLUtils.staticURL('/images/hand-heart.svg')}" alt="Heart" />
+                    <h2>Stay connected to the people you love</h2>
+                    <p>Reengaging in conversations with family and friends can help you feel more connected to important relationships.</p>
+                </li>
+                <li>
+                    <img src="${URLUtils.staticURL('/images/lightbulb-icon.png')}" alt="Light bulb" />
+                    <h2>Discover more independence</h2>
+                    <p>When you're more aware of your surroundings, you'll be able to do more without having to rely on anyone else.</p>
+                </li>
+                <li>
+                    <img src="${URLUtils.staticURL('/images/brain-icon.png')}" alt="Brain" />
+                    <h2>Support brain health</h2>
+                    <p>Reduce the risk of cognitive decline and diseases such as Alzheimer's or dementia.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <img src="${URLUtils.staticURL('/images/doctor-computer.jpeg')}" alt="Doctor at computer"/>
+            <h1>When should I get my hearing checked?</h1>
+            <p>It's a good idea to get your hearing checked at least once every 10 years until the age of 50. After 50, you should get your hearing tested every 3 years.* Even if you don't have symptoms, regular tests are helpful for prevention and to catch hearing loss early. If you have hearing loss or have been exposed to loud noise, more frequent tests are recommended.</p>
+            <p>*The American Speech-Language-Hearing Association (ASHA) guidelines state that you should get your hearing checked at least once every 10 years until the age of 50 and every 3 years after 50.</p>
+        </div>
+
+        <div class="container">
+            <h1>Hearing aids are more advanced than ever</h1>
+            <p>It's normal to feel worried about wearing hearing aids. But the truth is: With today's technology, hearing aids can become a natural part of your daily life.</p>
+            <div>
+                <h2>Fit for your lifestyle</h2>
+                <p>With options that have powerful sound enhancement, smartphone apps, wireless connectivity and more, there's a hearing aid for your everyday life.</p>
+            </div>
+            <div>
+                <h2>A variety of styles</h2>
+                <p>Hearing aids come in a variety of styles, so you can wear them with comfort and confidence.</p>
+            </div>
+            <div>
+                <h2>More discreet than ever</h2>
+                <p>Devices are also much smaller than they used to be, making them less noticeable and intimidating.</p>
+            </div>
+            
+        </div>
+
+        <iscomment> <isinclude template="hearingScreener/banner-2" />
+
+        <isinclude template="hearingScreener/banner-3" /> </iscomment>
 
     </div>
 
