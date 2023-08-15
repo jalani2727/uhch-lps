@@ -1,7 +1,7 @@
 .content-blue {
     background-color: var(--bright-blue-10, #E5F8FB);
     width: 100%;
-    padding: 10% 6%;
+    padding: 8% 6%;
 
 
     @include media-breakpoint-up(md) {
@@ -126,8 +126,41 @@
     &.content-cards {
         flex-wrap: wrap;
 
+        @include media-breakpoint-up(md) { 
+            padding-right: 10%;
+            padding-left: 10%;
+            justify-content: space-between;
+        }
+
         .cards-header {
             width: 100%;
+        }
+
+        .results-flex-card {
+            width: 100%;
+            text-align: left;
+            background-color: white;
+            border: 1px solid #B3BABC;
+            margin-bottom: 16px;
+            height: 20%;
+            padding: 30px;
+
+            p.results-text.subtext {
+                margin-bottom: 0px;
+                text-align: left;
+            }
+        }
+
+        @include media-breakpoint-up(lg) { 
+            .cards-header {
+                width: 100%;
+                padding: 0 20%;
+            }
+
+            .results-flex-card {
+                width: 32%;
+                height: 180px;
+            }
         }
     }
 }

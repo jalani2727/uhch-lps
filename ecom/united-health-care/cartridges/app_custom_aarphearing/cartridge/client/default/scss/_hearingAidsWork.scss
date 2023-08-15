@@ -1,0 +1,14 @@
+.hidden-md-up {
+    img {
+        width: 100%;
+    }
+
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+}
+
+.aids-work {
+    display: flex;
+    flex-direction: column;
+}
