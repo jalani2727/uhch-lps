@@ -474,10 +474,13 @@ base.isBenefitApplicable = function isBenefitApplicable() {
     ordertime.setHours(ordertime.getHours() - numberOfPastHoursForOrderLookup); 
     var benefitApplicable = true;
     var orderHistory = customer.getOrderHistory();
+    var Order = require('dw/order/Order');
     var customerOrders = orderHistory.getOrders(
         'creationDate > {0}',
+        'status = {1}',
         'creationDate desc',
-        ordertime
+        ordertime,
+        Order.ORDER_STATUS_NEW
     );
     if (customerOrders.count > 0) {
         while (customerOrders.hasNext()) {
