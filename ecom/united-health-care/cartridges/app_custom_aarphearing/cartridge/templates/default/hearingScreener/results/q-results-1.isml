@@ -10,39 +10,38 @@
         <div class="hero-container top-content">
             <div class="image-content">
                 <picture>
-                    <img class="hidden-md-down" src="${URLUtils.staticURL('/images/simulator-hero.png')}"
-                        alt="hero banner image">
-                    <img class="d-lg-none" src="${URLUtils.staticURL('/images/hero-mobile.png')}"
+                    <img class="hidden-md-down" src="${URLUtils.staticURL('/images/hearing-loss-hero.png')}"
                         alt="hero banner image">
                 </picture>
             </div>
             <div class="text-content">
-                <a class="logo-home custom-datalayer" href="${URLUtils.url('Home-Show')}"
-                    data-name="${Resource.msg('label.adobe.simulator-landing-name-logo', 'adobetracking', null)}"
-                    data-location="${Resource.msg('label.adobe.simulator-landing-location', 'adobetracking', null)}">
-                    <img class="mb-4 p-3" src="${URLUtils.staticURL('/images/logo-small.svg')}"
-                        alt="${Resource.msg('global.storename', 'common', null)}" />
-                </a>
+                <h1 class="hero-title">Based on your responses, you may have hearing loss.</h1>
+                <p class="hero-description">Here is some information for prevention and treating hearing loss early.</p>
+            </div>
+            <picture>
+                <img class="d-lg-none" src="${URLUtils.staticURL('/images/hearing-loss-hero.png')}"
+                        alt="hero banner image">
+            </picture>
+        </div>
 
-                <h1 class="hero-title">Hear the difference</h1>
-                <p class="hero-description">Been missing parts of your conversations? Experience what hearing aids could
-                    do
-                    for you with this simulator below, or schedule a no-cost hearing test with hearing care
-                    professionals
-                    near you. hello
-                </p>
-                <a class="custom-datalayer btn btn-primary hero-button custom-datalayer"
-                    href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest&amp;cid=AARP:LandingPage:other:Aug:2023:AARP-Sim-LP-Request-Appointment-1:Request-Appointment"
-                    data-name="${Resource.msg('label.adobe.simulator-landing-name-request', 'adobetracking', null)}"
-                    data-location="${Resource.msg('label.adobe.simulator-landing-location', 'adobetracking', null)}">
-                    Request an appointment</a>
+        <div class="container content-banner banner-1 mt-5">
+            <div class="row">
+                <div class="col-12 col-md-7">
+                    <h1>Stay connected to the people you love</h1>
+                    <p>Did you know 48 million Americans have some degree of hearing loss? It's very common - and your loved one is not alone. Preventative care and treating hearing loss easly can help them hear the sounds they've been missing. If your loved one is an AARP member, they can save on prescription hearing aids and accessories through AARP© Hearing Solutions™ provided by UnitedHealthcare Hearing.</p>
+
+                    <a>Discounts and perks for AARP members<img src="${URLUtils.staticURL('/images/CTA-arrow-down.svg')}" alt="arrow"/></a>
+                </div>
+                <div class="col-12 col-md-5">
+                    <picture>
+                    <img class="hidden-md-down" src="${URLUtils.staticURL('/images/ear.png')}"
+                                alt="ear image"> 
+                    </picture>
+                </div>
             </div>
         </div>
 
-<iscomment> banner-1 is a placeholder for for first section that is shared across pages </iscomment>
-        <isinclude template="hearingScreener/banner-1" />
-
-        <div class="container content-banner">
+        <div class="container content-banner content-blue" id="content-blue">
             <h1>Early signs of hearing loss</h1>
             <p>Get the support you need sooner. If you're experiencing any of these early symptoms, you may want to schedule an appointment with a hearing professional:</p>
             <ul>
@@ -57,7 +56,7 @@
         </div>
 
         <div class="container content-banner">
-            <img src="${URLUtils.staticURL('/images/logo-small.svg')}" alt="Woman with doctor" />
+            <img src="${URLUtils.staticURL('/images/results1.jpeg')}" alt="Woman with doctor" />
             <h1>Risks of untreated hearing loss</h1>
             <p>Living with untreated hearing loss impacts more than just your hearing. That's why it's important to get help early, so it doesn't lead to negative effects such as:</p>
             <ul>
@@ -121,30 +120,122 @@
 
         </div>
 
-        <div>
-            <h1>How hearing aids work</h1>
-            <p>Hearing aids pick up sound from your environment, convert it to a digital signal, and amplify the sound into your ears. Try this simple audio simulation for an example of what hearing aids might sound like for you.</p>
-            <h3>Hear for yourself</h3>
-            <p>Put on your headphones and experience dinner in a busy restaurant with and without hearing aids. Click the audio buttons below to hear the difference a pair of hearing aids can make.</p>
-            <div>
-                <div>
-                    <img src="${URLUtils.staticURL('/images/vector.svg')}" alt="Play with hearing aids"/>
-                    <h4>With hearing aids</h4>
+        <div class="container content-banner banner-1 mt-5">
+            <div class="row">
+                <div class="col-12 col-md-7">
+                    <picture><img class="hidden-md-down" src="${URLUtils.staticURL('/images/audio-simulation-module.png')}"
+                                alt="hero banner image"></picture>
                 </div>
-                <div>
-                    <img src="${URLUtils.staticURL('/images/vector.svg')}" alt="Play with hearing aids"/>
-                    <h4>Without hearing aids</h4>
+                <div class="col-12 col-md-5">
+                    <h1>How hearing aids work</h1>
+                    <p>Hearing aids pick up sound from your environment, convert it to a digital signal, and amplify the sound into your ears. Try this simple audio simulation for an example of what hearing aids might sound like for you.</p>
+
+                    <h2>Try this hearing simulation</h2>
+                    <p>Have your loved one put on their headphones and experience dinner in a busy restaurant with and without hearing aids. Click the audio buttons below to hear the difference a pair of hearing aids can make.</p>
+                    <div class="simulation-container">
+                        <div class="simulation">
+                            <picture><img class="logos" src="${URLUtils.staticURL('/images/r1-vector.png')}"
+                                alt="Play with hearing aids"></picture> <a>With Hearing Aids</a>
+                        </div>
+                        <div class="simulation">
+                            <picture><img class="logos" src="${URLUtils.staticURL('/images/r1-vector.png')}"
+                                        alt="Play without hearing aids"></picture> <a>Without Hearing Aids</a>
+                        </div>
+                    </div>
                 </div>
-                <p>This simulation is recorded with Phonak hearing aids, powered by Sonova technology.</p>
             </div>
         </div>
 
-        <iscomment> <isinclude template="hearingScreener/banner-2" />
+        <div class="container content-banner">
+            <div>
+                <h1>Technology, Choice, Support</h1>
+                <p>Over-the-counter (OTC) devices and prescription hearing aids are available with a variety of options to meet your needs. Even if you’re interested in buying an OTC device, it's recommended to schedule an appointment with a hearing professional to understand how you'll use your hearing aids.</p>
+                <div>
+                    <a href="#" class="custom-datalayer next btn-next btn btn-primary mb-md-5">Schedule Appointment</a>
+                </div>
+            </div>
+            <div class="hidden-md-down">
+                <div>
+                    <img src="${URLUtils.staticURL('/images/store-icon.png')}" alt="Pharmacy" />
 
-        <isinclude template="hearingScreener/banner-3" /> </iscomment>
+                </div>
+                <div>
+                    <img src="${URLUtils.staticURL('/images/home-delivery.png')}" alt="Home delivery" />
+
+                </div>
+            </div>
+        
+        </div>
+
+        <div class="container content-banner banner-1 mt-5">
+            <div class="row">
+                <div class="col-12 col-md-7">
+                    <h1>Explore all hearing products</h1>
+                        <p>Through AARP® Hearing Solutions™ provided by UnitedHealthcare Hearing, you have access to top-quality hearing aids from some of the most popular manufacturers. An array of options to match your lifestyle, hearing needs and budget is available. Connect with a hearing-care professional to learn more about these brands and what device may be best for you.</p>
+                </div>
+                <div class="col-12 col-md-5">
+                    <picture><img class="logos" src="${URLUtils.staticURL('/images/starkey.png')}"
+                        alt="Starkey logo"></picture>
+                    <picture><img class="logos" src="${URLUtils.staticURL('/images/oticon.png')}"
+                        alt="Oticon logo"></picture>
+                    <picture><img class="logos" src="${URLUtils.staticURL('/images/phonak.png')}"
+                        alt="Phonak logo"></picture>
+                    <picture><img class="logos" src="${URLUtils.staticURL('/images/beltone.png')}"
+                        alt="Beltone logo"></picture>
+                    <picture><img class="logos" src="${URLUtils.staticURL('/images/reSoundGN.png')}"
+                        alt="Resound GN logo"></picture>
+                    <picture><img class="logos" src="${URLUtils.staticURL('/images/signia.png')}"
+                        alt="Signia logo"></picture>
+                </div>
+            </div>
+        </div>
+
+        <div class="container content-banner banner-1 mt-5">
+            <div class="row">
+                <div class="col-12 col-md-7">
+                    <picture><img class="hidden-md-down" src="${URLUtils.staticURL('/images/wallet.png')}"
+                        alt="hero banner image"></picture>
+                </div>
+                <div class="col-12 col-md-5">
+                    <h1>What discounts and perks do I have as an AARP member?</h1>
+                    <p>As an AARP member, you can save on hearing aids, care and accessories:</p>
+                    <ul>
+                        <li class="aarp-perk-desc">No-cost hearing exam and consultation</li>
+                        <li class="aarp-perk-desc">Prescription hearing aids as low as $699 per ear</li>
+                        <li class="aarp-perk-desc">20% off prescription hearing aids and 15% off accessories</li>
+                        <li class="aarp-perk-desc">Four-year warranty* on hearing aids</li>
+                        <li class="aarp-perk-desc">More severe health problems </li>
+                    </ul>
+                    <p>*Four-year warranty applies to hearing aids in the Classic & Premier technology levels.</p>
+                    <div>
+                        <a href="${URLUtils.url('Screener-Show')}" class="custom-datalayer next btn-next btn btn-primary mt-md-2 mb-5"
+                    data-name="${Resource.msg('label.adobe.questionnaire-landing-name', 'adobetracking', null)}"
+                    data-location="${Resource.msg('label.adobe.questionnaire-landing-location', 'adobetracking', null)}">Learn More</a>
+
+                        <a href="${URLUtils.url('Screener-Show')}" class="custom-datalayer next btn-next btn btn-primary mt-md-2 mb-5"
+                    data-name="${Resource.msg('label.adobe.questionnaire-landing-name', 'adobetracking', null)}"
+                    data-location="${Resource.msg('label.adobe.questionnaire-landing-location', 'adobetracking', null)}">Join AARP</a>
+
+                        <a href="${URLUtils.url('Screener-Show')}" class="custom-datalayer next btn-next btn btn-primary mt-md-2 mb-5"
+                    data-name="${Resource.msg('label.adobe.questionnaire-landing-name', 'adobetracking', null)}"
+                    data-location="${Resource.msg('label.adobe.questionnaire-landing-location', 'adobetracking', null)}">Renew AARP </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container content-banner banner-1 mt-5">
+            <div class="row">
+                <div class="col-12 col-md-7">
+                    <h2>Disclaimer</h2>
+                    <p>
+                    AARP commercial member benefits are provided by third parties, not by AARP or its affiliates. Providers pay a royalty fee to AARP for the use of its intellectual property. These fees are used for the general purposes of AARP. Some provider offers are subject to change and may have restrictions. Please contact the provider directly for details. All trademarks property of respective owners.
+                    </p>
+                </div>
+            </div>
+        </div>
 
     </div>
-
 
 
     <isinclude template="home/registrationSuccessModal" />
