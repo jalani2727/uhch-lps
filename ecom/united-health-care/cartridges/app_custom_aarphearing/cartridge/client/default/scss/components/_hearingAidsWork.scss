@@ -1,3 +1,21 @@
+.container.aids-section {
+    @include media-breakpoint-up(md) {
+        padding-right: 10%;
+        padding-left: 10%;
+        margin-bottom: 3em;
+
+        .aids-work-left {
+            margin-right: 5%;
+            width: 50%;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
 .hidden-md-up {
     margin-bottom: 5%;
 
@@ -24,18 +42,18 @@
     margin-bottom: 5%;
     flex-direction: column;
 
-    &.col-12 {
+    &.aids-container {
         padding: 0;
     }
 
-    &.col-12 p {
+    &.aids-container p {
         font-size: 16px;
         color: var(--dark-gray, #333);
         font-family: "UHCSansMedium", sans-serif;
         font-weight: 500;
     }
 
-    &.col-12 h2 {
+    &.aids-container h2 {
         font-size: 22px;
         line-height: 30px;
         color: #002677;
@@ -43,7 +61,7 @@
         font-weight: 600;
     }
 
-    &.col-12 h1 {
+    &.aids-container h1 {
         margin-bottom: 10px;
     }
 
@@ -51,17 +69,16 @@
     @include media-breakpoint-up(md) {
         flex-direction: row;
         margin-bottom: 0;
-        align-items: center;
+        margin-right: 0;
+        margin-left: 0;
+        align-items: top;
+        justify-content: space-between;
 
-        margin-right: 10%;
-        margin-left: 10%;
-
-        .hidden-md-pic-container {
+        .hidden-md-pic {
             width: 50%;
-
-            img {
-                max-width: 100%;
-            }
+            height: 350px;
+            object-fit: cover;
+            object-position: 20% 50%;
         }
     }
 }
@@ -69,6 +86,11 @@
 .simulation-container {
     display: flex;
     flex-direction: column;
+
+    p.disclaimer {
+        font-size: 13px;
+        margin-top: 16px;
+    }
 
     .simulation {
         margin: 10px 0;
@@ -82,6 +104,17 @@
                     line-height: 22px;
                     font-weight: 600;
             }
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .simulation {
+            margin: 0;
+            width: 50%;
         }
     }
 }

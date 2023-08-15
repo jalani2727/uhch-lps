@@ -164,3 +164,33 @@
         }
     }
 }
+.hero-container {
+    &.top-content {
+        .image-content {
+            width: 100%;
+            overflow: hidden;
+            order: 1;
+            .results-hero.hidden-md-down {
+                height: 425px;
+                object-fit: cover;
+                object-position: 0% 35%;
+                overflow: hidden;
+                width: 140%;
+            }
+
+            .results-hero.d-lg-none {
+                width: 100%; 
+                overflow: hidden;
+                object-fit: cover;
+                height: 425px;
+                transform: sacale(1.2);
+            }
+        }
+        .text-content {
+            @include media-breakpoint-down(md) {
+                border-bottom: none;
+            }
+        }
+    }
+}
+

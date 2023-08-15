@@ -1,0 +1,33 @@
+ <div class="container content-banner banner-1 mt-5">
+    <div class="row">
+        <div class="col-12 col-md-7">
+            <picture><img class="hidden-md-down" src="${URLUtils.staticURL('/images/wallet.png')}"
+                        alt="hero banner image"></picture>
+        </div>
+        <div class="col-12 col-md-5">
+            <h1>What discounts and perks do I have as an AARP member?</h1>
+            <p>As an AARP member, you can save on hearing aids, care and accessories:</p>
+            <ul>
+                <li class="aarp-perk-desc">No-cost hearing exam and consultation</li>
+                <li class="aarp-perk-desc">Prescription hearing aids as low as $699 per ear</li>
+                <li class="aarp-perk-desc">20% off prescription hearing aids and 15% off accessories</li>
+                <li class="aarp-perk-desc">Four-year warranty* on hearing aids</li>
+                <li class="aarp-perk-desc">More severe health problems </li>
+            </ul>
+            <p>*Four-year warranty applies to hearing aids in the Classic & Premier technology levels.</p>
+            <div>
+            <a href="${URLUtils.url('Screener-Show')}" class="custom-datalayer next btn-next btn btn-primary mt-md-2 mb-5"
+          data-name="${Resource.msg('label.adobe.questionnaire-landing-name', 'adobetracking', null)}"
+          data-location="${Resource.msg('label.adobe.questionnaire-landing-location', 'adobetracking', null)}">Learn More</a>
+
+          <a href="${URLUtils.url('Screener-Show')}" class="custom-datalayer next btn-next btn btn-primary mt-md-2 mb-5"
+          data-name="${Resource.msg('label.adobe.questionnaire-landing-name', 'adobetracking', null)}"
+          data-location="${Resource.msg('label.adobe.questionnaire-landing-location', 'adobetracking', null)}">Join AARP</a>
+
+          <a href="${URLUtils.url('Screener-Show')}" class="custom-datalayer next btn-next btn btn-primary mt-md-2 mb-5"
+          data-name="${Resource.msg('label.adobe.questionnaire-landing-name', 'adobetracking', null)}"
+          data-location="${Resource.msg('label.adobe.questionnaire-landing-location', 'adobetracking', null)}">Renew AARP </a>
+          </div>
+        </div>
+    </div>
+</div>

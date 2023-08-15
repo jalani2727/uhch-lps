@@ -6,23 +6,20 @@
 
     </isscript>
 
-    <iscomment> header formatting placeholder </iscomment>
-    <div class="home-main homepage" data-is-pricebook-updated="${true}">
-]        <div class="hero-container top-content">
-            <div class="image-content">
-                <iscomment> <picture>
-                    <img class="hidden-md-down" src="${URLUtils.staticURL('/images/hearing-loss-hero.png')}"
-                        alt="hero banner image">
-                </picture> </iscomment>
+        <div class="home-main homepage" data-is-pricebook-updated="${true}">
+            <div class="hero-container top-content">
+                <div class="image-content">
+                    <picture>
+                        <img class="d-lg-none results-hero" src="${URLUtils.staticURL('/images/hearing-loss-hero.png')}"
+                            alt="hero banner image">
+                        <img class="hidden-md-down results-hero" src="${URLUtils.staticURL('/images/hearing-loss-hero.png')}"
+                            alt="hero banner image">
+                    </picture>
+                </div>
+                <div class="text-content">
+                    <h1 class="hero-title">Based on your responses, you may have hearing loss.</h1>
+                    <p class="hero-description">Here is some information for prevention and treating hearing loss early.</p>
             </div>
-            <div class="text-content">
-                <h1 class="hero-title">Based on your responses, you may have hearing loss.</h1>
-                <p class="hero-description">Here is some information for prevention and treating hearing loss early.</p>
-            </div>
-            <iscomment> <picture>
-                <img class="d-lg-none" src="${URLUtils.staticURL('/images/hearing-loss-hero.png')}"
-                        alt="hero banner image">
-            </picture> </iscomment>
         </div>
 
         <iscomment> ear section placeholder </iscomment>
@@ -30,8 +27,8 @@
         <div class="container content-banner banner-1 mt-5">
             <div class="row">
                 <div class="col-12 col-md-7">
-                    <h1>Stay connected to the people you love</h1>
-                    <p>Did you know 48 million Americans have some degree of hearing loss? It's very common - and your loved one is not alone. Preventative care and treating hearing loss easly can help them hear the sounds they've been missing. If your loved one is an AARP member, they can save on prescription hearing aids and accessories through AARP© Hearing Solutions™ provided by UnitedHealthcare Hearing.</p>
+                    <h1>Hear better, live better</h1>
+                    <p>Hearing loss is more common than you think — in fact, 48 million Americans have some degree of hearing loss. The best news is: You’re not alone — there is help. If you are an AARP member, you can save on prescription hearing aids and accessories through AARP® Hearing Solutions™ provided by UnitedHealthcare Hearing.</p>
 
                     <a>Discounts and perks for AARP members<img src="${URLUtils.staticURL('/images/CTA-arrow-down.svg')}" alt="arrow"/></a>
                 </div>
@@ -54,51 +51,14 @@
                 <li class="aarp-perk-desc perk-bold">You frequently ask people to speak louder, slow down or repeat themselves</li>
             </ul>
             <div class="sch-btn-container">
-                <a href="#" class="custom-datalayer next btn-next btn btn-primary">Schedule Appointment</a>
+                <a href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest&cid=AARP:LandingPage:other:Aug:2023:AARP-Sim-LP-Request-Appointment-1:Request-Appointment" class="custom-datalayer next btn-next btn btn-primary">Schedule Appointment</a>
             </div>
         </div>
 
         <iscomment> placeholder for risks template </iscomment>
+        <div>placeholder for risks of untreated hearing loss</div>
 
-        <div class="container content-banner">
-            <iscomment> <img src="${URLUtils.staticURL('/images/results1.jpeg')}" alt="Woman with doctor" /> </iscomment>
-            <h1>Risks of untreated hearing loss</h1>
-            <p>Living with untreated hearing loss impacts more than just your hearing. That's why it's important to get help early, so it doesn't lead to negative effects such as:</p>
-            <ul>
-                <li class="aarp-perk-desc">Depression or chronic fatigue</li>
-                <li class="aarp-perk-desc">Feelings of loneliness in social settings</li>
-                <li class="aarp-perk-desc">Problems with memory and focus</li>
-                <li class="aarp-perk-desc">Risks to your safety such as falling or tripping</li>
-                <li class="aarp-perk-desc">More severe health problems (For example: Alzheimer's or dementia)</li>
-            </ul>
-        </div>
-
-        <div class="container content-blue">
-            <h1>Why it's important to treat hearing loss early</h1>
-            <p>Treating hearing loss early can make all the difference in the world, allowing you to rediscover parts of your life that may have felt missing.</p>
-            <ul>
-                <li>
-                    <img src="${URLUtils.staticURL('/images/1-color-shoe.png')}" alt="Exercise shoe" />
-                    <h2>Enjoy your daily activities again</h2>
-                    <p>Whether it's gardening or going to the gym, better hearing can help you be more involved in your everyday activities.</p>
-                </li>
-                <li>
-                    <img src="${URLUtils.staticURL('/images/hand-heart.svg')}" alt="Heart" />
-                    <h2>Stay connected to the people you love</h2>
-                    <p>Reengaging in conversations with family and friends can help you feel more connected to important relationships.</p>
-                </li>
-                <li>
-                    <img src="${URLUtils.staticURL('/images/lightbulb-icon.png')}" alt="Light bulb" />
-                    <h2>Discover more independence</h2>
-                    <p>When you're more aware of your surroundings, you'll be able to do more without having to rely on anyone else.</p>
-                </li>
-                <li>
-                    <img src="${URLUtils.staticURL('/images/brain-icon.png')}" alt="Brain" />
-                    <h2>Support brain health</h2>
-                    <p>Reduce the risk of cognitive decline and diseases such as Alzheimer's or dementia.</p>
-                </li>
-            </ul>
-        </div>
+        <div>placeholder for why it's important to treat hearing loss early</div>
 
         <div class="container flex-stack">
                 <img class="img-container" src="${URLUtils.staticURL('/images/doctor-computer.jpeg')}" alt="Doctor at computer"/>
@@ -107,85 +67,24 @@
                 <p class="results-text subtext">It's a good idea to get your hearing checked at least once every 10 years until the age of 50. After 50, you should get your hearing tested every 3 years.* Even if you don't have symptoms, regular tests are helpful for prevention and to catch hearing loss early. If you have hearing loss or have been exposed to loud noise, more frequent tests are recommended.</p>
                 <p class="results-text subtext">*The American Speech-Language-Hearing Association (ASHA) guidelines state that you should get your hearing checked at least once every 10 years until the age of 50 and every 3 years after 50.</p>
                 <div class="sch-btn-container">
-                    <a href="#" class="custom-datalayer next btn-next btn btn-primary">Schedule Appointment</a>
+                    <a href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest&cid=AARP:LandingPage:other:Aug:2023:AARP-Sim-LP-Request-Appointment-1:Request-Appointment" class="custom-datalayer next btn-next btn btn-primary">Schedule Appointment</a>
                 </div>
             </div>
         </div>
 
-        <isinclude template="hearingScreener/results/q-results-cards-section.isml"/>
+        <isinclude template="hearingScreener/results/components/q-results-cards-section.isml"/>
 
-        <isinclude template="hearingScreener/results/q-results-hearing-aids-work.isml"/>
+        <isinclude template="hearingScreener/results/components/q-results-hearing-aids-work.isml"/>
 
-        <div>Technology, Choice, Support</div>
+        <isinclude template="hearingScreener/results/components/tech-choice-support" />
+
+        <div>placeholder for explore all hearing products</div>
+
+        <div>placeholder for discounts and perks</div>
+
+        <div>placeholder for disclaimer</div>
 
 
-        <div class="container content-banner banner-1 mt-5">
-            <div class="row">
-                <div class="col-12 col-md-7">
-                    <h1>Explore all hearing products</h1>
-                        <p>Through AARP® Hearing Solutions™ provided by UnitedHealthcare Hearing, you have access to top-quality hearing aids from some of the most popular manufacturers. An array of options to match your lifestyle, hearing needs and budget is available. Connect with a hearing-care professional to learn more about these brands and what device may be best for you.</p>
-                </div>
-                <div class="col-12 col-md-5">
-                    <picture><img class="logos" src="${URLUtils.staticURL('/images/starkey.png')}"
-                        alt="Starkey logo"></picture>
-                    <picture><img class="logos" src="${URLUtils.staticURL('/images/oticon.png')}"
-                        alt="Oticon logo"></picture>
-                    <picture><img class="logos" src="${URLUtils.staticURL('/images/phonak.png')}"
-                        alt="Phonak logo"></picture>
-                    <picture><img class="logos" src="${URLUtils.staticURL('/images/beltone.png')}"
-                        alt="Beltone logo"></picture>
-                    <picture><img class="logos" src="${URLUtils.staticURL('/images/reSoundGN.png')}"
-                        alt="Resound GN logo"></picture>
-                    <picture><img class="logos" src="${URLUtils.staticURL('/images/signia.png')}"
-                        alt="Signia logo"></picture>
-                </div>
-            </div>
-        </div>
-
-        <div class="container content-banner banner-1 mt-5 content-blue">
-            <div class="row">
-                <div class="col-12 col-md-7">
-                    <picture><img class="hidden-md-down" src="${URLUtils.staticURL('/images/wallet.png')}"
-                        alt="hero banner image"></picture>
-                </div>
-                <div class="col-12 col-md-5">
-                    <h1>What discounts and perks do I have as an AARP member?</h1>
-                    <p>As an AARP member, you can save on hearing aids, care and accessories:</p>
-                    <ul>
-                        <li class="aarp-perk-desc">No-cost hearing exam and consultation</li>
-                        <li class="aarp-perk-desc">Prescription hearing aids as low as $699 per ear</li>
-                        <li class="aarp-perk-desc">20% off prescription hearing aids and 15% off accessories</li>
-                        <li class="aarp-perk-desc">Four-year warranty* on hearing aids</li>
-                        <li class="aarp-perk-desc">More severe health problems </li>
-                    </ul>
-                    <p>*Four-year warranty applies to hearing aids in the Classic & Premier technology levels.</p>
-                    <div>
-                        <a href="${URLUtils.url('Screener-Show')}" class="custom-datalayer next btn-next btn btn-primary mt-md-2 mb-5"
-                    data-name="${Resource.msg('label.adobe.questionnaire-landing-name', 'adobetracking', null)}"
-                    data-location="${Resource.msg('label.adobe.questionnaire-landing-location', 'adobetracking', null)}">Learn More</a>
-
-                        <a href="${URLUtils.url('Screener-Show')}" class="custom-datalayer next btn-next btn btn-primary mt-md-2 mb-5"
-                    data-name="${Resource.msg('label.adobe.questionnaire-landing-name', 'adobetracking', null)}"
-                    data-location="${Resource.msg('label.adobe.questionnaire-landing-location', 'adobetracking', null)}">Join AARP</a>
-
-                        <a href="${URLUtils.url('Screener-Show')}" class="custom-datalayer next btn-next btn btn-primary mt-md-2 mb-5"
-                    data-name="${Resource.msg('label.adobe.questionnaire-landing-name', 'adobetracking', null)}"
-                    data-location="${Resource.msg('label.adobe.questionnaire-landing-location', 'adobetracking', null)}">Renew AARP </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container content-banner banner-1 mt-5">
-            <div class="row">
-                <div class="col-12 col-md-7">
-                    <h2>Disclaimer</h2>
-                    <p>
-                    AARP commercial member benefits are provided by third parties, not by AARP or its affiliates. Providers pay a royalty fee to AARP for the use of its intellectual property. These fees are used for the general purposes of AARP. Some provider offers are subject to change and may have restrictions. Please contact the provider directly for details. All trademarks property of respective owners.
-                    </p>
-                </div>
-            </div>
-        </div>
 
     </div>
 
