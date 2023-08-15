@@ -114,29 +114,10 @@
 
         <isinclude template="hearingScreener/results/q-results-cards-section.isml"/>
 
-
         <isinclude template="hearingScreener/results/q-results-hearing-aids-work.isml"/>
 
-        <div class="container content-banner">
-            <div>
-                <h1>Technology, Choice, Support</h1>
-                <p>Over-the-counter (OTC) devices and prescription hearing aids are available with a variety of options to meet your needs. Even if you’re interested in buying an OTC device, it's recommended to schedule an appointment with a hearing professional to understand how you'll use your hearing aids.</p>
-                <div>
-                    <a href="#" class="custom-datalayer next btn-next btn btn-primary mb-md-5">Schedule Appointment</a>
-                </div>
-            </div>
-            <div class="hidden-md-down">
-                <div>
-                    <img src="${URLUtils.staticURL('/images/store-icon.png')}" alt="Pharmacy" />
+        <div>Technology, Choice, Support</div>
 
-                </div>
-                <div>
-                    <img src="${URLUtils.staticURL('/images/home-delivery.png')}" alt="Home delivery" />
-
-                </div>
-            </div>
-        
-        </div>
 
         <div class="container content-banner banner-1 mt-5">
             <div class="row">

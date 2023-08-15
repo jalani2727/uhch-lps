@@ -1,25 +1,27 @@
 <div class="container content-banner banner-1 mt-5">
-    <div class="col-12 col-md-5 aids-work">
+    <div class="col-12 aids-work">
         <picture class="hidden-md-up"><img src="${URLUtils.staticURL('/images/audio-simulation-module.png')}"
                 alt="hero banner image">
         </picture>
-        <h1>How hearing aids work</h1>
-        <p>Hearing aids pick up sound from your environment, convert it to a digital signal, and amplify the sound into your ears. Try this simple audio simulation for an example of what hearing aids might sound like for you.</p>
+        <div class="col-12 col-md-7">
+            <h1>How hearing aids work</h1>
+            <p>Hearing aids pick up sound from your environment, convert it to a digital signal, and amplify the sound into your ears. Try this simple audio simulation for an example of what hearing aids might sound like for you.</p>
 
-        <h2>Try this hearing simulation</h2>
-        <p>Have your loved one put on their headphones and experience dinner in a busy restaurant with and without hearing aids. Click the audio buttons below to hear the difference a pair of hearing aids can make.</p>
-        <div class="simulation-container">
-            <div class="simulation">
-                <picture><img class="logos" src="${URLUtils.staticURL('/images/r1-vector.png')}"
-                    alt="Play with hearing aids"></picture> <a>With Hearing Aids</a>
-            </div>
-            <div class="simulation">
-                <picture><img class="logos" src="${URLUtils.staticURL('/images/r1-vector.png')}"
-                            alt="Play without hearing aids"></picture> <a>Without Hearing Aids</a>
+            <h2>Hear for yourself</h2>
+            <p>Have your loved one put on their headphones and experience dinner in a busy restaurant with and without hearing aids. Click the audio buttons below to hear the difference a pair of hearing aids can make.</p>
+            <div class="simulation-container">
+                <div class="simulation">
+                    <picture><img class="logos" src="${URLUtils.staticURL('/images/r1-vector.png')}"
+                        alt="Play with hearing aids"></picture> <a id="with-aids" class="simulation-text st">With Hearing Aids</a>
+                </div>
+                <div class="simulation">
+                    <picture><img class="logos" src="${URLUtils.staticURL('/images/r1-vector.png')}"
+                                alt="Play without hearing aids"></picture> <a id="without-aids" class="simulation-text st">Without Hearing Aids</a>
+                </div>
             </div>
         </div>
-        <div class="col-12 col-md-7">
-            <picture class="hidden-md-down"><img src="${URLUtils.staticURL('/images/audio-simulation-module.png')}"
+        <div class="hidden-md-pic-container col-12 col-md-7">
+            <picture class="hidden-md"><img src="${URLUtils.staticURL('/images/audio-simulation-module.png')}"
                     alt="hero banner image">
             </picture>
         </div>
