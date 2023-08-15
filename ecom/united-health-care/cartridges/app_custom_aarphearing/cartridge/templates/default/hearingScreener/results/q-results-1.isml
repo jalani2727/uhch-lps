@@ -103,22 +103,40 @@
             <p>*The American Speech-Language-Hearing Association (ASHA) guidelines state that you should get your hearing checked at least once every 10 years until the age of 50 and every 3 years after 50.</p>
         </div>
 
-        <div class="container">
+        <div class="container results1-section6">
             <h1>Hearing aids are more advanced than ever</h1>
             <p>It's normal to feel worried about wearing hearing aids. But the truth is: With today's technology, hearing aids can become a natural part of your daily life.</p>
-            <div>
+            <div class="results1-section6-sqr">
                 <h2>Fit for your lifestyle</h2>
                 <p>With options that have powerful sound enhancement, smartphone apps, wireless connectivity and more, there's a hearing aid for your everyday life.</p>
             </div>
-            <div>
+            <div class="results1-section6-sqr">
                 <h2>A variety of styles</h2>
                 <p>Hearing aids come in a variety of styles, so you can wear them with comfort and confidence.</p>
             </div>
-            <div>
+            <div class="results1-section6-sqr">
                 <h2>More discreet than ever</h2>
                 <p>Devices are also much smaller than they used to be, making them less noticeable and intimidating.</p>
             </div>
-            
+
+        </div>
+
+        <div>
+            <h1>How hearing aids work</h1>
+            <p>Hearing aids pick up sound from your environment, convert it to a digital signal, and amplify the sound into your ears. Try this simple audio simulation for an example of what hearing aids might sound like for you.</p>
+            <h3>Hear for yourself</h3>
+            <p>Put on your headphones and experience dinner in a busy restaurant with and without hearing aids. Click the audio buttons below to hear the difference a pair of hearing aids can make.</p>
+            <div>
+                <div>
+                    <img src="${URLUtils.staticURL('/images/vector.svg')}" alt="Play with hearing aids"/>
+                    <h4>With hearing aids</h4>
+                </div>
+                <div>
+                    <img src="${URLUtils.staticURL('/images/vector.svg')}" alt="Play with hearing aids"/>
+                    <h4>Without hearing aids</h4>
+                </div>
+                <p>This simulation is recorded with Phonak hearing aids, powered by Sonova technology.</p>
+            </div>
         </div>
 
         <iscomment> <isinclude template="hearingScreener/banner-2" />
