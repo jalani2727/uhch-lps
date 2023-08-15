@@ -25,7 +25,7 @@
                 for you with this simulator below, or schedule a no-cost hearing test with hearing care professionals
                 near you.
             </p>
-            <a class="custom-datalayer btn btn-primary hero-button custom-datalayer" href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest&amp;cid=AARP:LandingPage:other:Aug:2023:AARP-Sim-LP-Request-Appointment-1:Request-Appointment"
+            <a class="btn btn-primary hero-button custom-datalayer" href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest&amp;cid=AARP:LandingPage:other:Aug:2023:AARP-Sim-LP-Request-Appointment-1:Request-Appointment"
                 data-name="${Resource.msg('label.adobe.simulator-landing-name-request', 'adobetracking', null)}"
                 data-location="${Resource.msg('label.adobe.simulator-landing-location', 'adobetracking', null)}">
                 Request an appointment</a>
@@ -100,7 +100,7 @@
 
                 <p>Not an AARP member? <span><a href="https://appsec.aarp.org/mem/join?campaignId=FETUUHEJ&amp;cmp=ASI_P_MU_JN_UHCHEARING">Join</a></span> or <span><a href="https://appsec.aarp.org/mem/renew?campaignId=FETUUHER&amp;cmp=ASI_P_MU_RN_UHCHEARING">Renew</a></span> your membership today!</p>
             </div>
-            <a class="custom-datalayer btn btn-primary hero-button custom-datalayer" href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest&cid=AARP:LandingPage:other:Aug:2023:AARP-Sim-LP-Request-Appointment-1:Request-Appointment"
+            <a class="btn btn-primary hero-button custom-datalayer" href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest&cid=AARP:LandingPage:other:Aug:2023:AARP-Sim-LP-Request-Appointment-1:Request-Appointment"
                 data-name="${Resource.msg('label.adobe.simulator-landing-name-request', 'adobetracking', null)}"
                 data-location="${Resource.msg('label.adobe.simulator-landing-location', 'adobetracking', null)}">Request
                 an appointment</a>
@@ -120,7 +120,7 @@
                             connection to Bluetooth® devices, tap control, remote adjustments and more, AARP Hearing
                             Solutions can help you hear more for less.</p>
                     
-                        <a class="custom-datalayer btn btn-primary hero-button custom-datalayer"
+                        <a class="btn btn-primary hero-button custom-datalayer"
                             href="https://www.aarphearingsolutions.com/shop-products?cid=AARP:LandingPage:other:Aug:2023:AARP-Sim-LP-Shop-Products:Shop-Products"
                             data-name="${Resource.msg('label.adobe.simulator-landing-name-explore', 'adobetracking', null)}"
                             data-location="${Resource.msg('label.adobe.simulator-landing-location', 'adobetracking', null)}">Explore

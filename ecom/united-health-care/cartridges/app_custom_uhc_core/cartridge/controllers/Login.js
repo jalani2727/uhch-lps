@@ -406,10 +406,22 @@ server.get(
         }
         var URLUtils = require('dw/web/URLUtils');
         var actionURL = URLUtils.url('Login-DetailsSubmit').toString();
+        var viewData = res.getViewData();
+        viewData.adobeDataLayer = {};
+        viewData.adobeDataLayer.PageGroup = 'Create Account';
+        viewData.adobeDataLayer.PageName = 'create-account-page';
+        viewData.adobeDataLayer.Context = 'GlobalData';
+        var sections = {};
+        sections.section1 = '';
+        sections.section2 = '';
+        sections.section3 = '';
+        sections.section4 = '';
+        viewData.adobeDataLayer.sections = sections;
         res.render('account/createAccountPage', {
             maxDate: maxDate,
             actionURL: actionURL
         });
+        res.setViewData();
         next();
     }, pageMetaData.computedPageMetaData
 );
