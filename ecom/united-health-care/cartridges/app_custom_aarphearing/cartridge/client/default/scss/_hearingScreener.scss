@@ -589,6 +589,31 @@ fieldset {
         }
     }
 
+    &.banner-4 {
+        background-color: #E5F8FB;
+
+        h2 {
+            font-size: 24px;
+            color: #002677
+        }
+
+        p {
+            font-weight: 400;
+        }
+
+        .box{
+            background-color: white;
+            width: 300px;
+            height: 220px;
+            border: 1 solid #B3BABC;
+        }
+
+        .box-container {
+            display: flex;
+
+        }
+    }
+
     .hero-text-wrapper {
         @include media-breakpoint-between(md, lg){
 

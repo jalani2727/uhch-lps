@@ -5,52 +5,240 @@
         assets.addJs('/js/hearingScreener.js');
 
     </isscript>
+
+    ONE
     <div class="home-main homepage" data-is-pricebook-updated="${true}">
-        Results Page 2
         <div class="hero-container top-content">
             <div class="image-content">
                 <picture>
-                    <img class="hidden-md-down" src="${URLUtils.staticURL('/images/simulator-hero.png')}"
+                    <img class="hidden-md-down" src="${URLUtils.staticURL('/images/Stocksy_comp_28937781.png')}"
                         alt="hero banner image">
                     <img class="d-lg-none" src="${URLUtils.staticURL('/images/hero-mobile.png')}"
                         alt="hero banner image">
                 </picture>
             </div>
             <div class="text-content">
-                <a class="logo-home custom-datalayer" href="${URLUtils.url('Home-Show')}"
-                    data-name="${Resource.msg('label.adobe.simulator-landing-name-logo', 'adobetracking', null)}"
-                    data-location="${Resource.msg('label.adobe.simulator-landing-location', 'adobetracking', null)}">
-                    <img class="mb-4 p-3" src="${URLUtils.staticURL('/images/logo-small.svg')}"
-                        alt="${Resource.msg('global.storename', 'common', null)}" />
-                </a>
-
-                <h1 class="hero-title">Hear the difference</h1>
-                <p class="hero-description">Been missing parts of your conversations? Experience what hearing aids could
-                    do
-                    for you with this simulator below, or schedule a no-cost hearing test with hearing care
-                    professionals
-                    near you.
+                <h1 class="hero-title">Based on your responses, your loved one may have hearing loss.</h1>
+                <p class="hero-description">Below is some educational information below on how hearing loss is treated and how to best support your loved one.
                 </p>
-                <a class="custom-datalayer btn btn-primary hero-button custom-datalayer"
-                    href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest&amp;cid=AARP:LandingPage:other:Aug:2023:AARP-Sim-LP-Request-Appointment-1:Request-Appointment"
-                    data-name="${Resource.msg('label.adobe.simulator-landing-name-request', 'adobetracking', null)}"
-                    data-location="${Resource.msg('label.adobe.simulator-landing-location', 'adobetracking', null)}">
-                    Request an appointment</a>
             </div>
         </div>
 
 
+<isinclude template="hearingScreener/results/components/banner-1" />
 
-        <isinclude template="hearingScreener/banner-1" />
 
-        <isinclude template="hearingScreener/banner-2" />
 
-        <isinclude template="hearingScreener/banner-3" />
+THREE
+        <div class="container content-banner banner-4">
+    <div class="row">
+        <div class="col-12 col-md-7">
+            <h1>How to discuss hearing loss with a family member or friend</h1>
+            <p>Hearing loss can be a senstive subject. Open communication is key to making sure everyone feels respected, understood and cared for. When you have a conversation, here are a few things to remember.</p>
+        </div>
+        <div class="box-container">
 
-        
+        <div class="box">
+        <h2>Explanation is important</h2>
+        <p>Hearing loss is difficult to understood for people who haven't experienced it, so it can be helpful for symptoms to be explained.</p>
+        </div>
+
+         <div class="box">
+         <h2>Emotions should be shared</h2>
+        <p>Being open about feelings surrounding hearing loss can help bring family relationships closer.</p>
+        </div>
+
+         <div class="box">
+         <h2>Stigma needs to be broken</h2>
+        <p>When hearing loss is treated as a regular part of the family dynamic, people will become more comfortable talking about it.</p>
+        </div>
+
+         <div class="box">
+         <h2>A sense of humor doesn't hurt</h2>
+        <p>Miscommunication happens, but sometimes using humor can lighten the subject.</p>
+        </div>
+            
+        </div>
     </div>
+</div>
+
+FOUR
+        <div class="container content-banner banner-1 mt-6">
+    <div class="row">
+        <div class="col-12 col-md-7">
+            <h1>Tips for a better conversation about hearing loss</h1>
+            <p>Talking to someone with hearing loss may feel overwhelming or frustrating. To have a clearer, more approachable conversation, here are a few tips on what to do - and not to do.</p>
+        </div>
+        <div class="container">
+
+        <div class="box">
+        <picture><img class="heart" src="${URLUtils.staticURL('/images/heart.png')}"
+                        alt="hero banner image"></picture><h3>Do</h3>
+        <ul>
+        <li>Get their attention before speaking</li>
+        <li>Face the person while speaking</li>
+        <li>Limit background noise</li>
+        <li>Keep your hands away from your face</li>
+        <li>Speak naturally</li>
+        <li>Rephrase rather than repeat misundertood communication</li>
+        <li>Use an app that translates spoken words into written words (if needed)</li>
+        <li>Create visual signals</li>
+        </ul>
+        </div>
+
+        <div class="box">
+        <picture><img class="heart" src="${URLUtils.staticURL('/images/urgent.png')}"
+                        alt="hero banner image"></picture><h3>Do not</h3>
+        <ul>
+        <li>Tell the person to turn their hearing aids up</li>
+        <li>Say "never mind" or "I'll tell you later"</li>
+        <li>Be impatient or frustrated with the person</li>
+        <li>Assume the person knows sign language</li>
+        <li>Ask questions or start a conversation from another room</li>
+        </ul>
+        </div>
+            
+        </div>
+    </div>
+</div>
+
+FIVE
+<div class="container">
+            <h1>Why it's important to treat hearing loss early</h1>
+            <p>Treating hearing loss early can make all the difference in the world, allowing you to rediscover parts of your life that may have felt missing.</p>
+            <ul>
+                <li>
+                    <img src="${URLUtils.staticURL('/images/shoe.png')}" alt="Exercise shoe" />
+                    <h2>Enjoy your daily activities again</h2>
+                    <p>Whether it's gardening or going to the gym, better hearing can help you be more involved in your everyday activities.</p>
+                </li>
+                <li>
+                    <img src="${URLUtils.staticURL('/images/heart-hands.png')}" alt="Heart" />
+                    <h2>Stay connected to the people you love</h2>
+                    <p>Reengaging in conversations with family and friends can help you feel more connected to important relationships.</p>
+                </li>
+                <li>
+                    <img src="${URLUtils.staticURL('/images/lightbulb.png')}" alt="Light bulb" />
+                    <h2>Discover more independence</h2>
+                    <p>When you're more aware of your surroundings, you'll be able to do more without having to rely on anyone else.</p>
+                </li>
+                <li>
+                    <img src="${URLUtils.staticURL('/images/brain.png')}" alt="Brain" />
+                    <h2>Support brain health</h2>
+                    <p>Reduce the risk of cognitive decline and diseases such as Alzheimer's or dementia.</p>
+                </li>
+            </ul>
+        </div>
+
+SIX
+        <div class="container content-banner banner-1 mt-5">
+    <div class="row">
+        <div class="col-12 col-md-7">
+            <picture><img class="hidden-md-down" src="${URLUtils.staticURL('/images/ear_exam.png')}"
+                        alt="hero banner image"></picture>
+        </div>
+        <div class="col-12 col-md-5">
+            <h1>Risks of untreated hearing loss</h1>
+            <p>Living with untreated hearing loss impacts more than just hearing. That's why it's important to get your loved one help early, so it doesn't lead to negatice effects such as:</p>
+            <ul>
+                <li class="aarp-perk-desc">Depression or chronic fatigue</li>
+                <li class="aarp-perk-desc">Feelings of loneliness in social settings</li>
+                <li class="aarp-perk-desc">Problems with memory and focus</li>
+                <li class="aarp-perk-desc">Risks to safety such as falling or tripping</li>
+                <li class="aarp-perk-desc">More severe health problems </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+SEVEN
+        <div class="container content-banner banner-1 mt-5">
+    <div class="row">
+        <div class="col-12 col-md-7">
+            <h1>When your loved one won't wear a hearing aid</h1>
+            <p>To support your loved one and help them get the treatment they need without frustrating them or making them lose trust, it’s important to communicate in a way they can understand.
+            <br />
+            Consider a gentle approach. Let them know how their hearing loss is affecting friends and family members and that you are concerned for their health. A great way to communicate to them could be through a handwritten letter, which may be helpful if their hearing loss is more severe.
+            <br />
+            To further support your loved one, an online hearing test could be a simple, low-pressure solution to start the conversation or process of treatment. Another option could be scheduling an appointment with a hearing professional.</p>
+
+             <a href="${URLUtils.url('Screener-Show')}" class="custom-datalayer next btn-next btn btn-primary mt-md-2 mb-5"
+          data-name="${Resource.msg('label.adobe.questionnaire-landing-name', 'adobetracking', null)}"
+          data-location="${Resource.msg('label.adobe.questionnaire-landing-location', 'adobetracking', null)}">Online Hearing Test </a>
+
+           <a href="${URLUtils.url('Screener-Show')}" class="custom-datalayer next btn-next btn btn-primary mt-md-2 mb-5"
+          data-name="${Resource.msg('label.adobe.questionnaire-landing-name', 'adobetracking', null)}"
+          data-location="${Resource.msg('label.adobe.questionnaire-landing-location', 'adobetracking', null)}">Schedule Appointment </a>
+        </div>
+        <div class="col-12 col-md-5">
+         <picture><img class="hidden-md-down" src="${URLUtils.staticURL('/images/man-and-son.png')}"
+                        alt="hero banner image"></picture>
+        </div>
+    </div>
+</div>
+</div>
+
+EIGHT
+        <div class="container content-banner banner-1 mt-5">
+    <div class="row">
+        <div class="col-12 col-md-7">
+            <picture><img class="hidden-md-down" src="${URLUtils.staticURL('/images/audio-simulation-module.png')}"
+                        alt="hero banner image"></picture>
+        </div>
+        <div class="col-12 col-md-5">
+            <h1>How hearing aids work</h1>
+            <p>Hearing aids pick up sound from your environment, convert it to a digital signal, and amplify the sound into your ears. Try this simple audio simulation for an example of what hearing aids might sound like for you.</p>
+
+            <h2>Try this hearing simulation</h2>
+           <p>Have your loved one put on their headphones and experience dinner in a busy restaurant with and without hearing aids. Click the audio buttons below to hear the difference a pair of hearing aids can make.</p>
+            <div class="simulation-container">
+        <div class="simulation">
+         <picture><img class="logos" src="${URLUtils.staticURL('/images/play.png')}"
+                        alt="hero banner image"></picture> <a>With Hearing Aids</a>
+        </div>
+        <div class="simulation">
+         <picture><img class="logos" src="${URLUtils.staticURL('/images/play.png')}"
+                        alt="hero banner image"></picture> <a>Without Hearing Aids</a>
+        </div>
+        </div>
+        </div>
+
+    </div>
+</div>
+
+NINE (PLACEHOLDER FOR STEVE)
+<div class="container">
+            <h1>Why it's important to treat hearing loss early</h1>
+            <p>Treating hearing loss early can make all the difference in the world, allowing you to rediscover parts of your life that may have felt missing.</p>
+            <ul>
+                <li>
+                    <img src="${URLUtils.staticURL('/images/shoe.png')}" alt="Exercise shoe" />
+                    <h2>Enjoy your daily activities again</h2>
+                    <p>Whether it's gardening or going to the gym, better hearing can help you be more involved in your everyday activities.</p>
+                </li>
+                <li>
+                    <img src="${URLUtils.staticURL('/images/heart-hands.png')}" alt="Heart" />
+                    <h2>Stay connected to the people you love</h2>
+                    <p>Reengaging in conversations with family and friends can help you feel more connected to important relationships.</p>
+                </li>
+                <li>
+                    <img src="${URLUtils.staticURL('/images/lightbulb.png')}" alt="Light bulb" />
+                    <h2>Discover more independence</h2>
+                    <p>When you're more aware of your surroundings, you'll be able to do more without having to rely on anyone else.</p>
+                </li>
+                <li>
+                    <img src="${URLUtils.staticURL('/images/brain.png')}" alt="Brain" />
+                    <h2>Support brain health</h2>
+                    <p>Reduce the risk of cognitive decline and diseases such as Alzheimer's or dementia.</p>
+                </li>
+            </ul>
+        </div>
 
 
+<isinclude template="hearingScreener/results/components/banner-2" />
 
-    <isinclude template="home/registrationSuccessModal" />
-</isdecorate>
+<isinclude template="hearingScreener/results/components/banner-3" />
+
+<isinclude template="hearingScreener/results/components/banner-4" />
+
+</isdecorate> 
