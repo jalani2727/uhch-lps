@@ -11,9 +11,9 @@
         <div class="hero-container top-content">
             <div class="image-content">
                 <picture>
-                    <img class="hidden-md-down" src="${URLUtils.staticURL('/images/simulator-hero.png')}"
+                    <img class="hidden-md-down" src="${URLUtils.staticURL('/images/q-landing-4-hero-desktop.png')}"
                         alt="hero banner image">
-                    <img class="d-lg-none" src="${URLUtils.staticURL('/images/hero-mobile.png')}"
+                    <img class="d-lg-none" src="${URLUtils.staticURL('/images/q-landing-4-hero-mobile.png')}"
                         alt="hero banner image">
                 </picture>
             </div>
@@ -40,11 +40,35 @@
             </div>
         </div>
 
-        <isinclude template="hearingScreener/banner-1" />
+        <isinclude template="hearingScreener/results/components/banner-1" />
 
-        <isinclude template="hearingScreener/banner-2" />
+        <div class="light-blue-background">
 
-        <isinclude template="hearingScreener/banner-3" />
+            <div class="container center-wrapper">
+                <h1>What should I know about hearing tests?</h1>
+                <p>It’s important to take good care of your hearing, and one of the simplest ways to do that is by
+                    getting a hearing test. Here’s what to expect:</p>
+
+                <ul>
+                    <li class="aarp-perk-desc">First, you’ll take a hearing test. During this test, your ability to hear
+                        sounds at various pitches and volumes will be measured.</li>
+                    <li class="aarp-perk-desc">Once your hearing test is complete, you’ll review the results with your
+                        hearing professional.</li>
+                    <li class="aarp-perk-desc">Your hearing professional will help you develop a treatment plan, which
+                        may include a recommendation for a hearing aid or an assistive device.</li>
+                </ul>
+
+                <a class="custom-datalayer btn btn-primary hero-button custom-datalayer"
+                    href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest&cid=AARP:LandingPage:other:Aug:2023:AARP-Sim-LP-Request-Appointment-1:Request-Appointment"
+                    data-name="${Resource.msg('label.adobe.simulator-landing-name-request', 'adobetracking', null)}"
+                    data-location="${Resource.msg('label.adobe.simulator-landing-location', 'adobetracking', null)}">Schedule
+                    Appointment</a>
+            </div>
+        </div>
+
+        <isinclude template="hearingScreener/results/components/tech-choice-support" />
+
+        <iscomment> Steve / Darnycya templates </iscomment>
 
     </div>
 
