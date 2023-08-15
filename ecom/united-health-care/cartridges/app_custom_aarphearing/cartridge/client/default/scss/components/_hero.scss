@@ -43,7 +43,11 @@ h1 {
 }
 
 p {
-    @include bold-element-font;
+    font-size: 16px;
+    font-style: normal;
+    list-style: none;
+    line-height: 24px;
+    font-family: $uhc-font-sans-medium;
 }
 
 .sub-text {
