@@ -1,5 +1,6 @@
 // @import "./variables";
 @import "components/hero";
+@import "hearingScreenerResults1";
 $hero-title-font-color: $color-blue-dark;
 $hero-description-font-color: $body-text-color;
 
@@ -629,8 +630,3 @@ fieldset {
 
 
 // Results Pages
-
-#content-blue {
-    background-color: var(--bright-blue-10, #E5F8FB);
-    color: purple;
-}
