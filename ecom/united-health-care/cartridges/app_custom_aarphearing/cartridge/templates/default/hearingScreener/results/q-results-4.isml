@@ -49,7 +49,7 @@
         <isinclude template="hearingScreener/results/components/tech-choice-support" />
 
         <iscomment> Best type of care for you </iscomment>
-        <isinclude template="hearingScreener/results/components/q-results-type-of-care"/>
+        <iscomment> <isinclude template="hearingScreener/results/components/q-results-type-of-care"/> </iscomment>
 
         <isinclude template="hearingScreener/results/components/q-results-hearing-aids-cards"/>
 

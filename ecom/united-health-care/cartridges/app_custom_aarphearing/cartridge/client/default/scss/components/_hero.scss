@@ -76,12 +76,6 @@ p {
     
         .image-content {
             order: 1;   
-
-              .top-image {
-                    @include media-breakpoint-down(sm) {
-                        height: 280px;
-                    }
-                }
         }
     
         .text-content {
