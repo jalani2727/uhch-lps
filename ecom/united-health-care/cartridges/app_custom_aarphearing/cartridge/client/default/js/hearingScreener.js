@@ -128,3 +128,15 @@ $(".submit").click(function () {
     return false;
 })
 
+
+$(document).on('click', 'button.accordion-title', function() {
+    var arrow = $(this).find("img.down-arrow");
+    
+    if (arrow.hasClass('opened')){
+        arrow.removeClass('opened')
+        $(this).siblings('.list-container').removeClass("show");
+    } else {
+        arrow.addClass('opened')
+        $(this).siblings('.list-container').addClass("show");
+    }
+})

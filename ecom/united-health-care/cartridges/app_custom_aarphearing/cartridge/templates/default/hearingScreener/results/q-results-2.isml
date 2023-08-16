@@ -95,50 +95,55 @@
 
         <div class="accordions">
 
-            <button class="accordion-title">
-                <div class="title">
-                    <img src="${URLUtils.staticURL('/images/heart.png')}" alt="heart-icon" />
-                    <h3>Do</h3>
+            <div class="accordion-wrapper">
+
+                <button class="accordion-title">
+                    <div class="title">
+                        <img src="${URLUtils.staticURL('/images/heart.png')}" alt="heart-icon" />
+                        <h3>Do</h3>
+                    </div>
+
+                    <div>
+                        <img class="down-arrow" src="${URLUtils.staticURL('/images/vector.svg')}" alt="down-arrow" />
+                    </div>
+
+                </button>
+
+                <div class="list-container">
+                    <ul>
+                        <li>Get their attention before speaking</li>
+                        <li>Face the person while speaking</li>
+                        <li>Limit background noise</li>
+                        <li>Keep your hands away from your face</li>
+                        <li>Speak naturally</li>
+                        <li>Rephrase rather than repeat misundertood communication</li>
+                        <li>Use an app that translates spoken words into written words (if needed)</li>
+                        <li>Create visual signals</li>
+                    </ul>
                 </div>
-
-                <div>
-                    <img class="down-arrow" src="${URLUtils.staticURL('/images/vector.svg')}" alt="down-arrow" />
-                </div>
-
-            </button>
-
-            <div class="list-container">
-                <ul>
-                    <li>Get their attention before speaking</li>
-                    <li>Face the person while speaking</li>
-                    <li>Limit background noise</li>
-                    <li>Keep your hands away from your face</li>
-                    <li>Speak naturally</li>
-                    <li>Rephrase rather than repeat misundertood communication</li>
-                    <li>Use an app that translates spoken words into written words (if needed)</li>
-                    <li>Create visual signals</li>
-                </ul>
             </div>
 
-            <button class="accordion-title">
-                <div class="title">
-                    <img src="${URLUtils.staticURL('/images/urgent.png')}" alt="urgent-icon" />
-                    <h3>Do not</h3>
-                </div>
+            <div class="accordion-wrapper">
+                <button class="accordion-title">
+                    <div class="title">
+                        <img src="${URLUtils.staticURL('/images/urgent.png')}" alt="urgent-icon" />
+                        <h3>Do not</h3>
+                    </div>
 
-                <div>
-                    <img class="down-arrow" src="${URLUtils.staticURL('/images/vector.svg')}" alt="down-arrow" />
-                </div>
+                    <div>
+                        <img class="down-arrow" src="${URLUtils.staticURL('/images/vector.svg')}" alt="down-arrow" />
+                    </div>
 
-            </button>
-            <div class="list-container">
-                <ul>
-                    <li>Tell the person to turn their hearing aids up</li>
-                    <li>Say "never mind" or "I'll tell you later"</li>
-                    <li>Be impatient or frustrated with the person</li>
-                    <li>Assume the person knows sign language</li>
-                    <li>Ask questions or start a conversation from another room</li>
-                </ul>
+                </button>
+                <div class="list-container">
+                    <ul>
+                        <li>Tell the person to turn their hearing aids up</li>
+                        <li>Say "never mind" or "I'll tell you later"</li>
+                        <li>Be impatient or frustrated with the person</li>
+                        <li>Assume the person knows sign language</li>
+                        <li>Ask questions or start a conversation from another room</li>
+                    </ul>
+                </div>
             </div>
 
         </div>
