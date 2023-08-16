@@ -603,6 +603,174 @@ fieldset {
 
     &.banner-4 {
         background-color: #E5F8FB;
+        align-items: center;
+        padding: 30px;
+
+        h2 {
+            font-size: 24px;
+            color: #002677
+        }
+
+        p {
+            font-family: sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+        }
+
+        .subtext-top {
+            font-size: 16px;
+            margin-top: 10px;
+
+            @include media-breakpoint-down(sm) {
+                margin-top:20px;
+            }
+        }
+
+        .subtext {
+            font-size: 16px;
+        }
+
+        .title-container {
+        text-align: center;
+        width: 50%;
+        margin: auto;
+
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+        }
+        }
+
+        .box{
+            background-color: white;
+            width: 300px;
+            height: 220px;
+            border: 1px solid #B3BABC;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .box-container {
+            display: flex;
+            justify-content: space-evenly;
+
+            @include media-breakpoint-down(sm) {
+                flex-wrap: wrap;
+                width: 100%;
+            }
+
+        }
+    }
+
+    &.banner-5 {
+        width: 100%;
+        background-color: white;
+        align-items: center;
+        padding: 30px;
+
+        img {
+            width: 32px;
+            height: 32px;
+            margin-right: 20px;
+        }
+
+        h3 {
+            font-size: 24px;
+            color: #002677;
+            font-family: sans-serif;
+            font-weight: 700;
+            margin-top: 2px;
+        }
+
+        p {
+            font-family: sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+        }
+
+        .subtitle {
+            font-family: sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            font-size: 16px;
+
+            @include media-breakpoint-down(sm) {
+                width: 100%;
+            }
+        }
+
+        li {
+            font-size: 16px;
+            margin-bottom: 8px;
+            font-family: sans-serif;
+            font-weight: 500;
+            line-height: 22px;
+        }
+
+        .title-container {
+        text-align: center;
+        width: 60%;
+        margin: auto;
+
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+        }
+
+        }
+        
+        .accordion-title {
+            background-color: blue;
+            width: 100%;
+            border: 0px;
+            display: flex;
+            cursor: pointer;
+            padding: 20px ;
+            background-color: #F4F4F4;
+            justify-content: space-between;
+
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 20px;
+            }
+        }
+
+        .title {
+            display: flex;
+        }
+
+        .down-arrow {
+            width: 11px;
+            height: 6.8px;
+        }
+
+          .list-container {
+            padding: 10px 60px;
+            margin-bottom: 20px;
+            background-color: #F4F4F4;
+
+            @include media-breakpoint-down(sm) {
+                display: none; 
+            }
+          }
+
+          .accordions{
+width: 50%;
+margin: auto;
+
+@include media-breakpoint-down(sm) {
+    width: 100%;
+}
+
+          }
+
+    }
+
+    &.banner-6 {
+        width: 100%;
+        background-color: #E5F8FB;
+        align-items: center;
+        padding: 30px;
+        text-align: center;
 
         h2 {
             font-size: 24px;
@@ -611,20 +779,126 @@ fieldset {
 
         p {
             font-weight: 400;
+            font-size: 16px;
+            font-family: sans-serif;
+            font-weight: 400;
+        }
+
+        .subtext {
+            font-size: 16px;
+        }
+
+        .title-container {
+        width: 50%;
+        margin: auto;
         }
 
         .box{
-            background-color: white;
             width: 300px;
-            height: 220px;
-            border: 1 solid #B3BABC;
+            height: 230px;
+            margin: 20px;
+            padding: 20px;
         }
 
         .box-container {
             display: flex;
+            justify-content: space-evenly;
 
+            @include media-breakpoint-down(sm) {
+                flex-wrap: wrap;
+            }
         }
     }
+
+    &.banner-7 {
+        background-color: #E5F8FB;
+
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            font-family: sans-serif;
+        }
+
+        .row {
+padding: 50px;
+
+@include media-breakpoint-down(sm) {
+    padding: 10px;
+    }
+        }
+
+        .button-container {
+            margin-top: 30px;
+
+            @include media-breakpoint-down(sm) {
+                display:flex;
+                flex-direction: column;
+                }
+        }
+
+        .button {
+background-color: #00005c;
+border-radius: 30px;
+font-size: 15px;
+font-family: sans-serif;
+padding: 11px 20px;
+text-decoration: none;
+color: white !important; 
+margin-right: 20px ;
+
+@include media-breakpoint-down(sm) {
+ width: 180px;
+ }
+        }
+
+        .button-2 {
+            background-color: #E5F8FB;
+            border: 1px solid #00005c;
+            border-radius: 30px;
+            font-size: 15px;
+            font-family: sans-serif;
+            padding: 11px 20px;
+            color: #00005c !important; 
+            text-decoration: none;
+
+            @include media-breakpoint-down(sm) {
+                margin-top: 10px;
+                width: 200px;
+                }
+                    }
+
+                    .father-son-image {
+                        @include media-breakpoint-down(sm) {
+                           width: 335px;
+                           height: 235px;
+                           margin: 30px 0px;
+                        }
+    }
+
+                }
+
+
+
+
+    &.banner-8 {
+
+        .ear-image {
+
+            @include media-breakpoint-down(sm) {
+               width: 335px;
+               height: 235px;
+               margin: 30px 0px;
+            }
+        }
+    }
+
+        .subtext {
+                font-family: sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+        }
+    }
+
 
     .hero-text-wrapper {
         @include media-breakpoint-between(md, lg){
@@ -644,7 +918,6 @@ fieldset {
         }
     }
 
-}
 .aarp-perk-desc {
 
     @include bold-element-font;
