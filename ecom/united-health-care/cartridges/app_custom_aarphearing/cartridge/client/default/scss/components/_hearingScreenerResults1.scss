@@ -241,3 +241,31 @@
         margin-right: 5%;
     }
 }
+
+.content-blue.content-banner {
+
+    div.title-container {
+        width: 100%;
+    }
+
+    .box-container.reasons-to-treat-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @include media-breakpoint-up(md) {
+        div.title-container {
+            width: 50%;
+        }
+
+        .box-container.reasons-to-treat-container {
+            flex-direction: row;
+            justify-content: space-between;
+
+            div {
+                margin-right: 10px;
+                margin-left: 10px;
+            }
+        }
+    }
+}

@@ -74,43 +74,8 @@
                 </div>
         </div>
 
-        <div class="light-blue-background">
-            <div class="container content-banner banner-6">
-                <div class="title-container">
-                    <h1>Why it's important to treat hearing loss early</h1>
-                    <p>Treating hearing loss early can make all the difference in the world, allowing you to rediscover parts of your life that may have felt missing.</p>
-                </div>
+        <isinclude template="hearingScreener/results/components/important-to-treat.isml"/>
 
-                <div class="box-container mb-md-4">
-
-                    <div class="box">
-                        <img src="${URLUtils.staticURL('/images/shoe.png')}" alt="Exercise shoe" />
-                        <h2>Enjoy your daily activities again</h2>
-                        <p class="subtext">Whether it's gardening or going to the gym, better hearing can help you be more involved in your everyday activities.</p>
-                    </div>
-
-                    <div class="box">
-                        <img src="${URLUtils.staticURL('/images/heart-hands.png')}" alt="Heart" />
-                        <h2>Stay connected to the people you love</h2>
-                        <p class="subtext">Reengaging in conversations with family and friends can help you feel more connected to important relationships.</p>
-                    </div>
-
-
-                    <div class="box">
-                        <img src="${URLUtils.staticURL('/images/lightbulb.png')}" alt="Light bulb" />
-                        <h2>Discover their independence</h2>
-                        <p class="subtext">When you're more aware of your surroundings, you'll be able to do more without having to rely on anyone else.</p>
-                    </div>
-
-
-                    <div class="box">
-                        <img src="${URLUtils.staticURL('/images/brain.png')}" alt="Brain" />
-                        <h2>Support brain health</h2>
-                        <p class="subtext">Reduce the risk of cognitive decline and diseases such as Alzheimer's or dementia.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <div class="container flex-stack">
                 <img class="img-container" src="${URLUtils.staticURL('/images/doctor-computer.jpeg')}" alt="Doctor at computer"/>
