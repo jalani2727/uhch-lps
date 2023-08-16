@@ -55,28 +55,20 @@
             </div>
         </div>
 
-         <div class="container content-banner banner-8">
-            <div class="row">
-                <div class="col-12 col-md-5">
-                    <div class="risk-content">
-                        <h1>Risks of untreated hearing <br /> loss</h1>
-                        <p class="subtext">Living with untreated hearing loss impacts more than just hearing. That's why it's important to get your loved one help early, so it doesn't lead to negatice effects such as:</p>
-                        <ul>
-                            <li class="aarp-perk-desc">Depression or chronic fatigue</li>
-                            <li class="aarp-perk-desc">Feelings of loneliness in social settings</li>
-                            <li class="aarp-perk-desc">Problems with memory and focus</li>
-                            <li class="aarp-perk-desc">Risks to safety such as falling or tripping</li>
-                            <li class="aarp-perk-desc">More severe health problems (For example: Alzheimer's or dementia) </li>
-                        </ul>
-                    </div>
+         <div class="container content-banner banner-8 risk-row flex-stack">
+                <img class="img-container" src="${URLUtils.staticURL('/images/ear_exam.png')}"
+                    alt="ear exam image" />
+                <div class="risk-content">
+                    <h1>Risks of untreated hearing loss</h1>
+                    <p class="subtext">Living with untreated hearing loss impacts more than just hearing. That's why it's important to get your loved one help early, so it doesn't lead to negatice effects such as:</p>
+                    <ul>
+                        <li class="aarp-perk-desc">Depression or chronic fatigue</li>
+                        <li class="aarp-perk-desc">Feelings of loneliness in social settings</li>
+                        <li class="aarp-perk-desc">Problems with memory and focus</li>
+                        <li class="aarp-perk-desc">Risks to safety such as falling or tripping</li>
+                        <li class="aarp-perk-desc">More severe health problems (For example: Alzheimer's or dementia) </li>
+                    </ul>
                 </div>
-                <div class="col-12 col-md-7">
-                    <div class="image-container">
-                        <img class="ear-image" src="${URLUtils.staticURL('/images/ear_exam.png')}"
-                                    alt="ear exam image" />
-                    </div>
-                </div> 
-            </div>
         </div>
 
         <div class="light-blue-background">
@@ -138,10 +130,8 @@
         <isinclude template="hearingScreener/results/components/exploring-all-products.isml"/>
 
         <isinclude template="hearingScreener/results/components/discounts-perks.isml"/>
-
-        <div>placeholder for disclaimer</div>
-
-
+        
+        <isinclude template="hearingScreener/results/components/disclaimer.isml" />
 
     </div>
 

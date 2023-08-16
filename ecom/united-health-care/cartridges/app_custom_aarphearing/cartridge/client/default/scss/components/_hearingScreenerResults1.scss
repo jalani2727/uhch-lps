@@ -79,6 +79,11 @@
         border-color: #002677;
         font-size: 15px;
     }
+
+        .btn.btn-primary:hover {
+        background-color: #fff;
+        color: #002677;
+    }
 }
 
 .flex-stack {
@@ -96,6 +101,7 @@
         border-color: #002677;
         font-size: 15px;
     }
+
 
     .sch-btn-container {
         justify-content: start;
@@ -194,3 +200,22 @@
     }
 }
 
+.risk-row {
+
+    @include media-breakpoint-up(md) {
+        &.flex-stack {
+            .img-container{
+                margin-right: 0px;
+                margin-left: 3%;
+            }
+    
+            .img-container {
+                order: 2
+            }
+    
+            .risk-content {
+                order: 1
+            }
+        }
+    }
+}
