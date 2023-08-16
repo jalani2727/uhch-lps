@@ -1,0 +1,34 @@
+<div class="container content-banner banner-4 content-blue flex-stack content-cards">
+    <div class="cards-header">
+        <h1>How to discuss hearing loss with a family member or friend</h1>
+        <p class="subtext-top">Hearing loss can be a senstive subject. Open communication is key to making
+            sure everyone feels respected, understood and cared for. When you have a conversation, here are
+            a few things to remember.</p>
+    </div>
+
+
+        <div class="results-flex-card-2">
+            <h2>Explanation is important</h2>
+            <p class="results-text subtext">Hearing loss is difficult to understood for people who haven't experienced
+                it, so it can be helpful for symptoms to be explained.</p>
+        </div>
+
+        <div class="results-flex-card-2">
+            <h2>Emotions should be shared</h2>
+            <p class="results-text subtext">Being open about feelings surrounding hearing loss can help bring family
+                relationships closer.</p>
+        </div>
+
+        <div class="results-flex-card-2">
+            <h2>Stigma needs to be broken</h2>
+            <p class="results-text subtext">When hearing loss is treated as a regular part of the family dynamic, people
+                will become more comfortable talking about it.</p>
+        </div>
+
+        <div class="results-flex-card-2">
+            <h2>A sense of humor doesn't hurt</h2>
+            <p class="results-text subtext">Miscommunication happens, but sometimes using humor can lighten the subject.
+            </p>
+        </div>
+
+</div>

@@ -1,21 +1,21 @@
-<div class="container content-banner banner-1 mt-5">
+<div class="container content-banner banner-1 mt-5 explore-products">
     <div class="row">
         <div class="col-12 col-md-7">
             <h1>Explore all hearing products</h1>
             <p class="results-text subtext"> Through AARP® Hearing Solutions™ provided by UnitedHealthcare Hearing, you have access to top-quality hearing aids from some of the most popular manufacturers. An array of options to match your lifestyle, hearing needs and budget is available. Connect with a hearing-care professional to learn more about these brands and what device may be best for you.</p>
         </div>
         <div class="col-12 col-md-5 logo-container">
-            <picture><img class="logos" src="${URLUtils.staticURL('/images/starkey.png')}"
+            <picture><img class="logos" src="${URLUtils.staticURL('/images/starkey.svg')}"
                             alt="hero banner image"></picture>
-            <picture><img class="logos" src="${URLUtils.staticURL('/images/oticon.png')}"
+            <picture><img class="logos" src="${URLUtils.staticURL('/images/oticon.svg')}"
                             alt="hero banner image"></picture>
-            <picture><img class="logos" src="${URLUtils.staticURL('/images/phonak.png')}"
+            <picture><img class="logos" src="${URLUtils.staticURL('/images/phonak.svg')}"
                             alt="hero banner image"></picture>
-            <picture><img class="logos" src="${URLUtils.staticURL('/images/beltone.png')}"
+            <picture><img class="logos" src="${URLUtils.staticURL('/images/beltone.svg')}"
                             alt="hero banner image"></picture>
-            <picture><img class="logos" src="${URLUtils.staticURL('/images/reSoundGN.png')}"
+            <picture><img class="logos" src="${URLUtils.staticURL('/images/reSoundGN.svg')}"
                             alt="hero banner image"></picture>
-            <picture><img class="logos" src="${URLUtils.staticURL('/images/signia.png')}"
+            <picture><img class="logos" src="${URLUtils.staticURL('/images/signia.svg')}"
                             alt="hero banner image"></picture>
         </div>
     </div>
