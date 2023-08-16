@@ -1,9 +1,8 @@
-<div class="container content-banner banner-1 mt-5 aids-section">
+<div class="container flex-stack">
     <div class="aids-container aids-work">
-        <picture class="hidden-md-up"><img src="${URLUtils.staticURL('/images/audio-simulation-module.png')}"
-                alt="hero banner image">
-        </picture>
-        <div class="aids-work-left">
+        <img class="img-container" src="${URLUtils.staticURL('/images/audio-simulation-module.png')}"
+                alt="hero banner image" />
+        <div class="text-container">
             <h1>How hearing aids work</h1>
             <p>Hearing aids pick up sound from your environment, convert it to a digital signal, and amplify the sound into your ears. Try this simple audio simulation for an example of what hearing aids might sound like for you.</p>
 
@@ -21,7 +20,5 @@
                 <p class="disclaimer">This simulation is recorded with Phonak hearing aids, powered by Sonova technology.</p>
             </div>
         </div>
-        <img class="hidden-md-pic hidden-md" src="${URLUtils.staticURL('/images/audio-simulation-module.png')}"
-                    alt="hero banner image" />
     </div>
 </div>

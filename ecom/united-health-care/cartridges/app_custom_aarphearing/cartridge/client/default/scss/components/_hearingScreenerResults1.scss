@@ -142,7 +142,7 @@
             width: 100%;
         }
 
-        .results-flex-card {
+        .results-flex-card, .results-flex-card-2 {
             width: 100%;
             text-align: left;
             background-color: white;
@@ -166,6 +166,11 @@
             .results-flex-card {
                 width: 32%;
                 height: 180px;
+            }
+
+            .results-flex-card-2 {
+                width: 23%;
+                height: 240px;
             }
         }
     }
@@ -266,6 +271,25 @@
                 margin-right: 10px;
                 margin-left: 10px;
             }
+        }
+    }
+}
+
+.flex-stack {
+
+    @include media-breakpoint-down(sm) {
+        .ord-2 {
+            order: 2;
+        }
+        .ord-1 {
+            order: 1;
+        }
+
+        .father-son-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 0% 50%;
         }
     }
 }
