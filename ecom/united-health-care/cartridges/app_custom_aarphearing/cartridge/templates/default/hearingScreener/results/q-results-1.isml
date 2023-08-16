@@ -137,7 +137,7 @@
 
         <isinclude template="hearingScreener/results/components/exploring-all-products.isml"/>
 
-        <div>placeholder for discounts and perks</div>
+        <isinclude template="hearingScreener/results/components/discounts-perks.isml"/>
 
         <div>placeholder for disclaimer</div>
 
