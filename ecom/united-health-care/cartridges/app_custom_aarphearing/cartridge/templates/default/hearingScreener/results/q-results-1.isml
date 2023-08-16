@@ -55,10 +55,67 @@
             </div>
         </div>
 
-        <iscomment> placeholder for risks template </iscomment>
-        <div>placeholder for risks of untreated hearing loss</div>
+         <div class="container content-banner banner-8">
+            <div class="row">
+                <div class="col-12 col-md-5">
+                    <div class="risk-content">
+                        <h1>Risks of untreated hearing <br /> loss</h1>
+                        <p class="subtext">Living with untreated hearing loss impacts more than just hearing. That's why it's important to get your loved one help early, so it doesn't lead to negatice effects such as:</p>
+                        <ul>
+                            <li class="aarp-perk-desc">Depression or chronic fatigue</li>
+                            <li class="aarp-perk-desc">Feelings of loneliness in social settings</li>
+                            <li class="aarp-perk-desc">Problems with memory and focus</li>
+                            <li class="aarp-perk-desc">Risks to safety such as falling or tripping</li>
+                            <li class="aarp-perk-desc">More severe health problems (For example: Alzheimer's or dementia) </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12 col-md-7">
+                    <div class="image-container">
+                        <img class="ear-image" src="${URLUtils.staticURL('/images/ear_exam.png')}"
+                                    alt="ear exam image" />
+                    </div>
+                </div> 
+            </div>
+        </div>
 
-        <div>placeholder for why it's important to treat hearing loss early</div>
+        <div class="light-blue-background">
+            <div class="container content-banner banner-6">
+                <div class="title-container">
+                    <h1>Why it's important to treat hearing loss early</h1>
+                    <p>Treating hearing loss early can make all the difference in the world, allowing you to rediscover parts of your life that may have felt missing.</p>
+                </div>
+
+                <div class="box-container">
+
+                    <div class="box">
+                        <img src="${URLUtils.staticURL('/images/shoe.png')}" alt="Exercise shoe" />
+                        <h2>Enjoy your daily activities again</h2>
+                        <p class="subtext">Whether it's gardening or going to the gym, better hearing can help you be more involved in your everyday activities.</p>
+                    </div>
+
+                    <div class="box">
+                        <img src="${URLUtils.staticURL('/images/heart-hands.png')}" alt="Heart" />
+                        <h2>Stay connected to the people you love</h2>
+                        <p class="subtext">Reengaging in conversations with family and friends can help you feel more connected to important relationships.</p>
+                    </div>
+
+
+                    <div class="box">
+                        <img src="${URLUtils.staticURL('/images/lightbulb.png')}" alt="Light bulb" />
+                        <h2>Discover their independence</h2>
+                        <p class="subtext">When you're more aware of your surroundings, you'll be able to do more without having to rely on anyone else.</p>
+                    </div>
+
+
+                    <div class="box">
+                        <img src="${URLUtils.staticURL('/images/brain.png')}" alt="Brain" />
+                        <h2>Support brain health</h2>
+                        <p class="subtext">Reduce the risk of cognitive decline and diseases such as Alzheimer's or dementia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="container flex-stack">
                 <img class="img-container" src="${URLUtils.staticURL('/images/doctor-computer.jpeg')}" alt="Doctor at computer"/>
@@ -78,7 +135,7 @@
 
         <isinclude template="hearingScreener/results/components/tech-choice-support" />
 
-        <div>placeholder for explore all hearing products</div>
+        <isinclude template="hearingScreener/results/components/exploring-all-products.isml"/>
 
         <div>placeholder for discounts and perks</div>
 
