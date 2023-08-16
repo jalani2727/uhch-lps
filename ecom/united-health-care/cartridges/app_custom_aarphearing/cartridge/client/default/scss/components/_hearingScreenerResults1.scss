@@ -193,6 +193,8 @@
             }
         }
         .text-content {
+            padding-left: 15px;
+            padding-right: 15px;
             @include media-breakpoint-down(md) {
                 border-bottom: none;
             }
@@ -217,5 +219,25 @@
                 order: 1
             }
         }
+    }
+}
+
+.text-content.ear {
+    margin-bottom: 30px;
+}
+
+
+@include media-breakpoint-up(md) {
+    .ear-image-wrapper.image-container-wrapper {
+        order: 2;
+    }
+    
+    .ear-text-wrapper.text-content-wrapper {
+        order: 1;
+    }
+
+    .ear-row.row {
+        margin-left: 5%;
+        margin-right: 5%;
     }
 }

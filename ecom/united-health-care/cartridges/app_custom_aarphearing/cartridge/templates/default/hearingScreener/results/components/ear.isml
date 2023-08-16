@@ -5,9 +5,9 @@
             <iscomment> TODO: Dynamically render controller output here instead of hardcoded text. </iscomment>
             <iscomment> Update this to show controller output - set resource.msg values in the controller and assign
                 them to the viewData to be displayed here </iscomment>
-            <div class="text-content mt-3">
+            <div class="text-content mt-3 ear">
                 <h1>Stay connected to the people you love</h1>
-                <p>Did you know 48 million Americans have some degree of hearing loss? It's very common - and your loved
+                <p class="results-text subtext">Did you know 48 million Americans have some degree of hearing loss? It's very common - and your loved
                     one
                     is not alone. Preventative care and treating hearing loss easly can help them hear the sounds
                     they've
