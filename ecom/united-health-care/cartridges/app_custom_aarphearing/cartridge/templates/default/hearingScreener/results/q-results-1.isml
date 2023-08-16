@@ -22,9 +22,27 @@
             </div>
         </div>
 
-        <iscomment> ear section placeholder </iscomment>
+        <div class="container content-banner banner-1 my-md-5">
+            <div class="row ear-row">
+                <div class="col-12 col-md-7 ear-content-wrapper text-content-wrapper">
+                    <div class="text-content mt-3 ear">
+                        <h1>Hear better, live better</h1>
+                        <p class="results-text subtext">Hearing loss is more common than you think — in fact, 48 million Americans have some degree of hearing loss. The best news is: You’re not alone — there is help. If you are an AARP member, you can save on prescription hearing aids and accessories through AARP® Hearing Solutions™ provided by UnitedHealthcare Hearing.</p>
 
-        <isinclude template="hearingScreener/results/components/ear" />
+                        <a>Discounts and perks for AARP members <img class="pl-2" src="${URLUtils.staticURL('/images/CTA-arrow-down.svg')}" alt="arrow" /></a>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 ear-image-wrapper image-container-wrapper">
+                <div class="image-container">
+                    <picture>
+                        <img class="img-fluid" src="${URLUtils.staticURL('/images/ear.png')}" alt="ear image">
+                    </picture>
+                    
+                </div>
+                </div>
+            </div>
+        </div>
 
         <div class="container content-banner content-blue">
             <h1 class="subheader">Early signs of hearing loss</h1>
@@ -40,27 +58,20 @@
             </div>
         </div>
 
-         <div class="container content-banner banner-8 my-4">
-            <div class="row">
-                <div class="col-12 col-md-5 risk-content-wrapper">
-                    <div class="risk-content">
-                        <h1>Risks of untreated hearing <br /> loss</h1>
-                        <p class="subtext">Living with untreated hearing loss impacts more than just hearing. That's why it's important to get your loved one help early, so it doesn't lead to negatice effects such as:</p>
-                        <ul>
-                            <li class="aarp-perk-desc">Depression or chronic fatigue</li>
-                            <li class="aarp-perk-desc">Feelings of loneliness in social settings</li>
-                            <li class="aarp-perk-desc">Problems with memory and focus</li>
-                            <li class="aarp-perk-desc">Risks to safety such as falling or tripping</li>
-                            <li class="aarp-perk-desc">More severe health problems (For example: Alzheimer's or dementia) </li>
-                        </ul>
-                    </div>
+         <div class="container content-banner banner-8 risk-row flex-stack">
+                <img class="img-container" src="${URLUtils.staticURL('/images/ear_exam.png')}"
+                    alt="ear exam image" />
+                <div class="risk-content">
+                    <h1>Risks of untreated hearing loss</h1>
+                    <p class="subtext">Living with untreated hearing loss impacts more than just hearing. That's why it's important to get your loved one help early, so it doesn't lead to negatice effects such as:</p>
+                    <ul>
+                        <li class="aarp-perk-desc">Depression or chronic fatigue</li>
+                        <li class="aarp-perk-desc">Feelings of loneliness in social settings</li>
+                        <li class="aarp-perk-desc">Problems with memory and focus</li>
+                        <li class="aarp-perk-desc">Risks to safety such as falling or tripping</li>
+                        <li class="aarp-perk-desc">More severe health problems (For example: Alzheimer's or dementia) </li>
+                    </ul>
                 </div>
-                <div class="col-12 col-md-7 image-container-wrapper">
-                    <div class="image-container">
-                        <img class="ear-image" src="${URLUtils.staticURL('/images/ear_exam.png')}" alt="ear exam image" />
-                    </div>
-                </div> 
-            </div>
         </div>
 
         <div class="light-blue-background">
@@ -122,10 +133,8 @@
         <isinclude template="hearingScreener/results/components/exploring-all-products.isml"/>
 
         <isinclude template="hearingScreener/results/components/discounts-perks.isml"/>
-
-        <div>placeholder for disclaimer</div>
-
-
+        
+        <isinclude template="hearingScreener/results/components/disclaimer.isml" />
 
     </div>
 

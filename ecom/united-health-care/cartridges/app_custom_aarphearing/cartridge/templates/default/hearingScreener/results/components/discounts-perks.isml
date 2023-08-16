@@ -8,23 +8,23 @@
             <h1>What discounts and perks do I have as an AARP member?</h1>
             <p class="results-text subtext">As an AARP member, you can save on hearing aids, care and accessories:</p>
             <ul>
-                <li class="aarp-perk-desc">No-cost hearing exam and consultation</li>
-                <li class="aarp-perk-desc">Prescription hearing aids as low as $699 per ear</li>
-                <li class="aarp-perk-desc">20% off prescription hearing aids and 15% off accessories</li>
-                <li class="aarp-perk-desc">Four-year warranty* on hearing aids</li>
-                <li class="aarp-perk-desc">More severe health problems </li>
+                <li class="aarp-perk-desc perk-bold">No-cost hearing exam and consultation</li>
+                <li class="aarp-perk-desc perk-bold">Prescription hearing aids as low as $699 per ear</li>
+                <li class="aarp-perk-desc perk-bold">20% off prescription hearing aids and 15% off accessories</li>
+                <li class="aarp-perk-desc perk-bold">Four-year warranty* on hearing aids</li>
+                <li class="aarp-perk-desc perk-bold">More severe health problems </li>
             </ul>
             <p class="disclaimer">*Four-year warranty applies to hearing aids in the Classic & Premier technology levels.</p>
-            <div>
-            <a href="${URLUtils.url('Screener-Show')}" class="custom-datalayer next btn-next btn btn-primary mt-md-2 mb-5"
+            <div class="learn-btns-container">
+            <a href="${URLUtils.url('Screener-Show')}" class="custom-datalayer blue-btn next btn-next btn btn-primary mt-md-2 mb-5"
           data-name="${Resource.msg('label.adobe.questionnaire-landing-name', 'adobetracking', null)}"
           data-location="${Resource.msg('label.adobe.questionnaire-landing-location', 'adobetracking', null)}">Learn More</a>
 
-          <a href="${URLUtils.url('Screener-Show')}" class="custom-datalayer next btn-next btn btn-primary mt-md-2 mb-5"
+          <a href="${URLUtils.url('Screener-Show')}" class="custom-datalayer white-btn next btn-next btn btn-primary mt-md-2 mb-5"
           data-name="${Resource.msg('label.adobe.questionnaire-landing-name', 'adobetracking', null)}"
           data-location="${Resource.msg('label.adobe.questionnaire-landing-location', 'adobetracking', null)}">Join AARP</a>
 
-          <a href="${URLUtils.url('Screener-Show')}" class="custom-datalayer next btn-next btn btn-primary mt-md-2 mb-5"
+          <a href="${URLUtils.url('Screener-Show')}" class="custom-datalayer white-btn next btn-next btn btn-primary mt-md-2 mb-5"
           data-name="${Resource.msg('label.adobe.questionnaire-landing-name', 'adobetracking', null)}"
           data-location="${Resource.msg('label.adobe.questionnaire-landing-location', 'adobetracking', null)}">Renew AARP </a>
           </div>
