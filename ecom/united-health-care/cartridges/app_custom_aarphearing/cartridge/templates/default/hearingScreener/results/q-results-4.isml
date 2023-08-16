@@ -6,45 +6,58 @@
 
     </isscript>
     <div class="home-main homepage" data-is-pricebook-updated="${true}">
-        Results Page 4
-
         <div class="hero-container top-content">
             <div class="image-content">
                 <picture>
-                    <img class="hidden-md-down" src="${URLUtils.staticURL('/images/simulator-hero.png')}"
+                    <img class="hidden-md-down" src="${URLUtils.staticURL('/images/q-landing-4-hero-desktop.png')}"
                         alt="hero banner image">
-                    <img class="d-lg-none" src="${URLUtils.staticURL('/images/hero-mobile.png')}"
+                    <img class="d-lg-none" src="${URLUtils.staticURL('/images/q-landing-4-hero-mobile.png')}"
                         alt="hero banner image">
                 </picture>
             </div>
             <div class="text-content">
-                <a class="logo-home custom-datalayer" href="${URLUtils.url('Home-Show')}"
-                    data-name="${Resource.msg('label.adobe.simulator-landing-name-logo', 'adobetracking', null)}"
-                    data-location="${Resource.msg('label.adobe.simulator-landing-location', 'adobetracking', null)}">
-                    <img class="mb-4 p-3" src="${URLUtils.staticURL('/images/logo-small.svg')}"
-                        alt="${Resource.msg('global.storename', 'common', null)}" />
-                </a>
-
-                <h1 class="hero-title">Hear the difference</h1>
-                <p class="hero-description">Been missing parts of your conversations? Experience what hearing aids could
-                    do
-                    for you with this simulator below, or schedule a no-cost hearing test with hearing care
-                    professionals
-                    near you.
+                <h1 class="hero-title">Based on your responses, a hearing device could be a good option for you.</h1>
+                <p class="hero-description">Schedule an appointment with a hearing professional to learn more about
+                    different treatment options and products.
                 </p>
-                <a class="custom-datalayer btn btn-primary hero-button custom-datalayer"
-                    href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest&amp;cid=AARP:LandingPage:other:Aug:2023:AARP-Sim-LP-Request-Appointment-1:Request-Appointment"
-                    data-name="${Resource.msg('label.adobe.simulator-landing-name-request', 'adobetracking', null)}"
-                    data-location="${Resource.msg('label.adobe.simulator-landing-location', 'adobetracking', null)}">
-                    Request an appointment</a>
             </div>
         </div>
 
-        <isinclude template="hearingScreener/banner-1" />
+        <isinclude template="hearingScreener/results/components/ear" />
 
-        <isinclude template="hearingScreener/banner-2" />
+        <div class="light-blue-background">
 
-        <isinclude template="hearingScreener/banner-3" />
+            <div class="container center-wrapper">
+                <h1>Your best next step</h1>
+                <p>Ready to discover the right hearing device for you? We recommend a comprehensive in-person hearing test if you’re experiencing any of the symptoms below:</p>
+
+                <ul>
+                    <li class="aarp-perk-desc">High-pitched sounds are hard to hear (For example: doorbells or birds)</li>
+                    <li class="aarp-perk-desc">You often turn up the volume of the TV or radio</li>
+                    <li class="aarp-perk-desc">It’s difficult to understand conversations, especially in crowded places</li>
+                    <li class="aarp-perk-desc">You frequently ask people to speak louder, slow down or repeat themselves</li>
+                </ul>
+
+                <a class="custom-datalayer btn btn-primary hero-button custom-datalayer"
+                    href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest&cid=AARP:LandingPage:other:Aug:2023:AARP-Sim-LP-Request-Appointment-1:Request-Appointment"
+                    data-name="${Resource.msg('label.adobe.simulator-landing-name-request', 'adobetracking', null)}"
+                    data-location="${Resource.msg('label.adobe.simulator-landing-location', 'adobetracking', null)}">Schedule
+                    Appointment</a>
+            </div>
+        </div>
+
+        <isinclude template="hearingScreener/results/components/tech-choice-support" />
+
+        <iscomment> Best type of care for you </iscomment>
+        <iscomment> <isinclude template="hearingScreener/results/components/q-results-type-of-care"/> </iscomment>
+
+        <isinclude template="hearingScreener/results/components/q-results-hearing-aids-cards"/>
+
+        <isinclude template="hearingScreener/results/components/exploring-all-products"/>
+
+        <isinclude template="hearingScreener/results/components/discounts-perks"/>
+
+        <isinclude template="hearingScreener/results/components/disclaimer"/>
 
     </div>
 

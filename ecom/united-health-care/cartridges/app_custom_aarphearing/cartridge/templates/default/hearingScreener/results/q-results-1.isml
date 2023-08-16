@@ -24,22 +24,7 @@
 
         <iscomment> ear section placeholder </iscomment>
 
-        <div class="container content-banner banner-1 mt-5">
-            <div class="row">
-                <div class="col-12 col-md-7">
-                    <h1>Hear better, live better</h1>
-                    <p>Hearing loss is more common than you think — in fact, 48 million Americans have some degree of hearing loss. The best news is: You’re not alone — there is help. If you are an AARP member, you can save on prescription hearing aids and accessories through AARP® Hearing Solutions™ provided by UnitedHealthcare Hearing.</p>
-
-                    <a>Discounts and perks for AARP members<img src="${URLUtils.staticURL('/images/CTA-arrow-down.svg')}" alt="arrow"/></a>
-                </div>
-                <div class="col-12 col-md-5">
-                    <picture>
-                    <img class="hidden-md-down" src="${URLUtils.staticURL('/images/ear.png')}"
-                                alt="ear image"> 
-                    </picture>
-                </div>
-            </div>
-        </div>
+        <isinclude template="hearingScreener/results/components/ear" />
 
         <div class="container content-banner content-blue">
             <h1 class="subheader">Early signs of hearing loss</h1>
@@ -78,7 +63,7 @@
                     <p>Treating hearing loss early can make all the difference in the world, allowing you to rediscover parts of your life that may have felt missing.</p>
                 </div>
 
-                <div class="box-container">
+                <div class="box-container mb-md-4">
 
                     <div class="box">
                         <img src="${URLUtils.staticURL('/images/shoe.png')}" alt="Exercise shoe" />
