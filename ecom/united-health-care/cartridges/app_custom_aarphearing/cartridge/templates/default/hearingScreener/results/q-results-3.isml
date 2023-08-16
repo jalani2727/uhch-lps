@@ -23,7 +23,27 @@
             </div>
         </div>
 
-        <isinclude template="hearingScreener/results/components/ear" />
+          <div class="container content-banner banner-1 my-md-4">
+            <div class="row ear-row">
+                <div class="col-12 col-md-7 ear-content-wrapper text-content-wrapper">
+                    <div class="text-content mt-3 ear">
+                        <h1>Start your path to better hearing</h1>
+                        <p class="results-text subtext">Your hearing health is UnitedHealthcare Hearing's priority. From hearing tests to finding the right hearing device for you, we’re here each step of the way. If you are an AARP member, you can save on prescription hearing aids and accessories through AARP® Hearing Solutions™ provided by UnitedHealthcare Hearing.</p>
+
+                        <a>Discounts and perks for AARP members <img class="pl-2" src="${URLUtils.staticURL('/images/CTA-arrow-down.svg')}" alt="arrow" /></a>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 ear-image-wrapper image-container-wrapper">
+                <div class="image-container">
+                    <picture>
+                        <img class="img-fluid" src="${URLUtils.staticURL('/images/ear.png')}" alt="ear image">
+                    </picture>
+                    
+                </div>
+                </div>
+            </div>
+        </div>
 
         <div class="light-blue-background">
 
@@ -50,6 +70,86 @@
         </div>
 
         <iscomment> Dropdowns Section </iscomment>
+            <div class="container content-banner banner-5">
+
+        <div class="title-container">
+            <h1>Tips for a better conversation about hearing loss</h1>
+            <p class="subtitle">Talking to someone with hearing loss may feel overwhelming or frustrating. To have a
+                clearer, more approachable conversation, here are a few tips on what to do - and not to do.</p>
+        </div>
+
+        <div class="accordions">
+
+            <button class="accordion-title">
+                <div class="title">
+                    <img src="${URLUtils.staticURL('/images/heart.png')}" alt="heart-icon" />
+                    <h3>Do</h3>
+                </div>
+
+                <div>
+                    <img class="down-arrow" src="${URLUtils.staticURL('/images/vector.svg')}" alt="down-arrow" />
+                </div>
+
+            </button>
+
+            <div class="list-container">
+                <ul>
+                    <li>Get their attention before speaking</li>
+                    <li>Face the person while speaking</li>
+                    <li>Limit background noise</li>
+                    <li>Keep your hands away from your face</li>
+                    <li>Speak naturally</li>
+                    <li>Rephrase rather than repeat misundertood communication</li>
+                    <li>Use an app that translates spoken words into written words (if needed)</li>
+                    <li>Create visual signals</li>
+                </ul>
+            </div>
+
+            <button class="accordion-title">
+                <div class="title">
+                    <img src="${URLUtils.staticURL('/images/urgent.png')}" alt="urgent-icon" />
+                    <h3>Do not</h3>
+                </div>
+
+                <div>
+                    <img class="down-arrow" src="${URLUtils.staticURL('/images/vector.svg')}" alt="down-arrow" />
+                </div>
+
+            </button>
+            <div class="list-container">
+                <ul>
+                    <li>Tell the person to turn their hearing aids up</li>
+                    <li>Say "never mind" or "I'll tell you later"</li>
+                    <li>Be impatient or frustrated with the person</li>
+                    <li>Assume the person knows sign language</li>
+                    <li>Ask questions or start a conversation from another room</li>
+                </ul>
+            </div>
+            
+            <button class="accordion-title">
+                <div class="title">
+                    <img src="${URLUtils.staticURL('/images/urgent.png')}" alt="urgent-icon" />
+                    <h3>Do not</h3>
+                </div>
+
+                <div>
+                    <img class="down-arrow" src="${URLUtils.staticURL('/images/vector.svg')}" alt="down-arrow" />
+                </div>
+
+            </button>
+            <div class="list-container">
+                <ul>
+                    <li>Tell the person to turn their hearing aids up</li>
+                    <li>Say "never mind" or "I'll tell you later"</li>
+                    <li>Be impatient or frustrated with the person</li>
+                    <li>Assume the person knows sign language</li>
+                    <li>Ask questions or start a conversation from another room</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
 
         <isinclude template="hearingScreener/results/components/q-results-cards-section.isml"/>
 

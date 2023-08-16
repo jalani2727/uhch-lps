@@ -1,3 +1,15 @@
+@mixin hearing-screener-title-font-2 {
+    font-family: $uhc-heading-font-1;
+    font-size: 22px;
+    line-height: 30px;
+    color: $color-blue-dark;
+
+    @include media-breakpoint-up(lg) {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
 .results4 {
     
     &.content-cards {
@@ -10,5 +22,19 @@
                 min-height: 230px;
             }
         }
+    }
+}
+
+
+.type-of-care {
+    text-align: center;
+    
+    p {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    h2 {
+        @include hearing-screener-title-font-2();
     }
 }

@@ -23,7 +23,27 @@
         </div>
 
 
-       <isinclude template="hearingScreener/results/components/ear" />
+         <div class="container content-banner banner-1 my-md-5">
+            <div class="row ear-row">
+                <div class="col-12 col-md-7 ear-content-wrapper text-content-wrapper">
+                    <div class="text-content mt-3 ear">
+                        <h1>Stay connected to the people you love</h1>
+                        <p class="results-text subtext">Did you know 48 million Americans have some degree of hearing loss? It’s very common — and your loved one is not alone. Preventative care and treating hearing loss early can help them hear the sounds they’ve been missing. If your loved one is an AARP member, they can save on prescription hearing aids and accessories through AARP® Hearing Solutions™ provided by UnitedHealthcare Hearing.</p>
+
+                        <a>Discounts and perks for AARP members <img class="pl-2" src="${URLUtils.staticURL('/images/CTA-arrow-down.svg')}" alt="arrow" /></a>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 ear-image-wrapper image-container-wrapper">
+                <div class="image-container">
+                    <picture>
+                        <img class="img-fluid" src="${URLUtils.staticURL('/images/ear.png')}" alt="ear image">
+                    </picture>
+                    
+                </div>
+                </div>
+            </div>
+        </div>
 
         <div class="light-blue-background">
             <div class="container content-banner banner-4">
@@ -169,7 +189,7 @@
         </div>
     </div>
 
-    <div class="container content-banner banner-8 my-4">
+    <div class="container content-banner banner-8 py-4">
         <div class="row">
             <div class="col-12 col-md-7 image-container-wrapper">
                 <div class="image-container">

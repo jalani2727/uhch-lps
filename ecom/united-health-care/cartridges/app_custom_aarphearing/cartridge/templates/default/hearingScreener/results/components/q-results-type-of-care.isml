@@ -1,0 +1,29 @@
+<div class="container type-of-care py-4">
+
+    <div class="text-content">
+        <h1>Find the best type of care for you</h1>
+        <p>Whatever your care preferences, lifestyle and comfort level with technology, UnitedHealthcare hearing is here to help you along your journey.</p>
+    </div>
+
+    <div class="row my-4">
+
+        <div class="col-12 col-md-4">
+            <img src="${URLUtils.staticURL('/images/heart.png')}" alt="Heart" />
+            <h2>For more support</h2>
+            <p>If you don’t feel comfortable with technology or are looking for more hands-on support, prescription hearing aids and in-person care may be the right fit for you.</p>
+        </div>
+        <div class="col-12 col-md-4">
+            <img src="${URLUtils.staticURL('/images/toc-computer.png')}" alt="Heart" />
+            <h2>For more independence</h2>
+            <p>If you feel somewhat comfortable with technology and enjoy more flexibility, over-the-counter options and virtual care may be what you’re looking for.</p>
+        </div>
+        <div class="col-12 col-md-4">
+            <img src="${URLUtils.staticURL('/images/toc-calendar.png')}" alt="Heart" />
+            <h2>Your next steps</h2>
+            <p>UnitedHealthcare Hearing will help you navigate your hearing journey. We recommend meeting with a hearing professional to define the best path forward for treatment.</p>
+        </div>
+
+    </div>
+
+    <a href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest&cid=AARP:LandingPage:other:Aug:2023:AARP-Sim-LP-Request-Appointment-1:Request-Appointment" class="custom-datalayer next btn-next btn btn-primary">Schedule Appointment</a>
+</div>
