@@ -264,6 +264,10 @@ server.replace('OAuthReentry', server.middleware.https, consentTracking.consent,
             var sessionStorageHelper = require('*/cartridge/scripts/helpers/sessionStorageHelper');
             sessionStorageHelper.setCustomerdetailInSessionLogin(responseObj);
             sessionStorageHelper.setCustomerType(req);
+            if (!empty(session.privacy.pricebook)) {
+                // updating the pricebook if it is avaiable in the session
+                eligibilityHelper.updatePriceBook();
+            }
         }
         if (authenticatedCustomerProfile && !authenticatedCustomerProfile.custom.sfdcContactID) {
             var logout = URLUtils.url('Login-Logout').toString() + '/';

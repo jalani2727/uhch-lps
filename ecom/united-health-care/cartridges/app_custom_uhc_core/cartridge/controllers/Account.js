@@ -122,17 +122,6 @@ server.get('EditDetails',
             phone = req.currentCustomer.profile.phone;
             zipCode = customer.getProfile().custom.zipCode;
         }
-        var eligibilityHelper = require('*/cartridge/scripts/helpers/eligibilityHelper');
-        var memberDetails = {};
-        memberDetails.email = email;
-        memberDetails.zipCode = customer.getProfile().custom.zipCode;
-        memberDetails.subscriberId = session.privacy.subscriberId || '';
-        memberDetails.phoneNumber = req.currentCustomer.profile.phone;
-        memberDetails.healthPlanName = session.privacy.healthPlanName || '';
-        memberDetails.AARP_Subscriber_ID = session.privacy.AARPSubscriberId || '';
-        memberDetails.communicationPreference = session.privacy.communicationInstruction || '';
-        memberDetails.requestSource = 'editProfile';
-        eligibilityHelper.getCustomerDetails(memberDetails);
         var communicationPreference = session.privacy.communicationInstruction || 'mail';
         memberId = session.privacy.subscriberId || '';
         var aarpSubscriberID = session.privacy.AARPSubscriberId || '';

@@ -66,7 +66,9 @@ function getEligibility(externalProfile) {
             requestSource: externalProfile.requestSource,
             aarpSubscriberId: externalProfile.AARP_Subscriber_ID
         };
-        session.privacy.healthPlanName = externalProfile.healthPlanName || '';
+        session.privacy.healthPlanName = externalProfile.healthPlanName;
+        session.privacy.subscriberId = externalProfile.subscriberId;
+        session.privacy.AARPSubscriberId = externalProfile.AARP_Subscriber_ID;
     } else if (externalProfile.requestSource === 'editProfile') {
         eligibilityRequest = {
             zipCode: externalProfile.zipCode,
@@ -80,7 +82,9 @@ function getEligibility(externalProfile) {
             requestSource: 'EditProfile',
             aarpSubscriberId: externalProfile.AARP_Subscriber_ID
         };
-        session.privacy.healthPlanName = externalProfile.healthPlanName || '';
+        session.privacy.healthPlanName = externalProfile.healthPlanName;
+        session.privacy.subscriberId = externalProfile.subscriberId;
+        session.privacy.AARPSubscriberId = externalProfile.AARP_Subscriber_ID;
     } else if (externalProfile.requestSource === 'preRegistration') {
         eligibilityRequest = {
             email: externalProfile.email,
@@ -133,7 +137,7 @@ function getCustomerDetails(externalProfile) {
         } else {
             session.privacy.memberExists = true;
         }
-        if (eligibilityServiceCallObj.Opportunity_Id !== null) {
+        if (!empty(eligibilityServiceCallObj.Opportunity_Id)) {
             session.privacy.customerType = 'UHCVerified';
         } else {
             session.privacy.customerType = 'UHCNotVerified';
@@ -170,7 +174,7 @@ function displayRegistrationModel() {
  * helper for the updating the PriceBook
  */
 function updatePriceBook() {
-    if (session.privacy.customerType === 'UHCVerified' && session.privacy.pricebook && session.privacy.pricebook !== null) {
+    if (session.privacy.customerType === 'UHCVerified' && !empty(session.privacy.pricebook)) {
         var priceBookMgr = require('dw/catalog/PriceBookMgr');
         var userPriceBook = priceBookMgr.getPriceBook(session.privacy.pricebook);
         if (userPriceBook) {

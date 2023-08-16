@@ -460,7 +460,7 @@ base.checkPrescriptionId = function checkPrescriptionId(prescriptionProducts, pr
 base.applyPriceAdjustment = function applyPriceAdjustment(productLineItem) {
     // check if benefits api needs to be called, we are going to check ease API attributes and customer order history to call benefits api or not
     if (session.privacy.OTCBenefitApplicable) {
-        base.isBenefitApplicable()
+        base.isBenefitApplicable();
         if (!session.privacy.benefitAlreadyUsedInPast) {
             base.benefitsCalculationsAPI();
         }
@@ -470,27 +470,34 @@ base.applyPriceAdjustment = function applyPriceAdjustment(productLineItem) {
 base.isBenefitApplicable = function isBenefitApplicable() {
     // check the past orders of customer based on the site pref value
     var numberOfPastHoursForOrderLookup = preferences.numberOfPastHoursForOrderLookup || 2;
-    var ordertime = new Date();
-    ordertime.setHours(ordertime.getHours() - numberOfPastHoursForOrderLookup); 
+    var timeZoneFactor = dw.system.Site.current.timezoneOffset;
+    var orderLapseTime = new Date(new Date().getTime() + timeZoneFactor);
+    orderLapseTime.setHours(orderLapseTime.getHours() - numberOfPastHoursForOrderLookup); 
+    var Calendar = require('dw/util/Calendar');
+    var ordertime = require('dw/util/StringUtils').formatCalendar(new Calendar(orderLapseTime), "yyyy-MM-dd'T'HH:mm:ss");
     var benefitApplicable = true;
     var orderHistory = customer.getOrderHistory();
     var Order = require('dw/order/Order');
-    var customerOrders = orderHistory.getOrders(
-        'creationDate > {0}',
-        'status = {1}',
-        'creationDate desc',
-        ordertime,
-        Order.ORDER_STATUS_NEW
-    );
-    if (customerOrders.count > 0) {
-        while (customerOrders.hasNext()) {
-            var customerOrder = customerOrders.next();
-            if ('isBenefitApplied' in customerOrder.custom && customerOrder.custom.isBenefitApplied) {
-                benefitApplicable = false;
-                session.privacy.benefitAlreadyUsedInPast = true;
-                return benefitApplicable;
+    try {
+        var customerOrders = orderHistory.getOrders('creationDate > {0} AND status = {1}',
+            'creationDate desc',
+            ordertime,
+            Order.ORDER_STATUS_NEW
+        );
+        if (customerOrders.count > 0) {
+            while (customerOrders.hasNext()) {
+                var customerOrder = customerOrders.next();
+                if ('isBenefitApplied' in customerOrder.custom && customerOrder.custom.isBenefitApplied) {
+                    benefitApplicable = false;
+                    session.privacy.benefitAlreadyUsedInPast = true;
+                    return benefitApplicable;
+                }
             }
         }
+    } catch (er) {
+        benefitApplicable = false;
+        session.privacy.benefitAlreadyUsedInPast = true;
+        return benefitApplicable;
     }
     session.privacy.benefitAlreadyUsedInPast = false;
     return benefitApplicable;
@@ -499,6 +506,7 @@ base.isBenefitApplicable = function isBenefitApplicable() {
 base.recalculatePriceAdjustments = function recalculatePriceAdjustments(currentBasket) {
     base.removeLinePriceAdjustments(currentBasket);
     session.privacy.OTCStatus = null;
+    session.privacy.benefitAppliedToCart = null;
     if (session.customer.authenticated) {
         if (empty(session.privacy.subscriberId)) {
             session.privacy.OTCStatus = 'eligibilityNotAvailable';
@@ -507,7 +515,7 @@ base.recalculatePriceAdjustments = function recalculatePriceAdjustments(currentB
         } else if (session.privacy.OTCDevicesCoverage && session.privacy.NewPurchasePossible) {
             // if benefits are not used in recent past then call the benefits api
             if (!session.privacy.benefitAlreadyUsedInPast) {
-                session.privacy.benefitAppliedToCart  = true;
+                session.privacy.benefitAppliedToCart = true;
                 var benefitsCalculationsAPIResp = base.benefitsCalculationsAPI();
                 if (benefitsCalculationsAPIResp && ( benefitsCalculationsAPIResp.ok || 'deductibleMet' in benefitsCalculationsAPIResp) &&  !empty(benefitsCalculationsAPIResp.deductibleMet)) {
                     if (benefitsCalculationsAPIResp.deductibleMet.equalsIgnoreCase('yes')) {
