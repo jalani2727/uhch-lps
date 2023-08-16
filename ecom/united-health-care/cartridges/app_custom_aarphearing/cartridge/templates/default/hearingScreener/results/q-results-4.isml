@@ -23,7 +23,27 @@
             </div>
         </div>
 
-        <isinclude template="hearingScreener/results/components/ear" />
+          <div class="container content-banner banner-1 my-md-5">
+            <div class="row ear-row">
+                <div class="col-12 col-md-7 ear-content-wrapper text-content-wrapper">
+                    <div class="text-content mt-3 ear">
+                        <h1>Your hearing health, your way</h1>
+                        <p class="results-text subtext">There’s a hearing device option for your lifestyle. Get the hearing aids, care, and convenience to help make it easier to hear the sounds you’ve been missing. If you are an AARP member, you can save on prescription hearing aids and accessories through AARP® Hearing Solutions™ provided by UnitedHealthcare Hearing.</p>
+
+                        <a>Discounts and perks for AARP members <img class="pl-2" src="${URLUtils.staticURL('/images/CTA-arrow-down.svg')}" alt="arrow" /></a>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 ear-image-wrapper image-container-wrapper">
+                <div class="image-container">
+                    <picture>
+                        <img class="img-fluid" src="${URLUtils.staticURL('/images/ear.png')}" alt="ear image">
+                    </picture>
+                    
+                </div>
+                </div>
+            </div>
+        </div>
 
         <div class="light-blue-background">
 

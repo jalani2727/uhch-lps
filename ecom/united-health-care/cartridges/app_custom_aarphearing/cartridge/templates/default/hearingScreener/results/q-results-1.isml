@@ -112,7 +112,7 @@
             </div>
         </div>
 
-        <div class="container flex-stack my-5">
+        <div class="container flex-stack py-4">
                 <img class="img-container" src="${URLUtils.staticURL('/images/doctor-computer.jpeg')}" alt="Doctor at computer"/>
             <div class="text-container">
                 <h1>When should I get my hearing checked?</h1>
