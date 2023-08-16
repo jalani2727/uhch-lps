@@ -52,11 +52,11 @@
 
         <isinclude template="hearingScreener/results/components/tech-choice-support" />
 
-        <isinclude template="hearingScreener/banner-1" />
+        <isinclude template="hearingScreener/results/components/banner-2" />
 
-        <isinclude template="hearingScreener/banner-2" />
+        <isinclude template="hearingScreener/results/components/banner-3" />
 
-        <isinclude template="hearingScreener/banner-3" />
+        <isinclude template="hearingScreener/results/components/banner-4" />
 
     </div>
 
