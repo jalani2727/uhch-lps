@@ -23,7 +23,31 @@
             </div>
         </div>
 
-        <isinclude template="hearingScreener/results/components/ear" />
+        <div class="container content-banner banner-1 my-md-4">
+            <div class="row ear-row">
+                <div class="col-12 col-md-7 ear-content-wrapper text-content-wrapper">
+                    <div class="text-content mt-3 ear">
+                        <h1>Start your path to better hearing</h1>
+                        <p class="results-text subtext">Your hearing health is UnitedHealthcare Hearing's priority. From
+                            hearing tests to finding the right hearing device for you, we’re here each step of the way.
+                            If you are an AARP member, you can save on prescription hearing aids and accessories through
+                            AARP® Hearing Solutions™ provided by UnitedHealthcare Hearing.</p>
+
+                        <a>Discounts and perks for AARP members <img class="pl-2"
+                                src="${URLUtils.staticURL('/images/CTA-arrow-down.svg')}" alt="arrow" /></a>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 ear-image-wrapper image-container-wrapper">
+                    <div class="image-container">
+                        <picture>
+                            <img class="img-fluid" src="${URLUtils.staticURL('/images/ear.png')}" alt="ear image">
+                        </picture>
+
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="light-blue-background">
 
@@ -50,18 +74,107 @@
         </div>
 
         <iscomment> Dropdowns Section </iscomment>
+        <div class="container content-banner banner-5">
 
-        <isinclude template="hearingScreener/results/components/q-results-cards-section.isml"/>
+            <div class="title-container">
+                <h1>Tips for a better conversation about hearing loss</h1>
+                <p class="subtitle">Talking to someone with hearing loss may feel overwhelming or frustrating. To have a
+                    clearer, more approachable conversation, here are a few tips on what to do - and not to do.</p>
+            </div>
 
-        <isinclude template="hearingScreener/results/components/q-results-hearing-aids-work.isml"/>
+            <div class="accordions">
+                <div class="accordion-wrapper">
+                    <button class="accordion-title">
+                        <div class="title">
+                            <img class="hidden-md-down" src="${URLUtils.staticURL('/images/heart.png')}" alt="heart-icon" />
+                            <h3>Questions to ask your doctor</h3>
+                        </div>
+
+                        <div>
+                            <img class="down-arrow" src="${URLUtils.staticURL('/images/vector.svg')}"
+                                alt="down-arrow" />
+                        </div>
+
+                    </button>
+
+                    <div class="list-container">
+                        <ul>
+                            <li>What’s the most likely cause of my symptoms?</li>
+                            <li>What else might be causing my symptoms?</li>
+                            <li>What tests do you recommend?</li>
+                            <li>Should I stop taking any of my current medications?</li>
+                            <li>Should I see a specialist?</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion-wrapper">
+                    <button class="accordion-title">
+                        <div class="title">
+                            <img class="hidden-md-down" src="${URLUtils.staticURL('/images/urgent.png')}" alt="urgent-icon" />
+                            <h3>Questions your doctor may ask you</h3>
+                        </div>
+
+                        <div>
+                            <img class="down-arrow" src="${URLUtils.staticURL('/images/vector.svg')}"
+                                alt="down-arrow" />
+                        </div>
+                    </button>
+
+                    <div class="list-container">
+                        <ul>
+                            <li>How would you describe your symptoms?</li>
+                            <li>Do you have pain or drainage in the affected ear or ears?</li>
+                            <li>Did your symptoms come on suddenly?</li>
+                            <li>Do you have ringing, roaring or hissing in your ears?</li>
+                            <li>Do your symptoms include dizziness or balance problems?</li>
+                            <li>Do you have a history of ear infections, ear trauma or ear surgery?</li>
+                            <li>Have you ever worked in a job that exposed you to loud noise?</li>
+                            <li>Does your family complain that you turn up the TV volume too high?</li>
+                            <li>Do you have trouble understanding someone talking in a low voice?</li>
+                            <li>Do you have trouble understanding someone on the phone?</li>
+                            <li>Do you often need to ask others to speak up or repeat themselves? Does this happen more often in a noisy setting, such as a crowded restaurant?</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion-wrapper">
+                    <button class="accordion-title">
+                        <div class="title">
+                            <img class="hidden-md-down" src="${URLUtils.staticURL('/images/urgent.png')}" alt="urgent-icon" />
+                            <h3>What to prepare for your appointment</h3>
+                        </div>
+
+                        <div>
+                            <img class="down-arrow" src="${URLUtils.staticURL('/images/vector.svg')}"
+                                alt="down-arrow" />
+                        </div>
+
+                    </button>
+                    <div class="list-container">
+                        <ul>
+                            <li>A key list of your symptoms and how long you’ve had them</li>
+                            <li>Medical information, especially related to any ear problems</li>
+                            <li>Exposure you’ve had to loud environments</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <isinclude template="hearingScreener/results/components/q-results-cards-section.isml" />
+
+        <isinclude template="hearingScreener/results/components/q-results-hearing-aids-work.isml" />
 
         <isinclude template="hearingScreener/results/components/tech-choice-support" />
 
-        <isinclude template="hearingScreener/results/components/exploring-all-products"/>
+        <isinclude template="hearingScreener/results/components/exploring-all-products" />
 
-        <isinclude template="hearingScreener/results/components/discounts-perks"/>
+        <isinclude template="hearingScreener/results/components/discounts-perks" />
 
-        <isinclude template="hearingScreener/results/components/disclaimer"/>
+        <isinclude template="hearingScreener/results/components/disclaimer" />
 
     </div>
 

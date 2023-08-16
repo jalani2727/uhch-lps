@@ -739,8 +739,8 @@ fieldset {
             background-color: #F4F4F4;
             justify-content: space-between;
 
-            @include media-breakpoint-down(sm) {
-                margin-bottom: 20px;
+            @include media-breakpoint-down(md) {
+                text-align: left;
             }
         }
 
@@ -1095,5 +1095,34 @@ fieldset {
 .text-content-wrapper {
     @include media-breakpoint-down(md) {
         order: 2;
+    }
+}
+
+// Accordion Styles
+.accordion-wrapper {
+    margin-bottom: 20px;
+
+    .accordion-title {
+        @include media-breakpoint-down(md) {
+            text-align: left;
+        }
+    }
+
+    .list-container {
+        display: none;
+
+        &.show {
+            display: block;
+        }
+    }
+}
+
+
+.down-arrow {
+    transform: rotate(0);
+    transition: transform 0.15s ease;
+
+    &.opened {
+        transform: rotate(180deg);
     }
 }
