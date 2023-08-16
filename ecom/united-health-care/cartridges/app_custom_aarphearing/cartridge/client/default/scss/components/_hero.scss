@@ -75,11 +75,17 @@ p {
         display: flex;
     
         .image-content {
-            order: 2;
+            order: 1;   
+
+              .top-image {
+                    @include media-breakpoint-down(sm) {
+                        height: 280px;
+                    }
+                }
         }
     
         .text-content {
-            order: 1;
+            order: 2;
         }
     }
 
