@@ -1,0 +1,14 @@
+.results4 {
+    
+    &.content-cards {
+        
+        @include media-breakpoint-up(lg) { 
+        
+
+            .results-flex-card {
+                width: 32%;
+                min-height: 230px;
+            }
+        }
+    }
+}

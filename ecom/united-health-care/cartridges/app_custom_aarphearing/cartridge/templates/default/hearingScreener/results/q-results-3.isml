@@ -16,7 +16,6 @@
                 </picture>
             </div>
             <div class="text-content">
-
                 <h1 class="hero-title">Based on your responses, a hearing device could be a good option for you.</h1>
                 <p class="hero-description">Schedule an appointment with a hearing professional to learn more about
                     different treatment options and products.
@@ -24,7 +23,7 @@
             </div>
         </div>
 
-        <isinclude template="hearingScreener/results/components/banner-1" />
+        <isinclude template="hearingScreener/results/components/ear" />
 
         <div class="light-blue-background">
 
@@ -50,13 +49,19 @@
             </div>
         </div>
 
+        <iscomment> Dropdowns Section </iscomment>
+
+        <isinclude template="hearingScreener/results/components/q-results-cards-section.isml"/>
+
+        <isinclude template="hearingScreener/results/components/q-results-hearing-aids-work.isml"/>
+
         <isinclude template="hearingScreener/results/components/tech-choice-support" />
 
-        <isinclude template="hearingScreener/banner-1" />
+        <isinclude template="hearingScreener/results/components/exploring-all-products"/>
 
-        <isinclude template="hearingScreener/banner-2" />
+        <isinclude template="hearingScreener/results/components/discounts-perks"/>
 
-        <isinclude template="hearingScreener/banner-3" />
+        <isinclude template="hearingScreener/results/components/disclaimer"/>
 
     </div>
 
