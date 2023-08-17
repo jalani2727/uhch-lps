@@ -58,7 +58,7 @@
             </div>
         </div>
 
-         <div class="container content-banner banner-8 risk-row flex-stack">
+         <div class="container content-banner banner-8 risk-row flex-stack py-4">
                 <img class="img-container" src="${URLUtils.staticURL('/images/ear_exam.png')}"
                     alt="ear exam image" />
                 <div class="risk-content">
