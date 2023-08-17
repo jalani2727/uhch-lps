@@ -14,7 +14,10 @@
 </head>
 
     <body>
-        <isinclude template="/components/header/logoOnlyPageHeader" />
+        <iscomment> <isif
+            condition="${true}">
+            <isinclude template="/components/header/logoOnlyPageHeader" />
+        </isif> </iscomment>
         <div role="main" id="maincontent">
             <isreplace/>
         </div>
