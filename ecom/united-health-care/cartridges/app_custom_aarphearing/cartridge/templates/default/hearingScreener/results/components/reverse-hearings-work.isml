@@ -1,4 +1,4 @@
-<div class="container flex-stack">
+<div class="container flex-stack my-4">
     <div class="aids-container aids-work">
         <img class="img-container" src="${URLUtils.staticURL('/images/audio-simulation-module.png')}"
                 alt="hero banner image" />
