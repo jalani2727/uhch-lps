@@ -25,6 +25,7 @@
 }
 
 .explore-products.container {
+    max-width: none;
 
     @include media-breakpoint-up(md) {
         padding-right: 10%;
