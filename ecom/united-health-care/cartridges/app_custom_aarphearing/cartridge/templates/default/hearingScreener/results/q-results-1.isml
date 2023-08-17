@@ -7,7 +7,7 @@
     </isscript>
 
         <div class="home-main homepage" data-is-pricebook-updated="${true}">
-            <div class="hero-container top-content">
+            <div class="hero-container top-content p1-results-hero">
                 <div class="image-content">
                     <picture>
                         <img class="d-lg-none results-hero" src="${URLUtils.staticURL('/images/hearing-loss-hero.png')}"
@@ -63,7 +63,7 @@
                     alt="ear exam image" />
                 <div class="risk-content">
                     <h1>Risks of untreated hearing loss</h1>
-                    <p class="subtext">Living with untreated hearing loss impacts more than just hearing. That's why it's important to get your loved one help early, so it doesn't lead to negatice effects such as:</p>
+                    <p class="subtext">Living with untreated hearing loss impacts more than just your hearing. That's why it's important to get help early, so it doesn't lead to negative effects such as:</p>
                     <ul>
                         <li class="aarp-perk-desc">Depression or chronic fatigue</li>
                         <li class="aarp-perk-desc">Feelings of loneliness in social settings</li>
@@ -78,7 +78,7 @@
 
 
         <div class="container flex-stack py-4">
-                <img class="img-container" src="${URLUtils.staticURL('/images/doctor-computer.jpeg')}" alt="Doctor at computer"/>
+                <img class="img-container doc-comp" src="${URLUtils.staticURL('/images/doctor-computer.png')}" alt="Doctor at computer"/>
             <div class="text-container">
                 <h1>When should I get my hearing checked?</h1>
                 <p class="results-text subtext">It's a good idea to get your hearing checked at least once every 10 years until the age of 50. After 50, you should get your hearing tested every 3 years.* Even if you don't have symptoms, regular tests are helpful for prevention and to catch hearing loss early. If you have hearing loss or have been exposed to loud noise, more frequent tests are recommended.</p>
@@ -91,7 +91,33 @@
 
         <isinclude template="hearingScreener/results/components/q-results-cards-section.isml"/>
 
-        <isinclude template="hearingScreener/results/components/q-results-hearing-aids-work.isml"/>
+        <div class="container content-banner banner-1 mt-5 aids-section">
+            <div class="aids-container aids-work">
+                <picture class="hidden-md-up"><img src="${URLUtils.staticURL('/images/audio-simulation-module-mobile.png')}"
+                        alt="hero banner image">
+                </picture>
+                <div class="aids-work-left">
+                    <h1>How hearing aids work</h1>
+                    <p>Hearing aids pick up sound from your environment, convert it to a digital signal, and amplify the sound into your ears. Try this simple audio simulation for an example of what hearing aids might sound like for you.</p>
+
+                    <h2>Hear for yourself</h2>
+                    <p>Put on your headphones and experience dinner in a busy restaurant with and without hearing aids. Click the audio buttons below to hear the difference a pair of hearing aids can make.</p>
+                    <div class="simulation-container">
+                        <div class="simulation">
+                            <picture><img class="logos" src="${URLUtils.staticURL('/images/r1-vector.png')}"
+                                alt="Play with hearing aids"></picture> <a id="with-aids" class="simulation-text st">With Hearing Aids</a>
+                        </div>
+                        <div class="simulation">
+                            <picture><img class="logos" src="${URLUtils.staticURL('/images/r1-vector.png')}"
+                                        alt="Play without hearing aids"></picture> <a id="without-aids" class="simulation-text st">Without Hearing Aids</a>
+                        </div>
+                        <p class="disclaimer">This simulation is recorded with Phonak hearing aids, powered by Sonova technology.</p>
+                    </div>
+                </div>
+                <img class="hidden-md-pic hidden-lg" src="${URLUtils.staticURL('/images/audio-simulation-module.png')}"
+                            alt="hero banner image" />
+            </div>
+        </div>
 
         <isinclude template="hearingScreener/results/components/tech-choice-support" />
 
