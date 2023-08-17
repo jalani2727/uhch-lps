@@ -10,10 +10,6 @@
     //     margin-right: 0px;
     // }
 
-    @include media-breakpoint-up(lg) {
-        max-width: 100%;
-    }
-
     h1, p {
         text-align: center;
     }
@@ -165,6 +161,9 @@
             }
         }
 
+        .four-cards {
+
+
         @include media-breakpoint-up(lg) { 
             .cards-header {
                 width: 100%;
@@ -178,6 +177,14 @@
 
             .results-flex-card-2 {
                 height: 240px;
+                max-width: 20%;
+                margin-left: 12px;
+                margin-right: 12px;
+            }
+
+            .four-cards {
+                display: flex;
+                justify-content: space-around;
             }
         }
     }
