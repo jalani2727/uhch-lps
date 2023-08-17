@@ -1,4 +1,6 @@
 @import '~uhchearing/global';
+@import '~uhchearing/common/gettingStarted';
 @import './components/header';
 @import './components/footer';
-@import './components/hearingScreener';
+@import './variables';
+@import './hearingScreener';
