@@ -185,7 +185,7 @@
 
     <isinclude template="hearingScreener/results/components/reverse-hearings-work" />
 
-    <isinclude template="hearingScreener/results/components/tech-choice-support" />
+    <isinclude template="hearingScreener/results/components/tech-choice-support-2" />
 
     <isinclude template="hearingScreener/results/components/exploring-all-products.isml"/>
 
