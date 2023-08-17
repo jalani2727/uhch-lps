@@ -1,11 +1,10 @@
 <div class="container content-banner banner-4 content-blue flex-stack content-cards">
     <div class="cards-header">
         <h1>How to discuss hearing loss with a family member or friend</h1>
-        <p class="subtext-top">Hearing loss can be a sensitive subject. Open communication is key to making
-            sure everyone feels respected, understood and cared for. When you have a conversation, here are
-            a few things to remember.</p>
+        <p class="subtext-top">Hearing loss can be a sensitive subject. Open communication is key to making sure everyone feels respected, understood and cared for. When you have a conversation, here are a few things to remember.</p>
     </div>
 
+    <div class="row col-12 col-md-3 4-cards">
 
         <div class="results-flex-card-2">
             <h2>Explanation is important</h2>
@@ -30,5 +29,5 @@
             <p class="results-text subtext">Miscommunication happens, but sometimes using humor can lighten the subject.
             </p>
         </div>
-
+    </div>
 </div>
