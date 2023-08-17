@@ -1,11 +1,7 @@
     <div class="container content-banner banner-6 content-blue reasons-to-treat">
         <div class="title-container">
             <h1>Why it's important to treat hearing loss early</h1>
-<<<<<<< HEAD
             <p>Treating hearing loss early can make all the difference in the world, <span>allowing you to rediscover parts of your life that may have felt missing.</span></p>
-=======
-            <p>Treating hearing loss early can make all the difference in the world, allowing your loved one to rediscover parts of your life that may have felt missing.</p>
->>>>>>> develop
         </div>
 
         <div class="box-container mb-md-4 reasons-to-treat-container">
@@ -13,11 +9,7 @@
             <div>
                 <img src="${URLUtils.staticURL('/images/shoe.png')}" alt="Exercise shoe" />
                 <h2>Enjoy daily activities again</h2>
-<<<<<<< HEAD
                 <p class="subtext">Whether it's gardening or going to the gym, better hearing can help you be more involved in your everyday activities.</p>
-=======
-                <p class="subtext">Whether it’s gardening or going to the gym, better hearing can help you be more involved in your everyday activities.</p>
->>>>>>> develop
             </div>
 
             <div>
