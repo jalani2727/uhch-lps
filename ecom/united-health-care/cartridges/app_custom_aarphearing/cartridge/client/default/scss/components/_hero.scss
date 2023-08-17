@@ -43,7 +43,11 @@ h1 {
 }
 
 p {
-    @include bold-element-font;
+    font-size: 16px;
+    font-style: normal;
+    list-style: none;
+    line-height: 24px;
+    font-family: $uhc-font-sans-medium;
 }
 
 .sub-text {
@@ -71,11 +75,11 @@ p {
         display: flex;
     
         .image-content {
-            order: 2;
+            order: 1;   
         }
     
         .text-content {
-            order: 1;
+            order: 2;
         }
     }
 
@@ -115,11 +119,11 @@ p {
         overflow: hidden;
 
         .text-content {
-            padding: 55px 30px;
+            // padding: 55px 30px;
             position: absolute;
             width: 420px;
             top: 50%;
-            left: calc((100% - 1242px) / 2);
+            left: 10%;
             transform: translateY(-50%);
             border-bottom: none;
 
