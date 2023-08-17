@@ -128,7 +128,7 @@ $(".submit").click(function () {
     return false;
 })
 
-
+// Accordion Functionality
 $(document).on('click', 'button.accordion-title', function() {
     var arrow = $(this).find("img.down-arrow");
     
@@ -140,3 +140,21 @@ $(document).on('click', 'button.accordion-title', function() {
         $(this).siblings('.list-container').addClass("show");
     }
 })
+
+// Tech, Choice, Support Mobile 
+$(document).on('click', '.white-card-mobile .white-card', function(e) {
+    var cardID = $(this).data('tab');
+    var card = $("#"+ cardID);
+
+    if ($(this).hasClass('show')){
+        e.preventDefault();
+    };
+
+    if ($(this).siblings()) {
+        $(this).siblings().removeClass('show');
+        card.siblings().removeClass('show');
+    }
+
+    $(this).addClass('show');
+    card.addClass('show');
+} )
