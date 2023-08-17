@@ -77,16 +77,15 @@
         <div class="container content-banner banner-5">
 
             <div class="title-container">
-                <h1>Tips for a better conversation about hearing loss</h1>
-                <p class="subtitle">Talking to someone with hearing loss may feel overwhelming or frustrating. To have a
-                    clearer, more approachable conversation, here are a few tips on what to do - and not to do.</p>
+                <h1>Talking to a hearing care professional about your hearing health</h1>
+                <p class="subtitle">If you suspect you have hearing loss, meeting with a hearing care professional can
+                    help you learn more about the degree of hearing loss and best next steps.</p>
             </div>
 
             <div class="accordions">
                 <div class="accordion-wrapper">
                     <button class="accordion-title">
                         <div class="title">
-                            <img class="hidden-md-down" src="${URLUtils.staticURL('/images/heart.png')}" alt="heart-icon" />
                             <h3>Questions to ask your doctor</h3>
                         </div>
 
@@ -111,7 +110,6 @@
                 <div class="accordion-wrapper">
                     <button class="accordion-title">
                         <div class="title">
-                            <img class="hidden-md-down" src="${URLUtils.staticURL('/images/urgent.png')}" alt="urgent-icon" />
                             <h3>Questions your doctor may ask you</h3>
                         </div>
 
@@ -133,7 +131,8 @@
                             <li>Does your family complain that you turn up the TV volume too high?</li>
                             <li>Do you have trouble understanding someone talking in a low voice?</li>
                             <li>Do you have trouble understanding someone on the phone?</li>
-                            <li>Do you often need to ask others to speak up or repeat themselves? Does this happen more often in a noisy setting, such as a crowded restaurant?</li>
+                            <li>Do you often need to ask others to speak up or repeat themselves? Does this happen more
+                                often in a noisy setting, such as a crowded restaurant?</li>
                         </ul>
                     </div>
                 </div>
@@ -141,7 +140,6 @@
                 <div class="accordion-wrapper">
                     <button class="accordion-title">
                         <div class="title">
-                            <img class="hidden-md-down" src="${URLUtils.staticURL('/images/urgent.png')}" alt="urgent-icon" />
                             <h3>What to prepare for your appointment</h3>
                         </div>
 
@@ -164,9 +162,61 @@
         </div>
 
 
-        <isinclude template="hearingScreener/results/components/q-results-cards-section.isml" />
+        <div class="container results1-section6 content-blue flex-stack content-cards py-4">
+            <div class="cards-header">
+                <h1>Hearing aids are more advanced than ever</h1>
+                <p class="results-text subtext">It’s normal to feel worried about wearing hearing aids. But the truth
+                    is: With today’s technology, hearing aids can become a natural part of your daily life. Meeting with
+                    a hearing care professional can help you discover the right fit for you.</p>
+            </div>
+            <div class="results-flex-card">
+                <h2>Fit for your lifestyle</h2>
+                <p class="results-text subtext">With options that have powerful sound enhancement, smartphone apps,
+                    wireless connectivity and more, there's a hearing aid for your everyday life.</p>
+            </div>
+            <div class="results-flex-card">
+                <h2>A variety of styles</h2>
+                <p class="results-text subtext">Hearing aids come in a variety of styles, so you can wear them with
+                    comfort and confidence.</p>
+            </div>
+            <div class="results-flex-card">
+                <h2>More discreet than ever</h2>
+                <p class="results-text subtext">Devices are also much smaller than they used to be, making them less
+                    noticeable and intimidating.</p>
+            </div>
 
-        <isinclude template="hearingScreener/results/components/q-results-hearing-aids-work.isml" />
+        </div>
+
+        <div class="container content-banner banner-1 mt-5 aids-section">
+            <div class="aids-container aids-work">
+                <picture class="hidden-md-up"><img src="${URLUtils.staticURL('/images/audio-simulation-module.png')}"
+                        alt="hero banner image">
+                </picture>
+                <div class="aids-work-left">
+                    <h1>How hearing aids work</h1>
+                    <p>Hearing aids pick up sound from your environment, convert it to a digital signal, and amplify the sound into your ears. Try this simple audio simulation for an example of what hearing aids might sound like for you.</p>
+
+                    <h2>Hear for yourself</h2>
+                    <p>Put on your headphones and experience dinner in a busy restaurant with and without hearing aids. Click the audio buttons below to hear the difference a pair of hearing aids can make.</p>
+                    <div class="simulation-container">
+                        <div class="simulation">
+                            <picture><img class="logos" src="${URLUtils.staticURL('/images/r1-vector.png')}"
+                                    alt="Play with hearing aids"></picture> <a id="with-aids"
+                                class="simulation-text st">With Hearing Aids</a>
+                        </div>
+                        <div class="simulation">
+                            <picture><img class="logos" src="${URLUtils.staticURL('/images/r1-vector.png')}"
+                                    alt="Play without hearing aids"></picture> <a id="without-aids"
+                                class="simulation-text st">Without Hearing Aids</a>
+                        </div>
+                        <p class="disclaimer">This simulation is recorded with Phonak hearing aids, powered by Sonova
+                            technology.</p>
+                    </div>
+                </div>
+                <img class="hidden-md-pic hidden-md" src="${URLUtils.staticURL('/images/audio-simulation-module.png')}"
+                    alt="hero banner image" />
+            </div>
+        </div>
 
         <isinclude template="hearingScreener/results/components/tech-choice-support" />
 

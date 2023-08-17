@@ -77,7 +77,7 @@
             </div>
         </div>
     </div>
-    <div class="white-card-section white-card-mobile row mt-md-5 d-md-none">
+    <div class="white-card-section white-card-mobile row mt-md-5 d-lg-none">
         <div class="col-12">
 
             <div class="row change-card-header">

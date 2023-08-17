@@ -18,7 +18,7 @@ $content-background-color-light-blue: #e7f7fa;
     color: $hero-title-font-color;
 
     @include media-breakpoint-up(lg) {
-        font-size: 32px;
+        font-size: 36px;
         line-height: 44px;
     }
 }

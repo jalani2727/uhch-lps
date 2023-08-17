@@ -4,11 +4,11 @@
     padding: 8% 6%;
 
 
-    @include media-breakpoint-up(md) {
-        padding: 4% 25%;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
+    // @include media-breakpoint-up(md) {
+    //     padding: 4% 25%;
+    //     margin-left: 0px;
+    //     margin-right: 0px;
+    // }
 
     @include media-breakpoint-up(lg) {
         max-width: 100%;

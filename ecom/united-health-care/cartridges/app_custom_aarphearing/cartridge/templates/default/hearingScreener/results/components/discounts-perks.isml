@@ -1,10 +1,10 @@
  <div class="container content-banner banner-1 mt-5 content-blue perks-discounts">
     <div class="row perks-discounts-row">
-        <div class="col-12 col-md-7 wallet-container">
+        <div class="col-12 col-md-6 wallet-container">
             <img src="${URLUtils.staticURL('/images/wallet.png')}"
                         alt="hero banner image">
         </div>
-        <div class="col-12 col-md-5 perks-discounts-content">
+        <div class="col-12 col-md-6 perks-discounts-content">
             <h1>What discounts and perks do I have as an AARP member?</h1>
             <p class="results-text subtext">As an AARP member, you can save on hearing aids, care and accessories:</p>
             <ul>
@@ -12,7 +12,6 @@
                 <li class="aarp-perk-desc perk-bold">Prescription hearing aids as low as $699 per ear</li>
                 <li class="aarp-perk-desc perk-bold">20% off prescription hearing aids and 15% off accessories</li>
                 <li class="aarp-perk-desc perk-bold">Four-year warranty* on hearing aids</li>
-                <li class="aarp-perk-desc perk-bold">More severe health problems </li>
             </ul>
             <p class="disclaimer">*Four-year warranty applies to hearing aids in the Classic & Premier technology levels.</p>
             <div class="learn-btns-container">
