@@ -162,7 +162,7 @@
         </div>
 
 
-        <div class="container results1-section6 content-blue flex-stack content-cards py-4">
+        <div class="container-fluid results1-section6 content-blue flex-stack content-cards py-4">
             <div class="cards-header">
                 <h1>Hearing aids are more advanced than ever</h1>
                 <p class="results-text subtext">It’s normal to feel worried about wearing hearing aids. But the truth

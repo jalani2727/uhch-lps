@@ -1,21 +1,34 @@
-<div class="container results4 content-blue flex-stack content-cards py-4">
+<div class="container-fluid results4 content-blue flex-stack content-cards py-4">
     <div class="cards-header">
         <h1>Hearing aid considerations</h1>
         <p class="results-text subtext">Hearing aids vary in price, size, features, fit and more. Before meeting with a
             hearing professional, here are a few questions you can ask yourself to understand your needs and preferences
             for a hearing aid.</p>
     </div>
-    <div class="results-flex-card">
-        <h2>What type of look do I prefer?</h2>
-        <p class="results-text subtext">From the color to the fit on your ear (For example: a behind-the-ear style or an in-the-ear style), there are options you’ll feel confident wearing.</p>
+    <div class="container">
+    <div class="row">
+
+    <div class="col-12 col-md-4 mb-4">
+        <div class="card-container">
+            <h2>What type of look do I prefer?</h2>
+            <p class="results-text subtext">From the color to the fit on your ear (For example: a behind-the-ear style or an in-the-ear style), there are options you’ll feel confident wearing.</p>
+        </div>
     </div>
-    <div class="results-flex-card">
+    <div class="col-12 col-md-4 mb-4">
+
+    <div class="card-container">
         <h2>What is my budget?</h2>
         <p class="results-text subtext">With over-the-counter and prescription hearing aids — plus a variety of manufacturers — there are styles available within your price range.</p>
     </div>
-    <div class="results-flex-card">
+    </div>
+
+    <div class="col-12 col-md-4 mb-4">
+
+    <div class="card-container">
         <h2>Are there any special features I need?</h2>
         <p class="results-text subtext">Hearing aids come in a variety of unique features to blend with your lifestyle — such as Bluetooth or rechargeable batteries.</p>
     </div>
-
+    </div>
+    </div>
+    </div>
 </div>

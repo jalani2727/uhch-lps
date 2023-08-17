@@ -1,19 +1,29 @@
-<div class="container results1-section6 content-blue flex-stack content-cards py-4">
+<div class="container-fluid results1-section6 content-blue flex-stack content-cards py-4">
     <div class="cards-header">
         <h1>Hearing aids are more advanced than ever</h1>
         <p class="results-text subtext">It's normal to feel worried about wearing hearing aids. But the truth is: With today's technology, hearing aids can become a natural part of your daily life.</p>
     </div>
-    <div class="results-flex-card">
-        <h2>Fit for your lifestyle</h2>
-        <p class="results-text subtext">With options that have powerful sound enhancement, smartphone apps, wireless connectivity and more, there's a hearing aid for your everyday life.</p>
+    <div class="cointainer">
+        <div class="row">
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card-container">
+                    <h2>Fit for your lifestyle</h2>
+                    <p class="results-text subtext">With options that have powerful sound enhancement, smartphone apps, wireless connectivity and more, there's a hearing aid for your everyday life.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card-container">
+                    <h2>A variety of styles</h2>
+                    <p class="results-text subtext">Hearing aids come in a variety of styles, so you can wear them with comfort and confidence.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-4">
+                <div class="card-container">
+                    <h2>More discreet than ever</h2>
+                    <p class="results-text subtext">Devices are also much smaller than they used to be, making them less noticeable and intimidating.</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="results-flex-card">
-        <h2>A variety of styles</h2>
-        <p class="results-text subtext">Hearing aids come in a variety of styles, so you can wear them with comfort and confidence.</p>
     </div>
-    <div class="results-flex-card">
-        <h2>More discreet than ever</h2>
-        <p class="results-text subtext">Devices are also much smaller than they used to be, making them less noticeable and intimidating.</p>
-    </div>
-
 </div>
