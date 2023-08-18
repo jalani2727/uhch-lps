@@ -507,6 +507,7 @@ base.recalculatePriceAdjustments = function recalculatePriceAdjustments(currentB
     base.removeLinePriceAdjustments(currentBasket);
     session.privacy.OTCStatus = null;
     session.privacy.benefitAppliedToCart = null;
+    session.privacy.isBenefitsApiCallSuccessful = null;
     if (session.customer.authenticated) {
         if (empty(session.privacy.subscriberId)) {
             session.privacy.OTCStatus = 'eligibilityNotAvailable';

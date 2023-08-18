@@ -378,7 +378,7 @@ module.exports = function () {
             type: 'get',
             dataType: 'json',
             success: function (data) {
-                if (data.basket.items.length === 0) {
+                /**if (data.basket.items.length === 0) {
                     $('.cart').empty().append('<div class="row"> ' +
                         '<div class="col-12 text-center"> ' +
                         '<h1>' + data.basket.resources.emptyCartMsg + '</h1> ' +
@@ -430,7 +430,8 @@ module.exports = function () {
 
                 $('body').trigger('cart:update', data);
 
-                $.spinner().stop();
+                $.spinner().stop();**/
+                location.reload();
             },
             error: function (err) {
                 if (err.responseJSON.redirectUrl) {
@@ -444,6 +445,7 @@ module.exports = function () {
     });
 
     $('body').on('change', '.quantity-form > .quantity', function () {
+        $.spinner().start();
         var preSelectQty = $(this).data('pre-select-qty');
         var quantity = $(this).val();
         var productID = $(this).data('pid');
@@ -457,7 +459,7 @@ module.exports = function () {
         };
         url = appendToUrl(url, urlParams);
 
-        $(this).parents('.card').spinner().start();
+        $.spinner().start();
 
         $('body').trigger('cart:beforeUpdate');
 
@@ -467,7 +469,7 @@ module.exports = function () {
             context: this,
             dataType: 'json',
             success: function (data) {
-                $('.quantity[data-uuid="' + uuid + '"]').val(quantity);
+                /**$('.quantity[data-uuid="' + uuid + '"]').val(quantity);
                 $('.coupons-and-promos').empty().append(data.totals.discountsHtml);
                 updateCartTotals(data);
                 updateApproachingDiscounts(data.approachingDiscounts);
@@ -495,7 +497,8 @@ module.exports = function () {
                 $.spinner().stop();
                 if ($(this).parents('.product-info').hasClass('bonus-product-line-item') && $('.cart-page').length) {
                     location.reload();
-                }
+                }**/
+                location.reload();
             },
             error: function (err) {
                 if (err.responseJSON.redirectUrl) {
