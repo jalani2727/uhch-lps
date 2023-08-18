@@ -179,14 +179,15 @@ $desktop-huge: 1932px;
     
     .image-container {
         img {
-            width: auto;
-            height: 1210px;
+            height: 100%;
+            min-height: 1270px;
             min-width: 100%;
             object-fit: cover;
+            width: auto;
     
             @media (min-width: $desktop-huge) {
-                width: 100%;
                 height: 100%;
+                width: 100%;
             }
     
             text-align: center;
