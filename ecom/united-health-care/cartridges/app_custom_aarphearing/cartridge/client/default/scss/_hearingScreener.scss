@@ -91,6 +91,10 @@ $hs: hearing-screener;
     color: $secondary-col-3;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .#{$hs} {
     display: flex;
     justify-content: center;

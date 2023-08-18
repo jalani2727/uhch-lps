@@ -29,7 +29,7 @@
                         <h1>Hear better, live better</h1>
                         <p class="results-text subtext">Hearing loss is more common than you think — in fact, 48 million Americans have some degree of hearing loss. The best news is: You’re not alone — there is help. If you are an AARP member, you can save on prescription hearing aids and accessories through AARP® Hearing Solutions™ provided by UnitedHealthcare Hearing.</p>
 
-                        <a>Discounts and perks for AARP members <img class="pl-2" src="${URLUtils.staticURL('/images/CTA-arrow-down.svg')}" alt="arrow" /></a>
+                        <a href="#perks-discounts">Discounts and perks for AARP members <img class="pl-2" src="${URLUtils.staticURL('/images/CTA-arrow-down.svg')}" alt="arrow" /></a>
 
                     </div>
                 </div>
