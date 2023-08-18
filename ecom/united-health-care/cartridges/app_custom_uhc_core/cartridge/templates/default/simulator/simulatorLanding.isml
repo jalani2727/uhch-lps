@@ -2,9 +2,10 @@
     <isscript>
         var assets = require('*/cartridge/scripts/assets.js');
         assets.addJs('/js/homePage.js');
+        assets.addCss('/css/hearingScreener.css');
     </isscript>
 
-    <div class="hero-container top-content">
+    <div class="simulator-page hero-container top-content">
         <div class="image-content">
             <picture>
                 <img class="hidden-md-down" src="${URLUtils.staticURL('/images/simulator-hero.png')}"
