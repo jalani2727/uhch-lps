@@ -19,7 +19,7 @@ server.get(
         var viewData = res.getViewData();
 
         viewData.adobeDataLayer = {};
-        viewData.adobeDataLayer.Context = 'GlobalData'
+        viewData.adobeDataLayer.Context = 'GlobalData';
         viewData.adobeDataLayer.PageGroup = "Questionnaire Results 1";
         viewData.adobeDataLayer.PageName = "questionnaire-results-1";
 
@@ -36,7 +36,7 @@ server.get(
         var viewData = res.getViewData();
 
         viewData.adobeDataLayer = {};
-        viewData.adobeDataLayer.Context = 'GlobalData'
+        viewData.adobeDataLayer.Context = 'GlobalData';
         viewData.adobeDataLayer.PageGroup = "Questionnaire Results 2";
         viewData.adobeDataLayer.PageName = "questionnaire-results-2";
 
@@ -53,7 +53,7 @@ server.get(
         var viewData = res.getViewData();
 
         viewData.adobeDataLayer = {};
-        viewData.adobeDataLayer.Context = 'GlobalData'
+        viewData.adobeDataLayer.Context = 'GlobalData';
         viewData.adobeDataLayer.PageGroup = "Questionnaire Results 3";
         viewData.adobeDataLayer.PageName = "questionnaire-results-3";
 
@@ -70,7 +70,7 @@ server.get(
         var viewData = res.getViewData();
 
         viewData.adobeDataLayer = {};
-        viewData.adobeDataLayer.Context = 'GlobalData'
+        viewData.adobeDataLayer.Context = 'GlobalData';
         viewData.adobeDataLayer.PageGroup = "Questionnaire Results 4";
         viewData.adobeDataLayer.PageName = "questionnaire-results-4";
 
@@ -89,7 +89,7 @@ server.get(
         var viewData = res.getViewData();
 
         viewData.adobeDataLayer = {};
-        viewData.adobeDataLayer.Context = 'GlobalData'
+        viewData.adobeDataLayer.Context = 'GlobalData';
         viewData.adobeDataLayer.PageGroup = "Questionnaire Widget";
         viewData.adobeDataLayer.PageName = "questionnaire-widget";
 
@@ -106,7 +106,7 @@ server.get(
         var viewData = res.getViewData();
 
         viewData.adobeDataLayer = {};
-        viewData.adobeDataLayer.Context = 'GlobalData'
+        viewData.adobeDataLayer.Context = 'GlobalData';
         viewData.adobeDataLayer.PageGroup = "Questionnaire Landing Page";
         viewData.adobeDataLayer.PageName = "questionnaire-landing-page";
 
