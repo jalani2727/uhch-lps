@@ -9,17 +9,8 @@
 
             <h2>Hear for yourself</h2>
             <p>Have your loved one put on their headphones and experience dinner in a busy restaurant with and without hearing aids. Click the audio buttons below to hear the difference a pair of hearing aids can make.</p>
-            <div class="simulation-container">
-                <div class="simulation">
-                    <picture><img class="logos" src="${URLUtils.staticURL('/images/r1-vector.png')}"
-                        alt="Play with hearing aids"></picture> <a id="with-aids" class="simulation-text st">With Hearing Aids</a>
-                </div>
-                <div class="simulation">
-                    <picture><img class="logos" src="${URLUtils.staticURL('/images/r1-vector.png')}"
-                                alt="Play without hearing aids"></picture> <a id="without-aids" class="simulation-text st">Without Hearing Aids</a>
-                </div>
-                <p class="disclaimer">This simulation is recorded with Phonak hearing aids, powered by Sonova technology.</p>
-            </div>
+            
+            <isinclude template="components/audio-simulation" />
         </div>
         <img class="hidden-md-pic hidden-md" src="${URLUtils.staticURL('/images/audio-simulation-module.png')}"
                     alt="hero banner image" />
