@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 // ----- variables
 $desktop-xs: 768px;
@@ -26,6 +27,10 @@ $desktop-huge: 1932px;
             }
         }
     }
+=======
+.create-account-page {
+    max-width: 624px;
+>>>>>>> 30b30ede8e6eef942643cb8fb5192de1d1c11bc9
 
     .custom-form-control-label {
         font-size: 14px;
@@ -40,17 +45,23 @@ $desktop-huge: 1932px;
     .custom-form-label {
         font-size: 14px;
         color: $tints-col-3;
+<<<<<<< HEAD
         position: relative;
+=======
+>>>>>>> 30b30ede8e6eef942643cb8fb5192de1d1c11bc9
     }
 
     .custom-select.custom-form-control-label {
         font-size: 16px;
     }
 
+<<<<<<< HEAD
     .custom-select {
         padding: 0 0 0 10px;
     }
 
+=======
+>>>>>>> 30b30ede8e6eef942643cb8fb5192de1d1c11bc9
     .member-id-info-card {
         float: right;
         position: relative;
@@ -172,6 +183,7 @@ $desktop-huge: 1932px;
     .btn-create-account:not(:disabled) {
         border: 2px solid transparent;
     }
+<<<<<<< HEAD
 
     .card {
         padding: 18px 20px;
@@ -257,4 +269,6 @@ $desktop-huge: 1932px;
             }
         }
     }
+=======
+>>>>>>> 30b30ede8e6eef942643cb8fb5192de1d1c11bc9
 }

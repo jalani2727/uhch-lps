@@ -1,0 +1,87 @@
+<isdecorate template="common/layout/questionnaireResultsLayout">
+    <isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addJs('/js/homePage.js');
+        assets.addJs('/js/hearingScreener.js');
+
+    </isscript>
+    <div class="home-main homepage" data-is-pricebook-updated="${true}">
+        <div class="hero-container top-content">
+            <div class="image-content">
+                <picture>
+                    <img class="hidden-md-down" src="${URLUtils.staticURL('/images/q-landing-4-hero-desktop.png')}"
+                        alt="hero banner image">
+                    <img class="d-lg-none" src="${URLUtils.staticURL('/images/q-landing-4-hero-mobile.png')}"
+                        alt="hero banner image">
+                </picture>
+            </div>
+            <div class="text-content">
+                <h1 class="hero-title">Based on your responses, a hearing device could be a good option for you.</h1>
+                <p class="hero-description">Schedule an appointment with a hearing professional to learn more about
+                    different treatment options and products.
+                </p>
+            </div>
+        </div>
+
+          <div class="container content-banner banner-1 my-md-5">
+            <div class="row ear-row">
+                <div class="col-12 col-md-7 ear-content-wrapper text-content-wrapper">
+                    <div class="text-content mt-3 ear">
+                        <h1>Your hearing health, your way</h1>
+                        <p class="results-text subtext">There’s a hearing device option for your lifestyle. Get the hearing aids, care, and convenience to help make it easier to hear the sounds you’ve been missing. If you are an AARP member, you can save on prescription hearing aids and accessories through AARP® Hearing Solutions™ provided by UnitedHealthcare Hearing.</p>
+
+                        <a href="#perks-discounts">Discounts and perks for AARP members <img class="pl-2" src="${URLUtils.staticURL('/images/CTA-arrow-down.svg')}" alt="arrow" /></a>
+
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 ear-image-wrapper image-container-wrapper">
+                <div class="image-container">
+                    <picture>
+                        <img class="img-fluid" src="${URLUtils.staticURL('/images/ear.png')}" alt="ear image">
+                    </picture>
+                    
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="light-blue-background">
+
+            <div class="container center-wrapper">
+                <h1>Your best next step</h1>
+                <p>Ready to discover the right hearing device for you? We recommend a comprehensive in-person hearing test if you’re experiencing any of the symptoms below:</p>
+
+                <ul>
+                    <li class="aarp-perk-desc">High-pitched sounds are hard to hear (For example: doorbells or birds)</li>
+                    <li class="aarp-perk-desc">You often turn up the volume of the TV or radio</li>
+                    <li class="aarp-perk-desc">It’s difficult to understand conversations, especially in crowded places</li>
+                    <li class="aarp-perk-desc">You frequently ask people to speak louder, slow down or repeat themselves</li>
+                </ul>
+
+                <a class="custom-datalayer btn btn-primary hero-button custom-datalayer"
+                    href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest&cid=AARP:LandingPage:other:Aug:2023:AARP-Sim-LP-Request-Appointment-1:Request-Appointment"
+                    data-name="${Resource.msg('label.adobe.questionnaire-results-name-schedule', 'adobetracking', null)}"
+                    data-location="${Resource.msg('label.adobe.questionnaire-results-location', 'adobetracking', null)}">Schedule
+                    Appointment</a>
+            </div>
+        </div>
+
+        <isinclude template="hearingScreener/results/components/tech-choice-support" />
+
+        <iscomment> Best type of care for you </iscomment>
+        <isinclude template="hearingScreener/results/components/q-results-type-of-care"/>
+
+        <isinclude template="hearingScreener/results/components/q-results-hearing-aids-cards"/>
+
+        <isinclude template="hearingScreener/results/components/exploring-all-products"/>
+
+        <isinclude template="hearingScreener/results/components/discounts-perks"/>
+
+        <isinclude template="hearingScreener/results/components/disclaimer"/>
+
+    </div>
+
+
+
+    <isinclude template="home/registrationSuccessModal" />
+</isdecorate>

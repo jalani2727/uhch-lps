@@ -1,0 +1,141 @@
+// .content-blue.perks-discounts {
+//     padding: 8% 6%;
+
+//     @include media-breakpoint-up(md) {
+//         padding: 4% 6%;
+//     }
+
+//     @include media-breakpoint-up(lg) {
+//         padding: 4% 10%;
+//     }
+// }
+
+.perks-discounts-row {
+    display: flex;
+
+    .wallet-container, .perks-discounts-content {
+        width: 100%;
+    }
+
+    .perks-discounts-content {
+
+        h1, p {
+            text-align: left;
+        }
+
+        ul {
+            position: relative;
+            left: 10px;
+        }
+    }
+
+    .wallet-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2.5em;
+
+
+        img {
+            width: 80%;
+            height: auto;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        .wallet-container {
+            width: 50%;
+            justify-content: center;
+            margin-bottom: 0;
+
+
+            img {
+                width: auto;
+                height: auto;
+                object-fit: contain;
+                max-width: 75%;
+                max-height: 75%;
+                flex-shrink: 0;
+            }
+        }
+
+        .perks-discounts-content {
+            width: 50%;
+            padding-left: 0%;
+            padding-right: 0%;
+
+            ul {
+                position: relative;
+                left: 30px;
+            }
+        }
+    }
+
+    .learn-btns-container {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+
+        a.btn {
+            margin-right: 10px;
+            width: fit-content;
+            margin-bottom: 2em !important;
+
+            &.blue-btn {
+                background-color: #002677;
+                border-color: #002677;
+                color: white;
+
+                &:hover {
+                    background-color: transparent;
+                    border-color: #002677;
+                    color: #002677;
+                }
+            }
+
+            &.white-btn {
+                background-color: transparent;
+                border-color: #002677;
+                color: #002677;
+
+                &:hover {
+                    background-color: #002677;
+                    border-color: #002677;
+                    color: white;
+                }
+            }
+        }
+
+        @include media-breakpoint-up(md) {
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+
+            a.btn {
+                min-width: fit-content;
+                margin-bottom: 2em !important;
+            }
+        }
+
+
+
+    }
+
+    .perks-discounts-content {
+
+        h1, p {
+            text-align: start;
+        }
+
+        p.disclaimer {
+            font-size: 13px;
+            font-family: "UHCSansMedium", sans-serif;
+            text-align: left;
+        }
+
+        @include media-breakpoint-up(md) {
+            .aarp-perk-desc {
+                padding-left: 25px;
+            }
+        }
+    }
+}

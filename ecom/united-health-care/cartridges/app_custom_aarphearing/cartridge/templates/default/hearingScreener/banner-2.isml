@@ -1,0 +1,16 @@
+<div class="container content-banner banner-2">
+    <div class="row banner-2-content">
+        <div class="col-12">
+            <p>
+                Find out if you could benefit from hearing care with this short questionnaire.
+            </p>
+        </div>
+        <div class="col-12">
+            <a href="${URLUtils.url('Screener-Show')}" class="custom-datalayer next btn-next btn btn-primary mb-md-5"
+                data-name="${Resource.msg('label.adobe.questionnaire-landing-name', 'adobetracking', null)}"
+                data-location="${Resource.msg('label.adobe.questionnaire-landing-location', 'adobetracking', null)}">Take
+                the questionnaire</a>
+        </div>
+
+    </div>
+</div>
