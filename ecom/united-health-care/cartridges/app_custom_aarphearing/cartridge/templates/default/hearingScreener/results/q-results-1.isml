@@ -13,7 +13,7 @@
                     <img class="d-lg-none results-hero" src="${URLUtils.staticURL('/images/hearing-loss-hero.png')}"
                         alt="hero banner image">
                     <img class="hidden-md-down results-hero"
-                        src="${URLUtils.staticURL('/images/hearing-loss-hero.png')}" alt="hero banner image">
+                        src="${URLUtils.staticURL('/images/hearing-loss-hero-cut.png')}" alt="hero banner image">
                 </picture>
             </div>
             <div class="text-content">
