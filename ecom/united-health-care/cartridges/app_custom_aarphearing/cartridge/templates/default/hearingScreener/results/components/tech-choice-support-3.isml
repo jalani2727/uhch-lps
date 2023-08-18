@@ -1,0 +1,137 @@
+<div class="dark-blue-background">
+
+    <div class="container center-wrapper">
+
+        <div class="heading-wrapper">
+            <h1>Technology, Choice, Support</h1>
+            <p>Over-the-counter (OTC) devices and prescription hearing aids are available with a variety of options to meet your loved one's needs. Even if they’re interested in buying an OTC device, it's recommended to schedule an appointment with a hearing professional to understand how they'll use their hearing aids.</p>
+
+            <a class="custom-datalayer btn btn-primary hero-button custom-datalayer"
+                href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest&cid=AARP:LandingPage:other:Aug:2023:AARP-Sim-LP-Request-Appointment-1:Request-Appointment"
+                data-name="${Resource.msg('label.adobe.simulator-landing-name-request', 'adobetracking', null)}"
+                data-location="${Resource.msg('label.adobe.simulator-landing-location', 'adobetracking', null)}">Schedule
+                Appointment</a>
+        </div>
+
+        <div class="container white-card-section row mt-md-5 hidden-md-down">
+            <div class="col-6">
+                <div class="white-card">
+                    <div class="section">
+                        <h1 class="otc">Over-the-counter</h1>
+                    </div>
+                    <div class="section">
+                        <h2>Degrees of hearing loss</h2>
+                        <p>Mild to moderate hearing loss.</p>
+                    </div>
+                    <div class="section">
+                        <h2>Customization and capabilities</h2>
+                        <p>A variety of styles to fit most individuals. Not customizable.</p>
+                    </div>
+                    <div class="section">
+                        <h2>Warranties and repairs</h2>
+                        <p>Shorter warranties. Your loved one will likely work with the manufacturer for repairs and coverage.</p>
+                    </div>
+                    <div class="section">
+                        <h2>Service and support</h2>
+                        <p>Ideal if your loved one is comfortable with technology and adjusting their own settings.</p>
+                    </div>
+                    <div class="section">
+                        <h2>Types of devices</h2>
+                        <p>Situational use for specific situations (For example: restaurants or exercise) or all-day use.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="white-card">
+                    <div class="section">
+                        <h1 class="prescription">Prescription</h1>
+                    </div>
+                    <div class="section">
+                        <h2>Degrees of hearing loss</h2>
+                        <p>Any degree of hearing loss, including moderate to severe.</p>
+                    </div>
+                    <div class="section">
+                        <h2>Customization and capabilities</h2>
+                        <p>Programmed by a hearing-care professional to match their specific hearing needs.</p>
+                    </div>
+                    <div class="section">
+                        <h2>Warranties and repairs</h2>
+                        <p>Longer warranties. Your loved one will work with your hearing-care professional for repairs and coverage.</p>
+                    </div>
+                    <div class="section">
+                        <h2>Service and support</h2>
+                        <p>Ideal if your loved one wants help from a hearing-care professional for adjustments.</p>
+                    </div>
+                    <div class="section">
+                        <h2>Types of devices</h2>
+                        <p>Brand name or private label.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="white-card-section white-card-mobile row mt-md-5 d-lg-none">
+        <div class="col-12">
+
+            <div class="row change-card-header">
+                <div class="section white-card col-6 show" data-tab="otc-card">
+                    <h1 class="otc">Over-the-counter</h1>
+                </div>
+                <div class="section white-card col-6" data-tab="prescription-card">
+                    <h1 class="prescription">Prescription</h1>
+                </div>
+            </div>
+
+            <div class="white-card otc-card show" id="otc-card">
+                <div class="section">
+                    <h2>Degrees of hearing loss</h2>
+                    <p>Mild to moderate hearing loss.</p>
+                </div>
+                <div class="section">
+                    <h2>Customization and capabilities</h2>
+                    <p>A variety of styles to fit most individuals. Not customizable.</p>
+                </div>
+                <div class="section">
+                    <h2>Warranties and repairs</h2>
+                    <p>Shorter warranties. Your loved one will likely work with the manufacturer for repairs and coverage.</p>
+                </div>
+                <div class="section">
+                    <h2>Service and support</h2>
+                    <p>Ideal if your loved one is comfortable with technology and adjusting their own settings.</p>
+                </div>
+                <div class="section">
+                    <h2>Types of devices</h2>
+                    <p>Situational use for specific situations (For example: restaurants or exercise) or all-day use.</p>
+                </div>
+            </div>
+
+            <div class="white-card prescription-card" id="prescription-card">
+                <div class="section">
+                    <h2>Degrees of hearing loss</h2>
+                    <p>Any degree of hearing loss, including moderate to severe.</p>
+                </div>
+                <div class="section">
+                    <h2>Customization and capabilities</h2>
+                    <p>Programmed by a hearing-care professional to match your specific hearing needs.</p>
+                </div>
+                <div class="section">
+                    <h2>Warranties and repairs</h2>
+                    <p>Longer warranties. Your loved one will work with your hearing-care professional for repairs and coverage.</p>
+                </div>
+                <div class="section">
+                    <h2>Service and support</h2>
+                    <p>Ideal if your loved one wants help from a hearing- care professional for adjustments.</p>
+                </div>
+                <div class="section">
+                    <h2>Types of devices</h2>
+                    <p>Brand name or private label.</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+</div>
