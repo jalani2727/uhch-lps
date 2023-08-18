@@ -109,8 +109,7 @@
 
     @include media-breakpoint-up(md) { 
         flex-direction: row;
-        padding-right: 5%;
-        padding-left: 5%;
+
         align-items: top;
         
         .img-container {
@@ -301,10 +300,6 @@
         width: 100%;
     }
 
-    .box-container.reasons-to-treat-container {
-        display: flex;
-        flex-direction: column;
-    }
 
     @include media-breakpoint-up(lg) {
         div.title-container {
@@ -408,4 +403,8 @@
     @include media-breakpoint-up(md) {
         flex-direction: row;
     }
+}
+
+.reasons-to-treat-content {
+    align-self: center;
 }
