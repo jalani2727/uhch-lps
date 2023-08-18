@@ -407,3 +407,21 @@
 .reasons-to-treat-content {
     align-self: center;
 }
+
+.risk-row {
+    
+    img {
+        width: 100%;
+    }
+
+    @include media-breakpoint-down(sm) {
+        .image-container {
+            order: 1;
+        }
+
+        .risk-content {
+            order: 2;
+        }
+    }
+
+}
