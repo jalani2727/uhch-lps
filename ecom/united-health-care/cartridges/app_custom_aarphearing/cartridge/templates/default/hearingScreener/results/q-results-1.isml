@@ -33,7 +33,8 @@
                             through AARP® Hearing Solutions™ provided by UnitedHealthcare Hearing.</p>
 
                         <a href="#perks-discounts" class="custom-datalayer">Discounts
-                            and perks for AARP members <img class="pl-2" src="${URLUtils.staticURL('/images/CTA-arrow-down.svg')}" alt="arrow" /></a>
+                            and perks for AARP members <img class="pl-2"
+                                src="${URLUtils.staticURL('/images/CTA-arrow-down.svg')}" alt="arrow" /></a>
 
                     </div>
                 </div>
@@ -70,19 +71,32 @@
             </div>
         </div>
 
-        <div class="container content-banner banner-8 risk-row flex-stack py-4">
-            <img class="img-container" src="${URLUtils.staticURL('/images/ear_exam.png')}" alt="ear exam image" />
-            <div class="risk-content">
-                <h1>Risks of untreated hearing loss</h1>
-                <p class="subtext">Living with untreated hearing loss impacts more than just your hearing. That's why
-                    it's important to get help early, so it doesn't lead to negative effects such as:</p>
-                <ul>
-                    <li class="aarp-perk-desc">Depression or chronic fatigue</li>
-                    <li class="aarp-perk-desc">Feelings of loneliness in social settings</li>
-                    <li class="aarp-perk-desc">Problems with memory and focus</li>
-                    <li class="aarp-perk-desc">Risks to safety such as falling or tripping</li>
-                    <li class="aarp-perk-desc">More severe health problems (For example: Alzheimer's or dementia) </li>
-                </ul>
+        <div class="container content-banner banner-8 risk-row py-4">
+            <div class="row">
+                <div class="col-12 col-md-6 risk-content">
+                    <div class="risk-content">
+                        <h1>Risks of untreated hearing loss</h1>
+                        <p class="subtext">Living with untreated hearing loss impacts more than just your hearing.
+                            That's why
+                            it's important to get help early, so it doesn't lead to negative effects such as:</p>
+                        <ul>
+                            <li class="aarp-perk-desc">Depression or chronic fatigue</li>
+                            <li class="aarp-perk-desc">Feelings of loneliness in social settings</li>
+                            <li class="aarp-perk-desc">Problems with memory and focus</li>
+                            <li class="aarp-perk-desc">Risks to safety such as falling or tripping</li>
+                            <li class="aarp-perk-desc">More severe health problems (For example: Alzheimer's or
+                                dementia) </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6 img-container">
+                    <div class="img-container">
+                        <img class=" img-fluid" src="${URLUtils.staticURL('/images/ear_exam.png')}"
+                            alt="ear exam image" />
+                    </div>
+
+                </div>
             </div>
         </div>
 
@@ -170,15 +184,18 @@
                     <div class="simulation-container">
                         <div class="simulation">
                             <picture>
-                                <img class="logos" src="${URLUtils.staticURL('/images/r1-vector.png')}" alt="Play with hearing aids">
-                            </picture> 
+                                <img class="logos" src="${URLUtils.staticURL('/images/r1-vector.png')}"
+                                    alt="Play with hearing aids">
+                            </picture>
                             <a href="javascript:void(0)" id="with-aids" class="simulation-text st">With Hearing Aids</a>
                         </div>
                         <div class="simulation">
                             <picture>
-                                <img class="logos" src="${URLUtils.staticURL('/images/r1-vector.png')}" alt="Play without hearing aids">
-                            </picture> 
-                            <a href="javascript:void(0)" id="without-aids" class="simulation-text st">Without Hearing Aids</a>
+                                <img class="logos" src="${URLUtils.staticURL('/images/r1-vector.png')}"
+                                    alt="Play without hearing aids">
+                            </picture>
+                            <a href="javascript:void(0)" id="without-aids" class="simulation-text st">Without Hearing
+                                Aids</a>
                         </div>
                         <p class="disclaimer">This simulation is recorded with Phonak hearing aids, powered by Sonova
                             technology.</p>
