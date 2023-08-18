@@ -4,8 +4,8 @@
     var isAdobeDatalayer = 'true';
     var buildContentViewURL = '${URLUtils.https('Build-BuildContentView').toString()}';
     var datalayerContext = 'GlobalData';
-    var datalayerPageGroup = 'Questionnaire';
-    var datalayerPageName = 'questionnaire-widget-page';
+    var datalayerPageGroup = ${pdict.datalayerPageGroup};
+    var datalayerPageName = ${pdict.datalayerPageName};
     var isErrorPage = 'false';
     var isSections = 'true';
     var datalayerSections = {};

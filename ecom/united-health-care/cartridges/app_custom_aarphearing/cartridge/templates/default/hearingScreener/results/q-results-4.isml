@@ -60,8 +60,8 @@
 
                 <a class="custom-datalayer btn btn-primary hero-button custom-datalayer"
                     href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest&cid=AARP:LandingPage:other:Aug:2023:AARP-Sim-LP-Request-Appointment-1:Request-Appointment"
-                    data-name="${Resource.msg('label.adobe.simulator-landing-name-request', 'adobetracking', null)}"
-                    data-location="${Resource.msg('label.adobe.simulator-landing-location', 'adobetracking', null)}">Schedule
+                    data-name="${Resource.msg('label.adobe.questionnaire-results-name-schedule', 'adobetracking', null)}"
+                    data-location="${Resource.msg('label.adobe.questionnaire-results-location', 'adobetracking', null)}">Schedule
                     Appointment</a>
             </div>
         </div>
