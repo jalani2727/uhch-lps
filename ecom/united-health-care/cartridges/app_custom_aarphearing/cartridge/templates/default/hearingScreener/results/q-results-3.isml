@@ -213,8 +213,6 @@
                             technology.</p>
                     </div>
                 </div>
-                <img class="hidden-md-pic hidden-md" src="${URLUtils.staticURL('/images/audio-simulation-module.png')}"
-                    alt="hero banner image" />
             </div>
         </div>
 
