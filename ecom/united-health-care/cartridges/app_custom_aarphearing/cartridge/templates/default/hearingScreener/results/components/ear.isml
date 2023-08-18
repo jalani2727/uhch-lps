@@ -18,7 +18,7 @@
 
             </div>
         </div>
-        <div class="col-12 col-md-5 image-container-wrapper">
+        <div class="col-12 col-md-5 ear-image-wrapper image-container-wrapper">
           <div class="image-container">
               <picture>
                 <img class="img-fluid" src="${URLUtils.staticURL('/images/ear.png')}" alt="ear image">

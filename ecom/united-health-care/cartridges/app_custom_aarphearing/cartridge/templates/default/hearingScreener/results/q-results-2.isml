@@ -91,11 +91,45 @@
         </div>
     </div>
 
-    <isinclude template="hearingScreener/results/components/important-to-treat.isml"/>
+        <div class="container-fluid content-banner banner-6 content-blue reasons-to-treat">
+        <div class="title-container">
+            <h1>Why it's important to treat hearing loss early</h1>
+            <p>Treating hearing loss early can make all the difference in the world, <span>allowing you to rediscover parts of your life that may have felt missing.</span></p>
+        </div>
+
+        <div class="box-container mb-md-4 reasons-to-treat-container">
+
+            <div>
+                <img src="${URLUtils.staticURL('/images/shoe.png')}" alt="Exercise shoe" />
+                <h2>Enjoy daily activities again</h2>
+                <p class="subtext">Whether it’s gardening or going to the gym, better hearing can help them be more involved in their everyday activities.</p>
+            </div>
+
+            <div>
+                <img src="${URLUtils.staticURL('/images/heart-hands.png')}" alt="Heart" />
+                <h2>Stay connected to the people you love</h2>
+                <p class="subtext">Reengaging in conversations with family and friends can help your loved one feel more connected to important relationships.</p>
+            </div>
+
+
+            <div>
+                <img src="${URLUtils.staticURL('/images/lightbulb.png')}" alt="Light bulb" />
+                <h2>Discover their independence</h2>
+                <p class="subtext">When your loved one is more aware of their surroundings, they'll be able to do more without having to rely on anyone else.</p>
+            </div>
+
+
+            <div>
+                <img src="${URLUtils.staticURL('/images/brain.png')}" alt="Brain" />
+                <h2>Support brain health</h2>
+                <p class="subtext">Reduce the risk of cognitive decline and diseases such as Alzheimer’s or dementia.</p>
+            </div>
+        </div>
+    </div>
 
     <div class="container content-banner banner-8 py-4">
         <div class="row">
-            <div class="col-12 col-md-7 image-container-wrapper">
+            <div class="col-12 col-md-7 ear-image-wrapper image-container-wrapper">
                 <div class="image-container">
                     <img class="ear-image" src="${URLUtils.staticURL('/images/ear_exam.png')}" alt="ear exam image" />
                 </div>
@@ -120,7 +154,7 @@
     </div>
 
 
-    <div class="container content-banner banner-7 flex-stack content-blue">
+    <div class="container-fluid content-banner banner-7 flex-stack content-blue father-son">
         <div class="text-container ord-2">
             <h1>When your loved one won't wear a hearing aid</h1>
             <p>To support your loved one and help them get the treatment they need without frustrating them or
@@ -147,9 +181,32 @@
                 alt="father son image" />
     </div>
 
-    <isinclude template="hearingScreener/results/components/reverse-hearings-work" />
+    <div class="container flex-stack my-4">
+    <div class="aids-container aids-work">
+        <img class="img-container" src="${URLUtils.staticURL('/images/audio-simulation-module.png')}"
+                alt="hero banner image" />
+        <div class="text-container">
+            <h1>How hearing aids work</h1>
+            <p>Hearing aids pick up sound from your environment, convert it to a digital signal, and amplify the sound into your ears. Try this simple audio simulation for an example of what hearing aids might sound like for you.</p>
 
-    <isinclude template="hearingScreener/results/components/tech-choice-support-2" />
+            <h2>Try this hearing simulation</h2>
+            <p>Have your loved one put on their headphones and experience dinner in a busy restaurant with and without hearing aids. Click the audio buttons below to hear the difference a pair of hearing aids can make.</p>
+            <div class="simulation-container">
+                <div class="simulation">
+                    <picture><img class="logos" src="${URLUtils.staticURL('/images/r1-vector.png')}"
+                        alt="Play with hearing aids"></picture> <a id="with-aids" class="simulation-text st">With Hearing Aids</a>
+                </div>
+                <div class="simulation">
+                    <picture><img class="logos" src="${URLUtils.staticURL('/images/r1-vector.png')}"
+                                alt="Play without hearing aids"></picture> <a id="without-aids" class="simulation-text st">Without Hearing Aids</a>
+                </div>
+                <p class="disclaimer">This simulation is recorded with Phonak hearing aids, powered by Sonova technology.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <isinclude template="hearingScreener/results/components/tech-choice-support" />
 
     <isinclude template="hearingScreener/results/components/exploring-all-products.isml"/>
 

@@ -44,7 +44,7 @@
             </div>
         </div>
 
-        <div class="container content-banner content-blue">
+        <div class="container-fluid content-banner content-blue early-signs">
             <h1 class="subheader">Early signs of hearing loss</h1>
             <p class="results-text subtext">Get the support you need sooner. If you're experiencing any of these early symptoms, you may want to schedule an appointment with a hearing professional:</p>
             <ul>
@@ -74,7 +74,7 @@
                 </div>
         </div>
 
-           <div class="container content-banner banner-6 content-blue reasons-to-treat">
+           <div class="container-fluid content-banner banner-6 content-blue reasons-to-treat">
         <div class="title-container">
             <h1>Why it's important to treat hearing loss early</h1>
             <p>Treating hearing loss early can make all the difference in the world, <span>allowing you to rediscover parts of your life that may have felt missing.</span></p>
