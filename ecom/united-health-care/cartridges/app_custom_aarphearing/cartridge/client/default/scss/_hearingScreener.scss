@@ -894,15 +894,50 @@ fieldset {
             }
         }
 
-        .father-son-image {
-            @include media-breakpoint-down(md) {
-               margin-bottom: 10px;
+        a.btn {
+            margin-right: 10px;
+            width: fit-content;
+
+            &.blue-btn {
+                background-color: #002677;
+                border-color: #002677;
+                color: white;
+
+                &:hover {
+                    background-color: transparent;
+                    border-color: #002677;
+                    color: #002677;
+                }
             }
 
-            @include media-breakpoint-up(md) {
-                margin-right: 0px;
-                margin-left: 3%;
+            &.white-btn {
+                background-color: transparent;
+                border-color: #002677;
+                color: #002677;
+
+                &:hover {
+                    background-color: #002677;
+                    border-color: #002677;
+                    color: white;
+                }
             }
+        }
+
+        .loved-one-wrapper {
+            @include media-breakpoint-down(md) {
+                order: 2;
+            }
+        }
+        
+        .father-son-wrapper {
+            @include media-breakpoint-down(md) {
+                order: 1;
+            }
+            align-self: center;
+        }
+
+        .father-son-image {
+            width: 100%;
         }
 
     }
