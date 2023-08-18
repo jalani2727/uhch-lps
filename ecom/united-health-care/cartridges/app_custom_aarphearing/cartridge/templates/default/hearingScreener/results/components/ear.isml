@@ -7,24 +7,27 @@
                 them to the viewData to be displayed here </iscomment>
             <div class="text-content mt-3 ear">
                 <h1>Stay connected to the people you love</h1>
-                <p class="results-text subtext">Did you know 48 million Americans have some degree of hearing loss? It's very common - and your loved
+                <p class="results-text subtext">Did you know 48 million Americans have some degree of hearing loss? It's
+                    very common - and your loved
                     one
                     is not alone. Preventative care and treating hearing loss easly can help them hear the sounds
                     they've
                     been missing. If your loved one is an AARP member, they can save on prescription hearing aids and
                     accessories through AARP© Hearing Solutions™ provided by UnitedHealthcare Hearing.</p>
 
-                <a href="#perks-discounts">Discounts and perks for AARP members <img class="pl-2" src="${URLUtils.staticURL('/images/CTA-arrow-down.svg')}" alt="arrow" /></a>
+                <a href="#perks-discounts" class="custom-datalayer">Discounts
+                    and perks for AARP members <img class="pl-2"
+                        src="${URLUtils.staticURL('/images/CTA-arrow-down.svg')}" alt="arrow" /></a>
 
             </div>
         </div>
         <div class="col-12 col-md-5 ear-image-wrapper image-container-wrapper">
-          <div class="image-container">
-              <picture>
-                <img class="img-fluid" src="${URLUtils.staticURL('/images/ear.png')}" alt="ear image">
-            </picture>
-            
-          </div>
+            <div class="image-container">
+                <picture>
+                    <img class="img-fluid" src="${URLUtils.staticURL('/images/ear.png')}" alt="ear image">
+                </picture>
+
+            </div>
         </div>
     </div>
 </div>
