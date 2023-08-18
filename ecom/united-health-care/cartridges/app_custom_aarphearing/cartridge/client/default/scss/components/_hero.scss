@@ -100,7 +100,7 @@ p {
         margin: 0 auto;
         background-color: $primary-col-2;
         position: relative;
-        border-bottom: 1px solid $uhc-section-border-color;
+        
 
         .hero-title {
             @include hero-title-font;
