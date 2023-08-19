@@ -1,4 +1,40 @@
-@import "../variables";
+// @import "./variables";
+@import "components/hero";
+@import "components/hearingScreenerResults1";
+@import "components/hearingScreenerResults-4";
+@import "components/hearingAidsWork";
+@import "components/exploringAllProducts";
+@import "components/perksDiscounts";
+@import "components/disclaimer";
+$hero-title-font-color: $color-blue-dark;
+$hero-description-font-color: $body-text-color;
+
+$content-background-color-light-blue: #e7f7fa;
+
+@mixin hero-title-font {
+    font-family: $uhc-heading-font-1;
+    font-size: 26px;
+    line-height: 34px;
+    color: $hero-title-font-color;
+
+    @include media-breakpoint-up(lg) {
+        font-size: 36px;
+        line-height: 44px;
+    }
+}
+
+@mixin hero-description-font {
+    font-family: $uhc-font-sans-medium;
+    font-size: 16px;
+    line-height: 20px;
+    color: $hero-description-font-color;
+
+    @include media-breakpoint-up(lg) {
+        font-size: 16px;
+        line-height: 23px;
+    }
+}
+
 $hs: hearing-screener;
 
 @mixin hearing-screener-title-font {
@@ -14,6 +50,7 @@ $hs: hearing-screener;
         text-align: center;
     }
 }
+
 @mixin hearing-screener-title-font-2 {
     font-family: $uhc-heading-font-1;
     font-size: 22px;
@@ -35,6 +72,29 @@ $hs: hearing-screener;
     color: $color-blue-dark;
 }
 
+@mixin bold-element-font {
+    font-family: $uhc-font-sans-bold;
+    font-size: 16px;
+    font-style: normal;
+    list-style: none;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+@mixin medium-element-font {
+    font-family: $uhc-font-sans-medium;
+    font-size: 16px;
+    font-style: normal;
+    list-style: none;
+    line-height: 24px;
+
+    color: $secondary-col-3;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 .#{$hs} {
     display: flex;
     justify-content: center;
@@ -53,7 +113,7 @@ $hs: hearing-screener;
             width: 50%;
             height: 25px;
         }
-        
+
         @include media-breakpoint-down(sm) {
             width: 85%;
             height: 20px;
@@ -133,7 +193,7 @@ $hs: hearing-screener;
         }
 
         h3 {
-            @include hearing-screener-title-font-2();
+            @include hearing-screener-title-font-2;
         }
 
         .#{$hs}-header {
@@ -158,6 +218,7 @@ $hs: hearing-screener;
                 display: flex;
 
             }
+
             .screener-form-container {
                 display: block;
                 padding: 36px 36px 42px;
@@ -171,7 +232,7 @@ $hs: hearing-screener;
                             text-align: start;
                             font-family: $uhc-body-font;
                             line-height: 22px;
-                            color:#333333;
+                            color: #333333;
                             font-weight: 500;
                         }
 
@@ -240,15 +301,17 @@ $hs: hearing-screener;
                     line-height: 2;
 
                 }
+
                 label {
                     padding-left: 10px;
                 }
 
                 input[type="radio"] {
                     color: $color-blue-dark;
-                    border:  1px solid $color-blue-dark;
+                    border: 1px solid $color-blue-dark;
                     position: relative;
                     left: -3030px;
+
                     &::before {
                         display: flex;
                         flex-shrink: 0;
@@ -264,17 +327,20 @@ $hs: hearing-screener;
                         left: 3020px;
                         top: 3px;
                     }
+
                     &:checked {
                         &::before {
                             background-color: #00005c;
                         }
                     }
                 }
+
                 input[type="checkbox"] {
                     color: $color-blue-dark;
-                    border:  1px solid $color-blue-dark;
+                    border: 1px solid $color-blue-dark;
                     position: relative;
                     left: -3030px;
+
                     &::before {
                         display: flex;
                         flex-shrink: 0;
@@ -289,6 +355,7 @@ $hs: hearing-screener;
                         left: 3020px;
                         top: 3px;
                     }
+
                     &:checked {
                         &::before {
                             background-color: #00005c;
@@ -362,6 +429,11 @@ $hs: hearing-screener;
             .btn-next {
                 margin-top: 20px;
                 width: fit-content;
+
+                &.disabled {
+                    pointer-events: none;
+                    opacity: 0.5
+                }
             }
 
             .btn-back {
@@ -444,6 +516,7 @@ $hs: hearing-screener;
                             margin-top: 30px;
                         }
                     }
+
                     .screener-complete-container {
                         padding: 0;
                     }
@@ -471,5 +544,683 @@ $hs: hearing-screener;
                 }
             }
         }
+    }
+}
+
+// hearingScreener.js
+fieldset {
+    &:not(:first-of-type) {
+        display: none;
+    }
+}
+
+// Landing Page
+
+.content-banner {
+
+    h1 {
+        @include hero-title-font;
+    }
+
+    p {
+        @include bold-element-font;
+
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    .btn-primary {
+        background-color: $primary-col-4;
+        border-color: $primary-col-4;
+        color: #fff;
+    }
+
+    .banner-2-content {
+        text-align: center;
+
+        @include media-breakpoint-between(md, lg) {}
+
+        @include media-breakpoint-down(md) {
+            text-align: left;
+        }
+    }
+
+    &.banner-3 {
+        border-top: 1px solid #333;
+
+        .hero-text-wrapper {
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-text {
+            padding-left: 80px;
+        }
+
+        .image-content {
+            height: 100%;
+
+            img {
+                width: 100%;
+                clip-path: polygon(14% 0, 100% 0, 100% 100%, 0% 100%);
+
+                @include media-breakpoint-between(md, lg) {}
+
+                @include media-breakpoint-down(sm) {
+                    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
+                }
+            }
+        }
+    }
+
+    &.banner-4 {
+        background-color: #E5F8FB;
+        align-items: center;
+        padding: 30px;
+
+        h2 {
+            font-size: 24px;
+            color: #002677
+        }
+
+        p {
+            font-family: sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+        }
+
+        .subtext-top {
+            font-size: 16px;
+            margin-top: 10px;
+
+            @include media-breakpoint-down(sm) {
+                margin-top: 20px;
+            }
+        }
+
+        .subtext {
+            font-size: 16px;
+        }
+
+        .title-container {
+            text-align: center;
+            width: 50%;
+            margin: auto;
+
+            @include media-breakpoint-down(sm) {
+                width: 100%;
+            }
+        }
+
+        .box {
+            background-color: white;
+            width: 300px;
+            height: 220px;
+            border: 1px solid #B3BABC;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .box-container {
+            display: flex;
+            justify-content: space-evenly;
+
+            @include media-breakpoint-down(sm) {
+                flex-wrap: wrap;
+                width: 100%;
+            }
+
+        }
+    }
+
+    &.banner-5 {
+        width: 100%;
+        background-color: white;
+        align-items: center;
+        padding: 30px;
+
+        img {
+            width: 32px;
+            height: 32px;
+            margin-right: 20px;
+        }
+
+        h3 {
+            font-size: 24px;
+            color: #002677;
+            font-family: sans-serif;
+            font-weight: 700;
+            margin-top: 2px;
+        }
+
+        p {
+            font-family: sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+        }
+
+        .subtitle {
+            font-family: sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            font-size: 16px;
+
+            @include media-breakpoint-down(sm) {
+                width: 100%;
+            }
+        }
+
+        li {
+            font-size: 16px;
+            margin-bottom: 8px;
+            font-family: sans-serif;
+            font-weight: 500;
+            line-height: 22px;
+        }
+
+        .title-container {
+            text-align: center;
+            width: 60%;
+            margin: auto;
+
+            @include media-breakpoint-down(sm) {
+                width: 100%;
+            }
+
+        }
+
+        .accordion-title {
+            background-color: blue;
+            width: 100%;
+            border: 0px;
+            display: flex;
+            cursor: pointer;
+            padding: 20px;
+            background-color: #F4F4F4;
+            justify-content: space-between;
+
+            @include media-breakpoint-down(md) {
+                text-align: left;
+            }
+        }
+
+        .title {
+            display: flex;
+        }
+
+        .down-arrow {
+            width: 11px;
+            height: 6.8px;
+        }
+
+        .list-container {
+            padding: 10px 60px;
+            margin-bottom: 20px;
+            background-color: #F4F4F4;
+
+            @include media-breakpoint-down(sm) {
+                display: none;
+            }
+        }
+
+        .accordions {
+            width: 50%;
+            margin: auto;
+
+            @include media-breakpoint-down(sm) {
+                width: 100%;
+            }
+
+        }
+
+    }
+
+    &.banner-6 {
+        width: 100%;
+        background-color: #E5F8FB;
+        align-items: center;
+        padding: 30px;
+        text-align: center;
+
+        h2 {
+            font-size: 24px;
+            color: #002677
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            font-family: sans-serif;
+            font-weight: 400;
+        }
+
+        .subtext {
+            font-size: 16px;
+        }
+
+        .box {
+            width: 300px;
+            height: 230px;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .box-container {
+            display: flex;
+            justify-content: space-evenly;
+
+            @include media-breakpoint-down(sm) {
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    &.banner-7 {
+        background-color: #E5F8FB;
+
+        p {
+            font-weight: 400;
+            font-size: 16px;
+            font-family: sans-serif;
+        }
+
+        .button-container {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            a {
+                width: fit-content;
+                margin-bottom: 1.5em;
+            }
+
+            @include media-breakpoint-down(sm) {
+                flex-direction: column;
+            }
+        }
+
+        .text-container {
+            h1, p {
+                text-align: left;
+            }
+        }
+
+        .button {
+            background-color: #00005c;
+            border-radius: 30px;
+            font-size: 15px;
+            font-family: sans-serif;
+            padding: 11px 20px;
+            text-decoration: none;
+            color: white !important;
+            margin-right: 20px;
+
+            @include media-breakpoint-down(sm) {
+                width: 180px;
+            }
+        }
+
+        .button-2 {
+            background-color: #E5F8FB;
+            border: 1px solid #00005c;
+            border-radius: 30px;
+            font-size: 15px;
+            font-family: sans-serif;
+            padding: 11px 20px;
+            color: #00005c !important;
+            text-decoration: none;
+
+            @include media-breakpoint-down(sm) {
+                margin-top: 10px;
+                width: 200px;
+            }
+        }
+
+        a.btn {
+            margin-right: 10px;
+            width: fit-content;
+
+            &.blue-btn {
+                background-color: #002677;
+                border-color: #002677;
+                color: white;
+
+                &:hover {
+                    background-color: transparent;
+                    border-color: #002677;
+                    color: #002677;
+                }
+            }
+
+            &.white-btn {
+                background-color: transparent;
+                border-color: #002677;
+                color: #002677;
+
+                &:hover {
+                    background-color: #002677;
+                    border-color: #002677;
+                    color: white;
+                }
+            }
+        }
+
+        .loved-one-wrapper {
+            @include media-breakpoint-down(md) {
+                order: 2;
+            }
+        }
+        
+        .father-son-wrapper {
+            @include media-breakpoint-down(md) {
+                order: 1;
+            }
+            align-self: center;
+        }
+
+        .father-son-image {
+            width: 100%;
+        }
+
+    }
+
+
+
+
+    &.banner-8 {
+        @include media-breakpoint-down(md) {
+            .image-container-wrapper {
+                order: 1;
+            }
+
+            .risk-content-wrapper {
+                order: 2;
+            }
+        }
+
+        .ear-image {
+            width: 100%;
+
+            @include media-breakpoint-down(sm) {
+                margin: 30px 0px;
+            }
+        }
+    }
+
+    .subtext {
+        font-family: sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+    }
+}
+
+
+.hero-text-wrapper {
+    @include media-breakpoint-between(md, lg) {}
+
+    @include media-breakpoint-down(sm) {
+        order: 2;
+    }
+}
+
+.hero-text {
+    margin-left: auto;
+
+    @include media-breakpoint-up(md) {
+        max-width: 75%;
+    }
+}
+
+.aarp-perk-desc {
+
+    @include bold-element-font;
+    padding-left: 25px;
+
+    &::before {
+        content: '';
+        display: block;
+        position: relative;
+        top: 22px;
+        right: 29px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 23 23' fill='none'%3E%3Cg clip-path='url(%23clip0_752_153)'%3E%3Cpath d='M11.2802 0.589966C5.21444 0.589966 0.280151 5.52425 0.280151 11.59C0.280151 17.6557 5.21444 22.59 11.2802 22.59C17.3459 22.59 22.2802 17.6557 22.2802 11.59C22.2802 5.52425 17.3459 0.589966 11.2802 0.589966ZM9.26872 17.09L4.30301 12.1557L6.34587 10.1128L9.23729 13.0043L14.9887 7.25282H19.1373L9.26872 17.09Z' fill='%23002677'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_752_153'%3E%3Crect width='22' height='22' fill='white' transform='translate(0.280151 0.589966)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 23px;
+        width: 23px;
+    }
+}
+
+
+// Results Pages
+.light-blue-background {
+    background-color: $light-blue-background-color;
+}
+
+.dark-blue-background {
+    background-color: $color-blue-dark;
+
+    color: $white;
+
+    h1 {
+        color: $white;
+    }
+
+    .btn-primary {
+        color: $color-blue-dark;
+        border-color: $white;
+        background-color: $white;
+
+        &:hover {
+            color: $white;
+            border-color: $white;
+            background-color: $color-blue-dark;
+        }
+    }
+}
+
+.white-card-section {
+    .white-card {
+        background-color: $white;
+        color: $secondary-col-3;
+        @include medium-element-font();
+    
+        h1 {
+            font-size: 24px;
+            color: $color-blue-dark;
+        }
+    
+        h2 {
+            font-family: $uhc-font-sans-bold;
+            font-size: 16px;
+            color: $color-blue-dark;
+        }
+    
+        p {
+            @include medium-element-font();
+            margin: 0;
+        }
+    
+        .section {
+    
+            &:first-of-type {
+                @include media-breakpoint-up(md) {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: end;
+        
+                }
+                h1 {
+                    &.otc {
+    
+                        &::before {
+                            display: block;
+                            content: '';
+                            height: 70px;
+                            width: 70px;
+                            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72' fill='none'%3E%3Cg clip-path='url(%23clip0_716_18193)'%3E%3Cpath d='M56.9828 54.0008V13.4751H15.017V54.0008C13.3713 54.0008 12.0342 55.338 12.0342 56.9837H60.0685C59.9656 55.338 58.6285 54.0008 56.9828 54.0008ZM28.4913 49.4751H17.9999V36.0008H28.4913V49.4751ZM40.5256 54.0008H31.4742V36.0008H40.5256V54.0008ZM53.9999 49.4751H43.5085V36.0008H53.9999V49.4751ZM48.0342 30.0351H23.9656C20.6742 30.0351 17.9999 27.3608 17.9999 24.0694C17.9999 20.778 20.6742 18.1037 23.9656 18.1037H47.9313C51.2228 18.1037 53.897 20.778 53.897 24.0694C53.897 27.3608 51.3256 30.0351 48.0342 30.0351Z' fill='%23002677'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_716_18193'%3E%3Crect width='72' height='72' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+                        }
+                    }
+    
+                    &.prescription {
+    
+                        &::before {
+                            display: block;
+                            content: '';
+                            height: 70px;
+                            width: 70px;
+                            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='70' height='70' viewBox='0 0 70 70' fill='none'%3E%3Cg clip-path='url(%23clip0_716_18218)'%3E%3Cpath d='M20.752 22.298H18.3895V25.2146H20.6499C21.18 25.2802 21.7171 25.1728 22.1812 24.9084C22.3681 24.7756 22.5183 24.5976 22.6178 24.3911C22.7172 24.1845 22.7627 23.9561 22.7499 23.7271C22.7499 22.7501 22.1374 22.298 20.752 22.298Z' fill='%23002677'/%3E%3Cpath d='M62.7083 42.7V36.2396C62.7086 35.4292 62.4837 34.6346 62.0589 33.9445C61.634 33.2545 61.0258 32.6959 60.3021 32.3313L55.65 30.0125L50.8667 19.25C50.64 18.7306 50.2668 18.2884 49.7929 17.9776C49.3189 17.6668 48.7647 17.5009 48.1979 17.5H13.125C12.3515 17.5 11.6096 17.8073 11.0626 18.3543C10.5156 18.9013 10.2083 19.6431 10.2083 20.4167V42.7C9.76751 42.9545 9.40097 43.3199 9.14513 43.76C8.8893 44.2 8.75307 44.6993 8.75 45.2083H13.125C13.125 46.7554 13.7396 48.2392 14.8335 49.3331C15.9275 50.4271 17.4112 51.0417 18.9583 51.0417C20.5054 51.0417 21.9892 50.4271 23.0831 49.3331C24.1771 48.2392 24.7917 46.7554 24.7917 45.2083H45.2083C45.2083 46.7554 45.8229 48.2392 46.9169 49.3331C48.0108 50.4271 49.4946 51.0417 51.0417 51.0417C52.5888 51.0417 54.0725 50.4271 55.1665 49.3331C56.2604 48.2392 56.875 46.7554 56.875 45.2083H64.1667C64.1636 44.6993 64.0274 44.2 63.7715 43.76C63.5157 43.3199 63.1492 42.9545 62.7083 42.7ZM18.9583 48.125C18.3815 48.125 17.8176 47.9539 17.3379 47.6335C16.8583 47.313 16.4844 46.8574 16.2637 46.3245C16.0429 45.7915 15.9852 45.2051 16.0977 44.6393C16.2102 44.0735 16.488 43.5538 16.8959 43.1459C17.3038 42.738 17.8235 42.4603 18.3893 42.3477C18.9551 42.2352 19.5415 42.2929 20.0745 42.5137C20.6074 42.7344 21.063 43.1083 21.3835 43.5879C21.7039 44.0676 21.875 44.6315 21.875 45.2083C21.875 45.9819 21.5677 46.7237 21.0207 47.2707C20.4737 47.8177 19.7319 48.125 18.9583 48.125ZM27.475 36.4583L25.5792 33.7312L23.6979 36.4583H20.9125L24.1792 31.7188L20.8542 27.0229H18.4188V31.2813H16.0417V20.4167H21.2771C22.1038 20.3471 22.9333 20.514 23.6687 20.8979L23.9021 21.0583C24.2318 21.3069 24.505 21.6226 24.7036 21.9846C24.9023 22.3466 25.0217 22.7467 25.0542 23.1583C25.0908 23.444 25.0908 23.7331 25.0542 24.0187C24.9822 24.4834 24.8056 24.9257 24.5379 25.3122C24.2701 25.6987 23.9181 26.0193 23.5083 26.25L23.275 26.3813L25.6958 29.7938L27.1542 27.4312H29.8958L26.9792 31.6167L30.3188 36.4583H27.475ZM39.375 29.1667V20.4167H48.125L52.0187 29.1667H39.375ZM51.0417 48.125C50.4648 48.125 49.9009 47.9539 49.4213 47.6335C48.9416 47.313 48.5678 46.8574 48.347 46.3245C48.1263 45.7915 48.0685 45.2051 48.181 44.6393C48.2936 44.0735 48.5714 43.5538 48.9793 43.1459C49.3872 42.738 49.9069 42.4603 50.4727 42.3477C51.0384 42.2352 51.6249 42.2929 52.1578 42.5137C52.6908 42.7344 53.1463 43.1083 53.4668 43.5879C53.7873 44.0676 53.9583 44.6315 53.9583 45.2083C53.9583 45.9819 53.651 46.7237 53.1041 47.2707C52.5571 47.8177 51.8152 48.125 51.0417 48.125Z' fill='%23002677'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_716_18218'%3E%3Crect width='70' height='70' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+                        }
+
+                    }
+                }
+            }
+    
+            padding: 15px 20px;
+            border-top: 1px solid $secondary-col-3;
+
+            @include media-breakpoint-up(md) {
+                min-height: 110px;
+            }
+        }
+    }
+
+    &.white-card-mobile {
+        border-bottom: 1px solid $secondary-col-3;
+
+        .change-card-header {
+            margin: 0;
+
+            .white-card {
+                text-align: center;
+                border-top: 5px solid transparent;
+                
+
+                &:not(.show) {
+                    background-color: #F4F4F4;
+                    h1 { 
+                        color: #333;
+                        &.otc {
+                            &::before {
+                                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72' fill='none'%3E%3Cg clip-path='url(%23clip0_716_18193)'%3E%3Cpath d='M56.9828 54.0008V13.4751H15.017V54.0008C13.3713 54.0008 12.0342 55.338 12.0342 56.9837H60.0685C59.9656 55.338 58.6285 54.0008 56.9828 54.0008ZM28.4913 49.4751H17.9999V36.0008H28.4913V49.4751ZM40.5256 54.0008H31.4742V36.0008H40.5256V54.0008ZM53.9999 49.4751H43.5085V36.0008H53.9999V49.4751ZM48.0342 30.0351H23.9656C20.6742 30.0351 17.9999 27.3608 17.9999 24.0694C17.9999 20.778 20.6742 18.1037 23.9656 18.1037H47.9313C51.2228 18.1037 53.897 20.778 53.897 24.0694C53.897 27.3608 51.3256 30.0351 48.0342 30.0351Z' fill='%23333333'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_716_18193'%3E%3Crect width='72' height='72' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+                            }
+                        }
+                        &.prescription {
+                            &::before {
+                                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='70' height='70' viewBox='0 0 70 70' fill='none'%3E%3Cg clip-path='url(%23clip0_716_18218)'%3E%3Cpath d='M20.752 22.298H18.3895V25.2146H20.6499C21.18 25.2802 21.7171 25.1728 22.1812 24.9084C22.3681 24.7756 22.5183 24.5976 22.6178 24.3911C22.7172 24.1845 22.7627 23.9561 22.7499 23.7271C22.7499 22.7501 22.1374 22.298 20.752 22.298Z' fill='%23002677'/%3E%3Cpath d='M62.7083 42.7V36.2396C62.7086 35.4292 62.4837 34.6346 62.0589 33.9445C61.634 33.2545 61.0258 32.6959 60.3021 32.3313L55.65 30.0125L50.8667 19.25C50.64 18.7306 50.2668 18.2884 49.7929 17.9776C49.3189 17.6668 48.7647 17.5009 48.1979 17.5H13.125C12.3515 17.5 11.6096 17.8073 11.0626 18.3543C10.5156 18.9013 10.2083 19.6431 10.2083 20.4167V42.7C9.76751 42.9545 9.40097 43.3199 9.14513 43.76C8.8893 44.2 8.75307 44.6993 8.75 45.2083H13.125C13.125 46.7554 13.7396 48.2392 14.8335 49.3331C15.9275 50.4271 17.4112 51.0417 18.9583 51.0417C20.5054 51.0417 21.9892 50.4271 23.0831 49.3331C24.1771 48.2392 24.7917 46.7554 24.7917 45.2083H45.2083C45.2083 46.7554 45.8229 48.2392 46.9169 49.3331C48.0108 50.4271 49.4946 51.0417 51.0417 51.0417C52.5888 51.0417 54.0725 50.4271 55.1665 49.3331C56.2604 48.2392 56.875 46.7554 56.875 45.2083H64.1667C64.1636 44.6993 64.0274 44.2 63.7715 43.76C63.5157 43.3199 63.1492 42.9545 62.7083 42.7ZM18.9583 48.125C18.3815 48.125 17.8176 47.9539 17.3379 47.6335C16.8583 47.313 16.4844 46.8574 16.2637 46.3245C16.0429 45.7915 15.9852 45.2051 16.0977 44.6393C16.2102 44.0735 16.488 43.5538 16.8959 43.1459C17.3038 42.738 17.8235 42.4603 18.3893 42.3477C18.9551 42.2352 19.5415 42.2929 20.0745 42.5137C20.6074 42.7344 21.063 43.1083 21.3835 43.5879C21.7039 44.0676 21.875 44.6315 21.875 45.2083C21.875 45.9819 21.5677 46.7237 21.0207 47.2707C20.4737 47.8177 19.7319 48.125 18.9583 48.125ZM27.475 36.4583L25.5792 33.7312L23.6979 36.4583H20.9125L24.1792 31.7188L20.8542 27.0229H18.4188V31.2813H16.0417V20.4167H21.2771C22.1038 20.3471 22.9333 20.514 23.6687 20.8979L23.9021 21.0583C24.2318 21.3069 24.505 21.6226 24.7036 21.9846C24.9023 22.3466 25.0217 22.7467 25.0542 23.1583C25.0908 23.444 25.0908 23.7331 25.0542 24.0187C24.9822 24.4834 24.8056 24.9257 24.5379 25.3122C24.2701 25.6987 23.9181 26.0193 23.5083 26.25L23.275 26.3813L25.6958 29.7938L27.1542 27.4312H29.8958L26.9792 31.6167L30.3188 36.4583H27.475ZM39.375 29.1667V20.4167H48.125L52.0187 29.1667H39.375ZM51.0417 48.125C50.4648 48.125 49.9009 47.9539 49.4213 47.6335C48.9416 47.313 48.5678 46.8574 48.347 46.3245C48.1263 45.7915 48.0685 45.2051 48.181 44.6393C48.2936 44.0735 48.5714 43.5538 48.9793 43.1459C49.3872 42.738 49.9069 42.4603 50.4727 42.3477C51.0384 42.2352 51.6249 42.2929 52.1578 42.5137C52.6908 42.7344 53.1463 43.1083 53.4668 43.5879C53.7873 44.0676 53.9583 44.6315 53.9583 45.2083C53.9583 45.9819 53.651 46.7237 53.1041 47.2707C52.5571 47.8177 51.8152 48.125 51.0417 48.125Z' fill='%23333333'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_716_18218'%3E%3Crect width='70' height='70' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+                            }
+                        }
+                    }
+                }
+                &.show {
+                    border-top: 5px solid #00BED5;
+                }
+            }
+        }
+
+        h1 {
+            &.otc {
+                &::before {
+                    display: block;
+                    content: '';
+                    height: 70px;
+                    width: 70px;
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='72' height='72' viewBox='0 0 72 72' fill='none'%3E%3Cg clip-path='url(%23clip0_716_18193)'%3E%3Cpath d='M56.9828 54.0008V13.4751H15.017V54.0008C13.3713 54.0008 12.0342 55.338 12.0342 56.9837H60.0685C59.9656 55.338 58.6285 54.0008 56.9828 54.0008ZM28.4913 49.4751H17.9999V36.0008H28.4913V49.4751ZM40.5256 54.0008H31.4742V36.0008H40.5256V54.0008ZM53.9999 49.4751H43.5085V36.0008H53.9999V49.4751ZM48.0342 30.0351H23.9656C20.6742 30.0351 17.9999 27.3608 17.9999 24.0694C17.9999 20.778 20.6742 18.1037 23.9656 18.1037H47.9313C51.2228 18.1037 53.897 20.778 53.897 24.0694C53.897 27.3608 51.3256 30.0351 48.0342 30.0351Z' fill='%23002677'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_716_18193'%3E%3Crect width='72' height='72' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+                    margin: 0 auto;
+                }
+            }
+
+            &.prescription {
+                &::before {
+                    display: block;
+                    content: '';
+                    height: 70px;
+                    width: 70px;
+                    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='70' height='70' viewBox='0 0 70 70' fill='none'%3E%3Cg clip-path='url(%23clip0_716_18218)'%3E%3Cpath d='M20.752 22.298H18.3895V25.2146H20.6499C21.18 25.2802 21.7171 25.1728 22.1812 24.9084C22.3681 24.7756 22.5183 24.5976 22.6178 24.3911C22.7172 24.1845 22.7627 23.9561 22.7499 23.7271C22.7499 22.7501 22.1374 22.298 20.752 22.298Z' fill='%23002677'/%3E%3Cpath d='M62.7083 42.7V36.2396C62.7086 35.4292 62.4837 34.6346 62.0589 33.9445C61.634 33.2545 61.0258 32.6959 60.3021 32.3313L55.65 30.0125L50.8667 19.25C50.64 18.7306 50.2668 18.2884 49.7929 17.9776C49.3189 17.6668 48.7647 17.5009 48.1979 17.5H13.125C12.3515 17.5 11.6096 17.8073 11.0626 18.3543C10.5156 18.9013 10.2083 19.6431 10.2083 20.4167V42.7C9.76751 42.9545 9.40097 43.3199 9.14513 43.76C8.8893 44.2 8.75307 44.6993 8.75 45.2083H13.125C13.125 46.7554 13.7396 48.2392 14.8335 49.3331C15.9275 50.4271 17.4112 51.0417 18.9583 51.0417C20.5054 51.0417 21.9892 50.4271 23.0831 49.3331C24.1771 48.2392 24.7917 46.7554 24.7917 45.2083H45.2083C45.2083 46.7554 45.8229 48.2392 46.9169 49.3331C48.0108 50.4271 49.4946 51.0417 51.0417 51.0417C52.5888 51.0417 54.0725 50.4271 55.1665 49.3331C56.2604 48.2392 56.875 46.7554 56.875 45.2083H64.1667C64.1636 44.6993 64.0274 44.2 63.7715 43.76C63.5157 43.3199 63.1492 42.9545 62.7083 42.7ZM18.9583 48.125C18.3815 48.125 17.8176 47.9539 17.3379 47.6335C16.8583 47.313 16.4844 46.8574 16.2637 46.3245C16.0429 45.7915 15.9852 45.2051 16.0977 44.6393C16.2102 44.0735 16.488 43.5538 16.8959 43.1459C17.3038 42.738 17.8235 42.4603 18.3893 42.3477C18.9551 42.2352 19.5415 42.2929 20.0745 42.5137C20.6074 42.7344 21.063 43.1083 21.3835 43.5879C21.7039 44.0676 21.875 44.6315 21.875 45.2083C21.875 45.9819 21.5677 46.7237 21.0207 47.2707C20.4737 47.8177 19.7319 48.125 18.9583 48.125ZM27.475 36.4583L25.5792 33.7312L23.6979 36.4583H20.9125L24.1792 31.7188L20.8542 27.0229H18.4188V31.2813H16.0417V20.4167H21.2771C22.1038 20.3471 22.9333 20.514 23.6687 20.8979L23.9021 21.0583C24.2318 21.3069 24.505 21.6226 24.7036 21.9846C24.9023 22.3466 25.0217 22.7467 25.0542 23.1583C25.0908 23.444 25.0908 23.7331 25.0542 24.0187C24.9822 24.4834 24.8056 24.9257 24.5379 25.3122C24.2701 25.6987 23.9181 26.0193 23.5083 26.25L23.275 26.3813L25.6958 29.7938L27.1542 27.4312H29.8958L26.9792 31.6167L30.3188 36.4583H27.475ZM39.375 29.1667V20.4167H48.125L52.0187 29.1667H39.375ZM51.0417 48.125C50.4648 48.125 49.9009 47.9539 49.4213 47.6335C48.9416 47.313 48.5678 46.8574 48.347 46.3245C48.1263 45.7915 48.0685 45.2051 48.181 44.6393C48.2936 44.0735 48.5714 43.5538 48.9793 43.1459C49.3872 42.738 49.9069 42.4603 50.4727 42.3477C51.0384 42.2352 51.6249 42.2929 52.1578 42.5137C52.6908 42.7344 53.1463 43.1083 53.4668 43.5879C53.7873 44.0676 53.9583 44.6315 53.9583 45.2083C53.9583 45.9819 53.651 46.7237 53.1041 47.2707C52.5571 47.8177 51.8152 48.125 51.0417 48.125Z' fill='%23002677'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_716_18218'%3E%3Crect width='70' height='70' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        .otc-card, .prescription-card {
+            display: none;
+
+            &.show {
+                display: block;
+            }
+        }
+    }
+}
+
+
+.center-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+
+    .heading-wrapper {
+        text-align: center;
+    }
+
+    @include media-breakpoint-up(md) {
+        max-width: 75%;
+
+        .heading-wrapper {
+            p {
+                padding: 0 20%;
+            }
+        }
+
+
+        ul {
+            max-width: 80%;
+        }
+    }
+}
+
+.image-container-wrapper {
+    @include media-breakpoint-down(md) {
+        order: 1;
+
+    }
+}
+
+.text-content-wrapper {
+    @include media-breakpoint-down(md) {
+        order: 2;
+    }
+}
+
+// Accordion Styles
+.accordion-wrapper {
+    margin-bottom: 20px;
+
+    .accordion-title {
+        @include media-breakpoint-down(md) {
+            text-align: left;
+        }
+    }
+
+    .list-container {
+        display: none;
+
+        &.show {
+            display: block;
+        }
+    }
+}
+
+.down-arrow {
+    transform: rotate(0);
+    transition: transform 0.15s ease;
+
+    &.opened {
+        transform: rotate(180deg);
     }
 }

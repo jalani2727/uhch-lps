@@ -280,4 +280,24 @@ $(document).on('click', '.white-card-mobile .white-card', function(e) {
     $(this).addClass('show');
     card.addClass('show');
 } )
->>>>>>> 30b30ede8e6eef942643cb8fb5192de1d1c11bc9
+
+// Audio 
+var playing = false;
+$(document).on('click', 'a.play-button', function(e) {
+    
+    var soundEffect = $(this).find('.myAudio');
+
+    if (playing == false) {
+        $(this).closest(".simulation").addClass('playing');
+        $(this).addClass('playing');
+        soundEffect[0].play();
+        playing = true;
+    } else {
+        $(this).closest(".simulation").removeClass('playing');
+        $(this).removeClass('playing');
+        soundEffect[0].pause();
+        soundEffect[0].currentTime = 0;
+        playing = false;
+    }
+
+})

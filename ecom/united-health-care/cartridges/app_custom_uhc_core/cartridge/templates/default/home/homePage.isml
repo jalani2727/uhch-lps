@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <isdecorate template="common/layout/page">
     <isscript>
         var assets = require('*/cartridge/scripts/assets.js');
@@ -22,25 +21,3 @@
     </div>
     <isinclude template="home/registrationSuccessModal"/>
 </isdecorate>
-=======
-<isdecorate template="common/layout/page">
-    <isscript>
-        var assets = require('*/cartridge/scripts/assets.js');
-        assets.addJs('/js/homePage.js');
-        assets.addCss('/css/homePage.css');
-    </isscript>
-    <div class="home-main homepage" data-is-pricebook-updated="${true}">
-        <isslot id="home-main-m" description="Main home page slot." context="global" />
-    </div>
-
-
-    <isinclude template="home/banner-1" />
-    <isinclude template="home/banner-2" />
-
-
-    <div class="path-selection-slot">
-        <isslot id="path-selection-slot" description="Path Selection Slot" context="global" />
-    </div>
-    <isinclude template="home/registrationSuccessModal"/>
-</isdecorate>
->>>>>>> 30b30ede8e6eef942643cb8fb5192de1d1c11bc9

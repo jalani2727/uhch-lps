@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <isdecorate template="common/layout/page">
 
     <h1 class="page-title text-sm-center d-block position-static mt-sm-5 mb-0 px-3">${Resource.msg('heading.error.general', 'error', null)}</h1>
@@ -14,20 +13,3 @@
         </div>
     </div>
 </isdecorate>
-=======
-<isdecorate template="common/layout/page">
-
-    <h1 class="page-title text-sm-center d-block position-static mt-sm-5 mb-0 px-3">${Resource.msg('heading.error.general', 'error', null)}</h1>
-
-    <div class="container">
-        <p class="text-sm-center error-message my-4">${Resource.msg('message.page.not.found', 'error', null)}</p>
-        <div class="row justify-content-sm-center">
-            <div class="col-auto">
-                <a href="${URLUtils.url('Home-Show')}" class="btn btn-primary error continue-shopping" role="button" aria-pressed="true">
-                    ${Resource.msg('button.return.home', 'error', null)}
-                </a>
-            </div>
-        </div>
-    </div>
-</isdecorate>
->>>>>>> 30b30ede8e6eef942643cb8fb5192de1d1c11bc9
