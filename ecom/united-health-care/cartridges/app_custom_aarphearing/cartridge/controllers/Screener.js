@@ -20,13 +20,13 @@ server.get(
 
         viewData.adobeDataLayer = {};
         viewData.adobeDataLayer.Context = 'GlobalData';
-        viewData.adobeDataLayer.PageGroup = "Questionnaire Results 1";
-        viewData.adobeDataLayer.PageName = "questionnaire-results-1";
+        viewData.adobeDataLayer.PageGroup = 'Questionnaire Results 1';
+        viewData.adobeDataLayer.PageName = 'questionnaire-results-1';
 
         res.setViewData();
-        
+
         res.render('hearingScreener/results/q-results-1');
-        
+
         next();
     }
 );
@@ -37,13 +37,13 @@ server.get(
 
         viewData.adobeDataLayer = {};
         viewData.adobeDataLayer.Context = 'GlobalData';
-        viewData.adobeDataLayer.PageGroup = "Questionnaire Results 2";
-        viewData.adobeDataLayer.PageName = "questionnaire-results-2";
+        viewData.adobeDataLayer.PageGroup = 'Questionnaire Results 2';
+        viewData.adobeDataLayer.PageName = 'questionnaire-results-2';
 
         res.setViewData();
 
         res.render('hearingScreener/results/q-results-2');
-        
+
         next();
     }
 );
@@ -54,13 +54,13 @@ server.get(
 
         viewData.adobeDataLayer = {};
         viewData.adobeDataLayer.Context = 'GlobalData';
-        viewData.adobeDataLayer.PageGroup = "Questionnaire Results 3";
-        viewData.adobeDataLayer.PageName = "questionnaire-results-3";
+        viewData.adobeDataLayer.PageGroup = 'Questionnaire Results 3';
+        viewData.adobeDataLayer.PageName = 'questionnaire-results-3';
 
         res.setViewData();
 
         res.render('hearingScreener/results/q-results-3');
-        
+
         next();
     }
 );
@@ -71,13 +71,13 @@ server.get(
 
         viewData.adobeDataLayer = {};
         viewData.adobeDataLayer.Context = 'GlobalData';
-        viewData.adobeDataLayer.PageGroup = "Questionnaire Results 4";
-        viewData.adobeDataLayer.PageName = "questionnaire-results-4";
+        viewData.adobeDataLayer.PageGroup = 'Questionnaire Results 4';
+        viewData.adobeDataLayer.PageName = 'questionnaire-results-4';
 
         res.setViewData();
 
         res.render('hearingScreener/results/q-results-4');
-        
+
         next();
     }
 );
@@ -90,13 +90,13 @@ server.get(
 
         viewData.adobeDataLayer = {};
         viewData.adobeDataLayer.Context = 'GlobalData';
-        viewData.adobeDataLayer.PageGroup = "Questionnaire Widget";
-        viewData.adobeDataLayer.PageName = "questionnaire-widget";
+        viewData.adobeDataLayer.PageGroup = 'Questionnaire Widget';
+        viewData.adobeDataLayer.PageName = 'questionnaire-widget';
 
         res.setViewData();
 
         res.render('hearingScreener/questionnaire');
-        
+
         next();
     }
 );
@@ -107,13 +107,13 @@ server.get(
 
         viewData.adobeDataLayer = {};
         viewData.adobeDataLayer.Context = 'GlobalData';
-        viewData.adobeDataLayer.PageGroup = "Questionnaire Landing Page";
-        viewData.adobeDataLayer.PageName = "questionnaire-landing-page";
+        viewData.adobeDataLayer.PageGroup = 'Questionnaire Landing Page';
+        viewData.adobeDataLayer.PageName = 'questionnaire-landing-page';
 
         res.setViewData();
 
         res.render('hearingScreener/questionnaireLanding');
-        
+
         next();
     }
 );

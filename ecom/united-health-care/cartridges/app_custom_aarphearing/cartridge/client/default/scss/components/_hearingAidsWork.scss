@@ -31,7 +31,6 @@
     }
 }
 
-
 .hidden-lg {
     display: none;
 
@@ -67,7 +66,6 @@
     &.aids-container h1 {
         margin-bottom: 10px;
     }
-
 
     @include media-breakpoint-up(md) {
         flex-direction: row;
@@ -105,7 +103,7 @@
             opacity: 0.4;
         }
 
-        &.playing{
+        &.playing {
             border: 1px solid $color-blue-dark;
             border-radius: 50%;
         }
@@ -121,14 +119,15 @@
         display: flex;
         align-items: center;
 
-            #with-aids, #without-aids {
-                &.simulation-text.st {
-                    color: #002677;
-                    margin-left: 10px;
-                    line-height: 22px;
-                    font-weight: 600;
-                    font-family: "UHCSansBold", sans-serif;
-                    margin-bottom: 0;
+        #with-aids,
+        #without-aids {
+            &.simulation-text.st {
+                color: #002677;
+                margin-left: 10px;
+                line-height: 22px;
+                font-weight: 600;
+                font-family: "UHCSansBold", sans-serif;
+                margin-bottom: 0;
             }
         }
     }

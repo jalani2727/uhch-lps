@@ -472,7 +472,7 @@ base.isBenefitApplicable = function isBenefitApplicable() {
     var numberOfPastHoursForOrderLookup = preferences.numberOfPastHoursForOrderLookup || 2;
     var timeZoneFactor = dw.system.Site.current.timezoneOffset;
     var orderLapseTime = new Date(new Date().getTime() + timeZoneFactor);
-    orderLapseTime.setHours(orderLapseTime.getHours() - numberOfPastHoursForOrderLookup); 
+    orderLapseTime.setHours(orderLapseTime.getHours() - numberOfPastHoursForOrderLookup);
     var Calendar = require('dw/util/Calendar');
     var ordertime = require('dw/util/StringUtils').formatCalendar(new Calendar(orderLapseTime), "yyyy-MM-dd'T'HH:mm:ss");
     var benefitApplicable = true;
@@ -511,14 +511,14 @@ base.recalculatePriceAdjustments = function recalculatePriceAdjustments(currentB
     if (session.customer.authenticated) {
         if (empty(session.privacy.subscriberId)) {
             session.privacy.OTCStatus = 'eligibilityNotAvailable';
-        } else  if (!empty(session.privacy.subscriberId) && empty(session.privacy.pricebook)) {
+        } else if (!empty(session.privacy.subscriberId) && empty(session.privacy.pricebook)) {
             session.privacy.OTCStatus = 'eligibilityInProgress';
         } else if (session.privacy.OTCDevicesCoverage && session.privacy.NewPurchasePossible) {
             // if benefits are not used in recent past then call the benefits api
             if (!session.privacy.benefitAlreadyUsedInPast) {
                 session.privacy.benefitAppliedToCart = true;
                 var benefitsCalculationsAPIResp = base.benefitsCalculationsAPI();
-                if (benefitsCalculationsAPIResp && ( benefitsCalculationsAPIResp.ok || 'deductibleMet' in benefitsCalculationsAPIResp) &&  !empty(benefitsCalculationsAPIResp.deductibleMet)) {
+                if (benefitsCalculationsAPIResp && (benefitsCalculationsAPIResp.ok || 'deductibleMet' in benefitsCalculationsAPIResp) && !empty(benefitsCalculationsAPIResp.deductibleMet)) {
                     if (benefitsCalculationsAPIResp.deductibleMet.equalsIgnoreCase('yes')) {
                         session.privacy.OTCStatus = 'benefitApplied_DM';
                     } else {
@@ -558,7 +558,7 @@ base.benefitsCalculationsAPI = function benefitsCalculationsAPI() {
     var benefitCalculationAPPID = session.privacy.opportunityId;
     var products = [];
     var benefitsCalculationsAPIRequestObj = {};
-    for (var i = 0 ; i < currentBasket.productLineItems.length; i ++) {
+    for (var i = 0; i < currentBasket.productLineItems.length; i++) {
         products.push({
             productId: currentBasket.productLineItems[i].productID,
             quantity: currentBasket.productLineItems[i].quantity.value
@@ -582,13 +582,15 @@ base.benefitsCalculationsAPI = function benefitsCalculationsAPI() {
     if (benefitsCalculationsAPIRespObj && 'calculationDetails' in benefitsCalculationsAPIRespObj && benefitsCalculationsAPIRespObj.calculationDetails && benefitsCalculationsAPIRespObj.calculationDetails.length > 0) {
         if (benefitsCalculationsAPIRespObj && 'planBenefit' in benefitsCalculationsAPIRespObj) {
             session.privacy.benefitAPICalled = true;
-        }    
-        var pli , benefitProd, benefitAmt;
+        }
+        var pli,
+            benefitProd,
+            benefitAmt;
         var BENEFIT_ID = 'BENEFITAPI';
-        for (var z = 0 ; z< benefitsCalculationsAPIRespObj.calculationDetails.length; z++) {
+        for (var z = 0; z < benefitsCalculationsAPIRespObj.calculationDetails.length; z++) {
             benefitProd = benefitsCalculationsAPIRespObj.calculationDetails[z];
             pli = currentBasket.getProductLineItems(benefitProd.productId);
-            if (pli.length > 0 ) {
+            if (pli.length > 0) {
                 if (benefitProd.productOOPAmount != benefitProd.productCost) {
                     benefitAmt = Math.abs(benefitProd.productCost - benefitProd.productOOPAmount);
                     Transaction.wrap(function () {

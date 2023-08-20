@@ -16,6 +16,7 @@
     font-weight: 700;
     line-height: 24px;
 }
+
 @mixin normal-element-font {
     font-family: $uhc-font-sans-medium;
     font-size: 16px;
@@ -29,16 +30,13 @@
     max-width: 100%;
 }
 
-
 .content-banner {
-
     h1 {
         @include hero-title-font;
     }
 
     p {
         @include normal-element-font;
-
     }
 
     ul {
@@ -54,17 +52,12 @@
     .banner-2-content {
         text-align: center;
 
-        @include media-breakpoint-between(md, lg){
-
-        }
-
         @include media-breakpoint-down(md) {
             text-align: left;
         }
     }
 
     &.banner-3 {
-
         .hero-text-wrapper {
             display: flex;
             align-items: center;
@@ -81,10 +74,6 @@
                 width: 100%;
                 clip-path: polygon(14% 0, 100% 0, 100% 100%, 0% 100%);
 
-                @include media-breakpoint-between(md, lg){
-
-                }
-
                 @include media-breakpoint-down(sm) {
                     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 83%);
                 }
@@ -93,10 +82,6 @@
     }
 
     .hero-text-wrapper {
-        @include media-breakpoint-between(md, lg){
-
-        }
-
         @include media-breakpoint-down(sm) {
             order: 2;
         }
@@ -111,7 +96,6 @@
     }
 
     .aarp-perk-desc {
-
         @include bold-element-font;
 
         &::before {

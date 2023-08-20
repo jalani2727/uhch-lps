@@ -11,12 +11,8 @@
 }
 
 .results4 {
-    
     &.content-cards {
-        
-        @include media-breakpoint-up(lg) { 
-        
-
+        @include media-breakpoint-up(lg) {
             .results-flex-card {
                 width: 32%;
                 min-height: 230px;
@@ -25,10 +21,9 @@
     }
 }
 
-
 .type-of-care {
     text-align: center;
-    
+
     p {
         width: 75%;
         margin: 0 auto;

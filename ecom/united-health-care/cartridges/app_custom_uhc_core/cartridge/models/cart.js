@@ -3,7 +3,7 @@
 var base = module.superModule;
 
 var cartHelper = require('*/cartridge/scripts/cart/cartHelpers');
-var Resource = require('dw/web/Resource');    
+var Resource = require('dw/web/Resource');
 
 /**
  * @constructor
