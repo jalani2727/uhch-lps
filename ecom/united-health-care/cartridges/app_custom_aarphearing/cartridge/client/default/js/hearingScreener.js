@@ -25,26 +25,26 @@ function updateProgressBar(currentField, upcoming) {
 }
 
 function navigateToResultsLp(question, answer) {
-    const resultsPage1 = 'resultsPage1';
-    const resultsPage2 = 'resultsPage2';
-    const resultsPage3 = 'resultsPage3';
-    const resultsPage4 = 'resultsPage4';
+    const resultsPage1 = 'https://bgxl-010.dx.commercecloud.salesforce.com/on/demandware.store/Sites-AARPHearing-Site/default/Screener-ResultsPage1';
+    const resultsPage2 = 'https://bgxl-010.dx.commercecloud.salesforce.com/on/demandware.store/Sites-AARPHearing-Site/default/Screener-ResultsPage2';
+    const resultsPage3 = 'https://bgxl-010.dx.commercecloud.salesforce.com/on/demandware.store/Sites-AARPHearing-Site/default/Screener-ResultsPage3';
+    const resultsPage4 = 'https://bgxl-010.dx.commercecloud.salesforce.com/on/demandware.store/Sites-AARPHearing-Site/default/Screener-ResultsPage4';
 
-    console.log(answer);
+    let route = "";
 
     if (question === "screener-q4a" || question === "screener-q4b") {
         switch (answer) {
             case "q2a-1":
-                console.log(resultsPage1);
+                route = resultsPage1;
                 break;
             case "q2a-2":
-                console.log(resultsPage3);
+                route = resultsPage3;
                 break;
             case "q2a-3":
-                console.log(resultsPage3);
+                route = resultsPage3;
                 break;
             case "q2a-4":
-                console.log(resultsPage3);
+                route = resultsPage3;
                 break;
             default:
                 break;
@@ -52,13 +52,13 @@ function navigateToResultsLp(question, answer) {
     } else if (question === "screener-q4c") {
         switch (answer) {
             case "q2c-1":
-                console.log(resultsPage4);
+                route = resultsPage4;
                 break;
             case "q2c-2":
-                console.log(resultsPage4);
+                route = resultsPage4;
                 break;
             case "q2c-3":
-                console.log(resultsPage3);
+                route = resultsPage3;
                 break;
             default:
                 break;
@@ -66,13 +66,13 @@ function navigateToResultsLp(question, answer) {
     } else if (question === "screener-q4d") {
         switch (answer) {
             case "q2d-1":
-                console.log(resultsPage4);
+                route = resultsPage4;
                 break;
             case "q2d-2":
-                console.log(resultsPage4);
+                route = resultsPage4;
                 break;
             case "q2d-3":
-                console.log(resultsPage4);
+                route = resultsPage4;
                 break;
             default:
                 break;
@@ -80,15 +80,19 @@ function navigateToResultsLp(question, answer) {
     } else if (question === "screener-q4e") {
         switch (answer) {
             case "q2e-1":
-                console.log(resultsPage2);
+                route = resultsPage2;
                 break;
             case "q2e-2":
-                console.log(resultsPage2);
+                route = resultsPage2;
                 break;
             default:
                 break;
         }
     }
+
+    setTimeout(()=> {
+        if (route !== "") window.location.href = route;
+    }, 5000);
 }
 
 // Change current Progress Bar step when a radio button or checkbox is selected.
