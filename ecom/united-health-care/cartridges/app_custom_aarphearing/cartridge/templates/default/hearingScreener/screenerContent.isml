@@ -62,7 +62,7 @@
         </li>
     </ul>
 
-    <a href="javascript:void(0)" id="q2-btn" class="next btn-next btn btn-primary mb-5 custom-datalayer"
+    <a href="javascript:void(0)" id="q2-btn" class="disabled next btn-next btn btn-primary mb-5 custom-datalayer"
         data-name="${Resource.msg('label.adobe.questionnaire-widget-next', 'hearingscreener', null)}"
         data-location="HHQ-Q1">
         ${Resource.msg('label.hearing-screener.btn.next-question', 'hearingscreener', null)}
@@ -100,7 +100,7 @@
         </li>
     </ul>
 
-    <a href="javascript:void(0)" id="q3-btn" class="next btn-next btn btn-primary mb-5 custom-datalayer"
+    <a href="javascript:void(0)" id="q3-btn" class="disabled next btn-next btn btn-primary mb-5 custom-datalayer"
         data-name="${Resource.msg('label.adobe.questionnaire-widget-next', 'hearingscreener', null)}"
         data-location="HHQ-Q2">
         ${Resource.msg('label.hearing-screener.btn.next-question', 'hearingscreener', null)}
@@ -138,7 +138,7 @@
         </li>
     </ul>
 
-    <a href="javascript:void(0)" id="q4-btn" class="next btn-next btn btn-primary mb-5 custom-datalayer"
+    <a href="javascript:void(0)" id="q4-btn" class="disabled next btn-next btn btn-primary mb-5 custom-datalayer"
         data-name="${Resource.msg('label.adobe.questionnaire-widget-next', 'hearingscreener', null)}"
         data-location="HHQ-Q3">
         ${Resource.msg('label.hearing-screener.btn.next-question', 'hearingscreener', null)}
@@ -250,7 +250,7 @@
         </li>
     </ul>
 
-    <a href="javascript:void(0)" id="q3a-btn" class="next btn-next btn btn-primary mb-5">
+    <a href="javascript:void(0)" id="q3a-btn" class="disabled next btn-next btn btn-primary mb-5">
         ${Resource.msg('label.hearing-screener.btn.next-question', 'hearingscreener', null)}
     </a>
 
@@ -287,7 +287,7 @@
         </li>
     </ul>
 
-    <a href="javascript:void(0)" id="q4a-btn" class="next btn-next btn btn-primary mb-5">
+    <a href="javascript:void(0)" id="q4a-btn" class="disabled next btn-next btn btn-primary mb-5">
         ${Resource.msg('label.hearing-screener.btn.next-question', 'hearingscreener', null)}
     </a>
 
@@ -324,7 +324,7 @@
         </li>
     </ul>
 
-    <a href="javascript:void(0)" id="results-btn" class="next btn-next btn btn-primary mb-5">
+    <a href="javascript:void(0)" id="results-btn" class="disabled next btn-next btn btn-primary mb-5">
         ${Resource.msg('label.hearing-screener.btn.next-question', 'hearingscreener', null)}
     </a>
 
@@ -359,7 +359,7 @@
         </li>
     </ul>
 
-    <a href="javascript:void(0)" id="q3c-btn" class="next btn-next btn btn-primary mb-5">
+    <a href="javascript:void(0)" id="q3c-btn" class="disabled next btn-next btn btn-primary mb-5">
         ${Resource.msg('label.hearing-screener.btn.next-question', 'hearingscreener', null)}
     </a>
 
@@ -392,7 +392,7 @@
         </li>
     </ul>
 
-    <a href="javascript:void(0)" id="q4c-btn" class="next btn-next btn btn-primary mb-5">
+    <a href="javascript:void(0)" id="q4c-btn" class="disabled next btn-next btn btn-primary mb-5">
         ${Resource.msg('label.hearing-screener.btn.next-question', 'hearingscreener', null)}
     </a>
 
@@ -495,7 +495,7 @@
         </li>
     </ul>
 
-    <a href="javascript:void(0)" id="q3d-btn" class="next btn-next btn btn-primary mb-5">
+    <a href="javascript:void(0)" id="q3d-btn" class="disabled next btn-next btn btn-primary mb-5">
         ${Resource.msg('label.hearing-screener.btn.next-question', 'hearingscreener', null)}
     </a>
 
@@ -576,7 +576,7 @@
         </li>
     </ul>
 
-    <a href="javascript:void(0)" id="results-btn" class="next btn-next btn btn-primary mb-5">
+    <a href="javascript:void(0)" id="results-btn" class="disabled next btn-next btn btn-primary mb-5">
         ${Resource.msg('label.hearing-screener.btn.next-question', 'hearingscreener', null)}
     </a>
 
@@ -607,7 +607,7 @@
         </li>
     </ul>
 
-    <a href="javascript:void(0)" id="q3e-btn" class="next btn-next btn btn-primary mb-5">
+    <a href="javascript:void(0)" id="q3e-btn" class="disabled next btn-next btn btn-primary mb-5">
         ${Resource.msg('label.hearing-screener.btn.next-question', 'hearingscreener', null)}
     </a>
 
@@ -640,7 +640,7 @@
         </li>
     </ul>
 
-    <a href="javascript:void(0)" id="q4e-btn" class="next btn-next btn btn-primary mb-5">
+    <a href="javascript:void(0)" id="q4e-btn" class="disabled next btn-next btn btn-primary mb-5">
         ${Resource.msg('label.hearing-screener.btn.next-question', 'hearingscreener', null)}
     </a>
 
@@ -673,7 +673,7 @@
         </li>
     </ul>
 
-    <a href="javascript:void(0)" id="results-btn" class="next btn-next btn btn-primary mb-5">
+    <a href="javascript:void(0)" id="results-btn" class="disabled next btn-next btn btn-primary mb-5">
         ${Resource.msg('label.hearing-screener.btn.next-question', 'hearingscreener', null)}
     </a>
 

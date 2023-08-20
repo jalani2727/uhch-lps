@@ -29,37 +29,6 @@
                         data-name="${Resource.msg('label.adobe.questionnaire-landing-name', 'adobetracking', null)}"
                         data-location="${Resource.msg('label.adobe.questionnaire-landing-location', 'adobetracking', null)}">Join
                         AARP</a>
-<div class="container-fluid content-banner banner-1 mt-5 content-blue perks-discounts py-4" id="perks-discounts">
-
-    <div class="container">
-        <div class="row perks-discounts-row">
-            <div class="col-12 col-md-6 wallet-container">
-                <img src="${URLUtils.staticURL('/images/wallet.png')}" alt="hero banner image">
-            </div>
-            <div class="col-12 col-md-6 perks-discounts-content">
-                <h1>What discounts and perks do I have as an AARP member?</h1>
-                <p class="results-text subtext">As an AARP member, you can save on hearing aids, care and accessories:
-                </p>
-                <ul>
-                    <li class="aarp-perk-desc perk-bold">No-cost hearing exam and consultation</li>
-                    <li class="aarp-perk-desc perk-bold">Prescription hearing aids as low as $699 per ear</li>
-                    <li class="aarp-perk-desc perk-bold">20% off prescription hearing aids and 15% off accessories</li>
-                    <li class="aarp-perk-desc perk-bold">Four-year warranty* on hearing aids</li>
-                </ul>
-                <p class="disclaimer">*Four-year warranty applies to hearing aids in the Classic & Premier technology
-                    levels.</p>
-                <div class="learn-btns-container">
-                    <a href="https://www.aarphearingsolutions.com/shop-products?cid=AARP:LandingPage:other:Aug:2023:AARP-Sim-LP-Shop-Products:Shop-Products"
-                        class="custom-datalayer blue-btn next btn-next btn btn-primary mt-md-2 mb-5"
-                        data-name="${Resource.msg('label.adobe.questionnaire-landing-name', 'adobetracking', null)}"
-                        data-location="${Resource.msg('label.adobe.questionnaire-landing-location', 'adobetracking', null)}">Learn
-                        More</a>
-
-                    <a href="https://appsec.aarp.org/mem/join?campaignId=FETUUHEJ&cmp=ASI_P_MU_JN_UHCHEARING"
-                        class="custom-datalayer white-btn next btn-next btn btn-primary mt-md-2 mb-5"
-                        data-name="${Resource.msg('label.adobe.questionnaire-landing-name', 'adobetracking', null)}"
-                        data-location="${Resource.msg('label.adobe.questionnaire-landing-location', 'adobetracking', null)}">Join
-                        AARP</a>
 
                     <a href="https://appsec.aarp.org/mem/renew?campaignId=FETUUHER&amp;cmp=ASI_P_MU_RN_UHCHEARING"
                         class="custom-datalayer white-btn next btn-next btn btn-primary mt-md-2 mb-5"

@@ -3,7 +3,7 @@
         var assets = require('*/cartridge/scripts/assets.js');
         assets.addJs('/js/homePage.js');
         assets.addJs('/js/hearingScreener.js');
-
+        assets.addCss('/css/hearingScreener.css');
     </isscript>
     <div class="home-main homepage" data-is-pricebook-updated="${true}">
         <div class="hero-container top-content">
@@ -131,8 +131,8 @@
                             <li>Does your family complain that you turn up the TV volume too high?</li>
                             <li>Do you have trouble understanding someone talking in a low voice?</li>
                             <li>Do you have trouble understanding someone on the phone?</li>
-                            <li>Do you often need to ask others to speak up or repeat themselves? </li>
-                            <li>Does this happen more often in a noisy setting, such as a crowded restaurant? </li>
+                            <li>Do you often need to ask others to speak up or repeat themselves? Does this happen more
+                                often in a noisy setting, such as a crowded restaurant?</li>
                         </ul>
                     </div>
                 </div>
@@ -175,8 +175,20 @@
 
                     <h2>Hear for yourself</h2>
                     <p>Put on your headphones and experience dinner in a busy restaurant with and without hearing aids. Click the audio buttons below to hear the difference a pair of hearing aids can make.</p>
-                    
-                    <isinclude template="hearingScreener/results/components/audio-simulation" />
+                    <div class="simulation-container">
+                        <div class="simulation">
+                            <picture><img class="logos" src="${URLUtils.staticURL('/images/r1-vector.png')}"
+                                    alt="Play with hearing aids"></picture> <a id="with-aids"
+                                class="simulation-text st">With Hearing Aids</a>
+                        </div>
+                        <div class="simulation">
+                            <picture><img class="logos" src="${URLUtils.staticURL('/images/r1-vector.png')}"
+                                    alt="Play without hearing aids"></picture> <a id="without-aids"
+                                class="simulation-text st">Without Hearing Aids</a>
+                        </div>
+                        <p class="disclaimer">This simulation is recorded with Phonak hearing aids, powered by Sonova
+                            technology.</p>
+                    </div>
                 </div>
                 <img class="hidden-md-pic hidden-sm-down" src="${URLUtils.staticURL('/images/audio-simulation-module.png')}"
                     alt="hero banner image" />

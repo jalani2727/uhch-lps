@@ -3,7 +3,7 @@
         var assets = require('*/cartridge/scripts/assets.js');
         assets.addJs('/js/homePage.js');
         assets.addJs('/js/hearingScreener.js');
-
+        assets.addCss('/css/hearingScreener.css');
     </isscript>
     <div class="home-main homepage" data-is-pricebook-updated="${true}">
         <div class="hero-container top-content">

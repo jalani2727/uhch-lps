@@ -9,6 +9,9 @@ var animating; // flag to prevent quick multi-click glitches
 const fieldsets = $('.screener-form-container fieldset');
 const progressBar = $('.hearing-screener-progress-bar');
 
+// variable for question 2 answer
+let answer = "";
+
 function updateProgressBar(currentField, upcoming) {
     // Grab data-attribute from expected fieldset and apply it as a class name to the progressBar
     if (progressBar.hasClass(currentField.get(0).dataset.questionStart)) {
@@ -22,7 +25,70 @@ function updateProgressBar(currentField, upcoming) {
 }
 
 function navigateToResultsLp(question, answer) {
-    console.log(question + ": " + answer);
+    const resultsPage1 = 'resultsPage1';
+    const resultsPage2 = 'resultsPage2';
+    const resultsPage3 = 'resultsPage3';
+    const resultsPage4 = 'resultsPage4';
+
+    console.log(answer);
+
+    if (question === "screener-q4a" || question === "screener-q4b") {
+        switch (answer) {
+            case "q2a-1":
+                console.log(resultsPage1);
+                break;
+            case "q2a-2":
+                console.log(resultsPage3);
+                break;
+            case "q2a-3":
+                console.log(resultsPage3);
+                break;
+            case "q2a-4":
+                console.log(resultsPage3);
+                break;
+            default:
+                break;
+        }
+    } else if (question === "screener-q4c") {
+        switch (answer) {
+            case "q2c-1":
+                console.log(resultsPage4);
+                break;
+            case "q2c-2":
+                console.log(resultsPage4);
+                break;
+            case "q2c-3":
+                console.log(resultsPage3);
+                break;
+            default:
+                break;
+        }
+    } else if (question === "screener-q4d") {
+        switch (answer) {
+            case "q2d-1":
+                console.log(resultsPage4);
+                break;
+            case "q2d-2":
+                console.log(resultsPage4);
+                break;
+            case "q2d-3":
+                console.log(resultsPage4);
+                break;
+            default:
+                break;
+        }
+    } else if (question === "screener-q4e") {
+        switch (answer) {
+            case "q2e-1":
+                console.log(resultsPage2);
+                break;
+            case "q2e-2":
+                console.log(resultsPage2);
+                break;
+            default:
+                break;
+        }
+    }
 }
 
 // Change current Progress Bar step when a radio button or checkbox is selected.
@@ -37,7 +103,7 @@ fieldsets.each(function (index, fs) {
         next.data('next', this.id);
 
         // enable the next button
-        
+        next.removeClass('disabled');
     });
 });
 
@@ -57,11 +123,18 @@ $('.next').click(function () {
         
         if (reqs?.indexOf(next_data) > -1) {
             next_fs = fieldset;
+        } else if (next_data?.indexOf("q2") > -1) {
+            // snag the answer for question 2
+            answer = next_data;
         } else if (next_data?.indexOf("q4") > -1) {
+            // go to the results page
             next_fs = next_results;
-            // navigateToResultsLp();
         }
     });
+
+    if (next_fs === next_results) {
+        navigateToResultsLp(current_fs.get(0).id, answer);
+    }
 
     // Append this question to the previous button
     let prev = next_fs.find('.previous');
@@ -95,15 +168,15 @@ $('.next').click(function () {
             // show the next fieldset
             next_fs.show();
             // disable button next button on next_fs
-            next_fs.find('.next').addClass('disabled');
+            // next_fs.find('.next').addClass('disabled');
         },
         duration: 600,
         complete: function () {
             animating = false;
             // enable button next button on next_fs
-            setTimeout(()=> {
-                next_fs.find('.next').removeClass('disabled');
-            }, 100);
+            // setTimeout(()=> {
+            //     next_fs.find('.next').removeClass('disabled');
+            // }, 100);
         }
     });
 });
@@ -117,6 +190,11 @@ $('.previous').click(function () {
     // Get previous fieldset
     prev_data = $(this).data('prev');
     prev_fs = current_fs.parent().find('#' + prev_data);
+
+    // enable the previous next button
+    if (prev_fs.find(':input:checked').length > 0) {
+        prev_fs.find('.next').removeClass('disabled');
+    }
 
     updateProgressBar(current_fs, prev_fs);
 
@@ -144,14 +222,14 @@ $('.previous').click(function () {
                 opacity: opacity
             });
             current_fs.hide();
-            prev_fs.find('.next').addClass('disabled');
+            // prev_fs.find('.next').addClass('disabled');
         },
         duration: 800,
         complete: function () {
             animating = false;
-            setTimeout(()=> {
-                prev_fs.find('.next').removeClass('disabled');
-            }, 100);
+            // setTimeout(()=> {
+            //     prev_fs.find('.next').removeClass('disabled');
+            // }, 100);
         }
     });
 });
