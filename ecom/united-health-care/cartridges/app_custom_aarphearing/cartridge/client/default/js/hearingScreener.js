@@ -1,6 +1,6 @@
 var current_fs,
     next_fs,
-    previous_fs; // fieldsets
+    prev_fs; // fieldsets
 var left,
     opacity,
     scale; // fieldset properties being animated
@@ -21,12 +21,23 @@ function updateProgressBar(currentField, upcoming) {
     }
 }
 
+function navigateToResultsLp(question, answer) {
+    console.log(question + ": " + answer);
+}
+
 // Change current Progress Bar step when a radio button or checkbox is selected.
 fieldsets.each(function (index, fs) {
     let fieldset = $(this);
 
     fieldset.find(':input').click(function () {
         progressBar.hasClass(fieldset.get(0).dataset.questionFilled) ? '' : progressBar.addClass(fieldset.get(0).dataset.questionFilled);
+
+        // append the last selected question to the next button
+        let next = fieldset.find('.next');
+        next.data('next', this.id);
+
+        // enable the next button
+        
     });
 });
 
@@ -34,11 +45,31 @@ $('.next').click(function () {
     if (animating) return false;
     animating = true;
 
+    // Get current fieldset
     current_fs = $(this).parent();
-    next_fs = $(this).parent().next();
+
+    // Get next fieldset
+    next_data = $(this).data('next');
+    next_results = current_fs.parent().find('#screener-results');
+    fieldsets.each(function (index, fs) {
+        let fieldset = $(this);
+        let reqs = fieldset.data('req')?.reqs;
+        
+        if (reqs?.indexOf(next_data) > -1) {
+            next_fs = fieldset;
+        } else if (next_data?.indexOf("q4") > -1) {
+            next_fs = next_results;
+            // navigateToResultsLp();
+        }
+    });
+
+    // Append this question to the previous button
+    let prev = next_fs.find('.previous');
+    prev.data('prev', current_fs.get(0).id);
 
     // Logic to update Progress Bar Classes
     updateProgressBar(current_fs, next_fs);
+
     // Hide current fieldset
     current_fs.hide();
 
@@ -82,16 +113,15 @@ $('.previous').click(function () {
     animating = true;
 
     current_fs = $(this).parent();
-    previous_fs = $(this).parent().prev();
 
-    updateProgressBar(current_fs, previous_fs);
+    // Get previous fieldset
+    prev_data = $(this).data('prev');
+    prev_fs = current_fs.parent().find('#' + prev_data);
 
-    // Clear the inputs of the current and previous fieldsets when going backwards
-    // previous_fs.find(':input').prop('checked', false);
-    // current_fs.find(':input').prop('checked', false);
+    updateProgressBar(current_fs, prev_fs);
 
     // show the previous fieldset
-    previous_fs.show();
+    prev_fs.show();
 
     // hide the current fieldset
     current_fs.animate({
@@ -99,28 +129,28 @@ $('.previous').click(function () {
     }, {
         step: function (now, mx) {
             // as the opacity of current_fs reduces to 0 - stored in "now"
-            // 1. scale previous_fs from 80% to 100%
+            // 1. scale prev_fs from 80% to 100%
             scale = 0.8 + (1 - now) * 0.2;
             // 2. take current_fs to the right(50%) - from 0%
             left = ((1 - now) * 50) + '%';
-            // 3. increase opacity of previous_fs to 1 as it moves in
+            // 3. increase opacity of prev_fs to 1 as it moves in
             opacity = 1 - now;
             current_fs.css({
                 // 'left': left
             });
-            previous_fs.css({
+            prev_fs.css({
                 transform: 'scale(' + scale + ')',
                 position: 'relative',
                 opacity: opacity
             });
             current_fs.hide();
-            previous_fs.find('.next').addClass('disabled');
+            prev_fs.find('.next').addClass('disabled');
         },
         duration: 800,
         complete: function () {
             animating = false;
             setTimeout(()=> {
-                previous_fs.find('.next').removeClass('disabled');
+                prev_fs.find('.next').removeClass('disabled');
             }, 100);
         }
     });
