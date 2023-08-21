@@ -751,7 +751,12 @@
 
 <iscomment> Basic screener complete page </iscomment>
 
-<fieldset class="screener-complete" id="screener-results" data-question-start="progress-bar-complete">
+<fieldset class="screener-complete" id="screener-results"
+    data-question-start="progress-bar-complete"
+    data-results-url-one="${URLUtils.url('Screener-ResultsPage1')}"
+    data-results-url-two="${URLUtils.url('Screener-ResultsPage2')}"
+    data-results-url-three="${URLUtils.url('Screener-ResultsPage3')}"
+    data-results-url-four="${URLUtils.url('Screener-ResultsPage4')}">
     <div class="desktop-background-gray">
         <img alt="Questionnaite Complete Image" src="${URLUtils.staticURL('/images/CheckMrk.svg')}" />
 

@@ -25,10 +25,15 @@ function updateProgressBar(currentField, upcoming) {
 }
 
 function navigateToResultsLp(question, answer) {
-    const resultsPage1 = 'https://bgxl-010.dx.commercecloud.salesforce.com/on/demandware.store/Sites-AARPHearing-Site/default/Screener-ResultsPage1';
-    const resultsPage2 = 'https://bgxl-010.dx.commercecloud.salesforce.com/on/demandware.store/Sites-AARPHearing-Site/default/Screener-ResultsPage2';
-    const resultsPage3 = 'https://bgxl-010.dx.commercecloud.salesforce.com/on/demandware.store/Sites-AARPHearing-Site/default/Screener-ResultsPage3';
-    const resultsPage4 = 'https://bgxl-010.dx.commercecloud.salesforce.com/on/demandware.store/Sites-AARPHearing-Site/default/Screener-ResultsPage4';
+    // const resultsPage1 = 'https://bgxl-010.dx.commercecloud.salesforce.com/on/demandware.store/Sites-AARPHearing-Site/default/Screener-ResultsPage1';
+    // const resultsPage2 = 'https://bgxl-010.dx.commercecloud.salesforce.com/on/demandware.store/Sites-AARPHearing-Site/default/Screener-ResultsPage2';
+    // const resultsPage3 = 'https://bgxl-010.dx.commercecloud.salesforce.com/on/demandware.store/Sites-AARPHearing-Site/default/Screener-ResultsPage3';
+    // const resultsPage4 = 'https://bgxl-010.dx.commercecloud.salesforce.com/on/demandware.store/Sites-AARPHearing-Site/default/Screener-ResultsPage4';
+
+    const resultsPage1 = $('#screener-results').data('results-url-one');
+    const resultsPage2 = $('#screener-results').data('results-url-two');
+    const resultsPage3 = $('#screener-results').data('results-url-three');
+    const resultsPage4 = $('#screener-results').data('results-url-four');
 
     let route = "";
 
