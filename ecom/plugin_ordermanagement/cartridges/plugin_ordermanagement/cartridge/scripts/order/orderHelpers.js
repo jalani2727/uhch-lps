@@ -141,7 +141,9 @@ function getLastOrder(req) {
     }
 
     // If there is an order
-    if (compositeResponses && compositeResponses.compositeResponse[0].body.records.length > 0) {
+    if (compositeResponses && compositeResponses.compositeResponse[0] && 
+        compositeResponses.compositeResponse[0].body && compositeResponses.compositeResponse[0].body.records &&
+        compositeResponses.compositeResponse[0].body.records.length > 0) {
         // Create the OrderSummary to FulfillmentOrders map
         var somApiFulfillmentOrders = compositeResponses.compositeResponse[1];
         var orderSummaryToFulfillmentMap = null;

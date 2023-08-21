@@ -1,5 +1,5 @@
 <div class="prices-add-to-cart-actions">
-    <isif condition="${pdict.product && pdict.product.price && (pdict.product.price !== null)}">
+    <isif condition="${pdict.product && !empty(pdict.product.price)}">
         <div class="row">
             <div class="col-12">
                 <!-- Prices -->

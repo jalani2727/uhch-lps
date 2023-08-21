@@ -26,7 +26,7 @@
     <div class="container">
         <h1 class="page-title">${Resource.msg('title.cart', 'cart', null)}</h1>
         <div class="d-inline-block hidden-xs-down">
-            <a class="continue-shopping-link" href="${URLUtils.url('Home-Show')}"
+            <a class="continue-shopping-link" href="${dw.system.Site.current.preferences.custom.isHostURL ? 'https://' +request.httpHost : URLUtils.url('Home-Show')+ '/'}"
                 title="${Resource.msg('link.continue.shopping', 'cart', null)}">
                 ${Resource.msg('link.continue.shopping', 'cart', null)}
             </a>
@@ -75,6 +75,9 @@
                 <!---totals, and checkout actions--->
                 <div class="col-md-5 col-lg-4 offset-lg-1">
                     <div class="totals mt-md-4">
+                        <isif condition="${!empty(session.privacy.isBenefitsApiCallSuccessful) && !session.privacy.isBenefitsApiCallSuccessful}" >
+                            <iscontentasset aid="benefit-api-call-failure" />
+                        </isif>
                         <!-- OTC Benefit application -->
                         <div class="otc-benefit-status-container d-none d-sm-block">
                             <iscontentasset aid="otc-benefit-application-messages" />
@@ -104,14 +107,13 @@
                         </div>
                         <div class="row">
                             <isset name="isAARPValidCustomer" value="${false}" scope="page" />
-                            <isif condition="${customer.authenticated && !miniCart && ((session.privacy.AARP_Member && session.privacy.AARP_Member === 'true') || (session.privacy.customerType === 'UHCVerified'))}">
+                            <isif condition="${customer.authenticated && !miniCart && ((session.privacy.AARP_Member) || (session.privacy.customerType === 'UHCVerified'))}">
                                 <isset name="isAARPValidCustomer" value="${true}" scope="page" />
                             </isif>
 
                             <isif condition="${customer.authenticated && !isAARPValidCustomer}">
                                 <isinclude template="cart/aarpSubscriberIdForm" />
                             </isif>
-                            
                             <isif condition="${isAARPValidCustomer}">
                                 <div class="col-12 checkout-continue">
                                     <isif condition="${customer.authenticated && isAARPValidCustomer}">
@@ -138,7 +140,7 @@
             </div>
             <isinclude template="cart/cartRemoveProductModal" />
         </div>
-
         <isinclude template="cart/cartRemoveCouponModal" />
     </isif>
+
 </isdecorate>

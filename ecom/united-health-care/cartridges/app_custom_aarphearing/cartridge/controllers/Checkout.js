@@ -28,7 +28,7 @@ server.prepend(
             res.redirect(URLUtils.url('Cart-Show'));
         } else {
             var isAARPValidCustomer = false;
-            if ((session.privacy.AARP_Member && session.privacy.AARP_Member === 'true') || (session.privacy.customerType === 'UHCVerified')) {
+            if ((session.privacy.AARP_Member) || (session.privacy.customerType === 'UHCVerified')) {
                 isAARPValidCustomer = true;
             }
             if (!isAARPValidCustomer) {

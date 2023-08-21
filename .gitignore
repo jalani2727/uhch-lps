@@ -36,3 +36,5 @@ reports/
 **/static/key.pem
 **/static/cert.pem
 upload_folder
+package-lock.json
+**/package-lock.json

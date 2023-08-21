@@ -106,7 +106,7 @@ server.get('EditDetails',
         var userFirstName = '';
         var userLastName = '';
         var email = '';
-        var birthday;
+        var zipCode = '';
         var phone;
         var memberId;
         if (req.pageMetaData.title === currentSitePipeline) {
@@ -119,21 +119,13 @@ server.get('EditDetails',
             userFirstName = req.currentCustomer.profile.firstName;
             userLastName = req.currentCustomer.profile.lastName;
             email = req.currentCustomer.profile.email;
-            birthday = req.currentCustomer.profile.birthday;
-            phone = req.currentCustomer.profile.phoneHome;
+            phone = req.currentCustomer.profile.phone;
+            zipCode = customer.getProfile().custom.zipCode;
         }
         var communicationPreference = session.privacy.communicationInstruction || 'mail';
-        if (preferences.useAARP) {
-            memberId = session.privacy.AARPSubscriberId !== null && session.privacy.AARP_Member ? session.privacy.AARPSubscriberId : '';
-        } else {
-            memberId = session.privacy.subscriberId || '';
-        }
+        memberId = session.privacy.subscriberId || '';
+        var aarpSubscriberID = session.privacy.AARPSubscriberId || '';
         var healthPlanName = session.privacy.healthPlanName || '';
-        var zipCode = '';
-        if (session.privacy.customerDetails) {
-            var customerDetailsObj = JSON.parse(session.privacy.customerDetails);
-            zipCode = customerDetailsObj.ZipCode && customerDetailsObj.ZipCode !== null ? customerDetailsObj.ZipCode : '';
-        }
         res.render('account/editProfile', {
             actionURL: URLUtils.url('Account-SubmitDetails').toString(),
             userFirstName: userFirstName,
@@ -141,10 +133,10 @@ server.get('EditDetails',
             email: email,
             communicationPreference: communicationPreference,
             zipCode: zipCode,
-            birthdate: birthday,
             memberId: memberId,
             phone: phone,
-            healthPlanName: healthPlanName
+            healthPlanName: healthPlanName,
+            aarpSubscriberID: aarpSubscriberID
         });
         next();
     }, pageMetaData.computedPageMetaData);
@@ -194,14 +186,16 @@ server.post('SubmitDetails',
         externalProfile.subscriberId = formData.memberId;
         externalProfile.phoneNumber = formData.userPhone;
         externalProfile.healthPlanName = formData.healthplanName;
-        externalProfile.communicationPreference = formData.communicationPreference;
+        externalProfile.AARP_Subscriber_ID = formData.aarpmemberId;
         session.privacy.communicationInstruction = formData.communicationPreference || '';
+        externalProfile.communicationPreference = formData.communicationPreference;
         externalProfile.requestSource = 'editProfile';
         var responseObj = eligibilityHelper.getCustomerDetails(externalProfile);
         if (responseObj && responseObj != null) {
             Transaction.wrap(function () {
                 profile.setPhoneHome(responseObj.home_phone ? responseObj.home_phone : formData.userPhone);
                 profile.custom.sfdcContactID = responseObj.sfdcContactId ? responseObj.sfdcContactId : '';
+                profile.custom.zipCode = responseObj.ZipCode ? responseObj.ZipCode : formData.userZip;
             });
         }
 

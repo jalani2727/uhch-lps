@@ -58,21 +58,27 @@ function getEligibilityMemberDetails() {
          */
         // eslint-disable-next-line no-unused-vars
         mockCall: function (svc, contactInfo) {
-            var response ={
-                "subscriberId": "9160891010",
-                "lastName": "Doe58012",
-                "firstName": "Jane58012",
-                "dob": "1953-07-15",
-                "zipCode": "91768",
-                "email": "ramesh_potlapuvvu@optum.com",
-                "hsIdUUID": "123Doe58012",
-                "siteId":"UHC_Hearing",
-                "requestSource":"Registration"
-            };
+            var response;
+            if ('mockResponse' in svc.configuration.custom && !empty(svc.configuration.custom.mockResponse)) {
+                response = JSON.parse(svc.configuration.custom.mockResponse);
+            } else {
+                response = {
+                    "subscriberId": "9160891010",
+                    "lastName": "Doe58012",
+                    "firstName": "Jane58012",
+                    "dob": "1953-07-15",
+                    "zipCode": "91768",
+                    "email": "ramesh_potlapuvvu@optum.com",
+                    "hsIdUUID": "123Doe58012",
+                    "siteId":"UHC_Hearing",
+                    "requestSource":"Registration"
+                };
+                response = JSON.stringify(response);
+            }
             return {
                 statusCode: 200,
                 statusMessage: 'Success',
-                text: JSON.stringify(response)
+                text: response
             };
         }
     });

@@ -1,5 +1,3 @@
-// @import "../variables";
-
 $hero-title-font-color: $color-blue-dark;
 $hero-description-font-color: $body-text-color;
 
@@ -73,11 +71,11 @@ p {
     &.top-content {
         flex-direction: column;
         display: flex;
-    
+
         .image-content {
-            order: 1;   
+            order: 1;
         }
-    
+
         .text-content {
             order: 2;
         }
@@ -100,7 +98,7 @@ p {
         margin: 0 auto;
         background-color: $primary-col-2;
         position: relative;
-        
+        border-bottom: 1px solid $uhc-section-border-color;
 
         .hero-title {
             @include hero-title-font;
@@ -119,7 +117,6 @@ p {
         overflow: hidden;
 
         .text-content {
-            // padding: 55px 30px;
             position: absolute;
             width: 420px;
             top: 50%;
@@ -144,15 +141,14 @@ p {
         .new-landing {
             background-color: $color-blue-dark;
             align-items: center;
-            
+
             .hero-text {
+                padding: 0 20px;
+                color: $uhc-white;
 
                 @include media-breakpoint-between(lg, xl) {
                     margin: 0 168px;
                 }
-                
-                padding: 0 20px;
-                color: $uhc-white;
 
                 h1 {
                     font-size: 56px;
@@ -167,7 +163,7 @@ p {
                         margin: 0;
                     }
 
-                    @include media-breakpoint-down(sm){
+                    @include media-breakpoint-down(sm) {
                         font-size: 28px;
                         font-style: normal;
                         font-weight: 600;
@@ -187,7 +183,7 @@ p {
                         font-size: 18px;
                     }
 
-                    @include media-breakpoint-down(sm){
+                    @include media-breakpoint-down(sm) {
                         font-size: 16px;
                         font-weight: 700;
                         line-height: 20px;
@@ -205,10 +201,7 @@ p {
                 clip-path: ellipse(88% 87% at 43% 94%);
                 transform: rotate(-75.445deg);
 
-                @include media-breakpoint-between(md, lg) {
-
-                }
-                @include media-breakpoint-down(sm){
+                @include media-breakpoint-down(sm) {
                     clip-path: ellipse(75% 89% at 66% 85%);
                     transform: rotate(18.555deg);
                 }
@@ -216,24 +209,18 @@ p {
                 img {
                     transform: rotate(75.445deg);
 
-                    @include media-breakpoint-between(md, lg) {
-
-                    }
-                    @include media-breakpoint-down(sm){
+                    @include media-breakpoint-down(sm) {
                         transform: rotate(-18.555deg);
                     }
                 }
-
             }
         }
     }
-
 }
+
 .try-simulator {
-
     .video-section-wrapper {
-
-        @include media-breakpoint-up(sm){
+        @include media-breakpoint-up(sm) {
             justify-content: space-around;
         }
 
@@ -242,11 +229,10 @@ p {
 
             @include media-breakpoint-down(sm) {
                 width: 425px;
-
             }
+
             @include media-breakpoint-down(xs) {
                 width: 345px;
-
             }
         }
     }
@@ -259,9 +245,9 @@ p {
 }
 
 .getting-started-description {
-
     p {
         margin-bottom: 16px;
+
         &:first-of-type {
             color: $color-blue-dark;
         }
@@ -274,19 +260,19 @@ p {
 
     h1 {
         color: $white;
+
         @include media-breakpoint-down(sm) {
             font-size: 28px;
         }
     }
-    
+
     .container {
         text-align: start;
-        
+
         @include media-breakpoint-up(md) {
             text-align: center;
             max-width: 50%;
         }
-        
     }
 }
 
@@ -295,11 +281,14 @@ p {
 
     .text-content {
         margin: 25% 0;
+
         @include media-breakpoint-down(sm) {
             margin: 35px 0;
         }
     }
-    .container, .image-content {
+
+    .container,
+    .image-content {
         img {
             width: 100%;
         }

@@ -1,12 +1,11 @@
 .disclaimer-section {
     margin-top: 40px;
     margin-bottom: 40px;
-    
+
     @include media-breakpoint-up(md) {
         padding: 4% 6%;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
     .disclaimer-wrapper {
@@ -25,5 +24,4 @@
         font-weight: 500;
         font-family: "UHCSansMedium", sans-serif;
     }
-    
 }

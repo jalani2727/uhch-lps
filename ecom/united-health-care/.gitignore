@@ -10,3 +10,5 @@ dw.json
 tmp/
 test/integration/config.json
 /.vscode
+package-lock.json
+**/package-lock.json

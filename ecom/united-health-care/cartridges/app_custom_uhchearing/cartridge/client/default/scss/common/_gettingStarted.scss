@@ -1,3 +1,4 @@
+
 $hero-title-font-color: $primary-col-1;
 $hero-description-font-color: $body-text-color;
 
@@ -6,7 +7,6 @@ $hero-description-font-color: $body-text-color;
     font-size: 36px;
     line-height: 34px;
     color: $hero-title-font-color;
-
 }
 
 @mixin getting-started-description-font {
@@ -28,6 +28,7 @@ $hero-description-font-color: $body-text-color;
 
     .image-content {
         margin-bottom: 50px;
+
         img {
             max-width: none;
         }
@@ -68,7 +69,6 @@ $hero-description-font-color: $body-text-color;
         align-items: center;
 
         .text-content {
-
             .getting-started-title {
                 margin-bottom: 16px;
             }

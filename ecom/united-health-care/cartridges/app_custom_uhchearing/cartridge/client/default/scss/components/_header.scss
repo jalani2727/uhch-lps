@@ -94,7 +94,7 @@ nav > .header {
             position: relative;
             margin: 0 auto;
         }
-        
+
         .hearing-solutions & {
             position: relative;
         }
@@ -150,7 +150,6 @@ nav > .header {
 }
 
 .hearing-solutions-header {
-
     nav > .header {
         @include media-breakpoint-down(sm) {
             height: auto;
@@ -165,7 +164,6 @@ nav > .header {
 
         @include media-breakpoint-down(sm) {
             flex-direction: column;
-            
         }
     }
 
@@ -174,7 +172,7 @@ nav > .header {
             height: auto;
             width: 100%;
             margin-bottom: 25px;
-            
+
             @include media-breakpoint-up(sm) {
                 width: 400px;
                 margin: 0;
@@ -182,7 +180,7 @@ nav > .header {
         }
     }
 
-    P {
+    p {
         color: $primary-col-1;
         font-size: 18px;
         font-style: normal;

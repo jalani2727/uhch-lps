@@ -67,11 +67,11 @@ p {
     &.top-content {
         flex-direction: column;
         display: flex;
-    
+
         .image-content {
             order: 2;
         }
-    
+
         .text-content {
             order: 1;
         }
@@ -138,13 +138,13 @@ p {
         .new-landing {
             background-color: $primary-col-1;
             align-items: center;
-            
+
             .hero-text {
 
                 @include media-breakpoint-between(lg, xl) {
                     margin: 0 168px;
                 }
-                
+
                 padding: 0 20px;
                 color: $uhc-white;
 
@@ -161,7 +161,7 @@ p {
                         margin: 0;
                     }
 
-                    @include media-breakpoint-down(sm){
+                    @include media-breakpoint-down(sm) {
                         font-size: 28px;
                         font-style: normal;
                         font-weight: 600;
@@ -181,7 +181,7 @@ p {
                         font-size: 18px;
                     }
 
-                    @include media-breakpoint-down(sm){
+                    @include media-breakpoint-down(sm) {
                         font-size: 16px;
                         font-weight: 700;
                         line-height: 20px;
@@ -199,10 +199,7 @@ p {
                 clip-path: ellipse(67% 84% at 56% 79%);
                 transform: rotate(-37.445deg);
 
-                @include media-breakpoint-between(md, lg) {
-
-                }
-                @include media-breakpoint-down(sm){
+                @include media-breakpoint-down(sm) {
                     clip-path: ellipse(68% 91% at 68% 86%);
                     transform: rotate(18.555deg);
                 }
@@ -210,21 +207,16 @@ p {
                 img {
                     transform: rotate(37.445deg);
 
-                    @include media-breakpoint-between(md, lg) {
-
-                    }
-                    @include media-breakpoint-down(sm){
+                    @include media-breakpoint-down(sm) {
                         transform: rotate(-18.555deg);
                     }
                 }
-
             }
         }
     }
-
 }
-.try-simulator {
 
+.try-simulator {
     .video-section-wrapper {
         justify-content: space-around;
     }
@@ -246,15 +238,14 @@ p {
             font-size: 28px;
         }
     }
-    
+
     .container {
         text-align: start;
-        
+
         @include media-breakpoint-up(md) {
             text-align: center;
             max-width: 50%;
         }
-        
     }
 }
 
@@ -267,7 +258,9 @@ p {
             margin: 35px 0;
         }
     }
-    .container, .image-content {
+
+    .container,
+    .image-content {
         @include media-breakpoint-down(sm) {
             padding: 0;
         }

@@ -13,13 +13,14 @@
 .perks-discounts-row {
     display: flex;
 
-    .wallet-container, .perks-discounts-content {
+    .wallet-container,
+    .perks-discounts-content {
         width: 100%;
     }
 
     .perks-discounts-content {
-
-        h1, p {
+        h1,
+        p {
             text-align: left;
         }
 
@@ -34,7 +35,6 @@
         justify-content: center;
         margin-bottom: 2.5em;
 
-
         img {
             width: 80%;
             height: auto;
@@ -46,7 +46,6 @@
             width: 50%;
             justify-content: center;
             margin-bottom: 0;
-
 
             img {
                 width: auto;
@@ -115,14 +114,11 @@
                 margin-bottom: 2em !important;
             }
         }
-
-
-
     }
 
     .perks-discounts-content {
-
-        h1, p {
+        h1,
+        p {
             text-align: start;
         }
 
