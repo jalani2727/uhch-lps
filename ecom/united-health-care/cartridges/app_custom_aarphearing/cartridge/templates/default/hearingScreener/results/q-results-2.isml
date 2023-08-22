@@ -10,7 +10,9 @@
         <div class="hero-container top-content">
             <div class="image-content">
                 <picture>
-                    <img class="top-image" src="${URLUtils.staticURL('/images/Stocksy_comp_28937781.png')}"
+                    <img class="hidden-sm-down top-image" src="${URLUtils.staticURL('/images/Stocksy_comp_28937781.png')}"
+                        alt="hero banner image">
+                    <img class="d-md-none" src="${URLUtils.staticURL('/images/results-pg-2-hero-mobile.png')}"
                         alt="hero banner image">
                 </picture>
             </div>
