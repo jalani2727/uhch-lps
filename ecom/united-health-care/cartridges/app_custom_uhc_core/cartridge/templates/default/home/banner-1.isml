@@ -10,7 +10,7 @@
                 your fit.</p>
 
             <a href="${URLUtils.url('Screener-Show')}"
-                class="custom-datalayer next btn-next btn btn-primary mt-md-2 mb-5"
+                class="custom-datalayer btn btn-primary mt-md-2 mb-5"
                 data-name="${Resource.msg('label.adobe.homepage-landing-name', 'adobetracking', null)}"
                 data-location="${Resource.msg('label.adobe.homepage-landing-location', 'adobetracking', null)}">Test your hearing </a>
         </div>

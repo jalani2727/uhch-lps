@@ -2,7 +2,7 @@
 
     <div class="text-content">
         <h1>Find the best type of care for you</h1>
-        <p>Whatever your care preferences, lifestyle and comfort level with technology, UnitedHealthcare hearing is here
+        <p>Whatever your care preferences, lifestyle and comfort level with technology, UnitedHealthcare Hearing is here
             to help you along your journey.</p>
     </div>
 
@@ -30,7 +30,7 @@
     </div>
 
     <a href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest&cid=AARP:LandingPage:other:Aug:2023:AARP-Sim-LP-Request-Appointment-1:Request-Appointment"
-        class="custom-datalayer next btn-next btn btn-primary"
+        class="custom-datalayer btn btn-primary"
         data-name="${Resource.msg('label.adobe.questionnaire-results-name-schedule', 'adobetracking', null)}"
         data-location="${Resource.msg('label.adobe.questionnaire-results-location', 'adobetracking', null)}">Schedule
         Appointment</a>

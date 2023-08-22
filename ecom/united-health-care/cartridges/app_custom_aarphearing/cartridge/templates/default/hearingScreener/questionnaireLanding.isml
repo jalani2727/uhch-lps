@@ -17,7 +17,7 @@
                         <h1>Your hearing matters</h1>
                         <p>Could you benefit from hearing care? Take our 5-minute questionnaire to find out.</p>
                         <a href="${URLUtils.url('Screener-Show')}"
-                            class="custom-datalayer next btn-next btn btn-primary mb-md-5"
+                            class="custom-datalayer btn btn-primary mb-md-5"
                             data-name="${Resource.msg('label.adobe.questionnaire-landing-name', 'adobetracking', null)}"
                             data-location="${Resource.msg('label.adobe.questionnaire-landing-location', 'adobetracking', null)}">Take
                             the questionnaire</a>

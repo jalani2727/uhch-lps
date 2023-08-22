@@ -189,12 +189,12 @@
 
                         <div class="button-container">
                             <a href="https://www.aarphearingsolutions.com/hearingtest"
-                                class="custom-datalayer blue-btn next btn-next btn btn-primary mt-md-2 "
+                                class="custom-datalayer white-btn btn btn-primary mt-md-2 "
                                 data-name="${Resource.msg('label.adobe.questionnaire-results-name-hearing-test', 'adobetracking', null)}"
                                 data-location="${Resource.msg('label.adobe.questionnaire-results-location', 'adobetracking', null)}">Online
                                 Hearing Test </a>
                             <a href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest&cid=AARP:LandingPage:other:Aug:2023:AARP-Sim-LP-Request-Appointment-1:Request-Appointment"
-                                class="custom-datalayer white-btn next btn-next btn btn-primary mt-md-2 "
+                                class="custom-datalayer white-btn btn btn-primary mt-md-2 "
                                 data-name="${Resource.msg('label.adobe.questionnaire-results-name-schedule', 'adobetracking', null)}"
                                 data-location="${Resource.msg('label.adobe.questionnaire-results-location', 'adobetracking', null)}">Schedule
                                 Appointment </a>
