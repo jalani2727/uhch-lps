@@ -10,9 +10,9 @@
         <div class="hero-container top-content p1-results-hero">
             <div class="image-content">
                 <picture>
-                    <img class="d-lg-none results-hero" src="${URLUtils.staticURL('/images/hearing-loss-hero.png')}"
+                    <img class="d-md-none results-hero" src="${URLUtils.staticURL('/images/hearing-loss-hero.png')}"
                         alt="hero banner image">
-                    <img class="hidden-md-down results-hero"
+                    <img class="hidden-sm-down results-hero"
                         src="${URLUtils.staticURL('/images/hearing-loss-hero-cut.png')}" alt="hero banner image">
                 </picture>
             </div>
@@ -30,9 +30,9 @@
                         <p class="results-text subtext">Hearing loss is more common than you think — in fact, 48 million
                             Americans have some degree of hearing loss. The best news is: You’re not alone — there is
                             help. If you are an AARP member, you can save on prescription hearing aids and accessories
-                            through AARP® Hearing Solutions™ provided by UnitedHealthcare Hearing.</p>
+                            through AARP<sup>®</sup> Hearing Solutions™ provided by UnitedHealthcare Hearing.</p>
 
-                        <a href="#perks-discounts" class="custom-datalayer">Discounts
+                        <a class="text-bold"  href="#perks-discounts" class="custom-datalayer">Discounts
                             and perks for AARP members <img class="pl-2"
                                 src="${URLUtils.staticURL('/images/CTA-arrow-down.svg')}" alt="arrow" /></a>
 
@@ -181,25 +181,8 @@
                     <h2>Hear for yourself</h2>
                     <p>Put on your headphones and experience dinner in a busy restaurant with and without hearing aids.
                         Click the audio buttons below to hear the difference a pair of hearing aids can make.</p>
-                    <div class="simulation-container">
-                        <div class="simulation">
-                            <picture>
-                                <img class="logos" src="${URLUtils.staticURL('/images/r1-vector.png')}"
-                                    alt="Play with hearing aids">
-                            </picture>
-                            <a href="javascript:void(0)" id="with-aids" class="simulation-text st">With Hearing Aids</a>
-                        </div>
-                        <div class="simulation">
-                            <picture>
-                                <img class="logos" src="${URLUtils.staticURL('/images/r1-vector.png')}"
-                                    alt="Play without hearing aids">
-                            </picture>
-                            <a href="javascript:void(0)" id="without-aids" class="simulation-text st">Without Hearing
-                                Aids</a>
-                        </div>
-                        <p class="disclaimer">This simulation is recorded with Phonak hearing aids, powered by Sonova
-                            technology.</p>
-                    </div>
+                   
+                   <isinclude template="hearingScreener/results/components/audio-simulation" />
                 </div>
                 <img class="hidden-md-pic hidden-lg" src="${URLUtils.staticURL('/images/audio-simulation-module.png')}"
                     alt="hero banner image" />

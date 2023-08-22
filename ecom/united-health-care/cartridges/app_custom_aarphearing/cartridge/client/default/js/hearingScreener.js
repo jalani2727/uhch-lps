@@ -281,18 +281,21 @@ $(document).on('click', '.white-card-mobile .white-card', function (e) {
 // Audio
 var playing = false;
 $(document).on('click', 'a.play-button', function (e) {
+    
     var soundEffect = $(this).find('.myAudio');
+    // console.log(soundEffect[0]);
 
     if (playing == false) {
         $(this).closest('.simulation').addClass('playing');
         $(this).addClass('playing');
-        soundEffect[0].play();
+        soundEffect.trigger('play');
         playing = true;
     } else {
         $(this).closest('.simulation').removeClass('playing');
         $(this).removeClass('playing');
-        soundEffect[0].pause();
+        soundEffect.trigger('pause');
         soundEffect[0].currentTime = 0;
         playing = false;
     }
+
 });

@@ -16,9 +16,9 @@
     <div class="col-12 col-md-7">
       <div class="image-content">
         <picture>
-          <img class="hidden-md-down" alt="sign in image"
+          <img class="hidden-sm-down" alt="sign in image"
             src="${URLUtils.staticURL('/images/Situational_Older_Gentleman.png')}" />
-          <img class="d-lg-none" alt="sign in image"
+          <img class="d-md-none" alt="sign in image"
             src="${URLUtils.staticURL('/images/Situational_Older_Gentleman-Mobile.png')}" />
         </picture>
       </div>

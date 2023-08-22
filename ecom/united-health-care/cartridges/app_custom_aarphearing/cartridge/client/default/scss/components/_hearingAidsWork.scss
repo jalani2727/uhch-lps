@@ -90,11 +90,11 @@
     display: flex;
     flex-direction: column;
 
-    .simulation {
-        &.playing {
-            background-color: #eee;
-        }
-    }
+    // .simulation {
+    //     &.playing {
+    //         background-color: #eee;
+    //     }
+    // }
 
     .play-button {
         cursor: pointer;
