@@ -1,4 +1,4 @@
-<div class="container-fluid content-banner banner-1 mt-5 content-blue perks-discounts" id="perks-discounts">
+<div class="container-fluid content-banner banner-1 mt-5 content-blue perks-discounts py-4" id="perks-discounts">
 
     <div class="container">
         <div class="row perks-discounts-row">

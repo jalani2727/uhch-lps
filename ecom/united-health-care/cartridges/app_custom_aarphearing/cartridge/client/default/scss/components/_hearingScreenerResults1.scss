@@ -284,6 +284,10 @@
 .ear-image-wrapper {
     display: flex;
     justify-content: center;
+
+    @include media-breakpoint-down(md) {
+        padding-bottom: 2rem;
+    }
 }
 
 .content-blue.content-banner {
