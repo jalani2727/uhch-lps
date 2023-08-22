@@ -8,9 +8,9 @@
     <div class="simulator-page hero-container top-content">
         <div class="image-content">
             <picture>
-                <img class="hidden-md-down" src="${URLUtils.staticURL('/images/simulator-hero.png')}"
+                <img class="hidden-sm-down" src="${URLUtils.staticURL('/images/simulator-hero.png')}"
                     alt="hero banner image">
-                <img class="d-lg-none" src="${URLUtils.staticURL('/images/hero-mobile.png')}" alt="hero banner image">
+                <img class="d-md-none" src="${URLUtils.staticURL('/images/hero-mobile.png')}" alt="hero banner image">
             </picture>
         </div>
         <div class="text-content">
@@ -27,7 +27,7 @@
                 near you.
             </p>
             <a class="btn btn-primary hero-button custom-datalayer" href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest&amp;cid=AARP:LandingPage:other:Aug:2023:AARP-Sim-LP-Request-Appointment-1:Request-Appointment"
-                data-name="${Resource.msg('label.adobe.simulator-landing-name-request', 'adobetracking', null)}"
+                data-name="${Resource.msg('label.adobe.simulator-landing-name-request-hero', 'adobetracking', null)}"
                 data-location="${Resource.msg('label.adobe.simulator-landing-location', 'adobetracking', null)}">
                 Request an appointment</a>
         </div>
@@ -82,7 +82,7 @@
         </div>
     </div>
 
-    <div class="container getting-started-container p-3 p-md-4">
+    <div class="container getting-started-container py-5">
         <div class="image-content">
 
             <img alt="getting started image" src="${URLUtils.staticURL('/images/questionnaire-ear.svg')}">
