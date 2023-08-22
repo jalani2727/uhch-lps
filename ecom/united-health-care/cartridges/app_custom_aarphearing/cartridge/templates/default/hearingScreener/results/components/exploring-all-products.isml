@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-12 col-md-7">
             <h1>Explore all hearing products</h1>
-            <p class="results-text subtext"> Through AARP<sup>®</sup> Hearing Solutions™ provided by UnitedHealthcare Hearing, you have access to top-quality hearing aids from some of the most popular manufacturers. An array of options to match your lifestyle, hearing needs and budget is available. Connect with a hearing-care professional to learn more about these brands and what device may be best for you.</p>
+            <p class="results-text subtext"> Through AARP Hearing Solutions provided by UnitedHealthcare Hearing, you have access to top-quality hearing aids from some of the most popular manufacturers. An array of options to match your lifestyle, hearing needs and budget is available. Connect with a hearing care professional to learn more about these brands and what device may be best for you.</p>
         </div>
         <div class="col-12 col-md-5 logo-container">
             <picture><img class="logos" src="${URLUtils.staticURL('/images/starkey.svg')}"
