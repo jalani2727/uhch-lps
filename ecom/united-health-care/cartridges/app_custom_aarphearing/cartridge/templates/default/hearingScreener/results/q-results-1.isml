@@ -64,7 +64,7 @@
             </ul>
             <div class="sch-btn-container">
                 <a href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest&cid=AARP:LandingPage:other:Aug:2023:AARP-Sim-LP-Request-Appointment-1:Request-Appointment"
-                    class="custom-datalayer next btn-next btn btn-primary"
+                    class="custom-datalayer btn btn-primary"
                     data-name="${Resource.msg('label.adobe.questionnaire-results-name-schedule', 'adobetracking', null)}"
                     data-location="${Resource.msg('label.adobe.questionnaire-results-location', 'adobetracking', null)}">Schedule
                     Appointment</a>
@@ -156,7 +156,7 @@
                     of 50 and every 3 years after 50.</p>
                 <div class="sch-btn-container">
                     <a href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest&cid=AARP:LandingPage:other:Aug:2023:AARP-Sim-LP-Request-Appointment-1:Request-Appointment"
-                        class="custom-datalayer next btn-next btn btn-primary"
+                        class="custom-datalayer btn btn-primary"
                         data-name="${Resource.msg('label.adobe.simulator-landing-name-request', 'adobetracking', null)}"
                         data-location="${Resource.msg('label.adobe.simulator-landing-location', 'adobetracking', null)}">Schedule
                         Appointment</a>
