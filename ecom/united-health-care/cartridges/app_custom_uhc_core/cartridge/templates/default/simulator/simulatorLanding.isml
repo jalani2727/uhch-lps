@@ -101,7 +101,7 @@
 
                 <p>Not an AARP member? <span><a href="https://appsec.aarp.org/mem/join?campaignId=FETUUHEJ&amp;cmp=ASI_P_MU_JN_UHCHEARING">Join</a></span> or <span><a href="https://appsec.aarp.org/mem/renew?campaignId=FETUUHER&amp;cmp=ASI_P_MU_RN_UHCHEARING">Renew</a></span> your membership today!</p>
             </div>
-            <a class="btn btn-primary hero-button custom-datalayer" href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest&cid=AARP:LandingPage:other:Aug:2023:AARP-Sim-LP-Request-Appointment-1:Request-Appointment"
+            <a class="btn btn-primary hero-button custom-datalayer" href="https://www.uhchearing.com/find-a-provider?providerType=guest"
                 data-name="${Resource.msg('label.adobe.simulator-landing-name-request', 'adobetracking', null)}"
                 data-location="${Resource.msg('label.adobe.simulator-landing-location', 'adobetracking', null)}">Request
                 an appointment</a>
