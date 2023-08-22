@@ -84,17 +84,17 @@
 
     <ul>
         <li>
-            <input class="custom-datalayer" type="radio" id="q2-1" name="q2" data-name="HHQ-Q1-A1"
+            <input class="custom-datalayer" type="radio" id="q2-1" name="q2" data-name="HHQ-Q2-A1"
                 data-location="HHQ-Q2" />
             <label for="q2-1">${Resource.msg('text.question.q2.choice-1', 'hearingscreener', null)}</label>
         </li>
         <li>
-            <input class="custom-datalayer" type="radio" id="q2-2" name="q2" data-name="HHQ-Q1-A2"
+            <input class="custom-datalayer" type="radio" id="q2-2" name="q2" data-name="HHQ-Q2-A2"
                 data-location="HHQ-Q2" />
             <label for="q2-2">${Resource.msg('text.question.q2.choice-2', 'hearingscreener', null)}</label>
         </li>
         <li>
-            <input class="custom-datalayer" type="radio" id="q2-3" name="q2" data-name="HHQ-Q1-A3"
+            <input class="custom-datalayer" type="radio" id="q2-3" name="q2" data-name="HHQ-Q2-A3"
                 data-location="HHQ-Q2" />
             <label for="q2-3">${Resource.msg('text.question.q2.choice-3', 'hearingscreener', null)}</label>
         </li>
@@ -122,17 +122,17 @@
 
     <ul>
         <li>
-            <input class="custom-datalayer" type="radio" id="q3-1" name="q3" data-name="HHQ-Q1-A1"
+            <input class="custom-datalayer" type="radio" id="q3-1" name="q3" data-name="HHQ-Q3-A1"
                 data-location="HHQ-Q3" />
             <label for="q3-1">${Resource.msg('text.question.q3.choice-1', 'hearingscreener', null)}</label>
         </li>
         <li>
-            <input class="custom-datalayer" type="radio" id="q3-2" name="q3" data-name="HHQ-Q1-A2"
+            <input class="custom-datalayer" type="radio" id="q3-2" name="q3" data-name="HHQ-Q3-A2"
                 data-location="HHQ-Q3" />
             <label for="q3-2">${Resource.msg('text.question.q3.choice-2', 'hearingscreener', null)}</label>
         </li>
         <li>
-            <input class="custom-datalayer" type="radio" id="q3-3" name="q3" data-name="HHQ-Q1-A3"
+            <input class="custom-datalayer" type="radio" id="q3-3" name="q3" data-name="HHQ-Q3-A3"
                 data-location="HHQ-Q3" />
             <label for="q3-3">${Resource.msg('text.question.q3.choice-3', 'hearingscreener', null)}</label>
         </li>
@@ -160,22 +160,22 @@
     <ul class="row">
         <div class="col-12 col-md-6">
             <li>
-                <input type="checkbox" class="custom-datalayer" id="q4-1" name="q4" data-name="HHQ-Q1-A1"
+                <input type="checkbox" class="custom-datalayer" id="q4-1" name="q4" data-name="HHQ-Q4-A1"
                     data-location="HHQ-Q4" />
                 <label for="q4-1">${Resource.msg('text.question.q4.choice-1', 'hearingscreener', null)}</label>
             </li>
             <li>
-                <input type="checkbox" class="custom-datalayer" id="q4-2" name="q4" data-name="HHQ-Q1-A2"
+                <input type="checkbox" class="custom-datalayer" id="q4-2" name="q4" data-name="HHQ-Q4-A2"
                     data-location="HHQ-Q4" />
                 <label for="q4-2">${Resource.msg('text.question.q4.choice-2', 'hearingscreener', null)}</label>
             </li>
             <li>
-                <input type="checkbox" class="custom-datalayer" id="q4-3" name="q4" data-name="HHQ-Q1-A3"
+                <input type="checkbox" class="custom-datalayer" id="q4-3" name="q4" data-name="HHQ-Q4-A3"
                     data-location="HHQ-Q4" />
                 <label for="q4-3">${Resource.msg('text.question.q4.choice-3', 'hearingscreener', null)}</label>
             </li>
             <li>
-                <input type="checkbox" class="custom-datalayer" id="q4-4" name="q4" data-name="HHQ-Q1-A4"
+                <input type="checkbox" class="custom-datalayer" id="q4-4" name="q4" data-name="HHQ-Q4-A4"
                     data-location="HHQ-Q4" />
                 <label for="q4-4">${Resource.msg('text.question.q4.choice-4', 'hearingscreener', null)}</label>
             </li>
@@ -183,22 +183,22 @@
         </div>
         <div class="col-12 col-md-6">
             <li>
-                <input type="checkbox" class="custom-datalayer" id="q4-5" name="q4" data-name="HHQ-Q1-A5"
+                <input type="checkbox" class="custom-datalayer" id="q4-5" name="q4" data-name="HHQ-Q4-A5"
                     data-location="HHQ-Q4" />
                 <label for="q4-5">${Resource.msg('text.question.q4.choice-5', 'hearingscreener', null)}</label>
             </li>
             <li>
-                <input type="checkbox" class="custom-datalayer" id="q4-6" name="q4" data-name="HHQ-Q1-A6"
+                <input type="checkbox" class="custom-datalayer" id="q4-6" name="q4" data-name="HHQ-Q4-A6"
                     data-location="HHQ-Q4" />
                 <label for="q4-6">${Resource.msg('text.question.q4.choice-6', 'hearingscreener', null)}</label>
             </li>
             <li>
-                <input type="checkbox" class="custom-datalayer" id="q4-7" name="q4" data-name="HHQ-Q1-A7"
+                <input type="checkbox" class="custom-datalayer" id="q4-7" name="q4" data-name="HHQ-Q4-A7"
                     data-location="HHQ-Q4" />
                 <label for="q4-7">${Resource.msg('text.question.q4.choice-7', 'hearingscreener', null)}</label>
             </li>
             <li>
-                <input type="checkbox" class="custom-datalayer" id="q4-8" name="q4" data-name="HHQ-Q1-A8"
+                <input type="checkbox" class="custom-datalayer" id="q4-8" name="q4" data-name="HHQ-Q4-A8"
                     data-location="HHQ-Q4" />
                 <label for="q4-8">${Resource.msg('text.question.q4.choice-8', 'hearingscreener', null)}</label>
             </li>
@@ -233,19 +233,23 @@
 
     <ul>
         <li>
-            <input type="radio" id="q2a-1" name="q2a" />
+            <input type="radio" class="custom-datalayer" id="q2a-1" name="q2a" data-name="HHQ-Q2A-A1"
+                    data-location="HHQ-Q2A" />
             <label for="q2a-1">${Resource.msg('text.question.q2a.choice-1', 'hearingscreener', null)}</label>
         </li>
         <li>
-            <input type="radio" id="q2a-2" name="q2a" />
+            <input type="radio" class="custom-datalayer" id="q2a-2" name="q2a" data-name="HHQ-Q2A-A2"
+                    data-location="HHQ-Q2A" />
             <label for="q2a-2">${Resource.msg('text.question.q2a.choice-2', 'hearingscreener', null)}</label>
         </li>
         <li>
-            <input type="radio" id="q2a-3" name="q2a" />
+            <input type="radio" class="custom-datalayer" id="q2a-3" name="q2a" data-name="HHQ-Q2A-A3"
+                    data-location="HHQ-Q2A" />
             <label for="q2a-3">${Resource.msg('text.question.q2a.choice-3', 'hearingscreener', null)}</label>
         </li>
         <li>
-            <input type="radio" id="q2a-4" name="q2a" />
+            <input type="radio" class="custom-datalayer" id="q2a-4" name="q2a" data-name="HHQ-Q2A-A4"
+                    data-location="HHQ-Q2A" />
             <label for="q2a-4">${Resource.msg('text.question.q2a.choice-4', 'hearingscreener', null)}</label>
         </li>
     </ul>
@@ -270,19 +274,23 @@
 
     <ul>
         <li>
-            <input type="radio" id="q3a-1" name="q3a" />
+            <input type="radio" class="custom-datalayer" id="q3a-1" name="q3a" data-name="HHQ-Q3A-A1"
+                    data-location="HHQ-Q3A" />
             <label for="q3a-1">${Resource.msg('text.question.q3a.choice-1', 'hearingscreener', null)}</label>
         </li>
         <li>
-            <input type="radio" id="q3a-2" name="q3a" />
+            <input type="radio" class="custom-datalayer" id="q3a-2" name="q3a" data-name="HHQ-Q3A-A2"
+                    data-location="HHQ-Q3A" />
             <label for="q3a-2">${Resource.msg('text.question.q3a.choice-2', 'hearingscreener', null)}</label>
         </li>
         <li>
-            <input type="radio" id="q3a-3" name="q3a" />
+            <input type="radio" class="custom-datalayer" id="q3a-3" name="q3a" data-name="HHQ-Q3A-A3"
+                    data-location="HHQ-Q3A" />
             <label for="q3a-3">${Resource.msg('text.question.q3a.choice-3', 'hearingscreener', null)}</label>
         </li>
         <li>
-            <input type="radio" id="q3a-4" name="q3a" />
+            <input type="radio" class="custom-datalayer" id="q3a-4" name="q3a" data-name="HHQ-Q3A-A4"
+                    data-location="HHQ-Q3A" />
             <label for="q3a-4">${Resource.msg('text.question.q3a.choice-4', 'hearingscreener', null)}</label>
         </li>
     </ul>
@@ -307,19 +315,23 @@
 
     <ul>
         <li>
-            <input type="radio" id="q4a-1" name="q4a" />
+            <input type="radio" class="custom-datalayer" id="q4a-1" name="q4a" data-name="HHQ-Q4A-A1"
+                    data-location="HHQ-Q4A" />
             <label for="q4a-1">${Resource.msg('text.question.q4a.choice-1', 'hearingscreener', null)}</label>
         </li>
         <li>
-            <input type="radio" id="q4a-2" name="q4a" />
+            <input type="radio" class="custom-datalayer" id="q4a-2" name="q4a" data-name="HHQ-Q4A-A2"
+                    data-location="HHQ-Q4A" />
             <label for="q4a-2">${Resource.msg('text.question.q4a.choice-2', 'hearingscreener', null)}</label>
         </li>
         <li>
-            <input type="radio" id="q4a-3" name="q4a" />
+            <input type="radio" class="custom-datalayer" id="q4a-3" name="q4a" data-name="HHQ-Q4A-A3"
+                    data-location="HHQ-Q4A" />
             <label for="q4a-3">${Resource.msg('text.question.q4a.choice-3', 'hearingscreener', null)}</label>
         </li>
         <li>
-            <input type="radio" id="q4a-4" name="q4a" />
+            <input type="radio" class="custom-datalayer" id="q4a-4" name="q4a" data-name="HHQ-Q4A-A4"
+                    data-location="HHQ-Q4A" />
             <label for="q4a-4">${Resource.msg('text.question.q4a.choice-4', 'hearingscreener', null)}</label>
         </li>
     </ul>
@@ -346,15 +358,18 @@
 
     <ul>
         <li>
-            <input type="radio" id="q2c-1" name="q2c" />
+            <input type="radio" class="custom-datalayer" id="q2c-1" name="q2c" data-name="HHQ-Q2C-A1"
+                    data-location="HHQ-Q2C" />
             <label for="q2c-1">${Resource.msg('text.question.q2c.choice-1', 'hearingscreener', null)}</label>
         </li>
         <li>
-            <input type="radio" id="q2c-2" name="q2c" />
+            <input type="radio" class="custom-datalayer" id="q2c-2" name="q2c" data-name="HHQ-Q2C-A2"
+                    data-location="HHQ-Q2C" />
             <label for="q2c-2">${Resource.msg('text.question.q2c.choice-2', 'hearingscreener', null)}</label>
         </li>
         <li>
-            <input type="radio" id="q2c-3" name="q2c" />
+            <input type="radio" class="custom-datalayer" id="q2c-3" name="q2c" data-name="HHQ-Q2C-A3"
+                    data-location="HHQ-Q2C" />
             <label for="q2c-3">${Resource.msg('text.question.q2c.choice-3', 'hearingscreener', null)}</label>
         </li>
     </ul>
@@ -379,15 +394,18 @@
 
     <ul>
         <li>
-            <input type="radio" id="q3c-1" name="q3c" />
+            <input type="radio" class="custom-datalayer" id="q3c-1" name="q3c" data-name="HHQ-Q3C-A1"
+                    data-location="HHQ-Q3C" />
             <label for="q3c-1">${Resource.msg('text.question.q3c.choice-1', 'hearingscreener', null)}</label>
         </li>
         <li>
-            <input type="radio" id="q3c-2" name="q3c" />
+            <input type="radio" class="custom-datalayer" id="q3c-2" name="q3c" data-name="HHQ-Q3C-A2"
+                    data-location="HHQ-Q3C" />
             <label for="q3c-2">${Resource.msg('text.question.q3c.choice-2', 'hearingscreener', null)}</label>
         </li>
         <li>
-            <input type="radio" id="q3c-3" name="q3c" />
+            <input type="radio" class="custom-datalayer" id="q3c-3" name="q3c" data-name="HHQ-Q3C-A3"
+                    data-location="HHQ-Q3C" />
             <label for="q3c-3">${Resource.msg('text.question.q3c.choice-3', 'hearingscreener', null)}</label>
         </li>
     </ul>
@@ -412,46 +430,46 @@
     <ul class="row">
         <div class="col-12 col-md-6">
             <li>
-                <input type="checkbox" class="custom-datalayer" id="q4-1" name="q4" data-name="HHQ-Q1-A1"
-                    data-location="HHQ-Q4" />
+                <input type="checkbox" class="custom-datalayer" id="q4c-1" name="q4c" data-name="HHQ-Q4C-A1"
+                    data-location="HHQ-Q4C" />
                 <label for="q4-1">${Resource.msg('text.question.q4.choice-1', 'hearingscreener', null)}</label>
             </li>
             <li>
-                <input type="checkbox" class="custom-datalayer" id="q4-2" name="q4" data-name="HHQ-Q1-A2"
-                    data-location="HHQ-Q4" />
+                <input type="checkbox" class="custom-datalayer" id="q4c-2" name="q4c" data-name="HHQ-Q4C-A2"
+                    data-location="HHQ-Q4C" />
                 <label for="q4-2">${Resource.msg('text.question.q4.choice-2', 'hearingscreener', null)}</label>
             </li>
             <li>
-                <input type="checkbox" class="custom-datalayer" id="q4-3" name="q4" data-name="HHQ-Q1-A3"
-                    data-location="HHQ-Q4" />
+                <input type="checkbox" class="custom-datalayer" id="q4c-3" name="q4c" data-name="HHQ-Q4C-A3"
+                    data-location="HHQ-Q4C" />
                 <label for="q4-3">${Resource.msg('text.question.q4.choice-3', 'hearingscreener', null)}</label>
             </li>
             <li>
-                <input type="checkbox" class="custom-datalayer" id="q4-4" name="q4" data-name="HHQ-Q1-A4"
-                    data-location="HHQ-Q4" />
+                <input type="checkbox" class="custom-datalayer" id="q4c-4" name="q4c" data-name="HHQ-Q4C-A4"
+                    data-location="HHQ-Q4C" />
                 <label for="q4-4">${Resource.msg('text.question.q4.choice-4', 'hearingscreener', null)}</label>
             </li>
 
         </div>
         <div class="col-12 col-md-6">
             <li>
-                <input type="checkbox" class="custom-datalayer" id="q4-5" name="q4" data-name="HHQ-Q1-A5"
-                    data-location="HHQ-Q4" />
+                <input type="checkbox" class="custom-datalayer" id="q4c-5" name="q4c" data-name="HHQ-Q4C-A5"
+                    data-location="HHQ-Q4C" />
                 <label for="q4-5">${Resource.msg('text.question.q4.choice-5', 'hearingscreener', null)}</label>
             </li>
             <li>
-                <input type="checkbox" class="custom-datalayer" id="q4-6" name="q4" data-name="HHQ-Q1-A6"
-                    data-location="HHQ-Q4" />
+                <input type="checkbox" class="custom-datalayer" id="q4c-6" name="q4c" data-name="HHQ-Q4C-A6"
+                    data-location="HHQ-Q4C" />
                 <label for="q4-6">${Resource.msg('text.question.q4.choice-6', 'hearingscreener', null)}</label>
             </li>
             <li>
-                <input type="checkbox" class="custom-datalayer" id="q4-7" name="q4" data-name="HHQ-Q1-A7"
-                    data-location="HHQ-Q4" />
+                <input type="checkbox" class="custom-datalayer" id="q4c-7" name="q4c" data-name="HHQ-Q4C-A7"
+                    data-location="HHQ-Q4C" />
                 <label for="q4-7">${Resource.msg('text.question.q4.choice-7', 'hearingscreener', null)}</label>
             </li>
             <li>
-                <input type="checkbox" class="custom-datalayer" id="q4-8" name="q4" data-name="HHQ-Q1-A8"
-                    data-location="HHQ-Q4" />
+                <input type="checkbox" class="custom-datalayer" id="q4c-8" name="q4c" data-name="HHQ-Q4C-A8"
+                    data-location="HHQ-Q4C" />
                 <label for="q4-8">${Resource.msg('text.question.q4.choice-8', 'hearingscreener', null)}</label>
             </li>
 
@@ -482,15 +500,18 @@
 
     <ul>
         <li>
-            <input type="radio" id="q2d-1" name="q2d" />
+            <input type="radio" class="custom-datalayer" id="q2d-1" name="q2d" data-name="HHQ-Q2D-A1"
+                    data-location="HHQ-Q2D" />
             <label for="q2d-1">${Resource.msg('text.question.q2d.choice-1', 'hearingscreener', null)}</label>
         </li>
         <li>
-            <input type="radio" id="q2d-2" name="q2d" />
+            <input type="radio" class="custom-datalayer" id="q2d-2" name="q2d" data-name="HHQ-Q2D-A2"
+                    data-location="HHQ-Q2D" />
             <label for="q2d-2">${Resource.msg('text.question.q2d.choice-2', 'hearingscreener', null)}</label>
         </li>
         <li>
-            <input type="radio" id="q2d-3" name="q2d" />
+            <input type="radio" class="custom-datalayer" id="q2d-3" name="q2d" data-name="HHQ-Q2D-A3"
+                    data-location="HHQ-Q2D" />
             <label for="q2d-3">${Resource.msg('text.question.q2d.choice-3', 'hearingscreener', null)}</label>
         </li>
     </ul>
@@ -515,23 +536,28 @@
     <ul class="row">
         <div class="col-12 col-md-6">
             <li>
-                <input type="checkbox" id="q3d-1" name="q3d" />
+                <input type="checkbox" class="custom-datalayer" id="q3d-1" name="q3d" data-name="HHQ-Q3D-A1"
+                    data-location="HHQ-Q3D" />
                 <label for="q3d-1">${Resource.msg('text.question.q3d.choice-1', 'hearingscreener', null)}</label>
             </li>
             <li>
-                <input type="checkbox" id="q3d-2" name="q3d" />
+                <input type="checkbox" class="custom-datalayer" id="q3d-2" name="q3d" data-name="HHQ-Q3D-A2"
+                    data-location="HHQ-Q3D" />
                 <label for="q3d-2">${Resource.msg('text.question.q3d.choice-2', 'hearingscreener', null)}</label>
             </li>
             <li>
-                <input type="checkbox" id="q3d-3" name="q3d" />
+                <input type="checkbox" class="custom-datalayer" id="q3d-3" name="q3d" data-name="HHQ-Q3D-A3"
+                    data-location="HHQ-Q3D" />
                 <label for="q3d-3">${Resource.msg('text.question.q3d.choice-3', 'hearingscreener', null)}</label>
             </li>
             <li>
-                <input type="checkbox" id="q3d-4" name="q3d" />
+                <input type="checkbox" class="custom-datalayer" id="q3d-4" name="q3d" data-name="HHQ-Q3D-A4"
+                    data-location="HHQ-Q3D" />
                 <label for="q3d-4">${Resource.msg('text.question.q3d.choice-4', 'hearingscreener', null)}</label>
             </li>
             <li>
-                <input type="checkbox" id="q3d-5" name="q3d" />
+                <input type="checkbox" class="custom-datalayer" id="q3d-5" name="q3d" data-name="HHQ-Q3D-A5"
+                    data-location="HHQ-Q3D" />
                 <label for="q3d-5">${Resource.msg('text.question.q3d.choice-5', 'hearingscreener', null)}</label>
             </li> 
         </div>
@@ -559,19 +585,23 @@
 
     <ul>
         <li>
-            <input type="radio" id="q4d-1" name="q4d" />
+            <input type="radio" class="custom-datalayer" id="q4d-1" name="q4d" data-name="HHQ-Q4D-A1"
+                    data-location="HHQ-Q4D" />
             <label for="q4d-1">${Resource.msg('text.question.q4d.choice-1', 'hearingscreener', null)}</label>
         </li>
         <li>
-            <input type="radio" id="q4d-2" name="q4d" />
+            <input type="radio" class="custom-datalayer" id="q4d-2" name="q4d" data-name="HHQ-Q4D-A2"
+                    data-location="HHQ-Q4D" />
             <label for="q4d-2">${Resource.msg('text.question.q4d.choice-2', 'hearingscreener', null)}</label>
         </li>
         <li>
-            <input type="radio" id="q4d-3" name="q4d" />
+            <input type="radio" class="custom-datalayer" id="q4d-3" name="q4d" data-name="HHQ-Q4D-A3"
+                    data-location="HHQ-Q4D" />
             <label for="q4d-3">${Resource.msg('text.question.q4d.choice-3', 'hearingscreener', null)}</label>
         </li>
         <li>
-            <input type="radio" id="q4d-4" name="q4d" />
+            <input type="radio" class="custom-datalayer" id="q4d-4" name="q4d" data-name="HHQ-Q4D-A4"
+                    data-location="HHQ-Q4D" />
             <label for="q4d-4">${Resource.msg('text.question.q4d.choice-4', 'hearingscreener', null)}</label>
         </li>
     </ul>
@@ -598,11 +628,13 @@
 
     <ul>
         <li>
-            <input type="radio" id="q2e-1" name="q2e" />
+            <input type="radio" class="custom-datalayer" id="q2e-1" name="q2e" data-name="HHQ-Q2E-A1"
+                    data-location="HHQ-Q2E" />
             <label for="q2e-1">${Resource.msg('text.question.q2e.choice-1', 'hearingscreener', null)}</label>
         </li>
         <li>
-            <input type="radio" id="q2e-2" name="q2e" />
+            <input type="radio" class="custom-datalayer" id="q2e-2" name="q2e" data-name="HHQ-Q2E-A2"
+                    data-location="HHQ-Q2E" />
             <label for="q2e-2">${Resource.msg('text.question.q2e.choice-2', 'hearingscreener', null)}</label>
         </li>
     </ul>
@@ -627,26 +659,29 @@
 
     <ul>
         <li>
-            <input type="radio" id="q3e-1" name="q3e" />
+            <input type="radio" class="custom-datalayer" id="q3e-1" name="q3e" data-name="HHQ-Q3E-A1"
+                    data-location="HHQ-Q3E" />
             <label for="q3e-1">${Resource.msg('text.question.q3e.choice-1', 'hearingscreener', null)}</label>
         </li>
         <li>
-            <input type="radio" id="q3e-2" name="q3e" />
+            <input type="radio" class="custom-datalayer" id="q3e-2" name="q3e" data-name="HHQ-Q3E-A2"
+                    data-location="HHQ-Q3E" />
             <label for="q3e-2">${Resource.msg('text.question.q3e.choice-2', 'hearingscreener', null)}</label>
         </li>
         <li>
-            <input type="radio" id="q3e-3" name="q3e" />
+            <input type="radio" class="custom-datalayer" id="q3e-3" name="q3e" data-name="HHQ-Q3E-A3"
+                    data-location="HHQ-Q3E" />
             <label for="q3e-3">${Resource.msg('text.question.q3e.choice-3', 'hearingscreener', null)}</label>
         </li>
     </ul>
 
-    <a href="javascript:void(0)" id="q4e-btn" class="disabled next btn-next btn btn-primary mb-5">
+    <a href="javascript:void(0)" class="custom-datalayer" id="q4e-btn" class="disabled next btn-next btn btn-primary mb-5">
         ${Resource.msg('label.hearing-screener.btn.next-question', 'hearingscreener', null)}
     </a>
 
 </fieldset>
 
-<fieldset class="screener-q4e" id="screener-q4e" data-req='{"reqs": ["q2e-1", "q2e-2"]}' data-question-filled="q4-filled" data-question-start="q4-unfilled">
+<fieldset class="screener-q4e" id="screener-q4e" data-req='{"reqs": ["q3e-1", "q3e-2", "q3e-3"]}' data-question-filled="q4-filled" data-question-start="q4-unfilled">
 
     <a href="javascript:void(0)" id="q3e-back" class="previous btn-back">
         ${Resource.msg('global.label.back', 'common', null)}
@@ -660,15 +695,18 @@
 
     <ul>
         <li>
-            <input type="radio" id="q4e-1" name="q4e" />
+            <input type="radio" class="custom-datalayer" id="q4e-1" name="q4e" data-name="HHQ-Q4E-A1"
+                    data-location="HHQ-Q4E" />
             <label for="q4e-1">${Resource.msg('text.question.q4e.choice-1', 'hearingscreener', null)}</label>
         </li>
         <li>
-            <input type="radio" id="q4e-2" name="q4e" />
+            <input type="radio" class="custom-datalayer" id="q4e-2" name="q4e" data-name="HHQ-Q4E-A2"
+                    data-location="HHQ-Q4E" />
             <label for="q4e-2">${Resource.msg('text.question.q4e.choice-2', 'hearingscreener', null)}</label>
         </li>
         <li>
-            <input type="radio" id="q4e-3" name="q4e" />
+            <input type="radio" class="custom-datalayer" id="q4e-3" name="q4e" data-name="HHQ-Q4E-A3"
+                    data-location="HHQ-Q4E" />
             <label for="q4e-3">${Resource.msg('text.question.q4e.choice-3', 'hearingscreener', null)}</label>
         </li>
     </ul>

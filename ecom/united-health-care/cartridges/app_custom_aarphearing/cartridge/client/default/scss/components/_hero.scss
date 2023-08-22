@@ -113,7 +113,7 @@ p {
         }
     }
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(md) {
         overflow: hidden;
 
         .text-content {
