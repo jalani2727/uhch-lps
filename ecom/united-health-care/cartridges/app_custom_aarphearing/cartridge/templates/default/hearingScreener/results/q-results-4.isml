@@ -77,7 +77,7 @@
 
         <isinclude template="hearingScreener/results/components/discounts-perks"/>
 
-        <isinclude template="hearingScreener/results/components/disclaimer"/>
+        <iscomment> <isinclude template="hearingScreener/results/components/disclaimer"/> </iscomment>
 
     </div>
 

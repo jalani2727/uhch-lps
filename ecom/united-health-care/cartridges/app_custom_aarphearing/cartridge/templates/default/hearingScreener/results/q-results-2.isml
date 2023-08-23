@@ -48,7 +48,7 @@
                     </div>
 
                     <div>
-                        <img class="down-arrow" src="${URLUtils.staticURL('/images/vector.svg')}" alt="down-arrow" />
+                        <img class="down-arrow" src="${URLUtils.staticURL('/images/vector-down.svg')}" alt="down-arrow" />
                     </div>
 
                 </button>
@@ -75,7 +75,7 @@
                     </div>
 
                     <div>
-                        <img class="down-arrow" src="${URLUtils.staticURL('/images/vector.svg')}" alt="down-arrow" />
+                        <img class="down-arrow" src="${URLUtils.staticURL('/images/vector-down.svg')}" alt="down-arrow" />
                     </div>
 
                 </button>
@@ -242,6 +242,6 @@
 
     <isinclude template="hearingScreener/results/components/discounts-perks.isml" />
 
-    <isinclude template="hearingScreener/results/components/disclaimer.isml" />
+    <iscomment> <isinclude template="hearingScreener/results/components/disclaimer.isml" /> </iscomment>
 
 </isdecorate>

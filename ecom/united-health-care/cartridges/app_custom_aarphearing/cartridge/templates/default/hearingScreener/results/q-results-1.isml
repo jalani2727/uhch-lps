@@ -32,7 +32,7 @@
                             help. If you are an AARP member, you can save on prescription hearing aids and accessories
                             through AARP<sup>®</sup> Hearing Solutions™ provided by UnitedHealthcare Hearing.</p>
 
-                        <a class="text-bold"  href="#perks-discounts" class="custom-datalayer">Discounts
+                        <a class="text-bold" href="#perks-discounts" class="custom-datalayer">Discounts
                             and perks for AARP members <img class="pl-2"
                                 src="${URLUtils.staticURL('/images/CTA-arrow-down.svg')}" alt="arrow" /></a>
 
@@ -100,43 +100,39 @@
             </div>
         </div>
 
-        <div class="container-fluid content-banner banner-6 content-blue reasons-to-treat py-4">
-            <div class="title-container">
+        <div class="container-fluid content-banner banner-6 content-blue reasons-to-treat">
+            <div class="">
                 <h1>Why it's important to treat hearing loss early</h1>
-                <p>Treating hearing loss early can make all the difference in the world, <span>allowing you to
-                        rediscover parts of your life that may have felt missing.</span></p>
+                <p>Treating hearing loss early can make all the difference in the world, allowing you to rediscover parts of your life that may have felt missing.</p>
             </div>
 
-            <div class="box-container mb-md-4 reasons-to-treat-container">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-3 reasons-to-treat-content">
+                        <img src="${URLUtils.staticURL('/images/shoe.png')}" alt="Exercise shoe" />
+                        <h2>Enjoy daily activities again</h2>
+                        <p class="subtext">Whether it's gardening or going to the gym, better hearing can help you be more involved in your everyday activities.</p>
+                    </div>
 
-                <div>
-                    <img src="${URLUtils.staticURL('/images/shoe.png')}" alt="Exercise shoe" />
-                    <h2>Enjoy daily activities again</h2>
-                    <p class="subtext">Whether it's gardening or going to the gym, better hearing can help you be more
-                        involved in your everyday activities.</p>
-                </div>
-
-                <div>
-                    <img src="${URLUtils.staticURL('/images/heart-hands.png')}" alt="Heart" />
-                    <h2>Stay connected to the people you love</h2>
-                    <p class="subtext">Reengaging in conversations with family and friends can help you feel more
-                        connected to important relationships.</p>
-                </div>
+                    <div class="col-12 col-md-3 reasons-to-treat-content">
+                        <img src="${URLUtils.staticURL('/images/heart-hands.png')}" alt="Heart" />
+                        <h2>Stay connected to the people you love</h2>
+                        <p class="subtext">Reengaging in conversations with family and friends can help you feel more connected to important relationships.</p>
+                    </div>
 
 
-                <div>
-                    <img src="${URLUtils.staticURL('/images/lightbulb.png')}" alt="Light bulb" />
-                    <h2>Discover more independence</h2>
-                    <p class="subtext">When you’re more aware of your surroundings, you’ll be able to do more without
-                        having to rely on anyone else.</p>
-                </div>
+                    <div class="col-12 col-md-3 reasons-to-treat-content">
+                        <img src="${URLUtils.staticURL('/images/lightbulb.png')}" alt="Light bulb" />
+                        <h2>Discover their independence</h2>
+                        <p class="subtext">When you’re more aware of your surroundings, you’ll be able to do more without having to rely on anyone else.</p>
+                    </div>
 
 
-                <div>
-                    <img src="${URLUtils.staticURL('/images/brain.png')}" alt="Brain" />
-                    <h2>Support brain health</h2>
-                    <p class="subtext">Reduce the risk of cognitive decline and diseases such as Alzheimer’s or
-                        dementia.</p>
+                    <div class="col-12 col-md-3 reasons-to-treat-content">
+                        <img src="${URLUtils.staticURL('/images/brain.png')}" alt="Brain" />
+                        <h2>Support brain health</h2>
+                        <p class="subtext">Reduce the risk of cognitive decline and diseases such as Alzheimer’s or dementia.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -181,8 +177,8 @@
                     <h2>Hear for yourself</h2>
                     <p>Put on your headphones and experience dinner in a busy restaurant with and without hearing aids.
                         Click the audio buttons below to hear the difference a pair of hearing aids can make.</p>
-                   
-                   <isinclude template="hearingScreener/results/components/audio-simulation" />
+
+                    <isinclude template="hearingScreener/results/components/audio-simulation" />
                 </div>
                 <img class="hidden-md-pic hidden-lg" src="${URLUtils.staticURL('/images/audio-simulation-module.png')}"
                     alt="hero banner image" />
@@ -195,7 +191,9 @@
 
         <isinclude template="hearingScreener/results/components/discounts-perks.isml" />
 
-        <iscomment> <isinclude template="hearingScreener/results/components/disclaimer.isml" /> </iscomment>
+        <iscomment>
+            <isinclude template="hearingScreener/results/components/disclaimer.isml" />
+        </iscomment>
 
     </div>
 
