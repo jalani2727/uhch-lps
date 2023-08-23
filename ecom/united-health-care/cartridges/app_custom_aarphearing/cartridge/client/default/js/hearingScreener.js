@@ -121,42 +121,42 @@ $('.next').click(function () {
     animating = true;
 
     /* Get current fieldset */
-    currentFs = $(this).parent();
+    currentFs = $(this)?.parent();
 
     /* Get next fieldset */
-    nextData = $(this).data('next');
-    nextResults = currentFs.parent().find('#screener-results');
-    fieldsets.each(function (index, fs) {
+    nextData = $(this)?.data('next');
+    nextResults = currentFs?.parent()?.find('#screener-results');
+    fieldsets?.each(function (index, fs) {
         let fieldset = $(this);
-        let reqs = fieldset.data('req').reqs;
+        let reqs = fieldset?.data('req')?.reqs;
         
-        if (reqs.indexOf(nextData) > -1) {
+        if (reqs?.indexOf(nextData) > -1) {
             nextFs = fieldset;
-        } else if (nextData.indexOf("q2") > -1) {
+        } else if (nextData?.indexOf("q2") > -1) {
             /* snag the answer for question 2 */
             answer = nextData;
-        } else if (nextData.indexOf("q4") > -1) {
+        } else if (nextData?.indexOf("q4") > -1) {
             /* go to the results page */
             nextFs = nextResults;
         }
     });
 
     if (nextFs === nextResults) {
-        navigateToResultsLp(currentFs.get(0).id, answer);
+        navigateToResultsLp(currentFs?.get(0)?.id, answer);
     }
 
     /* Append this question to the previous button */
-    let prev = nextFs.find('.previous');
-    prev.data('prev', currentFs.get(0).id);
+    let prev = nextFs?.find('.previous');
+    prev?.data('prev', currentFs?.get(0)?.id);
 
     /* Logic to update Progress Bar Classes */
     updateProgressBar(currentFs, nextFs);
 
     /* Hide current fieldset */
-    currentFs.hide();
+    currentFs?.hide();
 
     /* Update CSS on current fieldset */
-    currentFs.animate({
+    currentFs?.animate({
         opacity: 0
     }, {
         step: function (now, mx) {
@@ -167,15 +167,15 @@ $('.next').click(function () {
             left = (now * 50) + '%';
             /* 3. increase opacity of nextFs to 1 as it moves in */
             opacity = 1 - now;
-            currentFs.css({
+            currentFs?.css({
                 transform: 'scale(' + scale + ')'
             });
-            nextFs.css({
+            nextFs?.css({
                 transform: 'scale(' + scale + ')',
                 opacity: opacity
             });
             /* show the next fieldset */
-            nextFs.show();
+            nextFs?.show();
         },
         duration: 600,
         complete: function () {
@@ -184,28 +184,28 @@ $('.next').click(function () {
     });
 });
 
-$('.previous').click(function () {
+$('.previous')?.click(function () {
     if (animating) return false;
     animating = true;
 
-    currentFs = $(this).parent();
+    currentFs = $(this)?.parent();
 
     /* Get previous fieldset */
-    prevData = $(this).data('prev');
-    prevFs = currentFs.parent().find('#' + prevData);
+    prevData = $(this)?.data('prev');
+    prevFs = currentFs?.parent()?.find('#' + prevData);
 
     /* enable the previous next button */
-    if (prevFs.find(':input:checked').length > 0) {
-        prevFs.find('.next').removeClass('disabled');
+    if (prevFs?.find(':input:checked')?.length > 0) {
+        prevFs?.find('.next')?.removeClass('disabled');
     }
 
     updateProgressBar(currentFs, prevFs);
 
     /* show the previous fieldset */
-    prevFs.show();
+    prevFs?.show();
 
     /* hide the current fieldset */
-    currentFs.animate({
+    currentFs?.animate({
         opacity: 0
     }, {
         step: function (now, mx) {
@@ -216,15 +216,15 @@ $('.previous').click(function () {
             left = ((1 - now) * 50) + '%';
             /* 3. increase opacity of prevFs to 1 as it moves in */
             opacity = 1 - now;
-            currentFs.css({
+            currentFs?.css({
                 /* 'left': left */
             });
-            prevFs.css({
+            prevFs?.css({
                 transform: 'scale(' + scale + ')',
                 position: 'relative',
                 opacity: opacity
             });
-            currentFs.hide();
+            currentFs?.hide();
         },
         duration: 800,
         complete: function () {
