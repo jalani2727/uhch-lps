@@ -1,9 +1,14 @@
+/* fieldsets */
 var currentFs;
 var nextFs;
-var prevFs; /* fieldsets */
+var nextData;
+var nextResults;
+var prevFs;
+var prevData;
+/* fieldset properties being animated */
 var left;
 var opacity;
-var scale; /* fieldset properties being animated */
+var scale;
 var animating; /* flag to prevent quick multi-click glitches */
 
 const fieldsets = $('.screener-form-container fieldset');
@@ -25,11 +30,6 @@ function updateProgressBar(currentField, upcoming) {
 }
 
 function navigateToResultsLp(question, answer) {
-    /* const resultsPage1 = 'https://bgxl-010.dx.commercecloud.salesforce.com/on/demandware.store/Sites-AARPHearing-Site/default/Screener-ResultsPage1'; */
-    /* const resultsPage2 = 'https://bgxl-010.dx.commercecloud.salesforce.com/on/demandware.store/Sites-AARPHearing-Site/default/Screener-ResultsPage2'; */
-    /* const resultsPage3 = 'https://bgxl-010.dx.commercecloud.salesforce.com/on/demandware.store/Sites-AARPHearing-Site/default/Screener-ResultsPage3'; */
-    /* const resultsPage4 = 'https://bgxl-010.dx.commercecloud.salesforce.com/on/demandware.store/Sites-AARPHearing-Site/default/Screener-ResultsPage4'; */
-
     const resultsPage1 = $('#screener-results').data('results-url-one');
     const resultsPage2 = $('#screener-results').data('results-url-two');
     const resultsPage3 = $('#screener-results').data('results-url-three');
@@ -96,7 +96,7 @@ function navigateToResultsLp(question, answer) {
     }
 
     setTimeout(()=> {
-        if (route !== "") window.location.href = route;
+        if (route !== '') window.location.href = route;
     }, 5000);
 }
 
@@ -121,61 +121,61 @@ $('.next').click(function () {
     animating = true;
 
     /* Get current fieldset */
-    currentFs = $(this).parent();
+    currentFs = $(this)?.parent();
 
     /* Get next fieldset */
-    nextData = $(this).data('next');
-    nextResults = currentFs.parent().find('#screener-results');
+    nextData = $(this)?.data('next');
+    nextResults = currentFs?.parent()?.find('#screener-results');
     fieldsets.each(function (index, fs) {
         let fieldset = $(this);
-        let reqs = fieldset.data('req').reqs;
-        
-        if (reqs.indexOf(nextData) > -1) {
+        let reqs = fieldset?.data('req')?.reqs;
+
+        if (reqs?.indexOf(nextData) > -1) {
             nextFs = fieldset;
-        } else if (nextData.indexOf("q2") > -1) {
+        } else if (nextData?.indexOf('q2') > -1) {
             /* snag the answer for question 2 */
             answer = nextData;
-        } else if (nextData.indexOf("q4") > -1) {
+        } else if (nextData?.indexOf('q4') > -1) {
             /* go to the results page */
             nextFs = nextResults;
         }
     });
 
     if (nextFs === nextResults) {
-        navigateToResultsLp(currentFs.get(0).id, answer);
+        navigateToResultsLp(currentFs?.get(0).id, answer);
     }
 
     /* Append this question to the previous button */
-    let prev = nextFs.find('.previous');
-    prev.data('prev', currentFs.get(0).id);
+    let prev = nextFs?.find('.previous');
+    prev.data('prev', currentFs?.get(0).id);
 
     /* Logic to update Progress Bar Classes */
     updateProgressBar(currentFs, nextFs);
 
     /* Hide current fieldset */
-    currentFs.hide();
+    currentFs?.hide();
 
     /* Update CSS on current fieldset */
-    currentFs.animate({
+    currentFs?.animate({
         opacity: 0
     }, {
         step: function (now, mx) {
-            /* as the opacity of currentFs reduces to 0 - stored in "now" */
+            /* as the opacity of currentFs reduces to 0 - stored in 'now' */
             /* 1. scale currentFs down to 80% */
-            scale = 1.2 - (1 - now) * 0.2;
+            scale = 1.2 - ((1 - now) * 0.2);
             /* 2. bring nextFs from the right(50%) */
             left = (now * 50) + '%';
             /* 3. increase opacity of nextFs to 1 as it moves in */
             opacity = 1 - now;
-            currentFs.css({
+            currentFs?.css({
                 transform: 'scale(' + scale + ')'
             });
-            nextFs.css({
+            nextFs?.css({
                 transform: 'scale(' + scale + ')',
                 opacity: opacity
             });
             /* show the next fieldset */
-            nextFs.show();
+            nextFs?.show();
         },
         duration: 600,
         complete: function () {
@@ -188,43 +188,43 @@ $('.previous').click(function () {
     if (animating) return false;
     animating = true;
 
-    currentFs = $(this).parent();
+    currentFs = $(this)?.parent();
 
     /* Get previous fieldset */
-    prevData = $(this).data('prev');
-    prevFs = currentFs.parent().find('#' + prevData);
+    prevData = $(this)?.data('prev');
+    prevFs = currentFs?.parent()?.find('#' + prevData);
 
     /* enable the previous next button */
-    if (prevFs.find(':input:checked').length > 0) {
-        prevFs.find('.next').removeClass('disabled');
+    if (prevFs?.find(':input:checked')?.length > 0) {
+        prevFs?.find('.next')?.removeClass('disabled');
     }
 
     updateProgressBar(currentFs, prevFs);
 
     /* show the previous fieldset */
-    prevFs.show();
+    prevFs?.show();
 
     /* hide the current fieldset */
-    currentFs.animate({
+    currentFs?.animate({
         opacity: 0
     }, {
         step: function (now, mx) {
-            /* as the opacity of currentFs reduces to 0 - stored in "now" */
+            /* as the opacity of currentFs reduces to 0 - stored in 'now' */
             /* 1. scale prevFs from 80% to 100% */
-            scale = 0.8 + (1 - now) * 0.2;
+            scale = 0.8 + ((1 - now) * 0.2);
             /* 2. take currentFs to the right(50%) - from 0% */
             left = ((1 - now) * 50) + '%';
             /* 3. increase opacity of prevFs to 1 as it moves in */
             opacity = 1 - now;
-            currentFs.css({
+            currentFs?.css({
                 /* 'left': left */
             });
-            prevFs.css({
+            prevFs?.css({
                 transform: 'scale(' + scale + ')',
                 position: 'relative',
                 opacity: opacity
             });
-            currentFs.hide();
+            currentFs?.hide();
         },
         duration: 800,
         complete: function () {
@@ -271,11 +271,9 @@ $(document).on('click', '.white-card-mobile .white-card', function (e) {
 /* Audio */
 var playing = false;
 $(document).on('click', 'a.play-button', function (e) {
-    
     var soundEffect = $(this).find('.myAudio');
-    // console.log(soundEffect[0]);
 
-    if (playing == false) {
+    if (playing === false) {
         $(this).closest('.simulation').addClass('playing');
         $(this).addClass('playing');
         soundEffect.trigger('play');
@@ -287,5 +285,4 @@ $(document).on('click', 'a.play-button', function (e) {
         soundEffect[0].currentTime = 0;
         playing = false;
     }
-
 });
