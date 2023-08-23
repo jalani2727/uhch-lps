@@ -182,7 +182,7 @@
     }
 }
 
-.hero-container {
+.hero-container:not(.simulator-page){
     &.top-content {
         .image-content {
             width: 100%;

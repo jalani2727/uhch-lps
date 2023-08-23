@@ -73,11 +73,11 @@ p {
         display: flex;
 
         .image-content {
-            order: 1;
+            order: 2;
         }
 
         .text-content {
-            order: 2;
+            order: 1;
         }
     }
 
@@ -295,5 +295,12 @@ p {
         @include media-breakpoint-down(sm) {
             padding: 0;
         }
+    }
+}
+
+.simulator-page {
+
+    .text-content {
+        border: none;
     }
 }
