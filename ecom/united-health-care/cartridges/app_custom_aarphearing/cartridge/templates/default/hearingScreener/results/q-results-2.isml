@@ -10,10 +10,8 @@
         <div class="hero-container top-content">
             <div class="image-content">
                 <picture>
-                    <img class="hidden-sm-down top-image" src="${URLUtils.staticURL('/images/Stocksy_comp_28937781.png')}"
-                        alt="hero banner image">
-                    <img class="d-md-none" src="${URLUtils.staticURL('/images/results-pg-2-hero-mobile.png')}"
-                        alt="hero banner image">
+                    <img class="hidden-sm-down top-image" src="${URLUtils.staticURL('/images/ResultsPage2-Hero-Desk.jpg')}" alt="hero banner image">
+                    <img class="d-md-none" src="${URLUtils.staticURL('/images/ResultsPage2-Hero-mobile.jpg')}" alt="hero banner image">
                 </picture>
             </div>
             <div class="text-content">
@@ -207,7 +205,7 @@
                 </div>
 
                 <div class="col-12 col-md-6 father-son-wrapper">
-                    <img class="father-son-image img-fluid" src="${URLUtils.staticURL('/images/man-and-son.png')}"
+                    <img class="father-son-image img-fluid" src="${URLUtils.staticURL('/images/love-one-hearing-aid-desk.jpg')}"
                         alt="father son image" />
 
                 </div>
