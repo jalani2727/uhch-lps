@@ -10,7 +10,7 @@
     var isSections = '${'sections' in pdict.adobeDataLayer ?  true : false }';
     var datalayerSections = {};
     if (isSections === 'true') {
-        datalayerSections = <isprint value="${JSON.stringify(pdict.adobeDataLayer.sections)}" encoding="off"/>;
+        datalayerSections = '${pdict.adobeDataLayer.sections ? pdict.adobeDataLayer.sections : ""}' ;
     }
 </script>
 <isscript>
