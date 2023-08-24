@@ -1,6 +1,6 @@
 <isif condition="${pdict.name === null}">
     <div class="user hidden-sm-down uhc-signin js-guest-customer">
-        <a href="${pdict.signInUrl}" role="button" aria-label="${Resource.msg('label.header.loginbutton', 'account', null)}">
+        <a href="https://www.aarphearingsolutions.com/sign-in?oauthLoginTargetEndPoint=7" role="button" aria-label="${Resource.msg('label.header.loginbutton', 'account', null)}">
             <span class="user-message">${Resource.msg('link.header.login', 'account', null)}</span>
         </a>
     </div>
