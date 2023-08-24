@@ -12,12 +12,6 @@
     <isinclude template="home/banner-1" />
     <isinclude template="home/banner-2" />
 
-    <div class="footnote-section">
-        <div class="container py-5">
-            <p><sup>1</sup>4 - year warranty applies to hearing aids in the Classic & Premier technology levels.</p>
-        </div>
-    </div>
-
 
     <div class="path-selection-slot">
         <isslot id="path-selection-slot" description="Path Selection Slot" context="global" />

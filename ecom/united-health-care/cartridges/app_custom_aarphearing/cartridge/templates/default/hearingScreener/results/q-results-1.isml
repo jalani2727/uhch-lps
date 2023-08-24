@@ -10,10 +10,8 @@
         <div class="hero-container top-content p1-results-hero">
             <div class="image-content">
                 <picture>
-                    <img class="d-md-none results-hero" src="${URLUtils.staticURL('/images/hearing-loss-hero.png')}"
-                        alt="hero banner image">
-                    <img class="hidden-sm-down results-hero"
-                        src="${URLUtils.staticURL('/images/hearing-loss-hero-cut.png')}" alt="hero banner image">
+                    <img class="hidden-sm-down results-hero" src="${URLUtils.staticURL('/images/ResultsPage1-Hero-Desk.jpg')}" alt="hero banner image">
+                    <img class="d-md-none results-hero" src="${URLUtils.staticURL('/images/ResultsPage1-Hero-mobile.jpg')}" alt="hero banner image">
                 </picture>
             </div>
             <div class="text-content">

@@ -9,9 +9,9 @@
         <div class="hero-container top-content">
             <div class="image-content">
                 <picture>
-                    <img class="hidden-sm-down" src="${URLUtils.staticURL('/images/q-landing-4-hero-desktop.png')}"
+                    <img class="hidden-sm-down" src="${URLUtils.staticURL('/images/ResultsPage4-Hero-Desk.jpg')}"
                         alt="hero banner image">
-                    <img class="d-md-none" src="${URLUtils.staticURL('/images/q-landing-4-hero-mobile.png')}"
+                    <img class="d-md-none" src="${URLUtils.staticURL('/images/ResultsPage4-Hero-mobile.jpg')}"
                         alt="hero banner image">
                 </picture>
             </div>
