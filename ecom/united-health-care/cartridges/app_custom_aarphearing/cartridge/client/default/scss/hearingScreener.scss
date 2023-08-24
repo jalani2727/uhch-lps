@@ -592,7 +592,7 @@ fieldset {
         }
     }
 
-    &.banner-3 {
+    &.banner-2 {
         border-top: 1px solid #333;
 
         .hero-text-wrapper {
@@ -601,7 +601,9 @@ fieldset {
         }
 
         .hero-text {
-            padding-left: 80px;
+            @include media-breakpoint-down(sm) {
+                padding-top: 20px;
+            }
         }
 
         .image-content {
