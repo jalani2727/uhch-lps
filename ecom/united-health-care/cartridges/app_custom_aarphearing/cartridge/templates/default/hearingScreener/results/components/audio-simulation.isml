@@ -1,7 +1,8 @@
 <div class="simulation-container">
     <div class="simulation">
         <a href="javascript:void(0)" id="with-sound" class="play-button">
-            <img class="logos" src="${URLUtils.staticURL('/images/r1-vector.png')}" alt="Play with hearing aids">
+            <img class="logos play-icon" src="${URLUtils.staticURL('/images/r1-vector.png')}" alt="Play with hearing aids">
+            <img class="logos pause-icon" src="${URLUtils.staticURL('/images/pause-btn.png')}" alt="Play with hearing aids">
             <audio class="myAudio">
                 <source src="${URLUtils.staticURL('/audio/Kemar_OpenEar_UHC.wav')}" type="audio/wav">
                 Your browser does not support the audio element.
@@ -11,7 +12,8 @@
     </div>
     <div class="simulation">
         <a href="javascript:void(0)" id="without-sound" class="play-button">
-            <img class="logos" src="${URLUtils.staticURL('/images/r1-vector.png')}" alt="Play without hearing aids">
+            <img class="logos play-icon" src="${URLUtils.staticURL('/images/r1-vector.png')}" alt="Play without hearing aids">
+            <img class="logos pause-icon" src="${URLUtils.staticURL('/images/pause-btn.png')}" alt="Play without hearing aids">
             <audio class="myAudio">
                 <source src="${URLUtils.staticURL('/audio/Kemar_HA_UHC.wav')}" type="audio/wav">
                 Your browser does not support the audio element.
