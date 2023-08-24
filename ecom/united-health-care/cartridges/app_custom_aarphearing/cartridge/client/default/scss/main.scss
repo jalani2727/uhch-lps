@@ -1,7 +1,12 @@
-@import 'variables';
+@import './variables';
 
 .text-bold {
     font-family: $uhc-font-sans-bold;
+}
+
+.text-thin {
+    font-family: $uhc-font-sans-medium !important;
+    font-weight: 500 !important;
 }
 
 .overflow-hidden {
