@@ -15,7 +15,7 @@
                 <div class="col-12 col-md-7">
                     <div class="hero-text">
                         <h1>Your hearing matters</h1>
-                        <p>Could you benefit from hearing care? Take our 5-minute questionnaire to find out.</p>
+                        <p>Could you benefit from hearing care? <br> Take our 5-minute questionnaire to find out.</p>
                         <a href="${URLUtils.url('Screener-Show')}"
                             class="custom-datalayer btn btn-primary mb-md-5"
                             data-name="${Resource.msg('label.adobe.questionnaire-landing-name', 'adobetracking', null)}"
@@ -37,13 +37,6 @@
 
         <isinclude template="hearingScreener/banner-2" />
 
-        <isinclude template="hearingScreener/banner-3" />
-
-        <div class="footnote-section">
-            <div class="container py-5">
-                <p><sup>1</sup>4 - year warranty applies to hearing aids in the Classic & Premier technology levels.</p>
-            </div>
-        </div>
     </div>
 
 
