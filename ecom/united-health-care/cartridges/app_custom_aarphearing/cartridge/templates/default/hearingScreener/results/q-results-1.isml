@@ -61,7 +61,7 @@
                     themselves</li>
             </ul>
             <div class="sch-btn-container">
-                <a href="https://www.uhchearing.com/find-a-provider?providerType=guest"
+                <a href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest"
                     class="custom-datalayer btn btn-primary"
                     data-name="${Resource.msg('label.adobe.questionnaire-results-name-schedule', 'adobetracking', null)}"
                     data-location="${Resource.msg('label.adobe.questionnaire-results-location', 'adobetracking', null)}">Schedule
@@ -149,7 +149,7 @@
                     guidelines state that you should get your hearing checked at least once every 10 years until the age
                     of 50 and every 3 years after 50.</p>
                 <div class="sch-btn-container">
-                    <a href="https://www.uhchearing.com/find-a-provider?providerType=guest"
+                    <a href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest"
                         class="custom-datalayer btn btn-primary"
                         data-name="${Resource.msg('label.adobe.simulator-landing-name-request', 'adobetracking', null)}"
                         data-location="${Resource.msg('label.adobe.simulator-landing-location', 'adobetracking', null)}">Schedule

@@ -1,6 +1,6 @@
 <isif condition="${pdict.name === null}">
     <li class="nav-item d-md-none uhc-signin js-guest-customer" role="menuitem">
-        <a href="${pdict.signInUrl}" class="nav-link">
+        <a href="https://www.aarphearingsolutions.com/sign-in?oauthLoginTargetEndPoint=7" class="nav-link">
             <span class="user-message">${Resource.msg('link.header.login', 'account', null)}</span>
         </a>
     </li>

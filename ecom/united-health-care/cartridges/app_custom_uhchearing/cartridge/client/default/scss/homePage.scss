@@ -64,7 +64,9 @@
         }
 
         .hero-text {
-            padding-left: 80px;
+            @include media-breakpoint-down(sm) {
+                padding-top: 20px;
+            }
         }
 
         .image-content {

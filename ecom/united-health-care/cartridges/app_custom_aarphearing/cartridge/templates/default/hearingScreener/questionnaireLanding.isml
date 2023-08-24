@@ -23,7 +23,7 @@
                             the questionnaire</a>
                     </div>
                 </div>
-                <div class="col-12 col-md-5">
+                <div class="col-12 col-md-5 overflow-hidden p-0">
                     <div class="image-content">
                         <picture>
                             <img alt="sign in image" src="${URLUtils.staticURL('/images/red_shawl_3.png')}" />
