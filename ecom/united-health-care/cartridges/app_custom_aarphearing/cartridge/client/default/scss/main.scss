@@ -1,7 +1,7 @@
 @import './variables';
 
 .text-bold {
-    font-family: $uhc-font-sans-bold;
+    font-family: $uhc-font-sans-bold !important;
 }
 
 .text-thin {
