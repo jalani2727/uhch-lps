@@ -25,13 +25,14 @@ server.get(
         viewData.adobeDataLayer.PageName = 'questionnaire-results-1';
 
         var sections = {};
+        sections.section1 = '';
         sections.section2 = '';
         sections.section3 = '';
         sections.section4 = '';
         viewData.adobeDataLayer.sections = sections;
-        res.setViewData();
-
+        
         res.render('hearingScreener/results/q-results-1');
+        res.setViewData();
 
         next();
     }
@@ -48,13 +49,14 @@ server.get(
         viewData.adobeDataLayer.PageName = 'questionnaire-results-2';
 
         var sections = {};
+        sections.section1 = '';
         sections.section2 = '';
         sections.section3 = '';
         sections.section4 = '';
         viewData.adobeDataLayer.sections = sections;
-        res.setViewData();
-
+        
         res.render('hearingScreener/results/q-results-2');
+        res.setViewData();
 
         next();
     }
@@ -71,13 +73,14 @@ server.get(
         viewData.adobeDataLayer.PageName = 'questionnaire-results-3';
 
         var sections = {};
+        sections.section1 = '';
         sections.section2 = '';
         sections.section3 = '';
         sections.section4 = '';
         viewData.adobeDataLayer.sections = sections;
-        res.setViewData();
-
+        
         res.render('hearingScreener/results/q-results-3');
+        res.setViewData();
 
         next();
     }
@@ -94,13 +97,14 @@ server.get(
         viewData.adobeDataLayer.PageName = 'questionnaire-results-4';
 
         var sections = {};
+        sections.section1 = '';
         sections.section2 = '';
         sections.section3 = '';
         sections.section4 = '';
         viewData.adobeDataLayer.sections = sections;
-        res.setViewData();
-
+        
         res.render('hearingScreener/results/q-results-4');
+        res.setViewData();
 
         next();
     }
@@ -119,13 +123,14 @@ server.get(
         viewData.adobeDataLayer.PageName = 'questionnaire-widget';
 
         var sections = {};
+        sections.section1 = '';
         sections.section2 = '';
         sections.section3 = '';
         sections.section4 = '';
         viewData.adobeDataLayer.sections = sections;
-        res.setViewData();
-
+        
         res.render('hearingScreener/questionnaire');
+        res.setViewData();
 
         next();
     }
@@ -142,13 +147,14 @@ server.get(
         viewData.adobeDataLayer.PageName = 'questionnaire-landing-page';
 
         var sections = {};
+        sections.section1 = '';
         sections.section2 = '';
         sections.section3 = '';
         sections.section4 = '';
         viewData.adobeDataLayer.sections = sections;
-        res.setViewData();
-
+        
         res.render('hearingScreener/questionnaireLanding');
+        res.setViewData();
 
         next();
     }
