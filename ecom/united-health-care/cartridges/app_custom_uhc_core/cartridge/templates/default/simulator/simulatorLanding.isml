@@ -1,3 +1,5 @@
+<isinclude template="/components/modules" sf-toolkit="off" />
+
 <isdecorate template="common/layout/simulatorLandingLayout">
     <isscript>
         var assets = require('*/cartridge/scripts/assets.js');
@@ -8,9 +10,7 @@
     <div class="simulator-page hero-container top-content">
         <div class="image-content">
             <picture>
-                <img class="hidden-sm-down" src="${URLUtils.staticURL('/images/simulator-hero.png')}"
-                    alt="hero banner image">
-                <img class="d-md-none" src="${URLUtils.staticURL('/images/hero-mobile.png')}" alt="hero banner image">
+                <iscontentasset aid="img-simulator-landing-hero1" />
             </picture>
         </div>
         <div class="text-content">
@@ -129,10 +129,7 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 image-content">
-                    <img class="hidden-md-down" alt="explore products image"
-                        src="${URLUtils.staticURL('/images/explore-products.png')}" />
-                    <img class="d-lg-none" alt="explore products image"
-                        src="${URLUtils.staticURL('/images/explore-products-mobile.png')}" />
+                    <iscontentasset aid="img-explore-products" />
                 </div>
             </div>
         </div>
