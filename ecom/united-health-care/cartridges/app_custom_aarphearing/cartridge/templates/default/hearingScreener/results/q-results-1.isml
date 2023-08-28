@@ -59,7 +59,7 @@
             </ul>
             <div class="sch-btn-container">
                 <a href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest"
-                    class="custom-datalayer btn btn-primary"
+                    class="btn btn-primary custom-datalayer"
                     data-name="${Resource.msg('label.adobe.questionnaire-results-name-schedule', 'adobetracking', null)}"
                     data-location="${Resource.msg('label.adobe.questionnaire-results-location', 'adobetracking', null)}">Schedule
                     Appointment</a>
@@ -145,7 +145,7 @@
                     of 50 and every 3 years after 50.</p>
                 <div class="sch-btn-container">
                     <a href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest"
-                        class="custom-datalayer btn btn-primary"
+                        class="btn btn-primary custom-datalayer"
                         data-name="${Resource.msg('label.adobe.simulator-landing-name-request', 'adobetracking', null)}"
                         data-location="${Resource.msg('label.adobe.simulator-landing-location', 'adobetracking', null)}">Schedule
                         Appointment</a>
