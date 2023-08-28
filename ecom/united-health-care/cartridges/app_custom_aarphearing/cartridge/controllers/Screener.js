@@ -16,16 +16,23 @@ var server = require('server');
 server.get(
     'ResultsPage1',
     function (req, res, next) {
+        let adobeDataLayer = require('*/cartridge/scripts/datalayer.js');
         var viewData = res.getViewData();
 
         viewData.adobeDataLayer = {};
-        viewData.adobeDataLayer.Context = 'GlobalData';
-        viewData.adobeDataLayer.PageGroup = 'Questionnaire Results 1';
+        viewData.adobeDataLayer.Context = adobeDataLayer.CONTEXT.GLOBAL;
+        viewData.adobeDataLayer.PageGroup = adobeDataLayer.pageTypes.HHQ1;
         viewData.adobeDataLayer.PageName = 'questionnaire-results-1';
 
-        res.setViewData();
-
+        var sections = {};
+        sections.section1 = '';
+        sections.section2 = '';
+        sections.section3 = '';
+        sections.section4 = '';
+        viewData.adobeDataLayer.sections = sections;
+        
         res.render('hearingScreener/results/q-results-1');
+        res.setViewData();
 
         next();
     }
@@ -33,16 +40,23 @@ server.get(
 server.get(
     'ResultsPage2',
     function (req, res, next) {
+        let adobeDataLayer = require('*/cartridge/scripts/datalayer.js');
         var viewData = res.getViewData();
 
         viewData.adobeDataLayer = {};
-        viewData.adobeDataLayer.Context = 'GlobalData';
-        viewData.adobeDataLayer.PageGroup = 'Questionnaire Results 2';
+        viewData.adobeDataLayer.Context = adobeDataLayer.CONTEXT.GLOBAL;
+        viewData.adobeDataLayer.PageGroup = adobeDataLayer.pageTypes.HHQ2;
         viewData.adobeDataLayer.PageName = 'questionnaire-results-2';
 
-        res.setViewData();
-
+        var sections = {};
+        sections.section1 = '';
+        sections.section2 = '';
+        sections.section3 = '';
+        sections.section4 = '';
+        viewData.adobeDataLayer.sections = sections;
+        
         res.render('hearingScreener/results/q-results-2');
+        res.setViewData();
 
         next();
     }
@@ -50,16 +64,23 @@ server.get(
 server.get(
     'ResultsPage3',
     function (req, res, next) {
+        let adobeDataLayer = require('*/cartridge/scripts/datalayer.js');
         var viewData = res.getViewData();
 
         viewData.adobeDataLayer = {};
-        viewData.adobeDataLayer.Context = 'GlobalData';
-        viewData.adobeDataLayer.PageGroup = 'Questionnaire Results 3';
+        viewData.adobeDataLayer.Context = adobeDataLayer.CONTEXT.GLOBAL;
+        viewData.adobeDataLayer.PageGroup = adobeDataLayer.pageTypes.HHQ3;
         viewData.adobeDataLayer.PageName = 'questionnaire-results-3';
 
-        res.setViewData();
-
+        var sections = {};
+        sections.section1 = '';
+        sections.section2 = '';
+        sections.section3 = '';
+        sections.section4 = '';
+        viewData.adobeDataLayer.sections = sections;
+        
         res.render('hearingScreener/results/q-results-3');
+        res.setViewData();
 
         next();
     }
@@ -67,16 +88,23 @@ server.get(
 server.get(
     'ResultsPage4',
     function (req, res, next) {
+        let adobeDataLayer = require('*/cartridge/scripts/datalayer.js');
         var viewData = res.getViewData();
 
         viewData.adobeDataLayer = {};
-        viewData.adobeDataLayer.Context = 'GlobalData';
-        viewData.adobeDataLayer.PageGroup = 'Questionnaire Results 4';
+        viewData.adobeDataLayer.Context = adobeDataLayer.CONTEXT.GLOBAL;
+        viewData.adobeDataLayer.PageGroup = adobeDataLayer.pageTypes.HHQ4;
         viewData.adobeDataLayer.PageName = 'questionnaire-results-4';
 
-        res.setViewData();
-
+        var sections = {};
+        sections.section1 = '';
+        sections.section2 = '';
+        sections.section3 = '';
+        sections.section4 = '';
+        viewData.adobeDataLayer.sections = sections;
+        
         res.render('hearingScreener/results/q-results-4');
+        res.setViewData();
 
         next();
     }
@@ -86,16 +114,23 @@ server.get(
 server.get(
     'Show',
     function (req, res, next) {
+        let adobeDataLayer = require('*/cartridge/scripts/datalayer.js');
         var viewData = res.getViewData();
 
         viewData.adobeDataLayer = {};
-        viewData.adobeDataLayer.Context = 'GlobalData';
+        viewData.adobeDataLayer.Context = adobeDataLayer.CONTEXT.GLOBAL;
         viewData.adobeDataLayer.PageGroup = 'Questionnaire Widget';
         viewData.adobeDataLayer.PageName = 'questionnaire-widget';
 
-        res.setViewData();
-
+        var sections = {};
+        sections.section1 = '';
+        sections.section2 = '';
+        sections.section3 = '';
+        sections.section4 = '';
+        viewData.adobeDataLayer.sections = sections;
+        
         res.render('hearingScreener/questionnaire');
+        res.setViewData();
 
         next();
     }
@@ -103,16 +138,23 @@ server.get(
 server.get(
     'ShowLanding',
     function (req, res, next) {
+        let adobeDataLayer = require('*/cartridge/scripts/datalayer.js');
         var viewData = res.getViewData();
 
         viewData.adobeDataLayer = {};
-        viewData.adobeDataLayer.Context = 'GlobalData';
+        viewData.adobeDataLayer.Context = adobeDataLayer.CONTEXT.GLOBAL;
         viewData.adobeDataLayer.PageGroup = 'Questionnaire Landing Page';
         viewData.adobeDataLayer.PageName = 'questionnaire-landing-page';
 
-        res.setViewData();
-
+        var sections = {};
+        sections.section1 = '';
+        sections.section2 = '';
+        sections.section3 = '';
+        sections.section4 = '';
+        viewData.adobeDataLayer.sections = sections;
+        
         res.render('hearingScreener/questionnaireLanding');
+        res.setViewData();
 
         next();
     }

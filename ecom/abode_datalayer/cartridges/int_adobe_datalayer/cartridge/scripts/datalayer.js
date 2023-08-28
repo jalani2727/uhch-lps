@@ -36,7 +36,11 @@ var pageTypes = {
     ORDERHISTORY: 'order-history',
     ORDERDETAIL: 'order-detail',
     COVERAGE: 'coverage',
-    FORMS: 'form'
+    FORMS: 'form',
+    HHQ1: 'Questionnaire Results 1',
+    HHQ2: 'Questionnaire Results 2',
+    HHQ3: 'Questionnaire Results 3',
+    HHQ4: 'Questionnaire Results 4'
 };
 
 var sectionTypes = {

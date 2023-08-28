@@ -30,7 +30,7 @@
     </div>
 
     <a href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest"
-        class="custom-datalayer btn btn-primary"
+        class="btn btn-primary custom-datalayer"
         data-name="${Resource.msg('label.adobe.questionnaire-results-name-schedule', 'adobetracking', null)}"
         data-location="${Resource.msg('label.adobe.questionnaire-results-location', 'adobetracking', null)}">Schedule
         Appointment</a>

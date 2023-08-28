@@ -6,7 +6,7 @@
             </p>
         </div>
         <div class="col-12">
-            <a href="${URLUtils.url('Screener-Show')}" class="custom-datalayer btn btn-primary mb-md-5"
+            <a href="${URLUtils.url('Screener-Show')}" class="btn btn-primary mb-md-5 custom-datalayer"
                 data-name="${Resource.msg('label.adobe.questionnaire-landing-name', 'adobetracking', null)}"
                 data-location="${Resource.msg('label.adobe.questionnaire-landing-location', 'adobetracking', null)}">Take
                 the questionnaire</a>

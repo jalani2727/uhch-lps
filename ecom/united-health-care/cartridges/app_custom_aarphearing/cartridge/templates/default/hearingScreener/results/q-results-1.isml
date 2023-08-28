@@ -30,7 +30,7 @@
                             help. If you are an AARP member, you can save on prescription hearing aids and accessories
                             through AARP<sup>®</sup> Hearing Solutions™ provided by UnitedHealthcare Hearing.</p>
 
-                        <a class="text-bold" href="#perks-discounts" class="custom-datalayer">Discounts
+                        <a class="text-bold custom-datalayer" href="#perks-discounts">Discounts
                             and perks for AARP members <img class="pl-2"
                                 src="${URLUtils.staticURL('/images/CTA-arrow-down.svg')}" alt="arrow" /></a>
 
@@ -62,7 +62,7 @@
             </ul>
             <div class="sch-btn-container">
                 <a href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest"
-                    class="custom-datalayer btn btn-primary"
+                    class="btn btn-primary custom-datalayer"
                     data-name="${Resource.msg('label.adobe.questionnaire-results-name-schedule', 'adobetracking', null)}"
                     data-location="${Resource.msg('label.adobe.questionnaire-results-location', 'adobetracking', null)}">Schedule
                     Appointment</a>
@@ -150,7 +150,7 @@
                     of 50 and every 3 years after 50.</p>
                 <div class="sch-btn-container">
                     <a href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest"
-                        class="custom-datalayer btn btn-primary"
+                        class="btn btn-primary custom-datalayer"
                         data-name="${Resource.msg('label.adobe.simulator-landing-name-request', 'adobetracking', null)}"
                         data-location="${Resource.msg('label.adobe.simulator-landing-location', 'adobetracking', null)}">Schedule
                         Appointment</a>

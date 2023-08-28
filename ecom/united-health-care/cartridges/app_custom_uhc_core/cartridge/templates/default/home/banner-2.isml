@@ -8,7 +8,7 @@
           If you or someone you love might be experiencing hearing loss, answer these 4 questions to learn more and take
           that first step in professional hearing care.
         </p>
-         <a href="${URLUtils.url('Screener-Show')}" class="custom-datalayer btn btn-primary mt-md-2 mb-5"
+         <a href="${URLUtils.url('Screener-Show')}" class="btn btn-primary mt-md-2 mb-5 custom-datalayer"
           data-name="${Resource.msg('label.adobe.homepage-landing-name', 'adobetracking', null)}"
           data-location="${Resource.msg('label.adobe.homepage-landing-location', 'adobetracking', null)}">Take the questionnaire </a>
 
