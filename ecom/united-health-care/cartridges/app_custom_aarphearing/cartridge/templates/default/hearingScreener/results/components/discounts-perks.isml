@@ -1,9 +1,10 @@
 <div class="container-fluid content-banner banner-1 mt-5 content-blue perks-discounts py-4" id="perks-discounts">
-
+    <isinclude template="/components/modules" sf-toolkit="off" />
     <div class="container">
         <div class="row perks-discounts-row">
             <div class="col-12 col-md-6 wallet-container">
-                <img src="${URLUtils.staticURL('/images/wallet.png')}" alt="hero banner image">
+                <iscontentasset aid="img-wallet" />
+                <iscomment> <img src="${URLUtils.staticURL('/images/wallet.png')}" alt="hero banner image"> </iscomment>
             </div>
             <div class="col-12 col-md-6 perks-discounts-content">
                 <h1>What discounts and perks do I have as an AARP member?</h1>

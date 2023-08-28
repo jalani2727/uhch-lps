@@ -4,6 +4,13 @@
     justify-content: space-around;
 
     picture {
+        div {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    picture {
         width: 40%;
         margin-right: 5%;
         margin-left: 55;
