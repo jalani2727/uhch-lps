@@ -71,6 +71,27 @@
         display: none;
     }
 
+    &.image-left {
+
+        &>.content-asset {
+            display: none;
+
+            @include media-breakpoint-up(md) {
+                display: block;
+                min-width: calc(50% - 30px);
+                height: 100%;
+                margin-right: 30px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: 40% 50%;
+                }
+            }
+        }
+    }
+
 
     @include media-breakpoint-up(md) {
         flex-direction: row;
@@ -190,3 +211,5 @@
         object-position: 20% 50%;
     }
 }
+
+

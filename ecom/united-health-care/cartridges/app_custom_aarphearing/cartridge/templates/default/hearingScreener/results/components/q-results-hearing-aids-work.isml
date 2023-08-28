@@ -3,6 +3,7 @@
         <picture class="hidden-md-up"><img src="${URLUtils.staticURL('/images/audio-simulation-module-mobile.png')}"
                 alt="hero banner image">
         </picture>
+        
         <div class="aids-work-left">
             <h1>How hearing aids work</h1>
             <p>Hearing aids pick up sound from your environment, convert it to a digital signal, and amplify the sound into your ears. Try this simple audio simulation for an example of what hearing aids might sound like for you.</p>
