@@ -90,6 +90,7 @@ p {
 
         @include media-breakpoint-down(sm) {
             display: block;
+            padding: 15px;
         }
 
         flex-direction: column;
