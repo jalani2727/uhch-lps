@@ -1,4 +1,5 @@
 <isdecorate template="common/layout/questionnaireResultsLayout">
+<isinclude template="/components/modules" sf-toolkit="off" />
     <isscript>
         var assets = require('*/cartridge/scripts/assets.js');
         assets.addJs('/js/homePage.js');
@@ -9,10 +10,7 @@
         <div class="hero-container top-content">
             <div class="image-content">
                 <picture>
-                    <img class="hidden-sm-down" src="${URLUtils.staticURL('/images/q-landing-3-hero-desktop.png')}"
-                        alt="hero banner image">
-                    <img class="d-md-none" src="${URLUtils.staticURL('/images/q-landing-3-hero-mobile.png')}"
-                        alt="hero banner image">
+                    <iscontentasset aid="img-3-hero" />
                 </picture>
             </div>
             <div class="text-content">
@@ -33,15 +31,14 @@
                             If you are an AARP member, you can save on prescription hearing aids and accessories through
                             AARP<sup>®</sup> Hearing Solutions™ provided by UnitedHealthcare Hearing.</p>
 
-                        <a class="text-bold"  href="#perks-discounts">Discounts and perks for AARP members <img class="pl-2"
-                                src="${URLUtils.staticURL('/images/CTA-arrow-down.svg')}" alt="arrow" /></a>
+                        <iscontentasset aid="img-CTA-arrow-down" />
 
                     </div>
                 </div>
                 <div class="col-12 col-md-5 ear-image-wrapper image-container-wrapper">
                     <div class="image-container">
                         <picture>
-                            <img class="img-fluid" src="${URLUtils.staticURL('/images/ear.png')}" alt="ear image">
+                            <iscontentasset aid="img-ear" />
                         </picture>
 
                     </div>
@@ -90,8 +87,7 @@
                         </div>
 
                         <div>
-                            <img class="down-arrow" src="${URLUtils.staticURL('/images/vector-down.svg')}"
-                                alt="down-arrow" />
+                            <iscontentasset aid="img-down-arrow" />
                         </div>
 
                     </button>
@@ -114,8 +110,7 @@
                         </div>
 
                         <div>
-                            <img class="down-arrow" src="${URLUtils.staticURL('/images/vector-down.svg')}"
-                                alt="down-arrow" />
+                            <iscontentasset aid="img-down-arrow" />
                         </div>
                     </button>
 
@@ -144,8 +139,7 @@
                         </div>
 
                         <div>
-                            <img class="down-arrow" src="${URLUtils.staticURL('/images/vector-down.svg')}"
-                                alt="down-arrow" />
+                            <iscontentasset aid="img-down-arrow" />
                         </div>
 
                     </button>
@@ -166,8 +160,8 @@
 
         <div class="container content-banner banner-1 mt-5 aids-section">
             <div class="aids-container aids-work">
-                <picture class="hidden-md-up"><img src="${URLUtils.staticURL('/images/audio-simulation-module.png')}"
-                        alt="hero banner image">
+                <picture class="hidden-md-up">
+                    <iscontentasset aid="img-audio-simulation-module-mobile" />
                 </picture>
                 <div class="aids-work-left">
                     <h1>How hearing aids work</h1>
@@ -178,8 +172,7 @@
                     
                     <isinclude template="hearingScreener/results/components/audio-simulation" />
                 </div>
-                <img class="hidden-md-pic hidden-sm-down" src="${URLUtils.staticURL('/images/audio-simulation-module.png')}"
-                    alt="hero banner image" />
+                <iscontentasset aid="img-audio-simulation-module" />
             </div>
         </div>
 
