@@ -1,4 +1,5 @@
 <isdecorate template="common/layout/questionnaireResultsLayout">
+    <isinclude template="/components/modules" sf-toolkit="off" />
     <isscript>
         var assets = require('*/cartridge/scripts/assets.js');
         assets.addJs('/js/homePage.js');
@@ -10,8 +11,8 @@
         <div class="hero-container top-content">
             <div class="image-content">
                 <picture>
-                    <img class="hidden-sm-down top-image" src="${URLUtils.staticURL('/images/ResultsPage2-Hero-Desk.jpg')}" alt="hero banner image">
-                    <img class="d-md-none" src="${URLUtils.staticURL('/images/ResultsPage2-Hero-mobile.jpg')}" alt="hero banner image">
+                    <iscontentasset aid="img-ResultsPage2-Hero-Desk" />
+                    <iscontentasset aid="img-ResultsPage2-Hero-mobile" />
                 </picture>
             </div>
             <div class="text-content">
@@ -41,12 +42,12 @@
 
                 <button class="accordion-title">
                     <div class="title">
-                        <img src="${URLUtils.staticURL('/images/heart.png')}" alt="heart-icon" />
+                        <iscontentasset aid="img-heart-icon" />
                         <h3>Do</h3>
                     </div>
 
                     <div>
-                        <img class="down-arrow" src="${URLUtils.staticURL('/images/vector-down.svg')}" alt="down-arrow" />
+                        <iscontentasset aid="img-down-arrow" />
                     </div>
 
                 </button>
@@ -68,12 +69,12 @@
             <div class="accordion-wrapper">
                 <button class="accordion-title">
                     <div class="title">
-                        <img src="${URLUtils.staticURL('/images/urgent.png')}" alt="urgent-icon" />
+                        <iscontentasset aid="img-urgent-icon" />
                         <h3>Do not</h3>
                     </div>
 
                     <div>
-                        <img class="down-arrow" src="${URLUtils.staticURL('/images/vector-down.svg')}" alt="down-arrow" />
+                        <iscontentasset aid="img-down-arrow" />
                     </div>
 
                 </button>
@@ -102,14 +103,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-3 reasons-to-treat-content">
-                    <img src="${URLUtils.staticURL('/images/shoe.png')}" alt="Exercise shoe" />
+                    <iscontentasset aid="img-1-color-shoe" />
                     <h2>Enjoy daily activities again</h2>
                     <p class="subtext">Whether it’s gardening or going to the gym, better hearing can help them be more
                         involved in their everyday activities.</p>
                 </div>
 
                 <div class="col-12 col-md-3 reasons-to-treat-content">
-                    <img src="${URLUtils.staticURL('/images/heart-hands.png')}" alt="Heart" />
+                    <iscontentasset aid="img-heart-hands" />
                     <h2>Stay connected to the people you love</h2>
                     <p class="subtext">Reengaging in conversations with family and friends can help your loved one feel
                         more
@@ -118,7 +119,7 @@
 
 
                 <div class="col-12 col-md-3 reasons-to-treat-content">
-                    <img src="${URLUtils.staticURL('/images/lightbulb.png')}" alt="Light bulb" />
+                    <iscontentasset aid="img-light-bulb" />
                     <h2>Discover their independence</h2>
                     <p class="subtext">When your loved one is more aware of their surroundings, they'll be able to do
                         more
@@ -127,7 +128,7 @@
 
 
                 <div class="col-12 col-md-3 reasons-to-treat-content">
-                    <img src="${URLUtils.staticURL('/images/brain.png')}" alt="Brain" />
+                    <iscontentasset aid="img-brain" />
                     <h2>Support brain health</h2>
                     <p class="subtext">Reduce the risk of cognitive decline and diseases such as Alzheimer’s or
                         dementia.
@@ -141,7 +142,7 @@
         <div class="row">
             <div class="col-12 col-md-7 ear-image-wrapper image-container-wrapper">
                 <div class="image-container">
-                    <img class="ear-image" src="${URLUtils.staticURL('/images/ear_exam.png')}" alt="ear exam image" />
+                    <iscontentasset aid="img-ear-exam" />
                 </div>
             </div>
             <div class="col-12 col-md-5 risk-content-wrapper">
@@ -205,8 +206,7 @@
                 </div>
 
                 <div class="col-12 col-md-6 father-son-wrapper">
-                    <img class="father-son-image img-fluid" src="${URLUtils.staticURL('/images/love-one-hearing-aid-desk.jpg')}"
-                        alt="father son image" />
+                    <iscontentasset aid="img-father-son" />
 
                 </div>
 
@@ -215,9 +215,11 @@
     </div>
 
     <div class="container flex-stack my-4">
-        <div class="aids-container aids-work">
-            <img class="img-container" src="${URLUtils.staticURL('/images/audio-simulation-module.png')}"
-                alt="hero banner image" />
+        <div class="aids-container aids-work image-left">
+            <picture class="hidden-md-up">
+                <iscontentasset aid="img-audio-simulation-module-mobile" />
+            </picture>
+            <iscontentasset aid="img-audio-simulation-module" />
             <div class="text-container">
                 <h1>How hearing aids work</h1>
                 <p>Hearing aids pick up sound from your environment, convert it to a digital signal, and amplify the

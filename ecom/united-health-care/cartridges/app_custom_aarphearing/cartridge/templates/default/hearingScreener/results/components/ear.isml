@@ -1,4 +1,5 @@
 <div class="container content-banner banner-1 my-md-5">
+    <isinclude template="/components/modules" sf-toolkit="off" />
     <div class="row">
         <div class="col-12 col-md-7 text-content-wrapper">
 
@@ -15,18 +16,15 @@
                     been missing. If your loved one is an AARP member, they can save on prescription hearing aids and
                     accessories through AARP<sup>®</sup> Hearing Solutions™ provided by UnitedHealthcare Hearing.</p>
 
-                <a class="text-bold"  href="#perks-discounts" class="custom-datalayer">Discounts
-                    and perks for AARP members <img class="pl-2"
-                        src="${URLUtils.staticURL('/images/CTA-arrow-down.svg')}" alt="arrow" /></a>
+                <iscontentasset aid="img-CTA-arrow-down" />
 
             </div>
         </div>
         <div class="col-12 col-md-5 ear-image-wrapper image-container-wrapper">
             <div class="image-container">
                 <picture>
-                    <img class="img-fluid" src="${URLUtils.staticURL('/images/ear.png')}" alt="ear image">
+                    <iscontentasset aid="img-ear" />
                 </picture>
-
             </div>
         </div>
     </div>
