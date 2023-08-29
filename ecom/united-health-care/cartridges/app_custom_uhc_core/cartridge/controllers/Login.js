@@ -425,7 +425,7 @@ server.get(
             maxDate: maxDate,
             actionURL: actionURL
         });
-        res.setViewData();
+        res.setViewData(viewData);
         next();
     }, pageMetaData.computedPageMetaData
 );

@@ -4,6 +4,7 @@
         var assets = require('*/cartridge/scripts/assets.js');
         assets.addJs('/js/createAccount.js');
         assets.addCss('/css/createAccountPage.css');
+        assets.addJs('/js/tracking.js');
     </isscript>
     <div class="create-account-page uhc-core"
         data-health-plan-other="${Resource.msg('form.input.options.value.other', 'createaccount', null)}"
