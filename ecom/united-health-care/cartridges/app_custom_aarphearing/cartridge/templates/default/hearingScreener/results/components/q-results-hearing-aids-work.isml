@@ -1,4 +1,4 @@
-<div class="container content-banner banner-1 mt-5 aids-section">
+<div class="container content-banner banner-1 my-4 aids-section">
     <div class="aids-container aids-work">
         <picture class="hidden-md-up"><img src="${URLUtils.staticURL('/images/audio-simulation-module-mobile.png')}"
                 alt="hero banner image">

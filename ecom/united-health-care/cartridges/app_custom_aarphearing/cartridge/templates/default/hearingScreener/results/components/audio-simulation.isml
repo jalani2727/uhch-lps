@@ -4,17 +4,19 @@
     <isinclude template="/components/modules" sf-toolkit="off" />
     <div class="simulation">
         <a href="javascript:void(0)" id="with-sound" class="play-button">
-            <iscontentasset aid="img-play-icon" />
-            <iscontentasset aid="img-pause-icon" />
+            <img class="logos play-icon" src="${URLUtils.staticURL('/images/r1-vector.png')}" alt="Play with hearing aids">
+            <img class="logos pause-icon" src="${URLUtils.staticURL('/images/pause-btn.png')}" alt="Play with hearing aids">
+
             <iscontentasset aid="audio-kemar-OpenEar" />
         </a>
         <p id="with-aids" class="simulation-text st">With Hearing Aids</p>
     </div>
     <div class="simulation">
         <a href="javascript:void(0)" id="without-sound" class="play-button">
-            <iscontentasset aid="img-play-icon-2" />
-            <iscontentasset aid="img-pause-icon-2" />
-            <iscontentasset aid="audio-kemar_HA_UHC" /> 
+            <img class="logos play-icon" src="${URLUtils.staticURL('/images/r1-vector.png')}" alt="Play without hearing aids">
+            <img class="logos pause-icon" src="${URLUtils.staticURL('/images/pause-btn.png')}" alt="Play without hearing aids">
+
+            <iscontentasset aid="audio-kemar_HA_UHC" />
         </a>
         <p id="without-aids" class="simulation-text st">Without Hearing Aids</p>
     </div>

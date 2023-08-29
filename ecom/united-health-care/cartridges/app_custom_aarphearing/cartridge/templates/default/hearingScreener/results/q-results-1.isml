@@ -155,7 +155,7 @@
 
         <isinclude template="hearingScreener/results/components/q-results-cards-section.isml" />
 
-        <div class="container content-banner banner-1 mt-5 aids-section">
+        <div class="container content-banner banner-1 my-4 aids-section">
             <div class="aids-container aids-work">
                 <picture class="hidden-md-up">
                     <iscontentasset aid="img-audio-simulation-module-mobile" />

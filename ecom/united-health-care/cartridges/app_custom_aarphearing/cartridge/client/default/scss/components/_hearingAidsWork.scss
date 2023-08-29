@@ -1,23 +1,3 @@
-.container.aids-section {
-    @include media-breakpoint-up(md) {
-        padding-right: 5%;
-        padding-left: 5%;
-        margin-right: 0;
-        margin-left: 0;
-        margin-bottom: 3em;
-        max-width: 100%;
-
-        .aids-work-left {
-            margin-right: 5%;
-            min-width: 40%;
-        }
-    }
-
-    @include media-breakpoint-up(lg) {
-        padding-right: 10%;
-        padding-left: 10%;
-    }
-}
 
 .hidden-md-up {
     margin-bottom: 5%;
@@ -67,9 +47,6 @@
         margin-bottom: 10px;
     }
 
-    .aids-work-hero-desk {
-        display: none;
-    }
 
     &.image-left {
 
@@ -101,15 +78,6 @@
         align-items: top;
         justify-content: space-between;
 
-        &.aids-container {
-            div:nth-child(3) {
-                width: auto;
-                height: 400px;
-                min-width: 50%;
-                overflow: hidden;
-            }
-        }
-
         .hidden-md-pic {
             width: auto;
             height: 400px;
@@ -117,15 +85,6 @@
             overflow: hidden;
         }
 
-        .aids-work-hero-desk {
-            display: block;
-            width: 100%;
-            height: 100%;
-            -o-object-fit: cover;
-            object-fit: cover;
-            -o-object-position: 40% 50%;
-            object-position: 40% 50%;
-        }
     }
 }
 
