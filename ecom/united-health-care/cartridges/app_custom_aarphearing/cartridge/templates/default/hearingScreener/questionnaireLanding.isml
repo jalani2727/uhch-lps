@@ -20,7 +20,7 @@
                         <p>Could you benefit from hearing care? <br> Take our 5-minute questionnaire to find out.</p>
                         <a href="${URLUtils.url('Screener-Show')}"
                             class="btn btn-primary mb-md-5 custom-datalayer"
-                            data-name="${Resource.msg('label.adobe.questionnaire-landing-name', 'adobetracking', null)}"
+                            data-name="take the questionnaire - hero banner 1"
                             data-location="${Resource.msg('label.adobe.questionnaire-landing-location', 'adobetracking', null)}">Take
                             the questionnaire</a>
                     </div>

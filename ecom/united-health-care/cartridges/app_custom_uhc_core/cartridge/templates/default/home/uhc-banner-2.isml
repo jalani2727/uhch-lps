@@ -1,0 +1,28 @@
+<isinclude template="/components/modules" sf-toolkit="off" />
+
+<div class="content-banner banner-3 mt-5">
+
+  <div class="row">
+    <div class="col-12 col-md-5 hero-text-wrapper">
+      <div class="container hero-text">
+        <h1>Do you or a loved one need hearing aids?</h1>
+        <p class="mt-md-4">
+          If you or someone you love might be experiencing hearing loss, answer these 4 questions to learn more and take
+          that first step in professional hearing car teste.
+        </p>
+         <a href="${URLUtils.url('Screener-Show')}" class="btn btn-primary mt-md-2 mb-5 custom-datalayer"
+          data-name="take the questionnaire - hero banner 2"
+          data-location="${Resource.msg('label.adobe.homepage-landing-location', 'adobetracking', null)}">Take the questionnaire </a>
+
+      </div>
+    </div>
+    <div class="col-12 col-md-7">
+      <div class="image-content">
+        <picture>
+          <iscontentasset aid="img-hompage-banner2" />
+        </picture>
+      </div>
+    </div>
+  </div>
+
+</div>

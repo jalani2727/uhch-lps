@@ -21,19 +21,19 @@
                 <div class="learn-btns-container">
                     <a href="https://www.aarphearingsolutions.com/shop-products"
                         class="white-btn btn btn-primary mt-md-2 mb-5 custom-datalayer"
-                        data-name="${Resource.msg('label.adobe.questionnaire-landing-name', 'adobetracking', null)}"
+                        data-name="learn more"
                         data-location="${Resource.msg('label.adobe.questionnaire-landing-location', 'adobetracking', null)}">Learn
                         More</a>
 
                     <a href="https://appsec.aarp.org/mem/join?campaignId=FETUUHEJ&cmp=ASI_P_MU_JN_UHCHEARING"
                         class="white-btn btn btn-primary mt-md-2 mb-5 custom-datalayer"
-                        data-name="${Resource.msg('label.adobe.questionnaire-landing-name', 'adobetracking', null)}"
+                        data-name="join aarp"
                         data-location="${Resource.msg('label.adobe.questionnaire-landing-location', 'adobetracking', null)}">Join
                         AARP</a>
 
                     <a href="https://appsec.aarp.org/mem/renew?campaignId=FETUUHER&amp;cmp=ASI_P_MU_RN_UHCHEARING"
                         class="white-btn btn btn-primary mt-md-2 mb-5 custom-datalayer"
-                        data-name="${Resource.msg('label.adobe.questionnaire-landing-name', 'adobetracking', null)}"
+                        data-name="renew aarp"
                         data-location="${Resource.msg('label.adobe.questionnaire-landing-location', 'adobetracking', null)}">Renew
                         AARP </a>
                 </div>

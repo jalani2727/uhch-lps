@@ -11,7 +11,7 @@
           that first step in professional hearing care.
         </p>
         <a href="${URLUtils.url('Screener-Show')}" class="btn btn-primary mt-md-2 mb-5 custom-datalayer" 
-          data-name="${Resource.msg('label.adobe.questionnaire-landing-name', 'adobetracking', null)}"
+          data-name="take the questionnaire - hero banner 2"
           data-location="${Resource.msg('label.adobe.questionnaire-landing-location', 'adobetracking', null)}">Take the questionnaire </a>
       </div>
     </div>

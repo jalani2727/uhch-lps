@@ -11,7 +11,7 @@
 
             <a class="btn btn-primary hero-button custom-datalayer"
                 href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest"
-                data-name="${Resource.msg('label.adobe.questionnaire-results-name-schedule', 'adobetracking', null)}"
+                data-name="take the questionnaire - technology, choice, support"
                 data-location="${Resource.msg('label.adobe.questionnaire-results-location', 'adobetracking', null)}">Schedule
                 Appointment</a>
         </div>
