@@ -60,7 +60,7 @@
             <div class="sch-btn-container">
                 <a href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest"
                     class="btn btn-primary custom-datalayer"
-                    data-name="take the questionnaire - early signs of hearing loss"
+                    data-name="schedule appointment - early signs of hearing loss"
                     data-location="${Resource.msg('label.adobe.questionnaire-results-location', 'adobetracking', null)}">Schedule
                     Appointment</a>
             </div>

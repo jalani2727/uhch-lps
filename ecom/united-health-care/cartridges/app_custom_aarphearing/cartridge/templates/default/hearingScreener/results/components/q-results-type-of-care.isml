@@ -32,7 +32,7 @@
 
     <a href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest"
         class="btn btn-primary custom-datalayer"
-        data-name="take the questionnaire - type of care"
+        data-name="schedule appointment - type of care"
         data-location="${Resource.msg('label.adobe.questionnaire-results-location', 'adobetracking', null)}">Schedule
         Appointment</a>
 </div>
