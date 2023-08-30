@@ -38,7 +38,10 @@
                         <div class="card-body pt-0">
                             <div class="api-error-message"> </div>
                             <form action="${pdict.actionURL}" class="create-account-form adobe-form-event" method="POST"
-                                name="create-account-form" enctype="multipart/form-data">
+                                name="create-account-form" enctype="multipart/form-data" data-form-custom="create-account-form"
+                                data-name="create account form - aarp"
+                                data-location="${Resource.msg('label.adobe.create-account.page', 'createaccount', null)}"
+                                >
 
                                 <iscomment> User's first name </iscomment>
                                 <div class="col px-0">
