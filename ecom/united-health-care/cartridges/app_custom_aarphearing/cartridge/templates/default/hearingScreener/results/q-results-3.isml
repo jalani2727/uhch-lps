@@ -64,7 +64,7 @@
 
                 <a class="btn btn-primary hero-button custom-datalayer"
                     href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest"
-                    data-name="${Resource.msg('label.adobe.questionnaire-results-name-schedule', 'adobetracking', null)}"
+                    data-name="schedule appointment - what should i know about hearing test"
                     data-location="${Resource.msg('label.adobe.questionnaire-results-location', 'adobetracking', null)}">Schedule
                     Appointment</a>
             </div>
