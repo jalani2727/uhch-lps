@@ -37,7 +37,7 @@
                     <div class="card">
                         <div class="card-body pt-0">
                             <div class="api-error-message"> </div>
-                            <form action="${pdict.actionURL}" class="create-account-form" method="POST"
+                            <form action="${pdict.actionURL}" class="create-account-form adobe-form-event" method="POST"
                                 name="create-account-form" enctype="multipart/form-data">
 
                                 <iscomment> User's first name </iscomment>
