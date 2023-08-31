@@ -63,7 +63,7 @@
     </ul>
 
     <a href="javascript:void(0)" id="q2-btn" class="disabled next btn-next btn btn-primary mb-5 custom-datalayer"
-        data-name="${Resource.msg('label.adobe.questionnaire-widget-next', 'hearingscreener', null)}"
+        data-name="next question"
         data-location="hhq-q1">
         ${Resource.msg('label.hearing-screener.btn.next-question', 'hearingscreener', null)}
     </a>
@@ -101,7 +101,7 @@
     </ul>
 
     <a href="javascript:void(0)" id="q3-btn" class="disabled next btn-next btn btn-primary mb-5 custom-datalayer"
-        data-name="${Resource.msg('label.adobe.questionnaire-widget-next', 'hearingscreener', null)}"
+        data-name="next question"
         data-location="hhq-q2">
         ${Resource.msg('label.hearing-screener.btn.next-question', 'hearingscreener', null)}
     </a>
@@ -139,7 +139,7 @@
     </ul>
 
     <a href="javascript:void(0)" id="q4-btn" class="disabled next btn-next btn btn-primary mb-5 custom-datalayer"
-        data-name="${Resource.msg('label.adobe.questionnaire-widget-next', 'hearingscreener', null)}"
+        data-name="next question"
         data-location="hhq-q3">
         ${Resource.msg('label.hearing-screener.btn.next-question', 'hearingscreener', null)}
     </a>
@@ -208,7 +208,7 @@
     </ul>
 
     <a href="javascript:void(0)" id="results-btn" class="custom-datalyer next btn-next btn btn-primary mb-5"
-        data-name="${Resource.msg('label.adobe.questionnaire-widget-next', 'hearingscreener', null)}"
+        data-name="questionnaire submit q4"
         data-location="hhq-q4">
         ${Resource.msg('label.input.screener-submit', 'hearingscreener', null)}
     </a>
@@ -255,7 +255,7 @@
     </ul>
 
     <a href="javascript:void(0)" id="q3a-btn" class="disabled next btn-next btn btn-primary mb-5"
-        data-name="${Resource.msg('label.adobe.questionnaire-widget-next', 'hearingscreener', null)}"
+        data-name="next question"
         data-location="hhq-q2A">
         ${Resource.msg('label.hearing-screener.btn.next-question', 'hearingscreener', null)}
     </a>
@@ -298,7 +298,7 @@
     </ul>
 
     <a href="javascript:void(0)" id="q4a-btn" class="disabled next btn-next btn btn-primary mb-5"
-        data-name="${Resource.msg('label.adobe.questionnaire-widget-next', 'hearingscreener', null)}"
+        data-name="next question"
         data-location="hhq-q3A">
         ${Resource.msg('label.hearing-screener.btn.next-question', 'hearingscreener', null)}
     </a>
@@ -341,7 +341,7 @@
     </ul>
 
     <a href="javascript:void(0)" id="results-btn" class="disabled next btn-next btn btn-primary mb-5"
-        data-name="${Resource.msg('label.adobe.questionnaire-widget-next', 'hearingscreener', null)}"
+        data-name="next question"
         data-location="hhq-q4A">
         ${Resource.msg('label.hearing-screener.btn.next-question', 'hearingscreener', null)}
     </a>
@@ -381,7 +381,7 @@
     </ul>
 
     <a href="javascript:void(0)" id="q3c-btn" class="disabled next btn-next btn btn-primary mb-5"
-        data-name="${Resource.msg('label.adobe.questionnaire-widget-next', 'hearingscreener', null)}"
+        data-name="next question"
         data-location="hhq-q2C">
         ${Resource.msg('label.hearing-screener.btn.next-question', 'hearingscreener', null)}
     </a>
@@ -419,7 +419,7 @@
     </ul>
 
     <a href="javascript:void(0)" id="q4c-btn" class="disabled next btn-next btn btn-primary mb-5"
-        data-name="${Resource.msg('label.adobe.questionnaire-widget-next', 'hearingscreener', null)}"
+        data-name="next question"
         data-location="hhq-q3C">
         ${Resource.msg('label.hearing-screener.btn.next-question', 'hearingscreener', null)}
     </a>
@@ -488,7 +488,7 @@
     </ul>
 
     <a href="javascript:void(0)" id="results-btn" class="custom-datalyer next btn-next btn btn-primary mb-5"
-        data-name="${Resource.msg('label.adobe.questionnaire-widget-next', 'hearingscreener', null)}"
+        data-name="questionnaire submit - q4c"
         data-location="hhq-q4C">
         ${Resource.msg('label.input.screener-submit', 'hearingscreener', null)}
     </a>
@@ -527,7 +527,7 @@
     </ul>
 
     <a href="javascript:void(0)" id="q3d-btn" class="disabled next btn-next btn btn-primary mb-5"
-        data-name="${Resource.msg('label.adobe.questionnaire-widget-next', 'hearingscreener', null)}"
+        data-name="next question"
         data-location="hhq-q2D">
         ${Resource.msg('label.hearing-screener.btn.next-question', 'hearingscreener', null)}
     </a>
@@ -576,7 +576,7 @@
     </ul>
 
     <a href="javascript:void(0)" id="q4d-btn" class="custom-datalyer next btn-next btn btn-primary mb-5"
-        data-name="${Resource.msg('label.adobe.questionnaire-widget-next', 'hearingscreener', null)}"
+        data-name="questionnaire submit - q3d"
         data-location="hhq-q3D">
         ${Resource.msg('label.input.screener-submit', 'hearingscreener', null)}
     </a>
@@ -618,7 +618,7 @@
     </ul>
 
     <a href="javascript:void(0)" id="results-btn" class="disabled next btn-next btn btn-primary mb-5"
-        data-name="${Resource.msg('label.adobe.questionnaire-widget-next', 'hearingscreener', null)}"
+        data-name="next question"
         data-location="hhq-q4D">
         ${Resource.msg('label.hearing-screener.btn.next-question', 'hearingscreener', null)}
     </a>
@@ -653,7 +653,7 @@
     </ul>
 
     <a href="javascript:void(0)" id="q3e-btn" class="disabled next btn-next btn btn-primary mb-5"
-        data-name="${Resource.msg('label.adobe.questionnaire-widget-next', 'hearingscreener', null)}"
+        data-name="next question"
         data-location="hhq-q2E">
         ${Resource.msg('label.hearing-screener.btn.next-question', 'hearingscreener', null)}
     </a>
@@ -691,7 +691,7 @@
     </ul>
 
     <a href="javascript:void(0)" id="q4e-btn" class="disabled next btn-next btn btn-primary mb-5"
-        data-name="${Resource.msg('label.adobe.questionnaire-widget-next', 'hearingscreener', null)}"
+        data-name="next question"
         data-location="hhq-q3E">
         ${Resource.msg('label.hearing-screener.btn.next-question', 'hearingscreener', null)}
     </a>
@@ -729,82 +729,13 @@
     </ul>
 
     <a href="javascript:void(0)" id="results-btn" class="disabled next btn-next btn btn-primary mb-5"
-        data-name="${Resource.msg('label.adobe.questionnaire-widget-next', 'hearingscreener', null)}"
+        data-name="next question"
         data-location="hhq-q4E">
         ${Resource.msg('label.hearing-screener.btn.next-question', 'hearingscreener', null)}
     </a>
 
 </fieldset>
 
-<iscomment> End: Dynamic question set </iscomment>
-
-<iscomment> End: Question Slides </iscomment>
-<iscomment> <fieldset class="screener-complete screener-complete-1" data-question-start="progress-bar-complete">
-    <div class="desktop-background-gray">
-        <img alt="Questionnaire Complete Image" src="${URLUtils.staticURL('/images/CheckMrk.svg')}" />
-
-        <div class="screener-complete-container container">
-            <h1>
-                ${Resource.msg('label.hearing-screener.complete.heading', 'hearingscreener', null)}
-            </h1>
-            <p>
-                ${Resource.msg('label.hearing-screener.complete.subheading1', 'hearingscreener', null)}
-            </p>
-            <div class="form-group">
-                <label class="form-control-label" for="contact-email">
-                    ${Resource.msg('label.input.screener-email', 'hearingscreener', null)}
-                </label>
-                <input placeholder="Email address" type="email" class="form-control"
-                    aria-describedby="form-contact-email-error" id="contact-email" name="contactEmail"
-                    value="${pdict.profile ? pdict.profile.email : ''}" pattern="^[\w.%+-]+@[\w.-]+\.[\w]{2,6}$"
-                    data-pattern-mismatch="${Resource.msg('error.message.form.invalid-email', 'forms', null)}">
-                <div class="invalid-feedback" id="form-contact-email-error"></div>
-
-                <input type="checkbox" class="custom-datalayer" id="email-opt-in"
-                    nadata-name="${Resource.msg('label.adobe.questionnaire-widget-next', 'hearingscreener', null)}"
-                    data-location="hhq-q3" me="email-opt-in" />
-                <label for="email-opt-in" class="email-opt-in">${Resource.msg('label.input.screener-email-opt-in', 'hearingscreener', null)}</label>
-
-                <div class="submit-btns pt-4">
-                    <a href="javascript:void(0)" id="q4-btn" class="btn-submit btn btn-primary">
-                        ${Resource.msg('label.input.screener-submit', 'hearingscreener', null)}
-                    </a>
-                    <a href="javascript:void(0)" id="skip-to-results" class="btn-skip ml-4">
-                        ${Resource.msg('label.input.screener-skip', 'hearingscreener', null)}
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</fieldset>
-
-<fieldset class="screener-complete screener-complete-2" data-question-start="progress-bar-complete">
-    <div class="desktop-background-gray">
-        <img alt="Questionnaire Complete Image" src="${URLUtils.staticURL('/images/CheckMrk.svg')}" />
-
-        <div class="screener-complete-container container">
-            <h1>
-                ${Resource.msg('label.hearing-screener.complete.heading', 'hearingscreener', null)}
-            </h1>
-            <p>
-                ${Resource.msg('label.hearing-screener.complete.subheading1', 'hearingscreener', null)}
-            </p>
-            <h3 class="pt-3 pb-3">
-                ${Resource.msg('label.hearing-screener.complete.subheading2', 'hearingscreener', null)}
-            </h3>
-                <div class="form-group">
-
-                <div class="submit-btns pt-4">
-                    <a href="javascript:void(0)" id="skip-to-results" class="btn-skip">
-                        ${Resource.msg('label.input.screener-skip', 'hearingscreener', null)}
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</fieldset> </iscomment>
 
 <iscomment> Basic screener complete page </iscomment>
 
