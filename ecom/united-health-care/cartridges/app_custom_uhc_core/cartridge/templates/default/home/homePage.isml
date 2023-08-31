@@ -8,10 +8,13 @@
         <isslot id="home-main-m" description="Main home page slot." context="global" />
     </div>
 
+    <div class="member-perks-slot">
+        <isslot id="member-perks-slot" description="Member Perks Slot" context="global" />
+    </div>
 
-    <isinclude template="home/uhc-banner-1" />
-    <isinclude template="home/uhc-banner-2" />
-
+    <div class="take-questionnaire-slot">
+        <isslot id="take-questionnaire-slot" description="Member Perks Slot" context="global" />
+    </div>
 
     <div class="path-selection-slot">
         <isslot id="path-selection-slot" description="Path Selection Slot" context="global" />
