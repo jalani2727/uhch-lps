@@ -182,7 +182,7 @@
     }
 }
 
-.hero-container:not(.simulator-page){
+.hero-container:not(.simulator-page) {
     &.top-content {
         .image-content {
             width: 100%;
@@ -415,16 +415,13 @@
     }
 }
 
-
 .wrapper-doc-computer {
-
     .inner-doc-comp {
         width: 100%;
         margin-bottom: 5%;
     }
 
     @include media-breakpoint-up(md) {
-
         .inner-doc-comp {
             width: 100%;
             height: 100%;
@@ -440,5 +437,4 @@
             margin-bottom: 0;
         }
     }
-
 }

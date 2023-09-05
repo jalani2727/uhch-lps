@@ -923,15 +923,15 @@ fieldset {
             @include media-breakpoint-down(sm) {
                 order: 1;
             }
-            
+
             align-self: center;
         }
-        
+
         .father-son-image {
             width: 100%;
-            
+
             @include media-breakpoint-down(sm) {
-               margin-bottom: 25px;
+                margin-bottom: 25px;
             }
         }
     }
