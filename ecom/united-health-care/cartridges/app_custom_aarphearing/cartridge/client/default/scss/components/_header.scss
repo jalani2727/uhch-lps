@@ -30,7 +30,7 @@ $aarp-nav-black: #2d2d2d;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px;
+        padding: 25px;
 
         @include media-breakpoint-down(sm) {
             flex-direction: column;
