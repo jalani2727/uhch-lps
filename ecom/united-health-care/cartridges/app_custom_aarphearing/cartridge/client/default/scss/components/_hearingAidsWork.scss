@@ -48,7 +48,7 @@
     }
 
     &.image-left {
-        > .content-asset {
+        .content-asset {
             display: none;
 
             @include media-breakpoint-up(md) {
@@ -114,6 +114,7 @@
         &:hover {
             opacity: 0.4;
         }
+
         // &.playing {
         //     border: 1px solid $color-blue-dark;
         //     border-radius: 50%;
