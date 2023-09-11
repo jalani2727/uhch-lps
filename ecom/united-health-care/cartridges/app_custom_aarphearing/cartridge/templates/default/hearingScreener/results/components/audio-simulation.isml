@@ -4,8 +4,8 @@
     <isinclude template="/components/modules" sf-toolkit="off" />
     <div class="simulation">
         <a href="javascript:void(0)" id="with-sound" class="play-button">
-            <img class="logos play-icon" src="${URLUtils.staticURL('/images/r1-vector.png')}" alt="Play with hearing aids">
-            <img class="logos pause-icon" src="${URLUtils.staticURL('/images/pause-btn.png')}" alt="Play with hearing aids">
+            <iscontentasset aid="img-play-icon" />
+            <iscontentasset aid="img-pause-icon" />
 
             <iscontentasset aid="audio-kemar-OpenEar" />
         </a>
@@ -13,8 +13,8 @@
     </div>
     <div class="simulation">
         <a href="javascript:void(0)" id="without-sound" class="play-button">
-            <img class="logos play-icon" src="${URLUtils.staticURL('/images/r1-vector.png')}" alt="Play without hearing aids">
-            <img class="logos pause-icon" src="${URLUtils.staticURL('/images/pause-btn.png')}" alt="Play without hearing aids">
+            <iscontentasset aid="img-play-icon" />
+            <iscontentasset aid="img-pause-icon" />
 
             <iscontentasset aid="audio-kemar_HA_UHC" />
         </a>

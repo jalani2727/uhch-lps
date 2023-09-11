@@ -18,3 +18,44 @@ $aarp-nav-black: #2d2d2d;
         color: $aarp-nav-black;
     }
 }
+
+.hearing-solutions-header {
+    nav > .header {
+        @include media-breakpoint-down(sm) {
+            height: auto;
+        }
+    }
+
+    .navigation-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px;
+
+        @include media-breakpoint-down(sm) {
+            flex-direction: column;
+        }
+    }
+
+    .navbar-header {
+        &.logo-wrapper {
+            height: auto;
+            width: 100%;
+            margin-bottom: 25px;
+
+            @include media-breakpoint-up(sm) {
+                width: 400px;
+                margin: 0;
+            }
+        }
+    }
+
+    p {
+        color: $primary-col-1;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 24px;
+        margin: 0;
+    }
+}
