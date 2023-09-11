@@ -20,6 +20,7 @@ server.append('Show', function (req, res, next) {
     var viewData = res.getViewData();
     viewData.oauthLoginTargetEndPoint = 7;
     viewData.pricebookUpdated = true;
+    viewData.currentSite = currentSiteID;
     next();
 });
 
