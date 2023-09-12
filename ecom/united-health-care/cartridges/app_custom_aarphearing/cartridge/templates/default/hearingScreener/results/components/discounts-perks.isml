@@ -22,19 +22,19 @@
                     <a href="https://www.aarphearingsolutions.com/shop-products"
                         class="white-btn btn btn-primary mt-md-2 mb-5 custom-datalayer"
                         data-name="learn more"
-                        data-location="${Resource.msg('label.adobe.questionnaire-landing-location', 'adobetracking', null)}">Learn
+                        data-location="questionnaire results page discount perks section">Learn
                         More</a>
 
                     <a href="https://appsec.aarp.org/mem/join?campaignId=FETUUHEJ&cmp=ASI_P_MU_JN_UHCHEARING"
                         class="white-btn btn btn-primary mt-md-2 mb-5 custom-datalayer"
                         data-name="join aarp"
-                        data-location="${Resource.msg('label.adobe.questionnaire-landing-location', 'adobetracking', null)}">Join
+                        data-location="questionnaire results page discount perks section">Join
                         AARP</a>
 
                     <a href="https://appsec.aarp.org/mem/renew?campaignId=FETUUHER&amp;cmp=ASI_P_MU_RN_UHCHEARING"
                         class="white-btn btn btn-primary mt-md-2 mb-5 custom-datalayer"
                         data-name="renew aarp"
-                        data-location="${Resource.msg('label.adobe.questionnaire-landing-location', 'adobetracking', null)}">Renew
+                        data-location="questionnaire results page discount perks section">Renew
                         AARP </a>
                 </div>
             </div>
