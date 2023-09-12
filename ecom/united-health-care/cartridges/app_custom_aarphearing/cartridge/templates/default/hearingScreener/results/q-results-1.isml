@@ -147,7 +147,7 @@
                     <a href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest"
                         class="btn btn-primary custom-datalayer"
                         data-name="schedule appointment - when should I get my hearing checked"
-                        data-location="${Resource.msg('label.adobe.simulator-landing-location', 'adobetracking', null)}">Schedule
+                        data-location="questionnaire results page 1">Schedule
                         Appointment</a>
                 </div>
             </div>
