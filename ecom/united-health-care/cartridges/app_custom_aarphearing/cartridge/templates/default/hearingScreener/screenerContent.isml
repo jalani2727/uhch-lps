@@ -15,7 +15,7 @@
     <a href="javascript:void(0)" class="next btn-next btn btn-primary mb-5 custom-datalayer"
         data-next="q1"
         data-name="Start Questionnaire"
-        data-location="${Resource.msg('label.adobe.questionnaire-widget-location', 'adobetracking', null)}">
+        data-location="questionnaire widget page">
         ${Resource.msg('label.hearing-screener.btn.start', 'hearingscreener', null)}
     </a>
 </fieldset>

@@ -59,7 +59,7 @@
                 <a class="btn btn-primary hero-button custom-datalayer"
                     href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest"
                     data-name="schedule appointment - your next best step"
-                    data-location="${Resource.msg('label.adobe.questionnaire-results-location', 'adobetracking', null)}">Schedule
+                    data-location="questionnaire results page 4">Schedule
                     Appointment</a>
             </div>
         </div>
