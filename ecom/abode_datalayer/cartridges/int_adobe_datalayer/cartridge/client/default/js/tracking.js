@@ -121,13 +121,13 @@ try {
 
             if (!$form.hasClass('event-captured')) {
                 $form.addClass('event-captured');
+                adobeDataLayer.push({
+                    event: 'form started',
+                    form: {
+                        name: $form.attr('data-name')
+                    }
+                });
             }
-            adobeDataLayer.push({
-                event: 'form started',
-                form: {
-                    name: $form.attr('data-name')
-                }
-            });
         });
     }
 } catch (e) {
