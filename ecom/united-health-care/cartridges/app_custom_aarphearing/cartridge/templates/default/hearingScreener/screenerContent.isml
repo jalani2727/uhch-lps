@@ -14,7 +14,7 @@
     </div>
     <a href="javascript:void(0)" class="next btn-next btn btn-primary mb-5 custom-datalayer"
         data-next="q1"
-        data-name="Start Questionnaire"
+        data-name="start questionnaire"
         data-location="questionnaire widget page">
         ${Resource.msg('label.hearing-screener.btn.start', 'hearingscreener', null)}
     </a>
