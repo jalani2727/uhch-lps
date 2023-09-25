@@ -30,7 +30,7 @@
 
     </div>
 
-    <a href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest"
+    <a href="${URLUtils.url('ProviderSearch-Show')}"
         class="btn btn-primary custom-datalayer"
         data-name="schedule appointment - type of care"
         data-location="questionnaire results page - type of care">Schedule

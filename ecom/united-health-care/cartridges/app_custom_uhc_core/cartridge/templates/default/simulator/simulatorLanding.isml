@@ -26,7 +26,7 @@
                 for you with this simulator below, or schedule a no-cost hearing test with hearing care professionals
                 near you.
             </p>
-            <a class="btn btn-primary hero-button custom-datalayer" href="https://www.uhchearing.com/find-a-provider?providerType=guest&amp;cid=AARP:LandingPage:other:Aug:2023:AARP-Sim-LP-Request-Appointment-1:Request-Appointment"
+            <a class="btn btn-primary hero-button custom-datalayer" href="${URLUtils.url('ProviderSearch-Show')}"
                 data-name="request an appointment - hero banner 1"
                 data-location="${Resource.msg('label.adobe.simulator-landing-location', 'adobetracking', null)}">
                 Request an appointment</a>
@@ -101,7 +101,7 @@
 
                 <p>Not an AARP member? <span><a href="https://appsec.aarp.org/mem/join?campaignId=FETUUHEJ&amp;cmp=ASI_P_MU_JN_UHCHEARING">Join</a></span> or <span><a href="https://appsec.aarp.org/mem/renew?campaignId=FETUUHER&amp;cmp=ASI_P_MU_RN_UHCHEARING">Renew</a></span> your membership today!</p>
             </div>
-            <a class="btn btn-primary hero-button custom-datalayer" href="https://www.uhchearing.com/find-a-provider?providerType=guest"
+            <a class="btn btn-primary hero-button custom-datalayer" href="${URLUtils.url('ProviderSearch-Show')}"
                 data-name="request an appointment - find out if you could benefit from hearing aids"
                 data-location="${Resource.msg('label.adobe.simulator-landing-location', 'adobetracking', null)}">Request
                 an appointment</a>
@@ -122,7 +122,7 @@
                             Solutions can help you hear more for less.</p>
                     
                         <a class="btn btn-primary hero-button custom-datalayer"
-                            href="https://www.aarphearingsolutions.com/shop-products?cid=AARP:LandingPage:other:Aug:2023:AARP-Sim-LP-Shop-Products:Shop-Products"
+                            href="${URLUtils.url('Search-Show', 'cgid', 'shop-products')}"
                             data-name="${Resource.msg('label.adobe.simulator-landing-name-explore', 'adobetracking', null)}"
                             data-location="${Resource.msg('label.adobe.simulator-landing-location', 'adobetracking', null)}">Explore
                             products</a>

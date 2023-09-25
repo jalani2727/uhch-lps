@@ -10,7 +10,7 @@
                 aids.</p>
 
             <a class="btn btn-primary hero-button custom-datalayer"
-                href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest"
+                href="${URLUtils.url('ProviderSearch-Show')}"
                 data-name="schedule appointment - technology, choice, support"
                 data-location="questionnaire results page - technology, choice, support">Schedule
                 Appointment</a>

@@ -63,7 +63,7 @@
                 </ul>
 
                 <a class="btn btn-primary hero-button custom-datalayer"
-                    href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest"
+                    href="${URLUtils.url('ProviderSearch-Show')}"
                     data-name="schedule appointment - what should i know about hearing test"
                     data-location="questionnaire results page 3">Schedule
                     Appointment</a>
