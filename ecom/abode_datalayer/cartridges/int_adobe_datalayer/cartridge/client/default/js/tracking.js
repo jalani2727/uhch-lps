@@ -99,11 +99,103 @@ try {
                 }
             });
         });
+        document.addEventListener('DOMContentLoaded', function () {
+            let dataArray = new Array();
+            let clickableNodes = document.querySelectorAll('.custom-datalayer-screener-li');
+            console.log(clickableNodes, 'screener version');
+            clickableNodes.forEach(function (element) {
+                var jqueryElement = $(element);
+                var existingDatalayer = jqueryElement.attr('data-datalayer-config');
+
+                if (typeof existingDatalayer !== 'undefined') {
+                    return;
+                }
+                var component = {
+                    name: '',
+                    location: '',
+                    type: '',
+                    destinationUrl: ''
+                };
+
+                var innerText = jqueryElement.innerText;
+                var linkTitle = jqueryElement.title;
+                var linkText = jqueryElement.text();
+                var outerText = jqueryElement.outerText;
+                var label = linkText || linkTitle || innerText || outerText;
+                var linkId = jqueryElement.attr('id') || jqueryElement.attr('class');
+
+                if (label && linkId) {
+                    // set datalayer
+                    component.name = jqueryElement.attr('data-name');
+                    component.location = jqueryElement.attr('data-location');
+                    component.type = 'internal';
+                    component.destinationUrl = jqueryElement.attr('href');
+
+                    jqueryElement.attr('data-datalayer-config', JSON.stringify(component));
+                }
+                if (element.localName === 'button') {
+                    component.name = jqueryElement.attr('data-name');
+                    component.location = jqueryElement.attr('data-location');
+                    component.type = 'internal';
+                    component.destinationUrl = jqueryElement.closest('form').attr('action');
+                    jqueryElement.attr('data-datalayer-config', JSON.stringify(component));
+                }
+            });
+
+            // eslint-disable-next-line no-unused-vars
+            let dlPromise = new Promise((resolve, reject) => {
+                // Call the endpoint to obtain view event object and push it to datalayer
+                if (datalayerContext && datalayerPageGroup && datalayerPageName) {
+                    $.ajax({
+                        url: buildContentViewURL,
+                        type: 'POST',
+                        dataType: 'json',
+                        data: {
+                            components: JSON.stringify(dataArray),
+                            context: datalayerContext,
+                            pageGroup: datalayerPageGroup,
+                            pageName: datalayerPageName,
+                            isErrorPage: isErrorPage,
+                            sections: JSON.stringify(datalayerSections)
+                        },
+                        success: function (response) {
+                            let parsedContentView = response;
+                            console.log('parsedContentView:', parsedContentView);
+                            if (parsedContentView instanceof Array) {
+                                parsedContentView.forEach(function (element) {
+                                    adobeDataLayer.push(element);
+                                });
+                            } else {
+                                adobeDataLayer.push(parsedContentView);
+                            }
+                            resolve();
+                        },
+                        error: function () {
+                            console.log('error occured');
+                            reject();
+                        }
+                    });
+                } else {
+                    resolve();
+                }
+            });
+            dlPromise.then(() => {
+                if ($('.adobe-form-event').attr('data-form-custom')) {
+                    adobeDataLayer.push({
+                        event: 'form complete',
+                        form: {
+                            name: $('.adobe-form-event').attr('data-form-custom')
+                        }
+                    });
+                }
+            });
+        });
 
         // eslint-disable-next-line no-unused-vars
         $('.custom-datalayer').on('click', function () {
             var $dataAttr = $(this).closest('.custom-datalayer');
             let link = JSON.parse($dataAttr.attr('data-datalayer-config'));
+            // console.log(link, 'sending datalayer');
             if (link) {
                 adobeDataLayer.push({
                     event: 'link track',
@@ -113,6 +205,20 @@ try {
                     }
                 });
             }
+        });
+
+        // Pass the data-layer-config to the next button
+
+        $('.custom-datalayer-screener-li').on('click', function () {
+            var $dataAttr = $(this).closest('.custom-datalayer-screener-li');
+            // console.log($dataAttr, 'dataAttr');
+            var $nextBtn = $(this).closest('ul').siblings('.btn-next');
+
+            var liDataConfig = $dataAttr.attr('data-datalayer-config');
+            // console.log(liDataConfig, 'li config');
+
+            $nextBtn.attr('data-datalayer-config', liDataConfig);
+            // console.log($nextBtn.attr('data-datalayer-config'));
         });
 
         // On form start adobe datalayer event
