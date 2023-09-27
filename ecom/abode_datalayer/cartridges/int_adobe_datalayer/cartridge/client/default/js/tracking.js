@@ -195,7 +195,6 @@ try {
         $('.custom-datalayer').on('click', function () {
             var $dataAttr = $(this).closest('.custom-datalayer');
             let link = JSON.parse($dataAttr.attr('data-datalayer-config'));
-            // console.log(link, 'sending datalayer');
             if (link) {
                 adobeDataLayer.push({
                     event: 'link track',
@@ -211,11 +210,8 @@ try {
 
         $('.custom-datalayer-screener-li').on('click', function () {
             var $dataAttr = $(this).closest('.custom-datalayer-screener-li');
-            // console.log($dataAttr, 'dataAttr');
             var $nextBtn = $(this).closest('ul').siblings('.btn-next');
-
             var liDataConfig = $dataAttr.attr('data-datalayer-config');
-            // console.log(liDataConfig, 'li config');
 
             $nextBtn.attr('data-datalayer-config', liDataConfig);
             // console.log($nextBtn.attr('data-datalayer-config'));
