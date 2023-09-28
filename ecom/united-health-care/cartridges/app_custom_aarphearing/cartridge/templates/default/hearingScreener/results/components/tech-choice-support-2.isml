@@ -7,7 +7,7 @@
             <p>Over-the-counter (OTC) devices and prescription hearing aids are available with a variety of options to meet your loved one's needs. Even if they’re interested in buying an OTC device, it's recommended to schedule an appointment with a hearing professional to understand how they'll use their hearing aids..</p>
 
             <a class="btn btn-primary hero-button custom-datalayer"
-                href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest"
+                href="${URLUtils.url('ProviderSearch-Show')}"
                 data-name="schedule appointment - technology, choice, support"
                 data-location="questionnaire results page 2- technology, choice, support">Schedule
                 Appointment</a>
