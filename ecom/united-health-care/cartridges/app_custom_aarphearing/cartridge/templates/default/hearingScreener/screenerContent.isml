@@ -12,8 +12,10 @@
         <p class="mins-icon">${Resource.msg('text.screener-info-minutes', 'hearingscreener', null)}</p>
         <p class="question-icon">${Resource.msg('text.screener-info-questions', 'hearingscreener', null)}</p>
     </div>
-    <a href="javascript:void(0)" class="next btn-next btn btn-primary mb-5 custom-datalayer" data-next="q1"
-        data-name="Start Questionnaire" data-location="questionnaire widget page">
+    <a href="javascript:void(0)" class="next btn-next btn btn-primary mb-5 custom-datalayer"
+        data-next="q1"
+        data-name="start questionnaire"
+        data-location="questionnaire widget page">
         ${Resource.msg('label.hearing-screener.btn.start', 'hearingscreener', null)}
     </a>
 </fieldset>
