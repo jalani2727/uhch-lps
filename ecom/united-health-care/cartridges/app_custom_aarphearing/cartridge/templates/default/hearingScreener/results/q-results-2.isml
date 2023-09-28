@@ -189,12 +189,12 @@
                             an appointment with a hearing professional.</p>
 
                         <div class="button-container">
-                            <a href="https://www.aarphearingsolutions.com/hearingtest"
+                            <a href="${URLUtils.url('Screener-Show')}"
                                 class="white-btn btn btn-primary mt-md-2 custom-datalayer"
                                 data-name="online hearing test"
                                 data-location="questionnaire results page 2">Online
                                 Hearing Test </a>
-                            <a href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest"
+                            <a href="${URLUtils.url('ProviderSearch-Show')}"
                                 class="white-btn btn btn-primary mt-md-2 custom-datalayer"
                                 data-name="schedule appointment - when your loved one won't wear a hearing aid"
                                 data-location="questionnaire results page 2">Schedule

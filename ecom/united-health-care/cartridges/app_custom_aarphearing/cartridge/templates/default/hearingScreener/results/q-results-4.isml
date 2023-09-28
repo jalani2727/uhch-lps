@@ -57,7 +57,7 @@
                 </ul>
 
                 <a class="btn btn-primary hero-button custom-datalayer"
-                    href="https://www.aarphearingsolutions.com/find-a-provider?providerType=guest"
+                    href="${URLUtils.url('ProviderSearch-Show')}"
                     data-name="schedule appointment - your next best step"
                     data-location="questionnaire results page 4">Schedule
                     Appointment</a>

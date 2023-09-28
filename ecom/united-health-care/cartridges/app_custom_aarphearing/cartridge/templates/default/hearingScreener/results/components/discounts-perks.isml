@@ -19,7 +19,7 @@
                 <p class="disclaimer">*Four-year warranty applies to hearing aids in the Classic & Premier technology
                     levels.</p>
                 <div class="learn-btns-container">
-                    <a href="https://www.aarphearingsolutions.com/shop-products"
+                    <a href="${URLUtils.url('Search-Show', 'cgid', 'shop-products')}"
                         class="white-btn btn btn-primary mt-md-2 mb-5 custom-datalayer"
                         data-name="learn more"
                         data-location="questionnaire results page discount perks section">Learn
