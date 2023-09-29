@@ -189,7 +189,7 @@
                             an appointment with a hearing professional.</p>
 
                         <div class="button-container">
-                            <a href="${URLUtils.url('Screener-Show')}"
+                            <a href="${URLUtils.url('Page-Show', 'cid', 'hearingtest-landing')}"
                                 class="white-btn btn btn-primary mt-md-2 custom-datalayer"
                                 data-name="online hearing test"
                                 data-location="questionnaire results page 2">Online
