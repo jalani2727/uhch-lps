@@ -38,7 +38,7 @@
                             <div class="api-error-message"> </div>
                             <form action="${pdict.actionURL}" class="create-account-form adobe-form-event" method="POST"
                                 name="create-account-form" enctype="multipart/form-data"
-                                data-form-custom="create-account-form"
+                                data-form-custom="create account form - epic"
                                 data-name="create account form - epic"
                                 data-location="${Resource.msg('label.adobe.create-account.page', 'createaccount', null)}"
                                 >
