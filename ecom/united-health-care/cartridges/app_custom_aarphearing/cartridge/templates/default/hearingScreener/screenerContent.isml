@@ -232,7 +232,7 @@
         </li>
     </ul>
 
-    <a href="javascript:void(0)" id="q3a-btn" class="disabled next btn-next btn btn-primary mb-5"
+    <a href="javascript:void(0)" id="q3a-btn" class="disabled next btn-next btn btn-primary mb-5 custom-datalayer"
         data-name="next question" data-location="hhq-q2A">
         ${Resource.msg('label.hearing-screener.btn.next-question', 'hearingscreener', null)}
     </a>
@@ -271,7 +271,7 @@
         </li>
     </ul>
 
-    <a href="javascript:void(0)" id="q4a-btn" class="disabled next btn-next btn btn-primary mb-5"
+    <a href="javascript:void(0)" id="q4a-btn" class="disabled next btn-next btn btn-primary mb-5 custom-datalayer"
         data-name="next question" data-location="hhq-q3A">
         ${Resource.msg('label.hearing-screener.btn.next-question', 'hearingscreener', null)}
     </a>
@@ -310,7 +310,7 @@
         </li>
     </ul>
 
-    <a href="javascript:void(0)" id="results-btn" class="disabled next btn-next btn btn-primary mb-5"
+    <a href="javascript:void(0)" id="results-btn" class="disabled next btn-next btn btn-primary mb-5 custom-datalayer"
         data-name="next question" data-location="hhq-q4A">
         ${Resource.msg('label.hearing-screener.btn.next-question', 'hearingscreener', null)}
     </a>
@@ -347,7 +347,7 @@
         </li>
     </ul>
 
-    <a href="javascript:void(0)" id="q3c-btn" class="disabled next btn-next btn btn-primary mb-5"
+    <a href="javascript:void(0)" id="q3c-btn" class="disabled next btn-next btn btn-primary mb-5 custom-datalayer"
         data-name="next question" data-location="hhq-q2C">
         ${Resource.msg('label.hearing-screener.btn.next-question', 'hearingscreener', null)}
     </a>
@@ -382,7 +382,7 @@
         </li>
     </ul>
 
-    <a href="javascript:void(0)" id="q4c-btn" class="disabled next btn-next btn btn-primary mb-5"
+    <a href="javascript:void(0)" id="q4c-btn" class="disabled next btn-next btn btn-primary mb-5 custom-datalayer"
         data-name="next question" data-location="hhq-q3C">
         ${Resource.msg('label.hearing-screener.btn.next-question', 'hearingscreener', null)}
     </a>
@@ -443,7 +443,7 @@
 
     </ul>
 
-    <a href="javascript:void(0)" id="results-btn" class="custom-datalyer next btn-next btn btn-primary mb-5"
+    <a href="javascript:void(0)" id="results-btn" class="custom-datalyer next btn-next btn btn-primary mb-5 custom-datalayer"
         data-name="questionnaire submit - q4c" data-location="hhq-q4C">
         ${Resource.msg('label.input.screener-submit', 'hearingscreener', null)}
     </a>
@@ -479,7 +479,7 @@
         </li>
     </ul>
 
-    <a href="javascript:void(0)" id="q3d-btn" class="disabled next btn-next btn btn-primary mb-5"
+    <a href="javascript:void(0)" id="q3d-btn" class="disabled next btn-next btn btn-primary mb-5 custom-datalayer"
         data-name="next question" data-location="hhq-q2D">
         ${Resource.msg('label.hearing-screener.btn.next-question', 'hearingscreener', null)}
     </a>
@@ -523,7 +523,7 @@
         </div>
     </ul>
 
-    <a href="javascript:void(0)" id="q4d-btn" class="custom-datalyer next btn-next btn btn-primary mb-5"
+    <a href="javascript:void(0)" id="q4d-btn" class="custom-datalyer next btn-next btn btn-primary mb-5 custom-datalayer"
         data-name="questionnaire submit - q3d" data-location="hhq-q3D">
         ${Resource.msg('label.input.screener-submit', 'hearingscreener', null)}
     </a>
@@ -561,7 +561,7 @@
         </li>
     </ul>
 
-    <a href="javascript:void(0)" id="results-btn" class="disabled next btn-next btn btn-primary mb-5"
+    <a href="javascript:void(0)" id="results-btn" class="disabled next btn-next btn btn-primary mb-5 custom-datalayer"
         data-name="next question" data-location="hhq-q4D">
         ${Resource.msg('label.hearing-screener.btn.next-question', 'hearingscreener', null)}
     </a>
@@ -594,7 +594,7 @@
         </li>
     </ul>
 
-    <a href="javascript:void(0)" id="q3e-btn" class="disabled next btn-next btn btn-primary mb-5"
+    <a href="javascript:void(0)" id="q3e-btn" class="disabled next btn-next btn btn-primary mb-5 custom-datalayer"
         data-name="next question" data-location="hhq-q2E">
         ${Resource.msg('label.hearing-screener.btn.next-question', 'hearingscreener', null)}
     </a>
@@ -629,7 +629,7 @@
         </li>
     </ul>
 
-    <a href="javascript:void(0)" id="q4e-btn" class="disabled next btn-next btn btn-primary mb-5"
+    <a href="javascript:void(0)" id="q4e-btn" class="disabled next btn-next btn btn-primary mb-5 custom-datalayer"
         data-name="next question" data-location="hhq-q3E">
         ${Resource.msg('label.hearing-screener.btn.next-question', 'hearingscreener', null)}
     </a>
@@ -664,7 +664,7 @@
         </li>
     </ul>
 
-    <a href="javascript:void(0)" id="results-btn" class="disabled next btn-next btn btn-primary mb-5"
+    <a href="javascript:void(0)" id="results-btn" class="disabled next btn-next btn btn-primary mb-5 custom-datalayer"
         data-name="next question" data-location="hhq-q4E">
         ${Resource.msg('label.hearing-screener.btn.next-question', 'hearingscreener', null)}
     </a>
