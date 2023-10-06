@@ -6,6 +6,10 @@ header {
     }
 }
 
+nav > a {
+    font-size: 16px;
+}
+
 nav > .header {
     @include media-breakpoint-down(sm) {
         height: 48px;
