@@ -1,3 +1,4 @@
+ <isset name="currentSite" value="${pdict.currentSite}" scope="page">
 <header>
     <isinclude template="/components/header/skipNav" />
     <div class="header-banner slide-up d-none">

@@ -35,4 +35,16 @@ server.get('HSIDSignIn', function (req, res, next) {
     next();
 });
 
+server.append('IncludeHeaderMenu', function (req, res, next) {
+    var Site = require('dw/system/Site');
+    var viewData = res.getViewData();
+    var currentSite = Site.current.ID;
+
+    viewData.currentSite = currentSite;
+
+    res.setViewData(viewData);
+
+    next();
+})
+
 module.exports = server.exports();
